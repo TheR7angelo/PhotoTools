@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Windows;
 using PhotoTools.Utils;
 using PhotoTools.Sql;
@@ -18,7 +17,7 @@ namespace PhotoTools
             Requete.InitializeBdd();
 
             Fonction.Changelanguage("French");
-            Folder.Main(2022);
+            Folder.Create(2022);
 
         }
 

@@ -4,7 +4,7 @@ namespace PhotoTools.Utils.Create;
 
 public static class Folder
 {
-    public static void Main(int year)
+    public static void Create(int year)
     {
         for (var i=1; i<=12; i++)
         {
