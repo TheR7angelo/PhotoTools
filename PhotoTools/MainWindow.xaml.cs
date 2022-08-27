@@ -25,7 +25,7 @@ namespace PhotoTools
         {
             System.Diagnostics.Process.Start(new ProcessStartInfo()
             {
-                FileName = "https://www.google.fr",
+                FileName = Constant.Directory.githubPage,
                 UseShellExecute = true
             });
         }
