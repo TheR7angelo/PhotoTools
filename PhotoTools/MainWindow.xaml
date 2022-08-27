@@ -9,8 +9,18 @@
         Height="450"
         Width="800"
         WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResizeWithGrip"
         mc:Ignorable="d">
-    <Grid>
+        
+        <mah:MetroWindow.LeftWindowCommands>
+                <mah:WindowCommands>
+                        <Button Click="ButtonBase_OnClick" ToolTip="Open up the GitHub site">
+                                
+                        </Button>
+                </mah:WindowCommands>
+        </mah:MetroWindow.LeftWindowCommands>  
+        
+        <Grid>
 
-    </Grid>
+        </Grid>
 </mah:MetroWindow>
