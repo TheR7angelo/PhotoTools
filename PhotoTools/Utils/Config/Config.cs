@@ -17,6 +17,8 @@ public static class Config
         var appSettings = Configuration.AppSettings.Settings;
         LanguageName = appSettings["LanguageName"].Value;
         LanguageCode = appSettings["LanguageCode"].Value;
+
+        Language.CultureInfo = new CultureInfo(appSettings["LanguageCode"].Value);
     }
     
     public static Configuration InitConfig(string path)

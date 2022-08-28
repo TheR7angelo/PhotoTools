@@ -22,7 +22,7 @@ namespace PhotoTools
             Connection.InitializeBdds();
             Config.InitializeApp();
 
-            //Config.Changelanguage("English");
+            Config.Changelanguage("French");
             const string path = @"E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Test";
             Folder.Create(2022, path);
 

@@ -4,6 +4,5 @@ namespace PhotoTools.Constant;
 
 public static class Language
 {
-    public static CultureInfo CultureInfo { get; set; } = CultureInfo.CurrentCulture;
-    
+    public static CultureInfo CultureInfo { get; set; } = null!;
 }
