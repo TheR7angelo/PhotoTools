@@ -16,25 +16,34 @@ public static class Config
 
     public static void InitializeApp()
     {
-        var appSettings = Configuration.AppSettings.Settings;
-        LanguageName = appSettings["LanguageName"].Value;
-        LanguageCode = appSettings["LanguageCode"].Value;
+        Connection.InitializeBdds();
+        Settings = Configuration.AppSettings.Settings;
+        LanguageName = Settings["LanguageName"].Value;
+        LanguageCode = Settings["LanguageCode"].Value;
 
-        Language.CultureInfo = new CultureInfo(appSettings["LanguageCode"].Value);
+        Language.CultureInfo = new CultureInfo(Settings["LanguageCode"].Value);
     }
     
     public static Configuration InitConfig(string path)
     {
-        var map = new ExeConfigurationFileMap {ExeConfigFilename = path};
-        var config = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
-
         var code = CultureInfo.CurrentCulture.Name;
         var lang = Requete.GetCultureInfoLang(code);
+        
+        var map = new ExeConfigurationFileMap {ExeConfigFilename = path};
+        var config = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
+        var settings = config.AppSettings.Settings;
 
-        config.AppSettings.Settings.Add("LanguageName", lang);
-        config.AppSettings.Settings.Add("LanguageCode", code);
+        var cnfs = new List<Struc.ConfigStruc>
+        {
+            new (){ Key = "LanguageName", Value = lang },
+            new () { Key = "LanguageCode", Value = code },
+            new () { Key = "Theme", Value = string.Empty },
+        };
         
-        
+        foreach (var cnf in cnfs)
+        {
+            settings.Add(cnf.Key, cnf.Value);
+        }
         config.Save(ConfigurationSaveMode.Full, true);
         return config;
     }
