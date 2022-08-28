@@ -18,11 +18,11 @@ public static class Folder
             Console.WriteLine($"{num}_{month}");
 
             System.IO.Directory.CreateDirectory(path);
-            CreateFolderDays(date, path);
+            CreateFolderDays (date, path);
         }
     }
 
-    public static void CreateFolderDays(DateOnly date, string parentPath)
+    private static void CreateFolderDays(DateOnly date, string parentPath)
     {
         var endDate = date.Month + 1 == 13 ? new DateOnly(date.Year + 1, 1, 1).AddDays(-1) : new DateOnly(date.Year, date.Month + 1, 1).AddDays(-1);
 

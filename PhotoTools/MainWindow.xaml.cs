@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Windows;
 using PhotoTools.Sql;
 using PhotoTools.Utils.Config;
@@ -29,6 +30,11 @@ namespace PhotoTools
                 FileName = Constant.Directory.GithubPage,
                 UseShellExecute = true
             });
+        }
+
+        private void BtSettings_OnClick(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("open settings");
         }
     }
 }

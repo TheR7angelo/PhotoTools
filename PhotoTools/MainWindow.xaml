@@ -11,18 +11,24 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanResizeWithGrip"
         mc:Ignorable="d">
-        
-        
-        <!-- Barre top -->
-        <mah:MetroWindow.LeftWindowCommands>
-                <mah:WindowCommands>
-                        <Button Click="ButtonBase_OnClick" ToolTip="Open up the GitHub site">
-                                
-                        </Button>
-                </mah:WindowCommands>
-        </mah:MetroWindow.LeftWindowCommands>  
-        
-        <Grid>
 
-        </Grid>
+
+    <!-- Barre top -->
+    <mah:MetroWindow.LeftWindowCommands>
+        <mah:WindowCommands>
+            <Button Click="ButtonBase_OnClick" ToolTip="Open up the GitHub site">
+                <Image Source="/Utils/Img/github.png" Stretch="Fill" Margin="3"/>
+            </Button>
+        </mah:WindowCommands>
+    </mah:MetroWindow.LeftWindowCommands>
+    <mah:MetroWindow.RightWindowCommands>
+        <mah:WindowCommands>
+            <Button Click="BtSettings_OnClick" ToolTip="Open setttings">
+                <Image Source="/Utils/Img/parametres.png" Stretch="Fill" Margin="3"/>
+            </Button>
+        </mah:WindowCommands>
+    </mah:MetroWindow.RightWindowCommands>
+    <Grid>
+        
+    </Grid>
 </mah:MetroWindow>

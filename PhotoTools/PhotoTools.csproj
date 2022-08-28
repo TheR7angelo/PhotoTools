@@ -14,13 +14,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Sql\Bdds\Language.sqlite" />
-      <Resource Include="Sql\Bdds\Language.sqlite">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-    </ItemGroup>
-
-    <ItemGroup>
       <Folder Include="Test\2022\01_Janvier\01_Samedi" />
       <Folder Include="Test\2022\01_Janvier\02_Dimanche" />
       <Folder Include="Test\2022\01_Janvier\03_Lundi" />
@@ -176,6 +169,24 @@
       <Folder Include="Test\2022\06_Juin\02_Jeudi" />
       <Folder Include="Test\2022\06_Juin\03_Vendredi" />
       <Folder Include="Test\2022\06_Juin\04_Samedi" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Sql\Bdds\Language.sqlite" />
+      <None Remove="Utils\Img\parametres.png" />
+      <AdditionalFiles Include="Sql\Bdds\Language.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Utils\Img\parametres.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Utils\Img\github.png" />
+      <Resource Include="Utils\Img\github.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
 </Project>
