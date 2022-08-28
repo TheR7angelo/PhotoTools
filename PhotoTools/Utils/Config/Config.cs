@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Globalization;
 using PhotoTools.Constant;
 using PhotoTools.Sql;
@@ -9,6 +10,7 @@ namespace PhotoTools.Utils.Config;
 public static class Config
 {
     public static Configuration Configuration { get; } = GetPath.GetConfig();
+    public static KeyValueConfigurationCollection Settings = Configuration.AppSettings.Settings;
     public static string LanguageName { get; set; } = null!;
     public static string LanguageCode { get; set; } = null!;
 
@@ -42,15 +44,29 @@ public static class Config
         
         LanguageName = lang;
         LanguageCode = code;
-
-        var config = Config.Configuration;
-        var settings = config.AppSettings.Settings;
-
-        settings["LanguageName"].Value = lang;
-        settings["LanguageCode"].Value = code;
-        config.Save();
-
+        
         Language.CultureInfo = new CultureInfo(code);
 
+        var cnfs = new List<Struc.ConfigStruc>
+        {
+            new (){ Key = "LanguageName", Value = lang },
+            new () { Key = "LanguageCode", Value = code }
+        };
+        ModifyConfigs(cnfs);
+    }
+
+    private static void ModifyConfig(string key, string value)
+    {
+        Settings[key].Value = value;
+        Configuration.Save();
+    }
+
+    private static void ModifyConfigs(List<Struc.ConfigStruc> keyValuesStrucs)
+    {
+        foreach (var cnf in keyValuesStrucs)
+        {
+            Settings[cnf.Key].Value = cnf.Value;
+        }
+        Configuration.Save();
     }
 }

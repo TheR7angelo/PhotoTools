@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Configuration;
-using System.IO;using System.Reflection;
+using System.IO;
 using Directory = PhotoTools.Constant.Directory;
 
 namespace PhotoTools.Utils.Getter;
