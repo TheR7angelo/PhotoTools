@@ -12,6 +12,8 @@
         ResizeMode="CanResizeWithGrip"
         mc:Ignorable="d">
         
+        
+        <!-- Barre top -->
         <mah:MetroWindow.LeftWindowCommands>
                 <mah:WindowCommands>
                         <Button Click="ButtonBase_OnClick" ToolTip="Open up the GitHub site">

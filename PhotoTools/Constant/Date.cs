@@ -2,7 +2,7 @@
 
 namespace PhotoTools.Constant;
 
-public static partial class Constant
+public static class Language
 {
     public static string LanguageName { get; set; } = "French";
     public static string LanguageCode { get; set; } = "fr-FR";

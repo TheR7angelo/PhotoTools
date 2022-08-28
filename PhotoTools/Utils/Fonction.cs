@@ -10,10 +10,10 @@ public static class Fonction
     {
         var code = Requete.GetCultureInfoCode(lang);
         
-        Constant.Constant.LanguageName = lang;
-        Constant.Constant.LanguageCode = code;
+        Constant.Language.LanguageName = lang;
+        Constant.Language.LanguageCode = code;
 
-        Constant.Constant.CultureInfo = new CultureInfo(code);
+        Constant.Language.CultureInfo = new CultureInfo(code);
 
     }
     public static string Capitalize(this  string str)

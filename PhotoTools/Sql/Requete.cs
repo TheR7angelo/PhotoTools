@@ -6,13 +6,11 @@ namespace PhotoTools.Sql;
 
 public static class Requete
 {
-    private static SQLiteConnection _connLang = new (Constant.Constant.BaseLanguage);
-
     private static SQLiteCommand _commande = new (); 
     
     public static string GetCultureInfoCode(string lang)
     {
-        var reader = Execute(_GetCultureInfoCode(lang), _connLang);
+        var reader = Execute(_GetCultureInfoCode(lang), Connection.ConnLang);
 
         reader.Read();
         var code = reader["code"].ToString();
@@ -30,14 +28,4 @@ public static class Requete
         var commande = new SQLiteCommand(cmd, conn);
         return commande.ExecuteReader();
     }
-
-    public static void InitializeBdd()
-    {
-        var bdds = new List<SQLiteConnection>{_connLang};
-        foreach (var bdd in bdds)
-        {
-            bdd.Open();
-        }
-    }
-    
 }

@@ -14,18 +14,20 @@ namespace PhotoTools
         public MainWindow()
         {
             InitializeComponent();
-            Requete.InitializeBdd();
+            Connection.InitializeBdds();
+            
 
-            Fonction.Changelanguage("French");
-            Folder.Create(2022);
+            Fonction.Changelanguage("English");
+            const string path = @"E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Test";
+            Folder.Create(2022, path);
 
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start(new ProcessStartInfo()
+            Process.Start(new ProcessStartInfo()
             {
-                FileName = Constant.Directory.githubPage,
+                FileName = Constant.Directory.GithubPage,
                 UseShellExecute = true
             });
         }
