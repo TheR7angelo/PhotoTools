@@ -6,16 +6,6 @@ namespace PhotoTools.Utils;
 
 public static class Fonction
 {
-    public static void Changelanguage(string lang="English")
-    {
-        var code = Requete.GetCultureInfoCode(lang);
-        
-        Constant.Language.LanguageName = lang;
-        Constant.Language.LanguageCode = code;
-
-        Constant.Language.CultureInfo = new CultureInfo(code);
-
-    }
     public static string Capitalize(this  string str)
     {
         if (str.Length == 1){

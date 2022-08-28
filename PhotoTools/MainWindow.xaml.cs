@@ -1,8 +1,13 @@
-﻿using System.Diagnostics;
+﻿using System.Configuration;
+using System.Diagnostics;
+using System.Reflection;
 using System.Windows;
+using System.Xml.Schema;
 using PhotoTools.Utils;
 using PhotoTools.Sql;
+using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Create;
+using PhotoTools.Utils.Getter;
 
 namespace PhotoTools
 {
@@ -15,9 +20,9 @@ namespace PhotoTools
         {
             InitializeComponent();
             Connection.InitializeBdds();
-            
+            Config.InitializeApp();
 
-            Fonction.Changelanguage("English");
+            //Config.Changelanguage("English");
             const string path = @"E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Test";
             Folder.Create(2022, path);
 
