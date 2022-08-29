@@ -6,14 +6,14 @@ namespace PhotoTools.Sql;
 public static partial class Requete
 {
     private static SQLiteCommand _commande = new ();
-    public static string GetCultureInfoLang(string code)
+    public static string? GetCultureInfoLang(string code)
     {
         var reader = Execute(_GetCultureInfoLang(code), Connection.ConnLang);
 
         reader.Read();
         var lang = reader["lang"].ToString();
         reader.Close();
-        return lang ?? throw new InvalidOperationException();
+        return lang;
     }
     public static string GetCultureInfoCode(string lang)
     {

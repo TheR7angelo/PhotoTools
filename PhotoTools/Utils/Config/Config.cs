@@ -33,6 +33,12 @@ public static class Config
     {
         var code = CultureInfo.CurrentCulture.Name;
         var lang = Requete.GetCultureInfoLang(code);
+
+        if (lang == null)
+        {
+            code = "en-EN";
+            lang = "English";
+        }
         
         var map = new ExeConfigurationFileMap {ExeConfigFilename = path};
         var config = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);

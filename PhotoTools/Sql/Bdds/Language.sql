@@ -28,3 +28,7 @@ SELECT lg.lang, cu.code
 FROM t_culture cu
          INNER JOIN t_lang lg
                     on lg.id = cu.id;
+
+SELECT cu.code
+FROM t_culture cu
+WHERE cu.code = 'en-EN';
