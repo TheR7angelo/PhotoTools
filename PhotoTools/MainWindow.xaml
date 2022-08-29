@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhotoTools"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:views="clr-namespace:PhotoTools.Views"
         Title="MainWindow"
         Height="450"
         Width="800"
@@ -16,7 +17,7 @@
     <!-- Barre top -->
     <mah:MetroWindow.LeftWindowCommands>
         <mah:WindowCommands>
-            <Button Click="ButtonBase_OnClick" ToolTip="Open up the GitHub site">
+            <Button Name="BtMainGithub" Click="ButtonBase_OnClick">
                 <Image Source="/Utils/Img/github.png" Stretch="Fill" Margin="3"/>
             </Button>
         </mah:WindowCommands>
@@ -29,6 +30,6 @@
         </mah:WindowCommands>
     </mah:MetroWindow.RightWindowCommands>
     <Grid>
-        
+        <views:MainView/>
     </Grid>
 </mah:MetroWindow>

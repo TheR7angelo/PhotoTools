@@ -189,4 +189,19 @@
       </Resource>
     </ItemGroup>
 
+    <ItemGroup>
+      <EmbeddedResource Update="Utils\Trad\MainWindow.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>MainWindow.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Utils\Trad\MainWindow.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>MainWindow.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
 </Project>

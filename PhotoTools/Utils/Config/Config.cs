@@ -1,6 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Globalization;
+using System.Windows;
+using System.Windows.Controls;
+using MahApps.Metro.Controls;
 using PhotoTools.Constant;
 using PhotoTools.Sql;
 using PhotoTools.Utils.Getter;
@@ -22,6 +26,7 @@ public static class Config
         LanguageCode = Settings["LanguageCode"].Value;
 
         Language.CultureInfo = new CultureInfo(Settings["LanguageCode"].Value);
+        CultureInfo.CurrentUICulture = Language.CultureInfo;
     }
     
     public static Configuration InitConfig(string path)
@@ -55,6 +60,7 @@ public static class Config
         LanguageCode = code;
         
         Language.CultureInfo = new CultureInfo(code);
+        CultureInfo.CurrentUICulture = Language.CultureInfo;
 
         var cnfs = new List<Struc.ConfigStruc>
         {
