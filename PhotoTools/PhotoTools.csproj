@@ -177,6 +177,14 @@
       <AdditionalFiles Include="Sql\Bdds\Language.sqlite">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </AdditionalFiles>
+      <None Remove="Sql\Bdds\Main.sqlite" />
+      <AdditionalFiles Include="Sql\Bdds\Main.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
+      <None Remove="Sql\Bdds\Progress.sqlite" />
+      <AdditionalFiles Include="Sql\Bdds\Progress.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
     </ItemGroup>
 
     <ItemGroup>
