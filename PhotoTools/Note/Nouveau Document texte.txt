@@ -1,0 +1,1 @@
+Si un dossier contient des fichiers, le dossier doit avoir un suivis de traitement et d'envoie + une liste de personne à qui le dossier à étais envoyer

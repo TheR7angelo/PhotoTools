@@ -1,27 +1,22 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.SQLite;
 
 namespace PhotoTools.Sql;
 
-public class Connection
+public static class Connection
 {
-    public static SQLiteConnection ConnLang { get; }= new (Constant.BasePath.BaseLanguage);
-
-    private static readonly List<SQLiteConnection> Bdds = new() {ConnLang};
+    public static SQLiteConnection Conn { get; }= new (Constant.BasePath.BaseMain);
+    private static readonly List<string> PathBdds = new() { Constant.BasePath.BaseLanguage, Constant.BasePath.BaseProgress };
 
     public static void InitializeBdds()
     {
-        foreach (var bdd in Bdds)
-        {
-            bdd.Open();
-        }
+        Conn.Open();
+        Requete.AttachBdds(PathBdds);
     }
 
     public static void CloseBdds()
     {
-        foreach (var bdd in Bdds)
-        {
-            bdd.Close();
-        }
+        Conn.Close();
     }
 }
