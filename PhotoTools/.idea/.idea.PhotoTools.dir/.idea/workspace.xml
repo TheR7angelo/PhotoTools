@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00a350a8-33ca-456a-a817-076e98e1d3b0" name="Changes" comment="Modify new database to copy if newest file" />
+    <list default="true" id="00a350a8-33ca-456a-a817-076e98e1d3b0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +22,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5a3a9648777b963d4c2491701c2e9ea41b172b2c2629856c1d5eabd842f02bb7/MSG.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64e1f53c72e0f18176bb6bd71114eea9261c1de30f02b3ab8ddaf9de977910/MetroWindow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9ff6e15065aca4366778dbe1a1b71b9164dea3534b71e1795c33fd6f159f52/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -81,7 +82,10 @@
       <updated>1661753805430</updated>
       <workItem from="1661753822401" duration="5703000" />
       <workItem from="1661839876982" duration="7000" />
-      <workItem from="1661840235957" duration="3398000" />
+      <workItem from="1661840235957" duration="3639000" />
+      <workItem from="1661846084004" duration="125000" />
+      <workItem from="1661846457498" duration="214000" />
+      <workItem from="1661846719295" duration="229000" />
     </task>
     <task id="LOCAL-00001" summary="Add resource file for changing language">
       <created>1661759142061</created>
@@ -111,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661843666060</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Remove file">
+      <created>1661843723177</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661843723177</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Move file">
+      <created>1661843775832</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661843775832</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +154,8 @@
     <MESSAGE value="Addeds default language for application, if tradution is not valid then use English trad" />
     <MESSAGE value="added shema like in sqlite, ATTACH DATABASE function" />
     <MESSAGE value="Modify new database to copy if newest file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify new database to copy if newest file" />
+    <MESSAGE value="Remove file" />
+    <MESSAGE value="Move file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move file" />
   </component>
 </project>

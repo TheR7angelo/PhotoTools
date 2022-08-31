@@ -6,12 +6,17 @@
         xmlns:local="clr-namespace:PhotoTools"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:views="clr-namespace:PhotoTools.Views"
-        Title="MainWindow"
-        Height="450"
-        Width="800"
-        WindowStartupLocation="CenterScreen"
+        TitleAlignment="Center"
         ResizeMode="CanResizeWithGrip"
-        mc:Ignorable="d">
+        WindowTransitionsEnabled="False"
+        WindowStartupLocation="CenterScreen"
+        TitleCharacterCasing="Normal"
+        Title="{StaticResource AppName}" 
+        Width="{DynamicResource AppWidth}"
+        Height="{DynamicResource AppHeight}"
+        MinWidth="{DynamicResource AppWidth}"
+        MinHeight="{DynamicResource AppHeight}"
+        Closing="OnApplicationExit">
 
 
     <!-- Barre top -->

@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="Author">TheR7angelo</sys:String>
+    <sys:String x:Key="AppName">PhotoTools</sys:String>
+    <sys:String x:Key="AppVersion">0.1</sys:String>
+    
+    <sys:Double x:Key="AppWidth">1600</sys:Double>
+    <sys:Double x:Key="AppHeight">900</sys:Double>
+    <sys:Double x:Key="WgHeight">25</sys:Double>
+</ResourceDictionary>

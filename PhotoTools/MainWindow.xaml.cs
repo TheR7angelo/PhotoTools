@@ -1,11 +1,8 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Diagnostics;
-using System.Globalization;
 using System.Windows;
-using System.Windows.Interop;
-using PhotoTools.Sql;
 using PhotoTools.Utils.Config;
-using PhotoTools.Utils.Create;
 
 namespace PhotoTools
 {
@@ -19,7 +16,6 @@ namespace PhotoTools
             InitializeComponent();
             Config.InitializeApp();
             ChangeLanguage();
-            
             Config.Changelanguage("French");
 
             //const string path = @"E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Test";
@@ -44,6 +40,11 @@ namespace PhotoTools
         private void ChangeLanguage()
         {
             BtMainGithub.ToolTip = Utils.Trad.MainWindow.BtGithubToolTip;
+        }
+
+        private void OnApplicationExit(object? sender, CancelEventArgs e)
+        {
+            
         }
     }
 }
