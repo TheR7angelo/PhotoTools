@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0-windows</TargetFramework>
+        <OutputType>WinExe</OutputType>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
         <LangVersion>preview</LangVersion>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <NeutralLanguage>fr</NeutralLanguage>
+        <TargetFramework>net7.0-windows</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
@@ -184,6 +187,10 @@
       </AdditionalFiles>
       <None Remove="Sql\Bdds\Progress.sqlite" />
       <AdditionalFiles Include="Sql\Bdds\Progress.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
+      <None Remove="app.config" />
+      <AdditionalFiles Include="app.config">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </AdditionalFiles>
     </ItemGroup>

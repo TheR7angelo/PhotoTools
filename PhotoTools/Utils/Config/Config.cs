@@ -13,19 +13,19 @@ namespace PhotoTools.Utils.Config;
 
 public static class Config
 {
-    public static Configuration Configuration { get; } = GetPath.GetConfig();
-    public static KeyValueConfigurationCollection Settings = Configuration.AppSettings.Settings;
+    private static Configuration Configuration { get; } = GetPath.GetConfig();
+    private static KeyValueConfigurationCollection _settings = Configuration.AppSettings.Settings;
     public static string LanguageName { get; set; } = null!;
     public static string LanguageCode { get; set; } = null!;
 
     public static void InitializeApp()
     {
         Connection.InitializeBdds();
-        Settings = Configuration.AppSettings.Settings;
-        LanguageName = Settings["LanguageName"].Value;
-        LanguageCode = Settings["LanguageCode"].Value;
+        _settings = Configuration.AppSettings.Settings;
+        LanguageName = _settings["LanguageName"].Value;
+        LanguageCode = _settings["LanguageCode"].Value;
 
-        Language.CultureInfo = new CultureInfo(Settings["LanguageCode"].Value);
+        Language.CultureInfo = new CultureInfo(_settings["LanguageCode"].Value);
         CultureInfo.CurrentUICulture = Language.CultureInfo;
     }
     
@@ -78,7 +78,7 @@ public static class Config
 
     private static void ModifyConfig(string key, string value)
     {
-        Settings[key].Value = value;
+        _settings[key].Value = value;
         Configuration.Save();
     }
 
@@ -86,7 +86,7 @@ public static class Config
     {
         foreach (var cnf in keyValuesStrucs)
         {
-            Settings[cnf.Key].Value = cnf.Value;
+            _settings[cnf.Key].Value = cnf.Value;
         }
         Configuration.Save();
     }

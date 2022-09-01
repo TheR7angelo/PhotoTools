@@ -11,7 +11,7 @@
         WindowTransitionsEnabled="False"
         WindowStartupLocation="CenterScreen"
         TitleCharacterCasing="Normal"
-        Title="{StaticResource AppName}" 
+        Title="{StaticResource AppName}"
         Width="{DynamicResource AppWidth}"
         Height="{DynamicResource AppHeight}"
         MinWidth="{DynamicResource AppWidth}"

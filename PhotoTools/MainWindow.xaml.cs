@@ -4,17 +4,24 @@ using System.Diagnostics;
 using System.Windows;
 using PhotoTools.Utils.Config;
 
+
 namespace PhotoTools
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    
     public partial class MainWindow
     {
         public MainWindow()
         {
             InitializeComponent();
             Config.InitializeApp();
+
+
+            var v = Utils.Getter.AApplication.GetCurrentVersion;
+            Title = $"PhotoTools";
+
             ChangeLanguage();
             Config.Changelanguage("French");
 
