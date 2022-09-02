@@ -16,13 +16,9 @@ namespace PhotoTools
         public MainWindow()
         {
             InitializeComponent();
+            InitializeUi();
             Config.InitializeApp();
 
-
-            var v = Utils.Getter.AApplication.GetCurrentVersion;
-            Title = $"PhotoTools";
-
-            ChangeLanguage();
             Config.Changelanguage("French");
 
             //const string path = @"E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Test";
@@ -44,14 +40,17 @@ namespace PhotoTools
             Console.WriteLine("open settings");
         }
 
-        private void ChangeLanguage()
+        private void InitializeUi()
         {
+            var v = Utils.Getter.Application.GetCurrentVersion;
+            Title = Utils.Getter.Application.GetCurrentName();
+            
             BtMainGithub.ToolTip = Utils.Trad.MainWindow.BtGithubToolTip;
         }
 
         private void OnApplicationExit(object? sender, CancelEventArgs e)
         {
-            
+            Sql.Connection.CloseBdds();
         }
     }
 }

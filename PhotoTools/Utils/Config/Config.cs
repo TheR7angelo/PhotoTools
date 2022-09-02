@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Globalization;
+using System.Security.AccessControl;
 using System.Windows;
 using System.Windows.Controls;
 using MahApps.Metro.Controls;
@@ -21,7 +22,6 @@ public static class Config
     public static void InitializeApp()
     {
         Connection.InitializeBdds();
-        _settings = Configuration.AppSettings.Settings;
         LanguageName = _settings["LanguageName"].Value;
         LanguageCode = _settings["LanguageCode"].Value;
 
@@ -44,16 +44,15 @@ public static class Config
         var config = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
         var settings = config.AppSettings.Settings;
 
-        var cnfs = new List<Struc.ConfigStruc>
-        {
-            new (){ Key = "LanguageName", Value = lang },
-            new () { Key = "LanguageCode", Value = code },
-            new () { Key = "Theme", Value = string.Empty },
-        };
+        var cnfs = Requete.GetParams();
         
         foreach (var cnf in cnfs)
         {
-            settings.Add(cnf.Key, cnf.Value);
+            
+            var cf =
+                ConfigurationManager.GetSection("customAppSettingsGroup/customAppSettings") as
+                    System.Collections.Specialized.NameValueCollection;
+            cf.Add(cnf.Key, cnf.Value);
         }
         config.Save(ConfigurationSaveMode.Full, true);
         return config;

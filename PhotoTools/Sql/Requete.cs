@@ -10,6 +10,11 @@ public static partial class Requete
         var filename = Path.GetFileName(path).Split(".")[0].ToLower();
         return $"ATTACH DATABASE '{path}' as {filename}";
     }
+
+    private static string _GetParams()
+    {
+        return "SELECT pa.* FROM main.v_params pa ORDER BY pa.section";
+    }
     private static string _GetCultureInfoLang(string code)
     {
         return $"SELECT cu.* FROM language.v_culture cu WHERE cu.code='{code}'";

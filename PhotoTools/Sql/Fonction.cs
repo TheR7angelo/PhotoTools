@@ -1,12 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using PhotoTools.Constant;
 
 namespace PhotoTools.Sql;
 
 public static partial class Requete
 {
     private static SQLiteCommand _commande = new ();
+
+    public static List<Struc.ConfigStruc> GetParams()
+    {
+        var cnfs = new List<Struc.ConfigStruc>();
+        var reader = ExecuteReader(_GetParams());
+
+        while (reader.Read())
+        {
+            cnfs.Add(new Struc.ConfigStruc()
+            {
+                Section = reader["section"].ToString(),
+                Key = reader["key"].ToString(),
+                Value = reader["value"].ToString()
+            });
+        }
+        return cnfs;
+    }
     public static string? GetCultureInfoLang(string code)
     {
         var reader = ExecuteReader(_GetCultureInfoLang(code));

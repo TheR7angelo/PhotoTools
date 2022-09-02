@@ -6,5 +6,6 @@ public static class Struc
     {
         public string Key;
         public string? Value;
+        public string Section;
     }
 }

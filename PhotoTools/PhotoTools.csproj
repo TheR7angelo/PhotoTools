@@ -190,9 +190,6 @@
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </AdditionalFiles>
       <None Remove="app.config" />
-      <AdditionalFiles Include="app.config">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </AdditionalFiles>
     </ItemGroup>
 
     <ItemGroup>
