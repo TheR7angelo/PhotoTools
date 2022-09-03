@@ -13,6 +13,7 @@ public static class Connection
     public static void InitializeBdds()
     {
         Conn.Open();
+        Transaction = Conn.BeginTransaction();
         Requete.AttachBdds(PathBdds);
     }
 

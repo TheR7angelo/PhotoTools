@@ -26,5 +26,11 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="MainDebug.sqlite" uuid="af43221f-5195-426c-b614-e4b180d66156">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <auth-provider>no-auth</auth-provider>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>

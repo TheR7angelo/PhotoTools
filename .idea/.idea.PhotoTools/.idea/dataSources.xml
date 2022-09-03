@@ -25,5 +25,12 @@
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="MainDebug.sqlite" uuid="af43221f-5195-426c-b614-e4b180d66156">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/PhotoTools/bin/Debug/net7.0-windows/Sql/Bdds/Main.sqlite</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

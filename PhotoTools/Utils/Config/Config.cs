@@ -70,12 +70,11 @@ public static class Config
             new() { Section = "Language", Key = "LanguageCode", Value = code }
             
         };
-
-        using var transaction = Connection.Conn.BeginTransaction();
+        
         foreach (var cf in cfs)
         {
             Requete.UpdateSettings(cf.Section!, cf.Key!, cf.Value!);
         }
-        transaction.Commit();
+        Connection.Transaction.Commit();
     }
 }
