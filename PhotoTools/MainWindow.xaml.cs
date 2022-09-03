@@ -18,7 +18,6 @@ namespace PhotoTools
             InitializeComponent();
             InitializeUi();
             Config.InitializeApp();
-
             Config.Changelanguage("French");
 
             //const string path = @"E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Test";

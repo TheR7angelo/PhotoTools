@@ -1,4 +1,5 @@
-﻿using System.Data.SQLite;
+﻿using System;
+using System.Data.SQLite;
 using System.IO;
 
 namespace PhotoTools.Sql;
@@ -24,13 +25,22 @@ public static partial class Requete
         return $"SELECT cu.* FROM language.v_culture cu WHERE cu.lang='{lang}'";
     }
 
+    private static string _UpdateSettings(string section, string key, string value)
+    {
+        return $"""
+                UPDATE main.t_params
+                SET value = '{value}'
+                WHERE key = '{key}'
+                    AND fk_section = (SELECT id FROM main.t_section WHERE section = '{section}')
+                """ ;
+    }
+
     private static void Execute(string cmd)
     {
         new SQLiteCommand(cmd, Connection.Conn).ExecuteNonQuery();
     }
     private static SQLiteDataReader ExecuteReader(string cmd)
     {
-        var command = new SQLiteCommand(cmd, Connection.Conn);
-        return command.ExecuteReader();
+        return new SQLiteCommand(cmd, Connection.Conn).ExecuteReader();
     }
 }

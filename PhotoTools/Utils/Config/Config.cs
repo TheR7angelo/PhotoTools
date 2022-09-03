@@ -1,92 +1,81 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Globalization;
-using System.Security.AccessControl;
-using System.Windows;
-using System.Windows.Controls;
-using MahApps.Metro.Controls;
 using PhotoTools.Constant;
 using PhotoTools.Sql;
-using PhotoTools.Utils.Getter;
+using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Utils.Config;
 
 public static class Config
 {
-    private static Configuration Configuration { get; } = GetPath.GetConfig();
-    private static KeyValueConfigurationCollection _settings = Configuration.AppSettings.Settings;
-    public static string LanguageName { get; set; } = null!;
-    public static string LanguageCode { get; set; } = null!;
+    public static Strucs.StrucConfig.Configue Configue = new ();
 
     public static void InitializeApp()
     {
         Connection.InitializeBdds();
-        LanguageName = _settings["LanguageName"].Value;
-        LanguageCode = _settings["LanguageCode"].Value;
+        var paramsStrucs = Requete.GetParams();
+        double screenSize;
 
-        Language.CultureInfo = new CultureInfo(_settings["LanguageCode"].Value);
+        foreach (var param in paramsStrucs)
+        {
+            switch (param.Section)
+            {
+                case "Language":
+                    switch (param.Key)
+                    {
+                        case "LanguageName":
+                            Configue.Language.LanguageName = param.Value;
+                            break;
+                        case "LanguageCode":
+                            Configue.Language.LanguageCode = param.Value;
+                            break;
+                    }
+                    break;
+                case "Theme":
+                    Configue.Theme = param.Value;
+                    break;
+                case "ScreenSize":
+                    screenSize = double.Parse(param.Value!);
+                    switch (param.Key)
+                    {
+                        case "MinWidth":
+                            Configue.ScreenSize.MinWidth = screenSize;
+                            break;
+                        case "MinHeight":
+                            Configue.ScreenSize.MinHeight = screenSize;
+                            break;
+                    }
+                    break;
+            }
+        }
+
+        Language.CultureInfo = new CultureInfo(Configue.Language.LanguageCode!);
         CultureInfo.CurrentUICulture = Language.CultureInfo;
-    }
-    
-    public static Configuration InitConfig(string path)
-    {
-        var code = CultureInfo.CurrentCulture.Name;
-        var lang = Requete.GetCultureInfoLang(code);
-
-        if (lang == null)
-        {
-            code = "en-EN";
-            lang = "English";
-        }
-        
-        var map = new ExeConfigurationFileMap {ExeConfigFilename = path};
-        var config = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
-        var settings = config.AppSettings.Settings;
-
-        var cnfs = Requete.GetParams();
-        
-        foreach (var cnf in cnfs)
-        {
-            
-            var cf =
-                ConfigurationManager.GetSection("customAppSettingsGroup/customAppSettings") as
-                    System.Collections.Specialized.NameValueCollection;
-            cf.Add(cnf.Key, cnf.Value);
-        }
-        config.Save(ConfigurationSaveMode.Full, true);
-        return config;
     }
     public static void Changelanguage(string lang)
     {
         var code = Requete.GetCultureInfoCode(lang);
-        
-        LanguageName = lang;
-        LanguageCode = code;
-        
+
+        Configue.Language.LanguageName = lang;
+        Configue.Language.LanguageCode = code;
+
         Language.CultureInfo = new CultureInfo(code);
         CultureInfo.CurrentUICulture = Language.CultureInfo;
 
-        var cnfs = new List<Struc.ConfigStruc>
+        //var cfs = new Strucs.StrucConfig.ConfigStruc();
+        var cfs = new List<StrucConfig.ConfigStruc>
         {
-            new (){ Key = "LanguageName", Value = lang },
-            new () { Key = "LanguageCode", Value = code }
+            new() { Section = "Language", Key = "LanguageName", Value = lang },
+            new() { Section = "Language", Key = "LanguageCode", Value = code }
+            
         };
-        ModifyConfigs(cnfs);
-    }
 
-    private static void ModifyConfig(string key, string value)
-    {
-        _settings[key].Value = value;
-        Configuration.Save();
-    }
-
-    private static void ModifyConfigs(List<Struc.ConfigStruc> keyValuesStrucs)
-    {
-        foreach (var cnf in keyValuesStrucs)
+        using var transaction = Connection.Conn.BeginTransaction();
+        foreach (var cf in cfs)
         {
-            _settings[cnf.Key].Value = cnf.Value;
+            Requete.UpdateSettings(cf.Section!, cf.Key!, cf.Value!);
         }
-        Configuration.Save();
+        transaction.Commit();
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
-using PhotoTools.Constant;
 
 namespace PhotoTools.Sql;
 
@@ -9,14 +8,14 @@ public static partial class Requete
 {
     private static SQLiteCommand _commande = new ();
 
-    public static List<Struc.ConfigStruc> GetParams()
+    public static List<Utils.Strucs.StrucConfig.ConfigStruc> GetParams()
     {
-        var cnfs = new List<Struc.ConfigStruc>();
+        var cnfs = new List<Utils.Strucs.StrucConfig.ConfigStruc>();
         var reader = ExecuteReader(_GetParams());
 
         while (reader.Read())
         {
-            cnfs.Add(new Struc.ConfigStruc()
+            cnfs.Add(new Utils.Strucs.StrucConfig.ConfigStruc()
             {
                 Section = reader["section"].ToString(),
                 Key = reader["key"].ToString(),
@@ -44,6 +43,10 @@ public static partial class Requete
         return code ?? throw new InvalidOperationException();
     }
 
+    public static void UpdateSettings(string section, string key, string value)
+    {
+        Execute(_UpdateSettings(section, key, value));
+    }
     public static void AttachBdds(List<string> pathBdds)
     {
         foreach (var path in pathBdds)
