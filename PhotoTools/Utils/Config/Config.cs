@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using PhotoTools.Constant;
 using PhotoTools.Sql;
@@ -9,40 +8,39 @@ namespace PhotoTools.Utils.Config;
 
 public static class Config
 {
-    public static Strucs.StrucConfig.Configue Configue = new ();
+    public static StrucConfig.Configue Configue = new ();
 
     public static void InitializeApp()
     {
         Connection.InitializeBdds();
         var paramsStrucs = Requete.GetParams();
-        double screenSize;
 
         foreach (var param in paramsStrucs)
         {
             switch (param.Section)
             {
-                case "Language":
+                case ConfigSection.Language.Section:
                     switch (param.Key)
                     {
-                        case "LanguageName":
+                        case ConfigSection.Language.LanguageName:
                             Configue.Language.LanguageName = param.Value;
                             break;
-                        case "LanguageCode":
+                        case ConfigSection.Language.LanguageCode:
                             Configue.Language.LanguageCode = param.Value;
                             break;
                     }
                     break;
-                case "Theme":
+                case ConfigSection.Theme.Section:
                     Configue.Theme = param.Value;
                     break;
-                case "ScreenSize":
-                    screenSize = double.Parse(param.Value!);
+                case ConfigSection.ScreenSize.Section:
+                    var screenSize = double.Parse(param.Value!);
                     switch (param.Key)
                     {
-                        case "MinWidth":
+                        case ConfigSection.ScreenSize.MinWidth:
                             Configue.ScreenSize.MinWidth = screenSize;
                             break;
-                        case "MinHeight":
+                        case ConfigSection.ScreenSize.MinHeight:
                             Configue.ScreenSize.MinHeight = screenSize;
                             break;
                     }
@@ -66,9 +64,8 @@ public static class Config
         //var cfs = new Strucs.StrucConfig.ConfigStruc();
         var cfs = new List<StrucConfig.ConfigStruc>
         {
-            new() { Section = "Language", Key = "LanguageName", Value = lang },
-            new() { Section = "Language", Key = "LanguageCode", Value = code }
-            
+            new() { Section = ConfigSection.Language.Section, Key = ConfigSection.Language.LanguageName, Value = lang },
+            new() { Section = ConfigSection.Language.Section, Key = ConfigSection.Language.LanguageCode, Value = code }
         };
         
         foreach (var cf in cfs)

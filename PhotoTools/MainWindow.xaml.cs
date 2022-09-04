@@ -17,6 +17,7 @@ namespace PhotoTools
         {
             Config.InitializeApp();
             InitializeComponent();
+            
             InitializeUi();
 
             //Config.Changelanguage("English");

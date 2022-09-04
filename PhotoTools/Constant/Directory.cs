@@ -9,6 +9,4 @@ public static class Directory
     public static readonly string BddMain = $"{GetPath.GetCurrentPath}\\Sql\\Bdds\\Main.sqlite";
     public static readonly string BddLanguage = $"{GetPath.GetCurrentPath}\\Sql\\Bdds\\Language.sqlite";
     public static readonly string BddProgress = $"{GetPath.GetCurrentPath}\\Sql\\Bdds\\Progress.sqlite";
-
-    public static readonly string ConfigPath = $"{GetPath.GetCurrentPath}\\app.config";
 }
