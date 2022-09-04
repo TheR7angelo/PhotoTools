@@ -19,28 +19,28 @@ public static class Config
         {
             switch (param.Section)
             {
-                case ConfigSection.Language.Section:
+                case StrucConfig.ConfigSection.Language.Section:
                     switch (param.Key)
                     {
-                        case ConfigSection.Language.LanguageName:
+                        case StrucConfig.ConfigSection.Language.LanguageName:
                             Configue.Language.LanguageName = param.Value;
                             break;
-                        case ConfigSection.Language.LanguageCode:
+                        case StrucConfig.ConfigSection.Language.LanguageCode:
                             Configue.Language.LanguageCode = param.Value;
                             break;
                     }
                     break;
-                case ConfigSection.Theme.Section:
+                case StrucConfig.ConfigSection.Theme.Section:
                     Configue.Theme = param.Value;
                     break;
-                case ConfigSection.ScreenSize.Section:
+                case StrucConfig.ConfigSection.ScreenSize.Section:
                     var screenSize = double.Parse(param.Value!);
                     switch (param.Key)
                     {
-                        case ConfigSection.ScreenSize.MinWidth:
+                        case StrucConfig.ConfigSection.ScreenSize.MinWidth:
                             Configue.ScreenSize.MinWidth = screenSize;
                             break;
-                        case ConfigSection.ScreenSize.MinHeight:
+                        case StrucConfig.ConfigSection.ScreenSize.MinHeight:
                             Configue.ScreenSize.MinHeight = screenSize;
                             break;
                     }
@@ -64,8 +64,8 @@ public static class Config
         //var cfs = new Strucs.StrucConfig.ConfigStruc();
         var cfs = new List<StrucConfig.ConfigStruc>
         {
-            new() { Section = ConfigSection.Language.Section, Key = ConfigSection.Language.LanguageName, Value = lang },
-            new() { Section = ConfigSection.Language.Section, Key = ConfigSection.Language.LanguageCode, Value = code }
+            new() { Section = StrucConfig.ConfigSection.Language.Section, Key = StrucConfig.ConfigSection.Language.LanguageName, Value = lang },
+            new() { Section = StrucConfig.ConfigSection.Language.Section, Key = StrucConfig.ConfigSection.Language.LanguageCode, Value = code }
         };
         
         foreach (var cf in cfs)
