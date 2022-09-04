@@ -40,7 +40,7 @@ public partial class Language
         
         var newLang = Requete.GetEnglishLang(lang);
         Config.Changelanguage(newLang);
-        MessageBox.Show(Utils.Trad.SettingLanguage.BtSettingLanguageValideMsg);
+        System.Windows.MessageBox.Show(Utils.Trad.SettingLanguage.BtSettingLanguageValideMsg);
         InitializeUi();
     }
 }

@@ -28,7 +28,7 @@
     </mah:MetroWindow.LeftWindowCommands>
     <mah:MetroWindow.RightWindowCommands>
         <mah:WindowCommands>
-            <Button Click="BtSettings_OnClick" ToolTip="Open setttings">
+            <Button Name="BtMainSetting" Click="BtSettings_OnClick">
                 <Image Source="/Utils/Img/parametres.png" Stretch="Fill" Margin="3"/>
             </Button>
         </mah:WindowCommands>

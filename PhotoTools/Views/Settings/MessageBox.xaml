@@ -1,0 +1,32 @@
+﻿<mah:MetroWindow x:Class="PhotoTools.Views.Settings.MessageBox"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+                 TitleAlignment="Center"
+                 ResizeMode="NoResize"
+                 WindowTransitionsEnabled="False"
+                 WindowStartupLocation="CenterScreen"
+                 TitleCharacterCasing="Normal"
+                 Title="Information"
+                 Height="450"
+                 Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" VerticalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" x:Name="ImgIcon" Source="../../Utils/Img/github.png"/>
+                <TextBlock Grid.Column="1" x:Name="LbMsg" TextWrapping="Wrap" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="BtOk"/>
+        </StackPanel>
+    </Grid>
+</mah:MetroWindow>

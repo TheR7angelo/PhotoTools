@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows;
 using PhotoTools.Utils.Config;
+using MessageBox = PhotoTools.Views.Settings.MessageBox;
 
 
 namespace PhotoTools
@@ -38,15 +39,26 @@ namespace PhotoTools
 
         private void BtSettings_OnClick(object sender, RoutedEventArgs e)
         {
+            var msg = new MessageBox();
+            msg.LbMsg.Text = "Je suis un test trop bien ça mère en slipe";
+            msg.Show();
             Console.WriteLine("open settings");
         }
 
         private void InitializeUi()
         {
             var v = Utils.Getter.Application.GetCurrentVersion;
-            Title = Utils.Getter.Application.GetCurrentName();
+            Ui();
             
             BtMainGithub.ToolTip = Utils.Trad.MainWindows.BtGithubToolTip;
+            BtMainSetting.ToolTip = Utils.Trad.MainWindows.BtMainSetting;
+        }
+
+        private void Ui()
+        {
+            Title = Utils.Getter.Application.GetCurrentName();
+            MinWidth = Config.Configue.ScreenSize.MinWidth;
+            MinHeight = Config.Configue.ScreenSize.MinHeight;
         }
 
         private void OnApplicationExit(object? sender, CancelEventArgs e)

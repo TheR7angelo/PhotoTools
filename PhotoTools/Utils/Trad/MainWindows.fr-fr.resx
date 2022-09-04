@@ -14,4 +14,7 @@
     <data name="BtGithubToolTip" xml:space="preserve">
         <value>Ouvrir la page GitHub</value>
     </data>
+    <data name="BtMainSetting" xml:space="preserve">
+        <value>Ouvrir le menu paramètre</value>
+    </data>
 </root>

@@ -67,5 +67,14 @@ namespace PhotoTools.Utils.Trad {
                 return ResourceManager.GetString("BtGithubToolTip", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open the settings menu.
+        /// </summary>
+        internal static string BtMainSetting {
+            get {
+                return ResourceManager.GetString("BtMainSetting", resourceCulture);
+            }
+        }
     }
 }

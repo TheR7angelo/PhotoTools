@@ -7,19 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="Refractor">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Connection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.en.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.fr-fr.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/2b/ec2b7b65/SQLiteDataReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/f4/e42a45d8/SQLiteTransactionBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1c75f7ce15755f5ef0ffbfe951366a6895806eebd43910e5e715b15ab9b2588e/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5a797ca92a578f6e5ea8cf99e224acee2df4fb7cfbfb0ed1f34a1685a4ddae4/XamlReader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7977fbd944152f51647ff2ab17233d94dd58c49f4447cbda8b8bac30a8c2bbd/ClrObjectRuntime.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Config/Config.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -101,6 +84,7 @@
       <workItem from="1662099448590" duration="4464000" />
       <workItem from="1662210339257" duration="13358000" />
       <workItem from="1662282231253" duration="4658000" />
+      <workItem from="1662328632764" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="Start making version file">
       <created>1662037828680</created>
