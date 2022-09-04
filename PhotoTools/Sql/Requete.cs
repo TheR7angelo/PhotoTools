@@ -16,6 +16,11 @@ public static partial class Requete
     {
         return "SELECT pa.* FROM main.v_params pa ORDER BY pa.section";
     }
+
+    private static string _GetAllLangs(string lang)
+    {
+        return $"SELECT la.{lang.ToLower()} FROM language.t_lang la ORDER BY la.{lang.ToLower()}";
+    }
     private static string _GetCultureInfoLang(string code)
     {
         return $"SELECT cu.* FROM language.v_culture cu WHERE cu.code='{code}'";
@@ -24,7 +29,6 @@ public static partial class Requete
     {
         return $"SELECT cu.* FROM language.v_culture cu WHERE cu.lang='{lang}'";
     }
-
     private static string _UpdateSettings(string section, string key, string value)
     {
         return $"""

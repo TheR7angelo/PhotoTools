@@ -8,21 +8,16 @@ public static partial class Requete
 {
     private static SQLiteCommand _commande = new ();
 
-    public static List<Utils.Strucs.StrucConfig.ConfigStruc> GetParams()
+    public static IEnumerable<string> GetAllLangs(string lang)
     {
-        var cnfs = new List<Utils.Strucs.StrucConfig.ConfigStruc>();
-        var reader = ExecuteReader(_GetParams());
-
+        var langs = new List<string>();
+        var reader = ExecuteReader(_GetAllLangs(lang));
         while (reader.Read())
         {
-            cnfs.Add(new Utils.Strucs.StrucConfig.ConfigStruc()
-            {
-                Section = reader["section"].ToString(),
-                Key = reader["key"].ToString(),
-                Value = reader["value"].ToString()
-            });
+            langs.Add(reader[lang.ToLower()].ToString()!);
         }
-        return cnfs;
+
+        return langs;
     }
     public static string? GetCultureInfoLang(string code)
     {
@@ -46,6 +41,22 @@ public static partial class Requete
     public static void UpdateSettings(string section, string key, string value)
     {
         Execute(_UpdateSettings(section, key, value));
+    }
+    public static List<Utils.Strucs.StrucConfig.ConfigStruc> GetParams()
+    {
+        var cnfs = new List<Utils.Strucs.StrucConfig.ConfigStruc>();
+        var reader = ExecuteReader(_GetParams());
+
+        while (reader.Read())
+        {
+            cnfs.Add(new Utils.Strucs.StrucConfig.ConfigStruc()
+            {
+                Section = reader["section"].ToString(),
+                Key = reader["key"].ToString(),
+                Value = reader["value"].ToString()
+            });
+        }
+        return cnfs;
     }
     public static void AttachBdds(List<string> pathBdds)
     {

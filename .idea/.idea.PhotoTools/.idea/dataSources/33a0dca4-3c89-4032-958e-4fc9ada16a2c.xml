@@ -1322,7 +1322,7 @@
     <table id="484" parent="166" name="t_culture"/>
     <table id="485" parent="166" name="t_lang"/>
     <view id="486" parent="166" name="v_culture">
-      <SourceTextLength>117</SourceTextLength>
+      <SourceTextLength>136</SourceTextLength>
     </view>
     <column id="487" parent="482" name="type">
       <DataType>TEXT|0s</DataType>
@@ -1377,19 +1377,23 @@
       <DataType>INTEGER|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="500" parent="485" name="lang">
+    <column id="500" parent="485" name="french">
       <DataType>TEXT|0s</DataType>
       <Position>2</Position>
     </column>
-    <key id="501" parent="485" name="t_lang_pk">
+    <column id="501" parent="485" name="english">
+      <DataType>TEXT|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <key id="502" parent="485" name="t_lang_pk">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="502" parent="486" name="lang">
+    <column id="503" parent="486" name="english">
       <DataType>TEXT|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="503" parent="486" name="code">
+    <column id="504" parent="486" name="code">
       <DataType>VARCHAR(5)|0s</DataType>
       <Position>2</Position>
     </column>

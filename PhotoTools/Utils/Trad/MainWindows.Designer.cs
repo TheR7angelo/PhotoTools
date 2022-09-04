@@ -21,14 +21,14 @@ namespace PhotoTools.Utils.Trad {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MainWindow {
+    internal class MainWindows {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal MainWindow() {
+        internal MainWindows() {
         }
         
         /// <summary>
@@ -38,7 +38,7 @@ namespace PhotoTools.Utils.Trad {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.MainWindow", typeof(MainWindow).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.MainWindows", typeof(MainWindows).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -60,7 +60,7 @@ namespace PhotoTools.Utils.Trad {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ouvrir la page GitHub.
+        ///   Looks up a localized string similar to Open up the GitHub page.
         /// </summary>
         internal static string BtGithubToolTip {
             get {

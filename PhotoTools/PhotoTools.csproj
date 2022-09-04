@@ -203,17 +203,26 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="Utils\Trad\MainWindow.resx">
+      <EmbeddedResource Update="Utils\Trad\SettingLanguage.resx">
         <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>MainWindow.Designer.cs</LastGenOutput>
+        <LastGenOutput>SettingLanguage.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\MainWindows.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>MainWindows.Designer.cs</LastGenOutput>
       </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Utils\Trad\MainWindow.Designer.cs">
+      <Compile Update="Utils\Trad\SettingLanguage.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
-        <DependentUpon>MainWindow.resx</DependentUpon>
+        <DependentUpon>SettingLanguage.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Utils\Trad\MainWindows.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>MainWindows.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
