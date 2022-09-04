@@ -8,6 +8,12 @@ public static partial class Requete
 {
     private static SQLiteCommand _commande = new ();
 
+    public static string GetEnglishLang(string lang)
+    {
+        var reader = ExecuteReader(_GetEnglishLang(lang));
+        reader.Read();
+        return reader["english"].ToString()!;
+    }
     public static IEnumerable<string> GetAllLangs(string lang)
     {
         var langs = new List<string>();

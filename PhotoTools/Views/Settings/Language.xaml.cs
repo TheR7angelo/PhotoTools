@@ -1,4 +1,6 @@
-﻿using PhotoTools.Sql;
+﻿using System;
+using System.Windows;
+using PhotoTools.Sql;
 using PhotoTools.Utils.Config;
 
 namespace PhotoTools.Views.Settings;
@@ -20,6 +22,8 @@ public partial class Language
 
     private void FillComboLanguage()
     {
+        CbSettingLanguage.Items.Clear();
+        
         var lang = Config.Configue.Language.LanguageName;
         var languages = Requete.GetAllLangs(lang!);
 
@@ -27,5 +31,16 @@ public partial class Language
         {
             CbSettingLanguage.Items.Add(langue);
         }
+    }
+
+    private void BtSettingLanguageValide_OnClick(object sender, RoutedEventArgs e)
+    {
+        var lang = CbSettingLanguage.Text;
+        if (lang == string.Empty) return;
+        
+        var newLang = Requete.GetEnglishLang(lang);
+        Config.Changelanguage(newLang);
+        MessageBox.Show(Utils.Trad.SettingLanguage.BtSettingLanguageValideMsg);
+        InitializeUi();
     }
 }

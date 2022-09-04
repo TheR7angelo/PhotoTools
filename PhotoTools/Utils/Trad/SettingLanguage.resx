@@ -21,4 +21,7 @@
     <data name="BtSettingLanguageValide" xml:space="preserve">
         <value>Valid</value>
     </data>
+    <data name="BtSettingLanguageValideMsg" xml:space="preserve">
+        <value>Please rebbot to apply change</value>
+    </data>
 </root>

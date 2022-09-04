@@ -67,5 +67,14 @@ namespace PhotoTools.Utils.Trad {
                 return ResourceManager.GetString("BtSettingLanguageValide", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please rebbot to apply change.
+        /// </summary>
+        internal static string BtSettingLanguageValideMsg {
+            get {
+                return ResourceManager.GetString("BtSettingLanguageValideMsg", resourceCulture);
+            }
+        }
     }
 }

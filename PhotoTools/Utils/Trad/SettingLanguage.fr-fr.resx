@@ -14,4 +14,7 @@
     <data name="BtSettingLanguageValide" xml:space="preserve">
         <value>Validé</value>
     </data>
+    <data name="BtSettingLanguageValideMsg" xml:space="preserve">
+        <value>Merci de relancer l'application pour appliquer le changement</value>
+    </data>
 </root>

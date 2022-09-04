@@ -67,7 +67,7 @@ public static class Config
             new() { Section = StrucConfig.ConfigSection.Language.Section, Key = StrucConfig.ConfigSection.Language.LanguageName, Value = lang },
             new() { Section = StrucConfig.ConfigSection.Language.Section, Key = StrucConfig.ConfigSection.Language.LanguageCode, Value = code }
         };
-        
+        Connection.Transaction = Connection.Conn.BeginTransaction();
         foreach (var cf in cfs)
         {
             Requete.UpdateSettings(cf.Section!, cf.Key!, cf.Value!);
