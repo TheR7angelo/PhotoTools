@@ -54,7 +54,7 @@ public static class Config
 
     public static void InitializeStyle()
     {
-        
+        var style = Requete.GetActualStyle();
     }
     public static void Changelanguage(string lang)
     {

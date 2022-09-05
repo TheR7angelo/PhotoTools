@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using PhotoTools.Utils.Config;
+using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Sql;
 
@@ -8,6 +10,20 @@ public static partial class Requete
 {
     private static SQLiteCommand _commande = new ();
 
+    public static StrucConfig.Style GetActualStyle()
+    {
+        var reader = ExecuteReader(_GetActualStyle());
+        reader.Read();
+
+        return new StrucConfig.Style()
+        {
+            RgbM1 = reader["rgb_m1"].ToString()!,
+            RgbM2 = reader["rgb_m2"].ToString()!,
+            RgbM3 = reader["rgb_m3"].ToString()!,
+            RgbB1 = reader["rgb_b1"].ToString()!,
+            RgbB2 = reader["rgb_b2"].ToString()!,
+        };
+    }
     public static string GetEnglishLang(string lang)
     {
         var reader = ExecuteReader(_GetEnglishLang(lang));

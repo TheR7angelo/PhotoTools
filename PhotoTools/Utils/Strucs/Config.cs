@@ -6,11 +6,11 @@ public static class StrucConfig
 
     public struct Style
     {
-        public static string RgbM1 = null!;
-        public static string RgbM2 = null!;
-        public static string RgbM3 = null!;
-        public static string RgbB1 = null!;
-        public static string RgbB2 = null!;
+        public string RgbM1;
+        public string RgbM2;
+        public string RgbM3;
+        public string RgbB1;
+        public string RgbB2;
     }
 
     #endregion

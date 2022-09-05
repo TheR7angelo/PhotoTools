@@ -7,8 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added table style in main">
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Config.cs" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="Added struc style">
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,7 @@
       <workItem from="1662210339257" duration="13358000" />
       <workItem from="1662282231253" duration="4658000" />
       <workItem from="1662328632764" duration="30000" />
-      <workItem from="1662361145282" duration="15166000" />
+      <workItem from="1662361145282" duration="15712000" />
     </task>
     <task id="LOCAL-00001" summary="Start making version file">
       <created>1662037828680</created>
@@ -174,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662389023056</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added struc style">
+      <created>1662389372094</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662389372094</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +215,8 @@
     <MESSAGE value="Added image for messagebox and test in changing language function" />
     <MESSAGE value="Added icon base" />
     <MESSAGE value="added table style in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="added table style in main" />
+    <MESSAGE value="Added struc style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added struc style" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

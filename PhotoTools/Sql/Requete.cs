@@ -13,6 +13,14 @@ public static partial class Requete
         return $"ATTACH DATABASE '{path}' as {filename}";
     }
 
+    private static string _GetActualStyle()
+    {
+        return """
+        SELECT st.rgb_m1, st.rgb_m2, st.rgb_m3, st.rgb_b1, st.rgb_b2
+        FROM main.t_style st
+        WHERE st.name = (SELECT pa.value FROM main.v_params pa WHERE pa.section = 'Theme' AND pa.key = 'Name')
+        """;
+    }
     private static string _GetParams()
     {
         return "SELECT pa.* FROM main.v_params pa ORDER BY pa.section";
