@@ -225,6 +225,8 @@
       <Resource Include="Utils\Img\Icon\github.ico">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
+      <Page Remove="Utils\Config\Theme.xaml" />
+      <Resource Include="Utils\Config\Theme.xaml" />
     </ItemGroup>
 
     <ItemGroup>

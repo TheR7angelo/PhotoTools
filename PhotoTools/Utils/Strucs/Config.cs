@@ -4,13 +4,13 @@ public static class StrucConfig
 {
     public struct Configue
     {
-        public string? Theme;
+        public string? Name;
         public ConfigLang Language = new();
         public ConfigScreenSize ScreenSize = new();
 
         public Configue()
         {
-            Theme = string.Empty;
+            Name = string.Empty;
         }
     }
 
@@ -43,7 +43,7 @@ public static class StrucConfig
         public readonly struct Theme
         {
             public const string Section = "Theme";
-            public const string theme = "Theme";
+            public const string Name = "Theme";
         }
         public readonly struct ScreenSize
         {

@@ -31,7 +31,7 @@ public static class Config
                     }
                     break;
                 case StrucConfig.ConfigSection.Theme.Section:
-                    Configue.Theme = param.Value;
+                    Configue.Name = param.Value;
                     break;
                 case StrucConfig.ConfigSection.ScreenSize.Section:
                     var screenSize = double.Parse(param.Value!);
@@ -50,6 +50,11 @@ public static class Config
 
         Language.CultureInfo = new CultureInfo(Configue.Language.LanguageCode!);
         CultureInfo.CurrentUICulture = Language.CultureInfo;
+    }
+
+    public static void InitializeStyle()
+    {
+        
     }
     public static void Changelanguage(string lang)
     {

@@ -1,7 +1,11 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Windows;
+using System.Windows.Markup;
+using System.Windows.Media;
+using System.Xml;
 using PhotoTools.Utils.Config;
 using MessageBox = PhotoTools.Views.Settings.MessageBox;
 
@@ -18,8 +22,12 @@ namespace PhotoTools
         {
             Config.InitializeApp();
             InitializeComponent();
+            Config.InitializeStyle();
             
             InitializeUi();
+            
+            // t = (SolidColorBrush)Application.Current.FindResource("RgbM1")!;
+            // Console.WriteLine(t);
 
             //Config.Changelanguage("English");
 

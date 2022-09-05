@@ -1321,87 +1321,121 @@
     </table>
     <table id="484" parent="166" name="t_params"/>
     <table id="485" parent="166" name="t_section"/>
-    <view id="486" parent="166" name="v_params">
+    <table id="486" parent="166" name="t_style"/>
+    <view id="487" parent="166" name="v_params">
       <SourceTextLength>304</SourceTextLength>
     </view>
-    <column id="487" parent="482" name="type">
+    <column id="488" parent="482" name="type">
       <DataType>TEXT|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="488" parent="482" name="name">
+    <column id="489" parent="482" name="name">
       <DataType>TEXT|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="489" parent="482" name="tbl_name">
+    <column id="490" parent="482" name="tbl_name">
       <DataType>TEXT|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="490" parent="482" name="rootpage">
+    <column id="491" parent="482" name="rootpage">
       <DataType>INT|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="491" parent="482" name="sql">
+    <column id="492" parent="482" name="sql">
       <DataType>TEXT|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="492" parent="483" name="name">
+    <column id="493" parent="483" name="name">
       <Position>1</Position>
     </column>
-    <column id="493" parent="483" name="seq">
+    <column id="494" parent="483" name="seq">
       <Position>2</Position>
     </column>
-    <column id="494" parent="484" name="id">
+    <column id="495" parent="484" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="495" parent="484" name="fk_section">
+    <column id="496" parent="484" name="fk_section">
       <DataType>INTEGER|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="496" parent="484" name="key">
+    <column id="497" parent="484" name="key">
       <DataType>TEXT|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="497" parent="484" name="value">
+    <column id="498" parent="484" name="value">
       <DataType>TEXT|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="498" parent="484" name="defaut">
+    <column id="499" parent="484" name="defaut">
       <DataType>TEXT|0s</DataType>
       <Position>5</Position>
     </column>
-    <foreign-key id="499" parent="484" name="t_params_t_section_null_fk">
+    <foreign-key id="500" parent="484" name="t_params_t_section_null_fk">
       <ColNames>fk_section</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>t_section</RefTableName>
     </foreign-key>
-    <key id="500" parent="484" name="t_params_pk">
+    <key id="501" parent="484" name="t_params_pk">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="501" parent="485" name="id">
+    <column id="502" parent="485" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="502" parent="485" name="section">
+    <column id="503" parent="485" name="section">
       <DataType>TEXT|0s</DataType>
       <Position>2</Position>
     </column>
-    <key id="503" parent="485" name="t_section_pk">
+    <key id="504" parent="485" name="t_section_pk">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="504" parent="486" name="section">
-      <DataType>TEXT|0s</DataType>
+    <column id="505" parent="486" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>INTEGER|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="505" parent="486" name="key">
+    <column id="506" parent="486" name="name">
       <DataType>TEXT|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="506" parent="486" name="value">
+    <column id="507" parent="486" name="rgb_m1">
+      <DataType>varchar(9)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="508" parent="486" name="rgb_m2">
+      <DataType>varchar(9)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="509" parent="486" name="rgb_m3">
+      <DataType>varchar(9)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="510" parent="486" name="rgb_b1">
+      <DataType>varchar(9)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="511" parent="486" name="rgb_b2">
+      <DataType>varchar(9)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <key id="512" parent="486" name="t_style_pk">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="513" parent="487" name="section">
+      <DataType>TEXT|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="514" parent="487" name="key">
+      <DataType>TEXT|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="515" parent="487" name="value">
       <Position>3</Position>
     </column>
   </database-model>

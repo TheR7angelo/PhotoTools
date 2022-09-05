@@ -11,10 +11,6 @@
         WindowTransitionsEnabled="False"
         WindowStartupLocation="CenterScreen"
         TitleCharacterCasing="Normal"
-        Width="{DynamicResource AppWidth}"
-        Height="{DynamicResource AppHeight}"
-        MinWidth="{DynamicResource AppWidth}"
-        MinHeight="{DynamicResource AppHeight}"
         Closing="OnApplicationExit">
 
 
