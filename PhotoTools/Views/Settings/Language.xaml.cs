@@ -33,7 +33,7 @@ public partial class Language
         }
     }
 
-    private void BtSettingLanguageValide_OnClick(object sender, RoutedEventArgs e)
+    private void BtSettingLanguageValid_OnClick(object sender, RoutedEventArgs e)
     {
         var lang = CbSettingLanguage.Text;
         if (lang == string.Empty) return;
