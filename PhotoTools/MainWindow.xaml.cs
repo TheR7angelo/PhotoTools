@@ -39,9 +39,6 @@ namespace PhotoTools
 
         private void BtSettings_OnClick(object sender, RoutedEventArgs e)
         {
-            var msg = new MessageBox();
-            msg.LbMsg.Text = "Je suis un test trop bien ça mère en slipe";
-            msg.Show();
             Console.WriteLine("open settings");
         }
 

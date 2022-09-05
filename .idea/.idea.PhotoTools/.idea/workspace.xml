@@ -8,7 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/alert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/critical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/information.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/valid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Folder.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/github.png" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Ui/github.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/parametres.png" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Ui/parametres.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/MessageBox.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/MessageBox.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/MessageBox.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/MessageBox.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +103,7 @@
       <workItem from="1662210339257" duration="13358000" />
       <workItem from="1662282231253" duration="4658000" />
       <workItem from="1662328632764" duration="30000" />
+      <workItem from="1662361145282" duration="3880000" />
     </task>
     <task id="LOCAL-00001" summary="Start making version file">
       <created>1662037828680</created>

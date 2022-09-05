@@ -193,11 +193,31 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Resource Include="Utils\Img\parametres.png">
+      <None Remove="Utils\Img\github.png" />
+      <Resource Include="Utils\Img\Ui\github.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
-      <None Remove="Utils\Img\github.png" />
-      <Resource Include="Utils\Img\github.png">
+      <Resource Include="Utils\Img\Ui\parametres.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Utils\Img\MessageBox\alert.png" />
+      <Resource Include="Utils\Img\MessageBox\alert.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Utils\Img\MessageBox\critical.png" />
+      <Resource Include="Utils\Img\MessageBox\critical.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Utils\Img\MessageBox\error.png" />
+      <Resource Include="Utils\Img\MessageBox\error.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Utils\Img\MessageBox\information.png" />
+      <Resource Include="Utils\Img\MessageBox\information.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Utils\Img\MessageBox\valid.png" />
+      <Resource Include="Utils\Img\MessageBox\valid.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
     </ItemGroup>

@@ -8,8 +8,8 @@
                  WindowStartupLocation="CenterScreen"
                  TitleCharacterCasing="Normal"
                  Title="Information"
-                 Height="450"
-                 Width="800">
+                 Height="250"
+                 Width="500">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="6*"/>
@@ -21,7 +21,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="3*"/>
                 </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" x:Name="ImgIcon" Source="../../Utils/Img/github.png"/>
+                <Image Grid.Column="0" x:Name="ImgIcon" Source="../../Utils/Img/MessageBox/information.png"/>
                 <TextBlock Grid.Column="1" x:Name="LbMsg" TextWrapping="Wrap" HorizontalAlignment="Right" VerticalAlignment="Center"/>
             </Grid>
         </StackPanel>
