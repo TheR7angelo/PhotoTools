@@ -2,6 +2,21 @@
 
 public static class StrucConfig
 {
+    #region Style
+
+    public struct Style
+    {
+        public static string RgbM1 = null!;
+        public static string RgbM2 = null!;
+        public static string RgbM3 = null!;
+        public static string RgbB1 = null!;
+        public static string RgbB2 = null!;
+    }
+
+    #endregion
+
+    #region Config
+
     public struct Configue
     {
         public string? Name;
@@ -13,7 +28,6 @@ public static class StrucConfig
             Name = string.Empty;
         }
     }
-
     public struct ConfigLang
     {
         public string? LanguageName;
@@ -24,7 +38,6 @@ public static class StrucConfig
         public double MinWidth;
         public double MinHeight;
     }
-    
     public struct ConfigStruc
     {
         public string? Key;
@@ -52,4 +65,6 @@ public static class StrucConfig
             public const string MinHeight = "MinHeight";
         }
     }
+
+    #endregion
 }
