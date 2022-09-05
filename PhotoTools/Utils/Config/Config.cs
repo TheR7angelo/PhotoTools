@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Windows;
+using System.Windows.Media;
 using PhotoTools.Constant;
 using PhotoTools.Sql;
 using PhotoTools.Utils.Strucs;
@@ -54,7 +57,12 @@ public static class Config
 
     public static void InitializeStyle()
     {
-        var style = Requete.GetActualStyle();
+        var styles = Requete.GetActualStyle();
+        foreach (var st in styles)
+        {
+            Application.Current.Resources[st.Name] = st.StyleValue;
+        }
+        //(SolidColorBrush)Application.Current.Resources[""]
     }
     public static void Changelanguage(string lang)
     {

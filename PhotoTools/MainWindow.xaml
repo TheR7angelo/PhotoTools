@@ -1,9 +1,6 @@
 ﻿<mah:MetroWindow x:Class="PhotoTools.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PhotoTools"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:views="clr-namespace:PhotoTools.Views"
         TitleAlignment="Center"
@@ -29,7 +26,7 @@
             </Button>
         </mah:WindowCommands>
     </mah:MetroWindow.RightWindowCommands>
-    <Grid>
+    <Grid Background="{DynamicResource RgbM1}">
         <views:MainView/>
     </Grid>
 </mah:MetroWindow>

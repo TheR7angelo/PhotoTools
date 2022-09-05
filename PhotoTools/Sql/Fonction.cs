@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using PhotoTools.Utils;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Strucs;
 
@@ -10,18 +11,18 @@ public static partial class Requete
 {
     private static SQLiteCommand _commande = new ();
 
-    public static StrucConfig.Style GetActualStyle()
+    public static IEnumerable<StrucConfig.StyleColorBrush> GetActualStyle()
     {
         var reader = ExecuteReader(_GetActualStyle());
         reader.Read();
 
-        return new StrucConfig.Style()
+        return new List<StrucConfig.StyleColorBrush>()
         {
-            RgbM1 = reader["rgb_m1"].ToString()!,
-            RgbM2 = reader["rgb_m2"].ToString()!,
-            RgbM3 = reader["rgb_m3"].ToString()!,
-            RgbB1 = reader["rgb_b1"].ToString()!,
-            RgbB2 = reader["rgb_b2"].ToString()!,
+            new() { Name = "RgbM1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m1"].ToString()!) },
+            new() { Name = "RgbM2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m2"].ToString()!) },
+            new() { Name = "RgbM3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m3"].ToString()!) },
+            new() { Name = "RgbB1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b1"].ToString()!) },
+            new() { Name = "RgbB2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b2"].ToString()!) },
         };
     }
     public static string GetEnglishLang(string lang)

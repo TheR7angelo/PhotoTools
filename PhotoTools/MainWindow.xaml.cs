@@ -1,13 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.IO;
 using System.Windows;
-using System.Windows.Markup;
 using System.Windows.Media;
-using System.Xml;
 using PhotoTools.Utils.Config;
-using MessageBox = PhotoTools.Views.Settings.MessageBox;
 
 
 namespace PhotoTools
@@ -22,11 +18,11 @@ namespace PhotoTools
         {
             Config.InitializeApp();
             InitializeComponent();
-            Config.InitializeStyle();
+            //Config.InitializeStyle();
             
             InitializeUi();
             
-            // t = (SolidColorBrush)Application.Current.FindResource("RgbM1")!;
+            var t = (SolidColorBrush)Application.Current.FindResource("RgbM1")!;
             // Console.WriteLine(t);
 
             //Config.Changelanguage("English");
@@ -48,6 +44,7 @@ namespace PhotoTools
         private void BtSettings_OnClick(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("open settings");
+            Config.InitializeStyle();
         }
 
         private void InitializeUi()

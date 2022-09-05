@@ -1,18 +1,15 @@
-﻿namespace PhotoTools.Utils.Strucs;
+﻿using System.Windows.Media;
+
+namespace PhotoTools.Utils.Strucs;
 
 public static class StrucConfig
 {
     #region Style
-
-    public struct Style
+    public struct StyleColorBrush
     {
-        public string RgbM1;
-        public string RgbM2;
-        public string RgbM3;
-        public string RgbB1;
-        public string RgbB2;
+        public string Name;
+        public SolidColorBrush StyleValue;
     }
-
     #endregion
 
     #region Config
