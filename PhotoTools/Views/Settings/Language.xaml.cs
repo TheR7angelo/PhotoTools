@@ -43,8 +43,8 @@ public partial class Language
         
         var msg = new MessageBox
         {
-            LbMsg ={ Text = Utils.Trad.MainSetting.BtSettingLanguageValideMsg},
-            ImgIcon ={Source = MessageBox.Icon.Valid},
+            LbMsg ={ Text = Utils.Trad.MainSetting.BtSettingLanguageValideMsg },
+            ImgIcon ={ Source = MessageBox.Icon.Valid },
             Title = Utils.Trad.MainSetting.BtSettingLanguageValide
         };
         msg.Show();
