@@ -1,0 +1,15 @@
+﻿<mah:MetroWindow x:Class="PhotoTools.MainSetting"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+                 TitleAlignment="Center"
+                 ResizeMode="CanResizeWithGrip"
+                 WindowTransitionsEnabled="False"
+                 WindowStartupLocation="CenterScreen"
+                 TitleCharacterCasing="Normal"
+                 Height="450"
+                 Width="800">
+    <Grid Background="{DynamicResource RgbM1}">
+        
+    </Grid>
+</mah:MetroWindow>

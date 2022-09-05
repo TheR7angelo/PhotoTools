@@ -21,14 +21,14 @@ namespace PhotoTools.Utils.Trad {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class SettingLanguage {
+    internal class MainSetting {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal SettingLanguage() {
+        internal MainSetting() {
         }
         
         /// <summary>
@@ -38,7 +38,7 @@ namespace PhotoTools.Utils.Trad {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.SettingLanguage", typeof(SettingLanguage).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.MainSetting", typeof(MainSetting).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -74,6 +74,15 @@ namespace PhotoTools.Utils.Trad {
         internal static string BtSettingLanguageValideMsg {
             get {
                 return ResourceManager.GetString("BtSettingLanguageValideMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parameter.
+        /// </summary>
+        internal static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

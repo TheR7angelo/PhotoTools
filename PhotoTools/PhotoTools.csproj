@@ -19,161 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Test\2022\01_Janvier\01_Samedi" />
-      <Folder Include="Test\2022\01_Janvier\02_Dimanche" />
-      <Folder Include="Test\2022\01_Janvier\03_Lundi" />
-      <Folder Include="Test\2022\01_Janvier\04_Mardi" />
-      <Folder Include="Test\2022\01_Janvier\05_Mercredi" />
-      <Folder Include="Test\2022\01_Janvier\06_Jeudi" />
-      <Folder Include="Test\2022\01_Janvier\07_Vendredi" />
-      <Folder Include="Test\2022\01_Janvier\08_Samedi" />
-      <Folder Include="Test\2022\01_Janvier\09_Dimanche" />
-      <Folder Include="Test\2022\01_Janvier\10_Lundi" />
-      <Folder Include="Test\2022\01_Janvier\11_Mardi" />
-      <Folder Include="Test\2022\01_Janvier\12_Mercredi" />
-      <Folder Include="Test\2022\01_Janvier\13_Jeudi" />
-      <Folder Include="Test\2022\01_Janvier\14_Vendredi" />
-      <Folder Include="Test\2022\01_Janvier\15_Samedi" />
-      <Folder Include="Test\2022\01_Janvier\16_Dimanche" />
-      <Folder Include="Test\2022\01_Janvier\17_Lundi" />
-      <Folder Include="Test\2022\01_Janvier\18_Mardi" />
-      <Folder Include="Test\2022\01_Janvier\19_Mercredi" />
-      <Folder Include="Test\2022\01_Janvier\20_Jeudi" />
-      <Folder Include="Test\2022\01_Janvier\21_Vendredi" />
-      <Folder Include="Test\2022\01_Janvier\22_Samedi" />
-      <Folder Include="Test\2022\01_Janvier\23_Dimanche" />
-      <Folder Include="Test\2022\01_Janvier\24_Lundi" />
-      <Folder Include="Test\2022\01_Janvier\25_Mardi" />
-      <Folder Include="Test\2022\01_Janvier\26_Mercredi" />
-      <Folder Include="Test\2022\01_Janvier\27_Jeudi" />
-      <Folder Include="Test\2022\01_Janvier\28_Vendredi" />
-      <Folder Include="Test\2022\01_Janvier\29_Samedi" />
-      <Folder Include="Test\2022\01_Janvier\30_Dimanche" />
-      <Folder Include="Test\2022\01_Janvier\31_Lundi" />
-      <Folder Include="Test\2022\02_Février\01_Mardi" />
-      <Folder Include="Test\2022\02_Février\02_Mercredi" />
-      <Folder Include="Test\2022\02_Février\03_Jeudi" />
-      <Folder Include="Test\2022\02_Février\04_Vendredi" />
-      <Folder Include="Test\2022\02_Février\05_Samedi" />
-      <Folder Include="Test\2022\02_Février\06_Dimanche" />
-      <Folder Include="Test\2022\02_Février\07_Lundi" />
-      <Folder Include="Test\2022\02_Février\08_Mardi" />
-      <Folder Include="Test\2022\02_Février\09_Mercredi" />
-      <Folder Include="Test\2022\02_Février\10_Jeudi" />
-      <Folder Include="Test\2022\02_Février\11_Vendredi" />
-      <Folder Include="Test\2022\02_Février\12_Samedi" />
-      <Folder Include="Test\2022\02_Février\13_Dimanche" />
-      <Folder Include="Test\2022\02_Février\14_Lundi" />
-      <Folder Include="Test\2022\02_Février\15_Mardi" />
-      <Folder Include="Test\2022\02_Février\16_Mercredi" />
-      <Folder Include="Test\2022\02_Février\17_Jeudi" />
-      <Folder Include="Test\2022\02_Février\18_Vendredi" />
-      <Folder Include="Test\2022\02_Février\19_Samedi" />
-      <Folder Include="Test\2022\02_Février\20_Dimanche" />
-      <Folder Include="Test\2022\02_Février\21_Lundi" />
-      <Folder Include="Test\2022\02_Février\22_Mardi" />
-      <Folder Include="Test\2022\02_Février\23_Mercredi" />
-      <Folder Include="Test\2022\02_Février\24_Jeudi" />
-      <Folder Include="Test\2022\02_Février\25_Vendredi" />
-      <Folder Include="Test\2022\02_Février\26_Samedi" />
-      <Folder Include="Test\2022\02_Février\27_Dimanche" />
-      <Folder Include="Test\2022\02_Février\28_Lundi" />
-      <Folder Include="Test\2022\03_Mars\01_Mardi" />
-      <Folder Include="Test\2022\03_Mars\02_Mercredi" />
-      <Folder Include="Test\2022\03_Mars\03_Jeudi" />
-      <Folder Include="Test\2022\03_Mars\04_Vendredi" />
-      <Folder Include="Test\2022\03_Mars\05_Samedi" />
-      <Folder Include="Test\2022\03_Mars\06_Dimanche" />
-      <Folder Include="Test\2022\03_Mars\07_Lundi" />
-      <Folder Include="Test\2022\03_Mars\08_Mardi" />
-      <Folder Include="Test\2022\03_Mars\09_Mercredi" />
-      <Folder Include="Test\2022\03_Mars\10_Jeudi" />
-      <Folder Include="Test\2022\03_Mars\11_Vendredi" />
-      <Folder Include="Test\2022\03_Mars\12_Samedi" />
-      <Folder Include="Test\2022\03_Mars\13_Dimanche" />
-      <Folder Include="Test\2022\03_Mars\14_Lundi" />
-      <Folder Include="Test\2022\03_Mars\15_Mardi" />
-      <Folder Include="Test\2022\03_Mars\16_Mercredi" />
-      <Folder Include="Test\2022\03_Mars\17_Jeudi" />
-      <Folder Include="Test\2022\03_Mars\18_Vendredi" />
-      <Folder Include="Test\2022\03_Mars\19_Samedi" />
-      <Folder Include="Test\2022\03_Mars\20_Dimanche" />
-      <Folder Include="Test\2022\03_Mars\21_Lundi" />
-      <Folder Include="Test\2022\03_Mars\22_Mardi" />
-      <Folder Include="Test\2022\03_Mars\23_Mercredi" />
-      <Folder Include="Test\2022\03_Mars\24_Jeudi" />
-      <Folder Include="Test\2022\03_Mars\25_Vendredi" />
-      <Folder Include="Test\2022\03_Mars\26_Samedi" />
-      <Folder Include="Test\2022\03_Mars\27_Dimanche" />
-      <Folder Include="Test\2022\03_Mars\28_Lundi" />
-      <Folder Include="Test\2022\03_Mars\29_Mardi" />
-      <Folder Include="Test\2022\03_Mars\30_Mercredi" />
-      <Folder Include="Test\2022\03_Mars\31_Jeudi" />
-      <Folder Include="Test\2022\04_Avril\01_Vendredi" />
-      <Folder Include="Test\2022\04_Avril\02_Samedi" />
-      <Folder Include="Test\2022\04_Avril\03_Dimanche" />
-      <Folder Include="Test\2022\04_Avril\04_Lundi" />
-      <Folder Include="Test\2022\04_Avril\05_Mardi" />
-      <Folder Include="Test\2022\04_Avril\06_Mercredi" />
-      <Folder Include="Test\2022\04_Avril\07_Jeudi" />
-      <Folder Include="Test\2022\04_Avril\08_Vendredi" />
-      <Folder Include="Test\2022\04_Avril\09_Samedi" />
-      <Folder Include="Test\2022\04_Avril\10_Dimanche" />
-      <Folder Include="Test\2022\04_Avril\11_Lundi" />
-      <Folder Include="Test\2022\04_Avril\12_Mardi" />
-      <Folder Include="Test\2022\04_Avril\13_Mercredi" />
-      <Folder Include="Test\2022\04_Avril\14_Jeudi" />
-      <Folder Include="Test\2022\04_Avril\15_Vendredi" />
-      <Folder Include="Test\2022\04_Avril\16_Samedi" />
-      <Folder Include="Test\2022\04_Avril\17_Dimanche" />
-      <Folder Include="Test\2022\04_Avril\18_Lundi" />
-      <Folder Include="Test\2022\04_Avril\19_Mardi" />
-      <Folder Include="Test\2022\04_Avril\20_Mercredi" />
-      <Folder Include="Test\2022\04_Avril\21_Jeudi" />
-      <Folder Include="Test\2022\04_Avril\22_Vendredi" />
-      <Folder Include="Test\2022\04_Avril\23_Samedi" />
-      <Folder Include="Test\2022\04_Avril\24_Dimanche" />
-      <Folder Include="Test\2022\04_Avril\25_Lundi" />
-      <Folder Include="Test\2022\04_Avril\26_Mardi" />
-      <Folder Include="Test\2022\04_Avril\27_Mercredi" />
-      <Folder Include="Test\2022\04_Avril\28_Jeudi" />
-      <Folder Include="Test\2022\04_Avril\29_Vendredi" />
-      <Folder Include="Test\2022\04_Avril\30_Samedi" />
-      <Folder Include="Test\2022\05_Mai\01_Dimanche" />
-      <Folder Include="Test\2022\05_Mai\02_Lundi" />
-      <Folder Include="Test\2022\05_Mai\03_Mardi" />
-      <Folder Include="Test\2022\05_Mai\04_Mercredi" />
-      <Folder Include="Test\2022\05_Mai\05_Jeudi" />
-      <Folder Include="Test\2022\05_Mai\06_Vendredi" />
-      <Folder Include="Test\2022\05_Mai\07_Samedi" />
-      <Folder Include="Test\2022\05_Mai\08_Dimanche" />
-      <Folder Include="Test\2022\05_Mai\09_Lundi" />
-      <Folder Include="Test\2022\05_Mai\10_Mardi" />
-      <Folder Include="Test\2022\05_Mai\11_Mercredi" />
-      <Folder Include="Test\2022\05_Mai\12_Jeudi" />
-      <Folder Include="Test\2022\05_Mai\13_Vendredi" />
-      <Folder Include="Test\2022\05_Mai\14_Samedi" />
-      <Folder Include="Test\2022\05_Mai\15_Dimanche" />
-      <Folder Include="Test\2022\05_Mai\16_Lundi" />
-      <Folder Include="Test\2022\05_Mai\17_Mardi" />
-      <Folder Include="Test\2022\05_Mai\18_Mercredi" />
-      <Folder Include="Test\2022\05_Mai\19_Jeudi" />
-      <Folder Include="Test\2022\05_Mai\20_Vendredi" />
-      <Folder Include="Test\2022\05_Mai\21_Samedi" />
-      <Folder Include="Test\2022\05_Mai\22_Dimanche" />
-      <Folder Include="Test\2022\05_Mai\23_Lundi" />
-      <Folder Include="Test\2022\05_Mai\24_Mardi" />
-      <Folder Include="Test\2022\05_Mai\25_Mercredi" />
-      <Folder Include="Test\2022\05_Mai\26_Jeudi" />
-      <Folder Include="Test\2022\05_Mai\27_Vendredi" />
-      <Folder Include="Test\2022\05_Mai\28_Samedi" />
-      <Folder Include="Test\2022\05_Mai\29_Dimanche" />
-      <Folder Include="Test\2022\05_Mai\30_Lundi" />
-      <Folder Include="Test\2022\05_Mai\31_Mardi" />
-      <Folder Include="Test\2022\06_Juin\01_Mercredi" />
-      <Folder Include="Test\2022\06_Juin\02_Jeudi" />
-      <Folder Include="Test\2022\06_Juin\03_Vendredi" />
-      <Folder Include="Test\2022\06_Juin\04_Samedi" />
+      <Folder Include="Test" />
     </ItemGroup>
 
     <ItemGroup>
@@ -227,12 +73,22 @@
       </Resource>
       <Page Remove="Utils\Config\Theme.xaml" />
       <Resource Include="Utils\Config\Theme.xaml" />
+      <Page Update="Window\MainWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Window\MainSetting.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="Utils\Trad\SettingLanguage.resx">
+      <EmbeddedResource Update="Utils\Trad\MainSetting.resx">
         <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>SettingLanguage.Designer.cs</LastGenOutput>
+        <LastGenOutput>MainSetting.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Utils\Trad\MainWindows.resx">
         <Generator>ResXFileCodeGenerator</Generator>
@@ -241,7 +97,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Utils\Trad\SettingLanguage.Designer.cs">
+      <Compile Update="Utils\Trad\MainSetting.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>SettingLanguage.resx</DependentUpon>

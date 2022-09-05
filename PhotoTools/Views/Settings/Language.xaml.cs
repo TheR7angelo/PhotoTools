@@ -17,7 +17,7 @@ public partial class Language
     {
         FillComboLanguage();
 
-        BtSettingLanguageValide.Content = Utils.Trad.SettingLanguage.BtSettingLanguageValide.Normalize();
+        BtSettingLanguageValide.Content = Utils.Trad.MainSetting.BtSettingLanguageValide.Normalize();
     }
 
     private void FillComboLanguage()
@@ -43,9 +43,9 @@ public partial class Language
         
         var msg = new MessageBox
         {
-            LbMsg ={ Text = Utils.Trad.SettingLanguage.BtSettingLanguageValideMsg},
+            LbMsg ={ Text = Utils.Trad.MainSetting.BtSettingLanguageValideMsg},
             ImgIcon ={Source = MessageBox.Icon.Valid},
-            Title = Utils.Trad.SettingLanguage.BtSettingLanguageValide
+            Title = Utils.Trad.MainSetting.BtSettingLanguageValide
         };
         msg.Show();
         InitializeUi();

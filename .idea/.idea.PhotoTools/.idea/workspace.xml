@@ -7,17 +7,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="Added struc style">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/33a0dca4-3c89-4032-958e-4fc9ada16a2c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/33a0dca4-3c89-4032-958e-4fc9ada16a2c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/af43221f-5195-426c-b614-e4b180d66156.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/af43221f-5195-426c-b614-e4b180d66156.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/c6b5c690-4648-41d8-af44-0e20db581f51.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/c6b5c690-4648-41d8-af44-0e20db581f51.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="Added fonction to change current style">
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Window/MainSetting.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Window/MainSetting.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Config.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/MainSetting.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/MainSetting.en.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/MainSetting.fr-fr.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SettingLanguage.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/MainSetting.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/MainView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/MainView.xaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,7 @@
       <workItem from="1662282231253" duration="4658000" />
       <workItem from="1662328632764" duration="30000" />
       <workItem from="1662361145282" duration="15712000" />
-      <workItem from="1662397823684" duration="2008000" />
+      <workItem from="1662397823684" duration="3858000" />
     </task>
     <task id="LOCAL-00001" summary="Start making version file">
       <created>1662037828680</created>
@@ -181,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662389372094</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added fonction to change current style">
+      <created>1662405023644</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662405023644</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +223,8 @@
     <MESSAGE value="Added icon base" />
     <MESSAGE value="added table style in main" />
     <MESSAGE value="Added struc style" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added struc style" />
+    <MESSAGE value="Added fonction to change current style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added fonction to change current style" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

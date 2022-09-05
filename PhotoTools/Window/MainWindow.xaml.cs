@@ -1,12 +1,10 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Media;
 using PhotoTools.Utils.Config;
 
-
-namespace PhotoTools
+namespace PhotoTools.Window
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -18,7 +16,7 @@ namespace PhotoTools
         {
             Config.InitializeApp();
             InitializeComponent();
-            //Config.InitializeStyle();
+            Config.InitializeStyle();
             
             InitializeUi();
             
@@ -43,8 +41,10 @@ namespace PhotoTools
 
         private void BtSettings_OnClick(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("open settings");
-            Config.InitializeStyle();
+            var setting = new MainSetting();
+            setting.ShowDialog();
+            // Console.WriteLine("open settings");
+            // Config.InitializeStyle();
         }
 
         private void InitializeUi()
