@@ -9,6 +9,7 @@
         <FileVersion>1.0.0.0</FileVersion>
         <NeutralLanguage>fr</NeutralLanguage>
         <TargetFramework>net7.0-windows</TargetFramework>
+        <ApplicationIcon>Utils\Img\Icon\github.ico</ApplicationIcon>
     </PropertyGroup>
 
     <ItemGroup>
@@ -218,6 +219,10 @@
       </Resource>
       <None Remove="Utils\Img\MessageBox\valid.png" />
       <Resource Include="Utils\Img\MessageBox\valid.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Utils\Img\Icon\github.ico" />
+      <Resource Include="Utils\Img\Icon\github.ico">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
     </ItemGroup>
