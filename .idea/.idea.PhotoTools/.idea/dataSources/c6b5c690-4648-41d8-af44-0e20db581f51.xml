@@ -1423,19 +1423,24 @@
       <DataType>varchar(9)|0s</DataType>
       <Position>7</Position>
     </column>
-    <key id="512" parent="486" name="t_style_pk">
+    <column id="512" parent="486" name="modifiable">
+      <DataType>INTEGER|0s</DataType>
+      <DefaultExpression>1</DefaultExpression>
+      <Position>8</Position>
+    </column>
+    <key id="513" parent="486" name="t_style_pk">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="513" parent="487" name="section">
+    <column id="514" parent="487" name="section">
       <DataType>TEXT|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="514" parent="487" name="key">
+    <column id="515" parent="487" name="key">
       <DataType>TEXT|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="515" parent="487" name="value">
+    <column id="516" parent="487" name="value">
       <Position>3</Position>
     </column>
   </database-model>
