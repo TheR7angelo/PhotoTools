@@ -7,21 +7,19 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
-                <ComboBox x:Name="CbSettingLanguage" Height="25"/>
-                <Button  x:Name="BtSettingLanguageValide" Height="25" Click="BtSettingLanguageValid_OnClick"/>
-            </StackPanel>
-        </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <ComboBox x:Name="CbSettingLanguage" Height="25"/>
+            <Button  x:Name="BtSettingLanguageValid" Height="25" Click="BtSettingLanguageValid_OnClick"/>
+        </StackPanel>
     </Grid>
 </UserControl>

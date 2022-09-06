@@ -62,9 +62,9 @@ namespace PhotoTools.Utils.Trad {
         /// <summary>
         ///   Looks up a localized string similar to Valid.
         /// </summary>
-        internal static string BtSettingLanguageValide {
+        internal static string BtSettingLanguageValid {
             get {
-                return ResourceManager.GetString("BtSettingLanguageValide", resourceCulture);
+                return ResourceManager.GetString("BtSettingLanguageValid", resourceCulture);
             }
         }
         
