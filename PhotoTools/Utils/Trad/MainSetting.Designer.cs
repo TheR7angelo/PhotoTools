@@ -78,6 +78,24 @@ namespace PhotoTools.Utils.Trad {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string RdBtSettingTabLanguage {
+            get {
+                return ResourceManager.GetString("BtSettingTabLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        internal static string RdBtSettingTabTheme {
+            get {
+                return ResourceManager.GetString("BtSettingTabTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Parameter.
         /// </summary>
         internal static string Title {

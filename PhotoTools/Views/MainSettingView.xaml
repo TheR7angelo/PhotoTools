@@ -14,8 +14,8 @@
         </Grid.ColumnDefinitions>
         
         <StackPanel Grid.Column="0">
-            <Button x:Name="BtTabSettingTheme" Content="Theme" Click="BtTabItemTheme_OnClick"/>
-            <Button x:Name="BtTabSettingLanguage" Content="Langue" Click="BtTabItemLanguage_OnClick"/>
+            <RadioButton x:Name="RdBtSettingTabLanguage" Checked="RdBtSettingTabLanguage_OnCheck"/>
+            <RadioButton x:Name="RdBtSettingTabTheme" Checked="RdBtTabItemTheme_OnCheck"/>
         </StackPanel>
         <TabControl Grid.Column="1">
             <TabItem x:Name="TabLanguage" Visibility="Collapsed">
