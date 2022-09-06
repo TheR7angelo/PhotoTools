@@ -41,6 +41,21 @@
 
     <ItemGroup>
       <None Remove="Utils\Img\github.png" />
+      <Resource Include="Utils\Img\MessageBox\Source\Pngs\alert.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Utils\Img\MessageBox\Source\Pngs\critical.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Utils\Img\MessageBox\Source\Pngs\error.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Utils\Img\MessageBox\Source\Pngs\information.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Utils\Img\MessageBox\Source\Pngs\valid.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
       <Resource Include="Utils\Img\Ui\github.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
@@ -48,31 +63,15 @@
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
       <None Remove="Utils\Img\MessageBox\alert.png" />
-      <Resource Include="Utils\Img\MessageBox\alert.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\MessageBox\critical.png" />
-      <Resource Include="Utils\Img\MessageBox\critical.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\MessageBox\error.png" />
-      <Resource Include="Utils\Img\MessageBox\error.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\MessageBox\information.png" />
-      <Resource Include="Utils\Img\MessageBox\information.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\MessageBox\valid.png" />
-      <Resource Include="Utils\Img\MessageBox\valid.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Icon\github.ico" />
       <Resource Include="Utils\Img\Icon\github.ico">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
       <Page Remove="Utils\Config\Theme.xaml" />
-      <Resource Include="Utils\Config\Theme.xaml" />
       <Page Update="Window\MainWindow.xaml">
         <Generator>MSBuild:Compile</Generator>
         <XamlRuntime>Wpf</XamlRuntime>
@@ -84,6 +83,12 @@
         <SubType>Designer</SubType>
       </Page>
       <Page Update="Views\MessageBox.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Resource Include="Utils\Themes\Colors\Base.xaml" />
+      <Page Update="Utils\Themes\BaseColor.xaml">
         <Generator>MSBuild:Compile</Generator>
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>

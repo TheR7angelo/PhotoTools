@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:PhotoTools.Views.Settings"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
+    <Grid Background="{DynamicResource RgbM1}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>

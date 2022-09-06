@@ -51,11 +51,20 @@ namespace PhotoTools.Window
         {
             var v = Utils.Getter.Application.GetCurrentVersion;
             Ui();
-            
-            BtMainGithub.ToolTip = Utils.Trad.MainWindows.BtGithubToolTip;
-            BtMainSetting.ToolTip = Utils.Trad.MainWindows.BtMainSetting;
+
+            ToolTips();
         }
 
+        private void ToolTips()
+        {
+            BtMainGithub.ToolTip = Utils.Trad.MainWindows.BtGithubToolTip;
+            BtMainSetting.ToolTip = Utils.Trad.MainWindows.BtMainSetting;
+
+            WindowButtonCommands.Minimize = "Réduire";
+            WindowButtonCommands.Maximize = "Agrandir";
+            WindowButtonCommands.Restore = "Rétrécir";
+            WindowButtonCommands.Close = "Quitter";
+        }
         private void Ui()
         {
             Title = Utils.Getter.Application.GetCurrentName();

@@ -7,7 +7,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="Correct for TabItemSelect" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/BaseColor.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/BaseStyle.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Colors/Base.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Styles/Base/Ui/Header.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Styles/Base/Widgets/Button/Button.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Styles/Base/Widgets/Config.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Theme.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/alert.png" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/Source/Pngs/alert.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/critical.png" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/Source/Pngs/critical.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/error.png" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/Source/Pngs/error.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/information.png" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/Source/Pngs/information.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/valid.png" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/MessageBox/Source/Pngs/valid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +37,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/c7/4ef76f01/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/133b115411c2fb64df4278ddd68ab81905d23360234ce4e432116135557ac/UriExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1376b8596591b9bceeddb42cb7a72a6377621cc4b5f6ae33d23821aea3ef4c3/WindowButtonCommands.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5a797ca92a578f6e5ea8cf99e224acee2df4fb7cfbfb0ed1f34a1685a4ddae4/XamlReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6a61c4e52cff5fdd5eff5f4db293532b6024f1103492107cd5575671cdb/SafeFileHandle.Windows.cs" root0="SKIP_HIGHLIGHTING" />
@@ -94,7 +115,7 @@
       <workItem from="1662282231253" duration="4658000" />
       <workItem from="1662328632764" duration="30000" />
       <workItem from="1662361145282" duration="15712000" />
-      <workItem from="1662444764409" duration="6081000" />
+      <workItem from="1662444764409" duration="17414000" />
     </task>
     <task id="LOCAL-00001" summary="Start making version file">
       <created>1662037828680</created>
@@ -194,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662451467555</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Refractor">
+      <created>1662451660006</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662451660006</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,14 +250,14 @@
     <MESSAGE value="Update Commit function" />
     <MESSAGE value="Commit" />
     <MESSAGE value="Change struc for configuration" />
-    <MESSAGE value="Refractor" />
     <MESSAGE value="Added image for messagebox and test in changing language function" />
     <MESSAGE value="Added icon base" />
     <MESSAGE value="added table style in main" />
     <MESSAGE value="Added struc style" />
     <MESSAGE value="Added ui parameter" />
     <MESSAGE value="Correct for TabItemSelect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct for TabItemSelect" />
+    <MESSAGE value="Refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refractor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
