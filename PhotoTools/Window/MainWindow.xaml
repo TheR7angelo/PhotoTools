@@ -7,6 +7,8 @@
         TitleAlignment="Center"
         ResizeMode="CanResizeWithGrip"
         WindowTransitionsEnabled="False"
+        WindowTitleBrush="{DynamicResource RgbM1}"
+        NonActiveWindowTitleBrush="{DynamicResource RgbM1}"
         WindowStartupLocation="CenterScreen"
         TitleCharacterCasing="Normal"
         Closing="OnApplicationExit">
