@@ -8,12 +8,13 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <FileVersion>1.0.0.0</FileVersion>
         <NeutralLanguage>fr</NeutralLanguage>
-        <TargetFramework>net7.0-windows</TargetFramework>
+        <TargetFramework>net7.0-windows10.0.17763.0</TargetFramework>
         <ApplicationIcon>Utils\Img\Icon\github.ico</ApplicationIcon>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+      <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.2" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta2" />
       <PackageReference Include="System.Data.SQLite" Version="1.0.116" />
     </ItemGroup>
