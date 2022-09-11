@@ -13,6 +13,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="ControlzEx" Version="4.4.0" />
       <PackageReference Include="MahApps.Metro" Version="2.4.9" />
       <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.2" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta2" />

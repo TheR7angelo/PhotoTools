@@ -5,11 +5,13 @@
     <Color x:Key="CRgbM3">#FFFFFFFF</Color>
     <Color x:Key="CRgbB1">#FFFFFFFF</Color>
     <Color x:Key="CRgbB2">#FFFFFFFF</Color>
+    <Color x:Key="CRgbB3">#FFFFFFFF</Color>
     
     <SolidColorBrush x:Key="RgbM1" Color="{StaticResource CRgbM1}"/>
     <SolidColorBrush x:Key="RgbM2" Color="{StaticResource CRgbM2}"/>
     <SolidColorBrush x:Key="RgbM3" Color="{StaticResource CRgbM3}"/>
     <SolidColorBrush x:Key="RgbB1" Color="{StaticResource CRgbB1}"/>
     <SolidColorBrush x:Key="RgbB2" Color="{StaticResource CRgbB2}"/>
+    <SolidColorBrush x:Key="RgbB3" Color="{StaticResource CRgbB3}"/>
     
 </ResourceDictionary>

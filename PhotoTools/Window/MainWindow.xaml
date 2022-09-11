@@ -20,13 +20,14 @@
                                   Maximize="Agrandir"
                                   Restore="Rétrécir"
                                   Close="Quitter"
-                                  LightMinButtonStyle="{StaticResource MinButtonStyle}"
-                                  DarkMinButtonStyle="{StaticResource MinButtonStyle}"/>
+                                  LightMinButtonStyle="{DynamicResource MinButtonStyle}"
+                                  DarkMinButtonStyle="{DynamicResource MinButtonStyle}"
+                                  LightCloseButtonStyle="{DynamicResource CloseButtonStyle}"
+                                  DarkCloseButtonStyle="{DynamicResource CloseButtonStyle}"/>
                                   <!-- LightMaxButtonStyle="{StaticResource MaxButtonStyle}" -->
-                                  <!-- LightCloseButtonStyle="{StaticResource CloseButtonStyle}" -->
-                                  <!-- DarkMinButtonStyle="{StaticResource MinButtonStyle}" -->
-                                  <!-- DarkMaxButtonStyle="{StaticResource MaxButtonStyle}" -->
-                                  <!-- DarkCloseButtonStyle="{StaticResource CloseButtonStyle}"/> -->
+                                  <!-- DarkMaxButtonStyle="{StaticResource MaxButtonStyle}"/> -->
+        <!-- DarkMinButtonStyle="{StaticResource MinButtonStyle}" -->
+                                  
 
     </mah:MetroWindow.WindowButtonCommands>
     

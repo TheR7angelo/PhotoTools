@@ -23,6 +23,7 @@ public static partial class Requete
             new() { Name = "RgbM3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m3"].ToString()!) },
             new() { Name = "RgbB1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b1"].ToString()!) },
             new() { Name = "RgbB2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b2"].ToString()!) },
+            new() { Name = "RgbB3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) },
         };
     }
     public static string GetEnglishLang(string lang)
