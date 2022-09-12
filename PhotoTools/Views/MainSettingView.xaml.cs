@@ -33,7 +33,6 @@ public partial class MainSettingView
                 break;
         }
     }
-
     private void InitializeUi()
     {
         RdBtSettingTabLanguage.Content = Utils.Trad.MainSetting.RdBtSettingTabLanguage;

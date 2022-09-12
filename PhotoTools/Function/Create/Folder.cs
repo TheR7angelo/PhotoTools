@@ -15,7 +15,7 @@ public static class Folder
 
             var path = $"{pathParent}\\{year}\\{num}_{month}";
             
-            Console.WriteLine($"{num}_{month}");
+            Console.WriteLine($@"{num}_{month}");
 
             System.IO.Directory.CreateDirectory(path);
             CreateFolderDays (date, path);

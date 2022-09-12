@@ -9,8 +9,6 @@ namespace PhotoTools.Sql;
 
 public static partial class Requete
 {
-    private static SQLiteCommand _commande = new ();
-
     public static IEnumerable<StrucConfig.StyleColorBrush> GetActualStyle()
     {
         var reader = ExecuteReader(_GetActualStyle());
@@ -73,7 +71,7 @@ public static partial class Requete
 
         while (reader.Read())
         {
-            cnfs.Add(new Utils.Strucs.StrucConfig.ConfigStruc()
+            cnfs.Add(new StrucConfig.ConfigStruc()
             {
                 Section = reader["section"].ToString(),
                 Key = reader["key"].ToString(),

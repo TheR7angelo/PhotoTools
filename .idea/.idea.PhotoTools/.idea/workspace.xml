@@ -8,19 +8,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/c6b5c690-4648-41d8-af44-0e20db581f51.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/c6b5c690-4648-41d8-af44-0e20db581f51.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_06_09_2022_08_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_06_09_2022_08_11__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/1baf1389-1a8d-4321-baed-fdc0c2d86123.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/1baf1389-1a8d-4321-baed-fdc0c2d86123.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_11_09_2022_23_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_11_09_2022_23_00__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/7beec974-ce9c-4c49-b171-7a350df5bf0f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/v17/.futdcache.v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/phototools.metadata.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/phototools.projects.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Function/Create/Folder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Function/Create/Folder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Colors/Base.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Colors/Base.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Styles/Base/Ui/Header.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Styles/Base/Ui/Header.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/MainWindowView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/MainWindowView.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/MainWindowView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/MainWindowView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Styles/Base/Widgets/Button/Button.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Styles/Base/Widgets/Button/Button.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/MainSettingView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/MainSettingView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/MainSettingView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/MainSettingView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainSetting.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainSetting.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +40,19 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3e97068f857e4c7788a761e2f8c7c305f7a880/f8/a07563f2/Application.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/2b/ec2b7b65/SQLiteDataReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/c7/4ef76f01/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/eb/17b5b3d5/TraceRoutedEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/133b115411c2fb64df4278ddd68ab81905d23360234ce4e432116135557ac/UriExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1376b8596591b9bceeddb42cb7a72a6377621cc4b5f6ae33d23821aea3ef4c3/WindowButtonCommands.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5a797ca92a578f6e5ea8cf99e224acee2df4fb7cfbfb0ed1f34a1685a4ddae4/XamlReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6a61c4e52cff5fdd5eff5f4db293532b6024f1103492107cd5575671cdb/SafeFileHandle.Windows.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/89a2b53da2e32f22f450ecab5f59ea9f03bfe76b409627069931a786fcee/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a19439ae8dff2fdd12f27c8b7b3b360b86083bb6c699ec81f3caf797ea3eb11/Helper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ba47094ba7d713c3fbe6b073194f2822e7461fa8c3eb34a41c3dd61e48bc2/ResourceDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bc5ae3beba9b5dc6a499fd22f071ad8b106ae82dda9489f975fca4f768309d6e/Uri.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e6a439fde68a3e1d7d1e9e16caf4322bd91edc8db92a758dfdb87a72dd113e/XmlWellFormedWriter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -57,7 +76,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ReSharper&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -103,8 +122,8 @@
       <workItem from="1662282231253" duration="4658000" />
       <workItem from="1662328632764" duration="30000" />
       <workItem from="1662361145282" duration="15712000" />
-      <workItem from="1662397823684" duration="5313000" />
-      <workItem from="1662408750020" duration="247000" />
+      <workItem from="1662444764409" duration="17623000" />
+      <workItem from="1662639429329" duration="2425000" />
     </task>
     <task id="LOCAL-00001" summary="Start making version file">
       <created>1662037828680</created>
@@ -190,49 +209,42 @@
       <option name="project" value="LOCAL" />
       <updated>1662389372094</updated>
     </task>
-    <task id="LOCAL-00013" summary="Added fonction to change current style">
-      <created>1662405023644</created>
+    <task id="LOCAL-00013" summary="Added ui parameter">
+      <created>1662449607522</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1662405023644</updated>
+      <updated>1662449607522</updated>
     </task>
-    <task id="LOCAL-00014" summary="Rerfractor and add Ui Setting">
-      <created>1662406667853</created>
+    <task id="LOCAL-00014" summary="Correct for TabItemSelect">
+      <created>1662451467555</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1662406667853</updated>
+      <updated>1662451467555</updated>
     </task>
-    <task id="LOCAL-00015" summary="ras">
-      <created>1662407414991</created>
+    <task id="LOCAL-00015" summary="Refractor">
+      <created>1662451660006</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1662407414991</updated>
+      <updated>1662451660006</updated>
     </task>
-    <task id="LOCAL-00016" summary="moving title of MessageBox in view Language">
-      <created>1662407469295</created>
+    <task id="LOCAL-00016" summary="Started style">
+      <created>1662473169465</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1662407469295</updated>
+      <updated>1662473169465</updated>
     </task>
-    <task id="LOCAL-00017" summary="Rename variable">
-      <created>1662408494090</created>
+    <task id="LOCAL-00017" summary="Added color for title brush">
+      <created>1662639632910</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1662408494090</updated>
+      <updated>1662639632910</updated>
     </task>
-    <task id="LOCAL-00018" summary="added column modifiable in t_style">
-      <created>1662408986715</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1662408986715</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,18 +272,16 @@
     <MESSAGE value="Update Commit function" />
     <MESSAGE value="Commit" />
     <MESSAGE value="Change struc for configuration" />
-    <MESSAGE value="Refractor" />
     <MESSAGE value="Added image for messagebox and test in changing language function" />
     <MESSAGE value="Added icon base" />
     <MESSAGE value="added table style in main" />
     <MESSAGE value="Added struc style" />
-    <MESSAGE value="Added fonction to change current style" />
-    <MESSAGE value="Rerfractor and add Ui Setting" />
-    <MESSAGE value="ras" />
-    <MESSAGE value="moving title of MessageBox in view Language" />
-    <MESSAGE value="Rename variable" />
-    <MESSAGE value="added column modifiable in t_style" />
-    <option name="LAST_COMMIT_MESSAGE" value="added column modifiable in t_style" />
+    <MESSAGE value="Added ui parameter" />
+    <MESSAGE value="Correct for TabItemSelect" />
+    <MESSAGE value="Refractor" />
+    <MESSAGE value="Started style" />
+    <MESSAGE value="Added color for title brush" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added color for title brush" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

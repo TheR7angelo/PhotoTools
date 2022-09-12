@@ -20,25 +20,25 @@ namespace PhotoTools.Window
             InitializeComponent();
             Config.InitializeStyle();
 
-            ToastNotificationManagerCompat.OnActivated += toastArgs =>
-            {
-                var args = ToastArguments.Parse(toastArgs.Argument);
-                Console.WriteLine(args["action"]);
-            };
-
-            for (int i = 0; i < 2; i++)
-            {
-                new ToastContentBuilder()
-                    .AddArgument("action", "viewConversation")
-                    .AddArgument("conversationId", 9813)
-                    .AddText("Andrew sent you a picture")
-                    .AddText("Check this out, The Enchantments in Washington!")
-                    .AddButton(new ToastButton()
-                        .SetContent("Archive")
-                        .AddArgument("action", "archive")
-                        .SetBackgroundActivation())
-                    .Show();
-            }
+            // ToastNotificationManagerCompat.OnActivated += toastArgs =>
+            // {
+            //     var args = ToastArguments.Parse(toastArgs.Argument);
+            //     Console.WriteLine(args["action"]);
+            // };
+            //
+            // for (var i = 0; i < 2; i++)
+            // {
+            //     new ToastContentBuilder()
+            //         .AddArgument("action", "viewConversation")
+            //         .AddArgument("conversationId", 9813)
+            //         .AddText("Andrew sent you a picture")
+            //         .AddText("Check this out, The Enchantments in Washington!")
+            //         .AddButton(new ToastButton()
+            //             .SetContent("Archive")
+            //             .AddArgument("action", "archive")
+            //             .SetBackgroundActivation())
+            //         .Show();
+            // }
 
             InitializeUi();
             
@@ -72,8 +72,7 @@ namespace PhotoTools.Window
         private void InitializeUi()
         {
             var v = Utils.Getter.Application.GetCurrentVersion;
-            Ui();
-
+            
             ToolTips();
         }
 
@@ -86,12 +85,6 @@ namespace PhotoTools.Window
             WindowButtonCommands.Maximize = "Agrandir";
             WindowButtonCommands.Restore = "Rétrécir";
             WindowButtonCommands.Close = "Quitter";
-        }
-        private void Ui()
-        {
-            Title = Utils.Getter.Application.GetCurrentName();
-            MinWidth = Config.Configue.ScreenSize.MinWidth;
-            MinHeight = Config.Configue.ScreenSize.MinHeight;
         }
 
         private void OnApplicationExit(object? sender, CancelEventArgs e)

@@ -11,6 +11,11 @@
         NonActiveWindowTitleBrush="{DynamicResource RgbM1}"
         WindowStartupLocation="CenterScreen"
         TitleCharacterCasing="Normal"
+        
+        Title="PhotoTools"
+        MinWidth="1430" Width="1430"
+        MinHeight="760" Height="760"
+        
         Closing="OnApplicationExit">
 
 

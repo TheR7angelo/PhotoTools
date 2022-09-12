@@ -8,8 +8,9 @@
                  WindowTransitionsEnabled="False"
                  WindowStartupLocation="CenterScreen"
                  TitleCharacterCasing="Normal"
-                 Height="450"
-                 Width="800">
+                 MinHeight="560" MinWidth="950"
+                 Height="560" Width="950">
+    
     <Grid Background="{DynamicResource RgbM1}">
         <views:MainSettingView/>
     </Grid>
