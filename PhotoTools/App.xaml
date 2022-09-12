@@ -17,6 +17,9 @@
                 <ResourceDictionary Source="/Utils/Themes/BaseColor.xaml"/>
                 <ResourceDictionary Source="/Utils/Themes/BaseStyle.xaml"/>
                 
+                <!-- Image -->
+                <ResourceDictionary Source="Utils/Img/Pack/Base.xaml"/>
+                
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

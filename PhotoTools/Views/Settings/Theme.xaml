@@ -8,48 +8,53 @@
     
     
     <Grid Background="{DynamicResource RgbM1}">
-        
-        
-        
-        
-        <!-- Affichage des coleurs principale -->
         <StackPanel Orientation="Vertical">
-            
-            
-            <!-- Couleurs principale -->
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <StackPanel Orientation="Vertical">
-                    <Label Content="RgbM1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    <Button x:Name="RgbM1" Width="130" Height="150" Background="{DynamicResource RgbM1}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
+            <Grid Height="23" Margin="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox x:Name="CbStyle"/>
+                <Grid Grid.Column="1">
+                    <Image Source="{StaticResource 006-lock-2}"/>
+                </Grid>
+            </Grid>
+                <!-- Affichage des coleurs principale -->
+            <StackPanel Orientation="Vertical">
+                
+                <!-- Couleurs principale -->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="RgbM1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Button x:Name="RgbM1" Width="130" Height="150" Background="{DynamicResource RgbM1}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="RgbM2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Button x:Name="RgbM2" Width="130" Height="150" Background="{DynamicResource RgbM2}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="RgbM3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Button x:Name="RgbM3" Width="130" Height="150" Background="{DynamicResource RgbM3}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
+                    </StackPanel>
                 </StackPanel>
-                <StackPanel Orientation="Vertical">
-                    <Label Content="RgbM2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    <Button x:Name="RgbM2" Width="130" Height="150" Background="{DynamicResource RgbM2}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
-                </StackPanel>
-                <StackPanel Orientation="Vertical">
-                    <Label Content="RgbM3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    <Button x:Name="RgbM3" Width="130" Height="150" Background="{DynamicResource RgbM3}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
+                
+                
+                <!-- Couleurs bonus -->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Vertical">
+                        <Button x:Name="RgbB1" Width="130" Height="150" Background="{DynamicResource RgbB1}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
+                        <Label Content="RgbB1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Button x:Name="RgbB2" Width="130" Height="150" Background="{DynamicResource RgbB2}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
+                        <Label Content="RgbB2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Button x:Name="RgbB3" Width="130" Height="150" Background="{DynamicResource RgbB3}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
+                        <Label Content="RgbB3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
-            
-            
-            <!-- Couleurs bonus -->
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <StackPanel Orientation="Vertical">
-                    <Button x:Name="RgbB1" Width="130" Height="150" Background="{DynamicResource RgbB1}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
-                    <Label Content="RgbB1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                </StackPanel>
-                <StackPanel Orientation="Vertical">
-                    <Button x:Name="RgbB2" Width="130" Height="150" Background="{DynamicResource RgbB2}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
-                    <Label Content="RgbB2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                </StackPanel>
-                <StackPanel Orientation="Vertical">
-                    <Button x:Name="RgbB3" Width="130" Height="150" Background="{DynamicResource RgbB3}" BorderBrush="Black" BorderThickness="1" Click="Rgb_OnClick"/>
-                    <Label Content="RgbB3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                </StackPanel>
-            </StackPanel>
-            
-            
         </StackPanel>
     </Grid>
 </UserControl>

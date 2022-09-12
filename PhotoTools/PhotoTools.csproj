@@ -23,7 +23,6 @@
 
     <ItemGroup>
       <Folder Include="Test" />
-      <Folder Include="Utils\Img\Pack\Login" />
     </ItemGroup>
 
     <ItemGroup>
@@ -98,69 +97,21 @@
         <SubType>Designer</SubType>
       </Page>
       <None Remove="Utils\Img\Pack\Login\001-pin-code.png" />
-      <Resource Include="Utils\Img\Pack\Login\001-pin-code.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\002-unlock.png" />
-      <Resource Include="Utils\Img\Pack\Login\002-unlock.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\003-id-card-1.png" />
-      <Resource Include="Utils\Img\Pack\Login\003-id-card-1.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\004-login-1.png" />
-      <Resource Include="Utils\Img\Pack\Login\004-login-1.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\005-login.png" />
-      <Resource Include="Utils\Img\Pack\Login\005-login.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\006-lock-2.png" />
-      <Resource Include="Utils\Img\Pack\Login\006-lock-2.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\007-lock-1.png" />
-      <Resource Include="Utils\Img\Pack\Login\007-lock-1.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\008-lock.png" />
-      <Resource Include="Utils\Img\Pack\Login\008-lock.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\009-key.png" />
-      <Resource Include="Utils\Img\Pack\Login\009-key.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\010-keyhole-1.png" />
-      <Resource Include="Utils\Img\Pack\Login\010-keyhole-1.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\011-keyhole.png" />
-      <Resource Include="Utils\Img\Pack\Login\011-keyhole.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\012-id-card.png" />
-      <Resource Include="Utils\Img\Pack\Login\012-id-card.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\013-exit-1.png" />
-      <Resource Include="Utils\Img\Pack\Login\013-exit-1.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\014-exit.png" />
-      <Resource Include="Utils\Img\Pack\Login\014-exit.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\015-enter-1.png" />
-      <Resource Include="Utils\Img\Pack\Login\015-enter-1.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\016-enter.png" />
-      <Resource Include="Utils\Img\Pack\Login\016-enter.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\license.pdf" />
       <Resource Include="Utils\Img\Pack\Login\license.pdf">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -169,6 +120,11 @@
       <Resource Include="Utils\Img\Pack\Login\Login Icon Pack - Flat - 16 .SVG Icons.url">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
+      <Page Update="Utils\Img\Pack\Base.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
     </ItemGroup>
 
     <ItemGroup>
