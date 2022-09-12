@@ -43,14 +43,9 @@ public partial class Theme
         foreach (var theme in themes)
         {
             CbStyle.Items.Add(theme.Name);
-            if (theme.Name.Equals(Config.Configue.Theme.Name))
-            {
-                if (theme.Lock)
-                {
-                    var img = Application.Current.FindResource("Login006-Lock-2") as ImageSource;
-                    //ThemeLock.Source = Application.Current.FindResource("Login006-Lock-2") as ImageSource;
-                }
-            }
+            if (!theme.Name.Equals(Config.Configue.Theme.Name)) continue;
+            var nameImg = theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
+            ThemeLock.Source = (ImageSource)Application.Current.FindResource(nameImg)!;
         }
         CbStyle.SelectedValue = Config.Configue.Theme.Name;
     }

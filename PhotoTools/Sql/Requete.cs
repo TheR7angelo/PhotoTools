@@ -20,7 +20,7 @@ public static partial class Requete
     private static string _GetActualStyle()
     {
         return """
-        SELECT *
+        SELECT st.*
         FROM main.t_style st
         WHERE st.name = (SELECT pa.value FROM main.v_params pa WHERE pa.section = 'Theme' AND pa.key = 'Name')
         """;

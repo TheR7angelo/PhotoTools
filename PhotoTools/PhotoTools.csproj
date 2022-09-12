@@ -22,10 +22,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Test" />
-    </ItemGroup>
-
-    <ItemGroup>
       <None Remove="Sql\Bdds\Language.sqlite" />
       <None Remove="Utils\Img\parametres.png" />
       <AdditionalFiles Include="Sql\Bdds\Language.sqlite">

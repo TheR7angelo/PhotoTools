@@ -14,7 +14,7 @@ public static partial class Requete
         while (reader.Read())
         {
             var th = new StrucConfig.Themes();
-            th.Lock = Convert.ToBoolean((int)reader["lock"]);
+            th.Lock = Convert.ToBoolean(int.Parse(reader["lock"].ToString()!));
             th.Name = reader["name"].ToString()!;
             themes.Add(th);
         }
@@ -25,7 +25,7 @@ public static partial class Requete
     {
         var reader = ExecuteReader(_GetActualStyle());
         reader.Read();
-
+         
         return new List<StrucConfig.StyleColorBrush>
         {
             new() { Name = "RgbM1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m1"].ToString()!) },
@@ -33,7 +33,7 @@ public static partial class Requete
             new() { Name = "RgbM3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m3"].ToString()!) },
             new() { Name = "RgbB1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b1"].ToString()!) },
             new() { Name = "RgbB2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b2"].ToString()!) },
-            new() { Name = "RgbB3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) },
+            new() { Name = "RgbB3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) }
         };
     }
     public static string GetEnglishLang(string lang)
