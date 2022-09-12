@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SQLite;
 using PhotoTools.Utils;
-using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Sql;
 
 public static partial class Requete
 {
-    public static IEnumerable<string> GetAllThemes()
+    public static IEnumerable<StrucConfig.Themes> GetAllThemes()
     {
-        var themes = new List<string>();
+        var themes = new List<StrucConfig.Themes>();
         var reader = ExecuteReader(_GetAllThemes());
         while (reader.Read())
         {
-            themes.Add(reader["name"].ToString()!);
+            var th = new StrucConfig.Themes();
+            th.Lock = Convert.ToBoolean((int)reader["lock"]);
+            th.Name = reader["name"].ToString()!;
+            themes.Add(th);
         }
 
         return themes;
@@ -25,7 +26,7 @@ public static partial class Requete
         var reader = ExecuteReader(_GetActualStyle());
         reader.Read();
 
-        return new List<StrucConfig.StyleColorBrush>()
+        return new List<StrucConfig.StyleColorBrush>
         {
             new() { Name = "RgbM1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m1"].ToString()!) },
             new() { Name = "RgbM2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m2"].ToString()!) },
@@ -75,9 +76,9 @@ public static partial class Requete
     {
         Execute(_UpdateSettings(section, key, value));
     }
-    public static List<Utils.Strucs.StrucConfig.ConfigStruc> GetParams()
+    public static List<StrucConfig.ConfigStruc> GetParams()
     {
-        var cnfs = new List<Utils.Strucs.StrucConfig.ConfigStruc>();
+        var cnfs = new List<StrucConfig.ConfigStruc>();
         var reader = ExecuteReader(_GetParams());
 
         while (reader.Read())

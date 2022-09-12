@@ -42,7 +42,15 @@ public partial class Theme
         var themes = Requete.GetAllThemes();
         foreach (var theme in themes)
         {
-            CbStyle.Items.Add(theme);
+            CbStyle.Items.Add(theme.Name);
+            if (theme.Name.Equals(Config.Configue.Theme.Name))
+            {
+                if (theme.Lock)
+                {
+                    var img = Application.Current.FindResource("Login006-Lock-2") as ImageSource;
+                    //ThemeLock.Source = Application.Current.FindResource("Login006-Lock-2") as ImageSource;
+                }
+            }
         }
         CbStyle.SelectedValue = Config.Configue.Theme.Name;
     }

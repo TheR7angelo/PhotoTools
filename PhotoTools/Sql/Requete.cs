@@ -15,7 +15,7 @@ public static partial class Requete
 
     private static string _GetAllThemes()
     {
-        return "SELECT name FROM main.t_style ORDER BY name";
+        return "SELECT name, lock FROM main.t_style ORDER BY name";
     }
     private static string _GetActualStyle()
     {

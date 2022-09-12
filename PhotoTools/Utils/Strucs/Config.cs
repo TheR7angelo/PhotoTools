@@ -4,14 +4,6 @@ namespace PhotoTools.Utils.Strucs;
 
 public static class StrucConfig
 {
-    #region Style
-    public struct StyleColorBrush
-    {
-        public string Name;
-        public SolidColorBrush StyleValue;
-    }
-    #endregion
-
     #region Config
 
     public struct Configue
@@ -67,5 +59,21 @@ public static class StrucConfig
         }
     }
 
+    #endregion
+    
+    #region Style
+    public struct StyleColorBrush
+    {
+        public string Name;
+        public SolidColorBrush StyleValue;
+    }
+    #endregion
+    
+    #region Theme
+    public struct Themes
+    {
+        public bool Lock;
+        public string Name;
+    }
     #endregion
 }
