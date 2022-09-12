@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Documents;
 using System.Windows.Media;
-using MahApps.Metro.Controls;
+using PhotoTools.Sql;
+using PhotoTools.Utils.Config;
 
 namespace PhotoTools.Views.Settings;
 
-public partial class Theme : UserControl
+public partial class Theme
 {
     public Theme()
     {
@@ -33,6 +32,22 @@ public partial class Theme : UserControl
 
     private void Ui()
     {
+        FillComboStyle();
+        ButtonTheme();
+    }
+
+    private void FillComboStyle()
+    {
+        CbStyle.Items.Clear();
+        var themes = Requete.GetAllThemes();
+        foreach (var theme in themes)
+        {
+            CbStyle.Items.Add(theme);
+        }
+        CbStyle.SelectedValue = Config.Configue.Theme.Name;
+    }
+    private void ButtonTheme()
+    {
         var buttons = new List<Button> { RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
         foreach (var button in buttons)
         {
@@ -42,10 +57,13 @@ public partial class Theme : UserControl
             var blue = background.B;
             var hexa = $"{red:X}{green:X}{blue:X}";
 
-            var colorTitre = new TextBlock { Text = "Red:\nGreen:\nBlue:\nHexa:", Margin = new Thickness(3)};
-            var colorValue = new TextBlock { Text = $"{red}\n{green}\n{blue}\n{hexa}", Margin = new Thickness(3), TextAlignment = TextAlignment.Center};
+            var colorTitre = new TextBlock { Text = "Red:\nGreen:\nBlue:\nHexa:", Margin = new Thickness(3) };
+            var colorValue = new TextBlock
+            {
+                Text = $"{red}\n{green}\n{blue}\n{hexa}", Margin = new Thickness(3), TextAlignment = TextAlignment.Center
+            };
 
-            var stack = new StackPanel { Orientation = Orientation.Horizontal, Children = { colorTitre, colorValue }};
+            var stack = new StackPanel { Orientation = Orientation.Horizontal, Children = { colorTitre, colorValue } };
 
             button.ToolTip = new ToolTip
                 { Placement = PlacementMode.Center, StaysOpen = true, IsOpen = false, Content = stack };

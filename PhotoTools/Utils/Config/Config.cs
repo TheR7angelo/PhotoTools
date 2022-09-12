@@ -34,7 +34,7 @@ public static class Config
                     }
                     break;
                 case StrucConfig.ConfigSection.Theme.Section:
-                    Configue.Name = param.Value;
+                    Configue.Theme.Name = param.Value;
                     break;
                 case StrucConfig.ConfigSection.ScreenSize.Section:
                     var screenSize = double.Parse(param.Value!);

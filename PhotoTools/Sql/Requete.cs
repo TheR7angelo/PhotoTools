@@ -13,6 +13,10 @@ public static partial class Requete
         return $"ATTACH DATABASE '{path}' as {filename}";
     }
 
+    private static string _GetAllThemes()
+    {
+        return "SELECT name FROM main.t_style ORDER BY name";
+    }
     private static string _GetActualStyle()
     {
         return """

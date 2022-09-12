@@ -9,6 +9,17 @@ namespace PhotoTools.Sql;
 
 public static partial class Requete
 {
+    public static IEnumerable<string> GetAllThemes()
+    {
+        var themes = new List<string>();
+        var reader = ExecuteReader(_GetAllThemes());
+        while (reader.Read())
+        {
+            themes.Add(reader["name"].ToString()!);
+        }
+
+        return themes;
+    }
     public static IEnumerable<StrucConfig.StyleColorBrush> GetActualStyle()
     {
         var reader = ExecuteReader(_GetActualStyle());

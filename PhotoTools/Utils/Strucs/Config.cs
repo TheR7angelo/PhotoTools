@@ -16,13 +16,17 @@ public static class StrucConfig
 
     public struct Configue
     {
-        public string? Name;
+        public Themes Theme = new ();
         public ConfigLang Language = new();
         public ConfigScreenSize ScreenSize = new();
 
         public Configue()
         {
-            Name = string.Empty;
+        }
+
+        public struct Themes
+        {
+            public string? Name;
         }
     }
     public struct ConfigLang

@@ -16,7 +16,7 @@
                 </Grid.ColumnDefinitions>
                 <ComboBox x:Name="CbStyle"/>
                 <Grid Grid.Column="1">
-                    <Image Source="{StaticResource 006-lock-2}"/>
+                    <Image Source="{StaticResource Login006-Lock-2}"/>
                 </Grid>
             </Grid>
                 <!-- Affichage des coleurs principale -->

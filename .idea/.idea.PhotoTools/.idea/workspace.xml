@@ -7,45 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="Added pack image to ressource">
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Base.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/001-pin-code.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/002-unlock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/003-id-card-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/004-login-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/005-login.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/006-lock-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/007-lock-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/008-lock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/009-key.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/010-keyhole-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/011-keyhole.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/012-id-card.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/013-exit-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/014-exit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/015-enter-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/016-enter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/Login.xaml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added svg pack image">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/App.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/001-pin-code.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/002-unlock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/003-id-card-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/004-login-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/005-login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/006-lock-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/007-lock-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/008-lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/009-key.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/010-keyhole-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/011-keyhole.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/012-id-card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/013-exit-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/014-exit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/015-enter-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/016-enter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/Login.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/Login.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Config.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662981902280</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added svg pack image">
+      <created>1662984781037</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662984781037</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +307,8 @@
     <MESSAGE value="added tooltip with color display value" />
     <MESSAGE value="Added icon pack login" />
     <MESSAGE value="Added pack image to ressource" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pack image to ressource" />
+    <MESSAGE value="added svg pack image" />
+    <option name="LAST_COMMIT_MESSAGE" value="added svg pack image" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
