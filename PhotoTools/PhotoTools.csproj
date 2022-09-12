@@ -23,6 +23,7 @@
 
     <ItemGroup>
       <Folder Include="Test" />
+      <Folder Include="Utils\Img\Pack\Login" />
     </ItemGroup>
 
     <ItemGroup>
