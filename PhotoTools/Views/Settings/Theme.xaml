@@ -14,9 +14,9 @@
                     <ColumnDefinition Width="12*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:Name="CbStyle"/>
+                <ComboBox x:Name="CbStyle" SelectionChanged="CbStyle_OnSelectionChanged"/>
                 <Grid Grid.Column="1">
-                    <Image x:Name="ThemeLock" Source="{StaticResource Login006-Lock-2}"/>
+                    <Image x:Name="ThemeLock"/>
                 </Grid>
             </Grid>
                 <!-- Affichage des coleurs principale -->

@@ -6,6 +6,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 using PhotoTools.Sql;
 using PhotoTools.Utils.Config;
+using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Views.Settings;
 
@@ -43,12 +44,12 @@ public partial class Theme
         foreach (var theme in themes)
         {
             CbStyle.Items.Add(theme.Name);
-            if (!theme.Name.Equals(Config.Configue.Theme.Name)) continue;
-            var nameImg = theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
-            ThemeLock.Source = (ImageSource)Application.Current.FindResource(nameImg)!;
+            // if (!theme.Name.Equals(Config.Configue.Theme.Name)) continue;
+            // ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
         }
         CbStyle.SelectedValue = Config.Configue.Theme.Name;
     }
+
     private void ButtonTheme()
     {
         var buttons = new List<Button> { RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
@@ -82,5 +83,25 @@ public partial class Theme
         var blue = background.B;
 
         Console.WriteLine($@"{red} {green} {blue}");
+    }
+
+    private void CbStyle_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (CbStyle.SelectedItem == null) return;
+        var selectedTheme = CbStyle.SelectedItem.ToString();
+
+        var themes = Requete.GetAllThemes();
+
+        foreach (var theme in themes)
+        {
+            if (!theme.Name.Equals(selectedTheme)) continue;
+            ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
+        }
+    }
+    private static string GetImgLock(StrucConfig.Themes theme)
+    {
+        // var nameImg = theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
+        var nameImg = theme.Lock ? "Login006-Lock-2" : "Login003-Id-Card-1";
+        return nameImg;
     }
 }
