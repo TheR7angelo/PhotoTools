@@ -58,7 +58,7 @@ public static class Config
     public static void InitializeStyle()
     {
         var styles = Requete.GetActualStyle();
-        foreach (var st in styles)
+        foreach (var st in styles.Value)
         {
             Application.Current.Resources[st.Name] = st.StyleValue;
         }

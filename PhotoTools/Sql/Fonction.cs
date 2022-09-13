@@ -23,7 +23,6 @@ public static partial class Requete
         {
             themes.Add(GetThemeValues(reader));
         }
-
         return themes;
     }
 
@@ -46,20 +45,11 @@ public static partial class Requete
         return th;
     }
 
-    public static IEnumerable<StrucConfig.StyleColorBrush> GetActualStyle()
+    public static StrucConfig.Themes GetActualStyle()
     {
         var reader = ExecuteReader(_GetActualStyle());
         reader.Read();
-         
-        return new List<StrucConfig.StyleColorBrush>
-        {
-            new() { Name = "RgbM1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m1"].ToString()!) },
-            new() { Name = "RgbM2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m2"].ToString()!) },
-            new() { Name = "RgbM3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m3"].ToString()!) },
-            new() { Name = "RgbB1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b1"].ToString()!) },
-            new() { Name = "RgbB2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b2"].ToString()!) },
-            new() { Name = "RgbB3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) }
-        };
+        return GetThemeValues(reader);
     }
     public static string GetEnglishLang(string lang)
     {

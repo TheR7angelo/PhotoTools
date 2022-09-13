@@ -7,17 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/f5061267-ba3f-41b8-9c8e-6d9576e1e6fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/f5061267-ba3f-41b8-9c8e-6d9576e1e6fe.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_11_09_2022_23_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_11_09_2022_23_00__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_12_09_2022_08_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_12_09_2022_08_13__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_12_09_2022_17_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_12_09_2022_17_40__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_2022_08_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_2022_08_20__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Styles/Base/Ui/Header.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Themes/Styles/Base/Ui/Header.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainSetting.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainSetting.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor">
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +36,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bc5ae3beba9b5dc6a499fd22f071ad8b106ae82dda9489f975fca4f768309d6e/Uri.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c9477497070f137b25b150b2602d7a2083506e66eb488c272fefc6a0def5/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e6a439fde68a3e1d7d1e9e16caf4322bd91edc8db92a758dfdb87a72dd113e/XmlWellFormedWriter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Sql/Fonction.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -118,7 +111,7 @@
       <workItem from="1662444764409" duration="17623000" />
       <workItem from="1662639429329" duration="2425000" />
       <workItem from="1663068610910" duration="94000" />
-      <workItem from="1663069319850" duration="326000" />
+      <workItem from="1663069319850" duration="797000" />
     </task>
     <task id="LOCAL-00001" summary="Start making version file">
       <created>1662037828680</created>
@@ -309,7 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663068336591</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Change style for ui">
+      <created>1663069778391</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1663069778391</updated>
+    </task>
+    <task id="LOCAL-00029" summary="refractor">
+      <created>1663069926706</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1663069926706</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,8 +337,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Delete" />
-    <MESSAGE value="Move default parameter to sql database" />
     <MESSAGE value="Add configue in sql" />
     <MESSAGE value="Update Commit function" />
     <MESSAGE value="Commit" />
@@ -355,7 +360,9 @@
     <MESSAGE value="Added image Login003-Id-Card-1" />
     <MESSAGE value="Refractor color" />
     <MESSAGE value="Added function to display theme color" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added function to display theme color" />
+    <MESSAGE value="Change style for ui" />
+    <MESSAGE value="refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refractor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
