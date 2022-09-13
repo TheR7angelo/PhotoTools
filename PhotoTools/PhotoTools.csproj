@@ -25,15 +25,15 @@
       <None Remove="Sql\Bdds\Language.sqlite" />
       <None Remove="Utils\Img\parametres.png" />
       <AdditionalFiles Include="Sql\Bdds\Language.sqlite">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </AdditionalFiles>
       <None Remove="Sql\Bdds\Main.sqlite" />
       <AdditionalFiles Include="Sql\Bdds\Main.sqlite">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </AdditionalFiles>
       <None Remove="Sql\Bdds\Progress.sqlite" />
       <AdditionalFiles Include="Sql\Bdds\Progress.sqlite">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </AdditionalFiles>
       <None Remove="app.config" />
     </ItemGroup>

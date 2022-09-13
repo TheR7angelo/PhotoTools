@@ -13,9 +13,14 @@ public static partial class Requete
         return $"ATTACH DATABASE '{path}' as {filename}";
     }
 
-    private static string _GetAllThemes()
+    private static string _GetStyle(string theme)
     {
-        return "SELECT name, lock FROM main.t_style ORDER BY name";
+        return $"SELECT * FROM main.t_style WHERE name='{theme}'";
+    }
+
+    private static string _GetAllStyles()
+    {
+        return "SELECT * FROM main.t_style ORDER BY name";
     }
     private static string _GetActualStyle()
     {

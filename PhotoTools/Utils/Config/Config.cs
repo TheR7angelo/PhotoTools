@@ -62,7 +62,6 @@ public static class Config
         {
             Application.Current.Resources[st.Name] = st.StyleValue;
         }
-        //(SolidColorBrush)Application.Current.Resources[""]
     }
     public static void Changelanguage(string lang)
     {

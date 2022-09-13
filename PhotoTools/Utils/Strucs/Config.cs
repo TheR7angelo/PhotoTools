@@ -1,4 +1,5 @@
-﻿using System.Windows.Media;
+﻿using System.Collections.Generic;
+using System.Windows.Media;
 
 namespace PhotoTools.Utils.Strucs;
 
@@ -74,6 +75,7 @@ public static class StrucConfig
     {
         public bool Lock;
         public string Name;
+        public List<StyleColorBrush> Value;
     }
     #endregion
 }

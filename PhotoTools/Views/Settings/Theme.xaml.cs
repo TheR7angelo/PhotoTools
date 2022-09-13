@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -12,6 +13,8 @@ namespace PhotoTools.Views.Settings;
 
 public partial class Theme
 {
+    private IEnumerable<Button> _listButton;
+
     public Theme()
     {
         InitializeComponent();
@@ -33,8 +36,8 @@ public partial class Theme
 
     private void Ui()
     {
+        _listButton = new List<Button>{ RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
         FillComboStyle();
-        ButtonTheme();
     }
 
     private void FillComboStyle()
@@ -50,11 +53,17 @@ public partial class Theme
         CbStyle.SelectedValue = Config.Configue.Theme.Name;
     }
 
-    private void ButtonTheme()
+    private void ButtonTheme(StrucConfig.Themes theme)
     {
-        var buttons = new List<Button> { RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
-        foreach (var button in buttons)
+        
+        foreach (var button in _listButton)
         {
+            foreach (var value in theme.Value.Where(value => value.Name.Equals(button.Name)))
+            {
+                button.Background = value.StyleValue;
+                break;
+            }
+            
             var background = ((SolidColorBrush)button.Background).Color;
             var red = background.R;
             var green = background.G;
@@ -90,18 +99,16 @@ public partial class Theme
         if (CbStyle.SelectedItem == null) return;
         var selectedTheme = CbStyle.SelectedItem.ToString();
 
-        var themes = Requete.GetAllThemes();
-
-        foreach (var theme in themes)
-        {
-            if (!theme.Name.Equals(selectedTheme)) continue;
-            ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
+        var theme = Requete.GetStyle(selectedTheme);
+        
+        ButtonTheme(theme);
+        
+        ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
         }
-    }
     private static string GetImgLock(StrucConfig.Themes theme)
     {
-        // var nameImg = theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
-        var nameImg = theme.Lock ? "Login006-Lock-2" : "Login003-Id-Card-1";
+        var nameImg = theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
+        // var nameImg = theme.Lock ? "Login006-Lock-2" : "Login003-Id-Card-1";
         return nameImg;
     }
 }
