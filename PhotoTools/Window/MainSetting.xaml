@@ -12,7 +12,9 @@
                  WindowStartupLocation="CenterScreen"
                  TitleCharacterCasing="Normal"
                  MinHeight="560" MinWidth="950"
-                 Height="560" Width="950">
+                 Height="560" Width="950"
+                 ShowMaxRestoreButton="False"
+                 ShowMinButton="False">
     
     <mah:MetroWindow.WindowButtonCommands>
         <mah:WindowButtonCommands Minimize="Réduire"
