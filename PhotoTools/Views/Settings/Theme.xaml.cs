@@ -68,6 +68,7 @@ public partial class Theme
             var blue = background.B;
             var hexa = $"{red:X}{green:X}{blue:X}";
 
+            
             var colorTitre = new TextBlock { Text = "Red:\nGreen:\nBlue:\nHexa:", Margin = new Thickness(3) };
             var colorValue = new TextBlock
             {
@@ -105,6 +106,7 @@ public partial class Theme
         
         ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
         ThemeLock.Tag = theme.Lock;
+        ThemeLock.ToolTip = new ToolTip() { Content = $"Lock = {theme.Lock}" };
     }
     private static string GetImgLock(StrucConfig.Themes theme)
     {
