@@ -9,6 +9,7 @@
         WindowTransitionsEnabled="False"
         WindowTitleBrush="{DynamicResource RgbM1}"
         NonActiveWindowTitleBrush="{DynamicResource RgbM1}"
+        GlowBrush="{DynamicResource RgbM2}"
         WindowStartupLocation="CenterScreen"
         TitleCharacterCasing="Normal"
         
