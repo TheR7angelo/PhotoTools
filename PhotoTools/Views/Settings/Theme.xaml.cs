@@ -83,6 +83,7 @@ public partial class Theme
 
     private void Rgb_OnClick(object sender, RoutedEventArgs e)
     {
+        //todo Make function to modify value
         var btn = (Button)sender;
         var background = ((SolidColorBrush)btn.Background).Color;
         var red = background.R;
