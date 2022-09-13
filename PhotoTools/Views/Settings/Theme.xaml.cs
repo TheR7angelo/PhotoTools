@@ -47,8 +47,6 @@ public partial class Theme
         foreach (var theme in themes)
         {
             CbStyle.Items.Add(theme.Name);
-            // if (!theme.Name.Equals(Config.Configue.Theme.Name)) continue;
-            // ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
         }
         CbStyle.SelectedValue = Config.Configue.Theme.Name;
     }
@@ -92,6 +90,7 @@ public partial class Theme
         var blue = background.B;
 
         Console.WriteLine($@"{red} {green} {blue}");
+        Console.WriteLine(ThemeLock.Tag);
     }
 
     private void CbStyle_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -104,10 +103,10 @@ public partial class Theme
         ButtonTheme(theme);
         
         ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
-        }
+        ThemeLock.Tag = theme.Lock;
+    }
     private static string GetImgLock(StrucConfig.Themes theme)
     {
-        var nameImg = theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
-        return nameImg;
+        return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";;
     }
 }
