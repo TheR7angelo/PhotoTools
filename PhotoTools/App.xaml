@@ -16,7 +16,7 @@
                 <ResourceDictionary Source="/Utils/Themes/BaseStyle.xaml"/>
                 
                 <!-- Image -->
-                <ResourceDictionary Source="Utils/Img/Pack/Base.xaml"/>
+                <ResourceDictionary Source="Utils/Img/Base.xaml"/>
                 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
