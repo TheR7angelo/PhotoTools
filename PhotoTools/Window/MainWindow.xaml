@@ -40,7 +40,7 @@
     <mah:MetroWindow.LeftWindowCommands>
         <mah:WindowCommands>
             <Button Name="BtMainGithub" Click="ButtonBase_OnClick">
-                <Image Source="/Utils/Img/Ui/github.png" Stretch="Fill" Margin="3"/>
+                <Image Source="{StaticResource UiGithub}" Stretch="Fill" Margin="3"/>
             </Button>
         </mah:WindowCommands>
     </mah:MetroWindow.LeftWindowCommands>
