@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SQLite;
 using PhotoTools.Utils;
 using PhotoTools.Utils.Strucs;
 
@@ -9,22 +11,9 @@ public static partial class Requete
 {
     public static StrucConfig.Themes GetStyle(string theme)
     {
-        var th = new StrucConfig.Themes();
         var reader = ExecuteReader(_GetStyle(theme));
         reader.Read();
-
-        th.Lock = Convert.ToBoolean(int.Parse(reader["lock"].ToString()!));
-        th.Name = reader["name"].ToString()!;
-        th.Value = new List<StrucConfig.StyleColorBrush>
-        {
-            new() { Name = "RgbM1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m1"].ToString()!) },
-            new() { Name = "RgbM2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m2"].ToString()!) },
-            new() { Name = "RgbM3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m3"].ToString()!) },
-            new() { Name = "RgbB1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b1"].ToString()!) },
-            new() { Name = "RgbB2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b2"].ToString()!) },
-            new() { Name = "RgbB3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) }
-        };
-        return th;
+        return GetThemeValues(reader);
     }
     public static IEnumerable<StrucConfig.Themes> GetAllThemes()
     {
@@ -32,10 +21,19 @@ public static partial class Requete
         var reader = ExecuteReader(_GetAllStyles());
         while (reader.Read())
         {
-            var th = new StrucConfig.Themes();
-            th.Lock = Convert.ToBoolean(int.Parse(reader["lock"].ToString()!));
-            th.Name = reader["name"].ToString()!;
-            th.Value = new List<StrucConfig.StyleColorBrush>
+            themes.Add(GetThemeValues(reader));
+        }
+
+        return themes;
+    }
+
+    private static StrucConfig.Themes GetThemeValues(IDataRecord reader)
+    {
+        var th = new StrucConfig.Themes
+        {
+            Lock = Convert.ToBoolean(int.Parse(reader["lock"].ToString()!)),
+            Name = reader["name"].ToString()!,
+            Value = new List<StrucConfig.StyleColorBrush>
             {
                 new() { Name = "RgbM1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m1"].ToString()!) },
                 new() { Name = "RgbM2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m2"].ToString()!) },
@@ -43,12 +41,11 @@ public static partial class Requete
                 new() { Name = "RgbB1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b1"].ToString()!) },
                 new() { Name = "RgbB2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b2"].ToString()!) },
                 new() { Name = "RgbB3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) }
-            };
-            themes.Add(th);
-        }
-
-        return themes;
+            }
+        };
+        return th;
     }
+
     public static IEnumerable<StrucConfig.StyleColorBrush> GetActualStyle()
     {
         var reader = ExecuteReader(_GetActualStyle());
