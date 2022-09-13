@@ -7,26 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/1baf1389-1a8d-4321-baed-fdc0c2d86123.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/af43221f-5195-426c-b614-e4b180d66156.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/af43221f-5195-426c-b614-e4b180d66156.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/c6b5c690-4648-41d8-af44-0e20db581f51.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/c6b5c690-4648-41d8-af44-0e20db581f51.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_11_09_2022_23_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_11_09_2022_23_00__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_12_09_2022_08_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_12_09_2022_08_13__Changes_.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added geometry github">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/.idea/Bdds.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Ui/Base.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Ui/Base.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +26,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9b35bc5d5da43a49af8d74dac7ab37ccc1bb654cb7dfe8f9a21501181ed9b/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Img/Ui/Base.xaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -242,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662408986715</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added geometry github">
+      <created>1663085427822</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663085427822</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,26 +273,8 @@
     <MESSAGE value="moving title of MessageBox in view Language" />
     <MESSAGE value="Rename variable" />
     <MESSAGE value="added column modifiable in t_style" />
-    <option name="LAST_COMMIT_MESSAGE" value="added column modifiable in t_style" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs</url>
-          <line>46</line>
-          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Views\Settings\Theme.xaml.cs" initialLine="46" containingFunctionPresentation="method 'FillComboStyle'">
-            <startOffsets>
-              <option value="1197" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1262" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added geometry github" />
+    <option name="LAST_COMMIT_MESSAGE" value="added geometry github" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
