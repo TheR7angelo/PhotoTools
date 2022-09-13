@@ -13,7 +13,7 @@ namespace PhotoTools.Views.Settings;
 
 public partial class Theme
 {
-    private IEnumerable<Button> _listButton;
+    private List<Button>? _listButton;
 
     public Theme()
     {
@@ -56,7 +56,7 @@ public partial class Theme
     private void ButtonTheme(StrucConfig.Themes theme)
     {
         
-        foreach (var button in _listButton)
+        foreach (var button in _listButton!)
         {
             foreach (var value in theme.Value.Where(value => value.Name.Equals(button.Name)))
             {
@@ -99,7 +99,7 @@ public partial class Theme
         if (CbStyle.SelectedItem == null) return;
         var selectedTheme = CbStyle.SelectedItem.ToString();
 
-        var theme = Requete.GetStyle(selectedTheme);
+        var theme = Requete.GetStyle(selectedTheme!);
         
         ButtonTheme(theme);
         
@@ -108,7 +108,6 @@ public partial class Theme
     private static string GetImgLock(StrucConfig.Themes theme)
     {
         var nameImg = theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
-        // var nameImg = theme.Lock ? "Login006-Lock-2" : "Login003-Id-Card-1";
         return nameImg;
     }
 }

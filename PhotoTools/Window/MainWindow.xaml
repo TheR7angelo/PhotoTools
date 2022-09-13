@@ -28,10 +28,9 @@
                                   LightMinButtonStyle="{DynamicResource MinButtonStyle}"
                                   DarkMinButtonStyle="{DynamicResource MinButtonStyle}"
                                   LightCloseButtonStyle="{DynamicResource CloseButtonStyle}"
-                                  DarkCloseButtonStyle="{DynamicResource CloseButtonStyle}"/>
-                                  <!-- LightMaxButtonStyle="{StaticResource MaxButtonStyle}" -->
-                                  <!-- DarkMaxButtonStyle="{StaticResource MaxButtonStyle}"/> -->
-        <!-- DarkMinButtonStyle="{StaticResource MinButtonStyle}" -->
+                                  DarkCloseButtonStyle="{DynamicResource CloseButtonStyle}"
+                                  LightMaxButtonStyle="{StaticResource MaxButtonStyle}"
+                                  DarkMaxButtonStyle="{StaticResource MaxButtonStyle}"/>
                                   
 
     </mah:MetroWindow.WindowButtonCommands>

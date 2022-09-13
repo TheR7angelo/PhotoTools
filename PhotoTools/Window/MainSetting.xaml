@@ -6,10 +6,25 @@
                  TitleAlignment="Center"
                  ResizeMode="CanResizeWithGrip"
                  WindowTransitionsEnabled="False"
+                 WindowTitleBrush="{DynamicResource RgbM1}"
+                 NonActiveWindowTitleBrush="{DynamicResource RgbM1}"
                  WindowStartupLocation="CenterScreen"
                  TitleCharacterCasing="Normal"
                  MinHeight="560" MinWidth="950"
                  Height="560" Width="950">
+    
+    <mah:MetroWindow.WindowButtonCommands>
+        <mah:WindowButtonCommands Minimize="Réduire"
+                                  Maximize="Agrandir"
+                                  Restore="Rétrécir"
+                                  Close="Quitter"
+                                  LightMinButtonStyle="{DynamicResource MinButtonStyle}"
+                                  DarkMinButtonStyle="{DynamicResource MinButtonStyle}"
+                                  LightCloseButtonStyle="{DynamicResource CloseButtonStyle}"
+                                  DarkCloseButtonStyle="{DynamicResource CloseButtonStyle}"
+                                  LightMaxButtonStyle="{StaticResource MaxButtonStyle}"
+                                  DarkMaxButtonStyle="{StaticResource MaxButtonStyle}"/>
+    </mah:MetroWindow.WindowButtonCommands>
     
     <Grid Background="{DynamicResource RgbM1}">
         <views:MainSettingView/>
