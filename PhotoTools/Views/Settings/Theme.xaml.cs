@@ -21,19 +21,6 @@ public partial class Theme
         Ui();
     }
 
-    // private void Th_OnClick(object sender, RoutedEventArgs e)
-    // {
-    //     var r = (int)Math.Round(pixieColor.Color.RGB_R);
-    //     var g = (int)Math.Round(pixieColor.Color.RGB_G);
-    //     var b = (int)Math.Round(pixieColor.Color.RGB_B);
-    //
-    //     var t = r.ToString("X");
-    //     var y = g.ToString("X");
-    //     var u = b.ToString("X");
-    //     var hex = $"FF{t}{y}{u}";
-    //     Console.WriteLine(hex);
-    // }
-
     private void Ui()
     {
         _listButton = new List<Button>{ RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
@@ -51,9 +38,8 @@ public partial class Theme
         CbStyle.SelectedValue = Config.Configue.Theme.Name;
     }
 
-    private void ButtonTheme(StrucConfig.Themes theme)
+    private void ButtonThemesBackground(StrucConfig.Themes theme)
     {
-        
         foreach (var button in _listButton!)
         {
             foreach (var value in theme.Value.Where(value => value.Name.Equals(button.Name)))
@@ -61,25 +47,36 @@ public partial class Theme
                 button.Background = value.StyleValue;
                 break;
             }
-            
-            var background = ((SolidColorBrush)button.Background).Color;
-            var red = background.R;
-            var green = background.G;
-            var blue = background.B;
-            var hexa = $"{red:X}{green:X}{blue:X}";
-
-            
-            var colorTitre = new TextBlock { Text = "Red:\nGreen:\nBlue:\nHexa:", Margin = new Thickness(3) };
-            var colorValue = new TextBlock
-            {
-                Text = $"{red}\n{green}\n{blue}\n{hexa}", Margin = new Thickness(3), TextAlignment = TextAlignment.Center
-            };
-
-            var stack = new StackPanel { Orientation = Orientation.Horizontal, Children = { colorTitre, colorValue } };
-
-            button.ToolTip = new ToolTip
-                { Placement = PlacementMode.Center, StaysOpen = true, IsOpen = false, Content = stack };
         }
+    }
+    private void ButtonThemesTooltip()
+    {
+        
+        foreach (var button in _listButton!)
+        {
+            ButtonThemeToolTip(button);
+        }
+    }
+
+    public static void ButtonThemeToolTip(Control button)
+    {
+        var background = ((SolidColorBrush)button.Background).Color;
+        var red = background.R;
+        var green = background.G;
+        var blue = background.B;
+        var hexa = $"{red:X}{green:X}{blue:X}";
+
+
+        var colorTitre = new TextBlock { Text = "Red:\nGreen:\nBlue:\nHexa:", Margin = new Thickness(3) };
+        var colorValue = new TextBlock
+        {
+            Text = $"{red}\n{green}\n{blue}\n{hexa}", Margin = new Thickness(3), TextAlignment = TextAlignment.Center
+        };
+
+        var stack = new StackPanel { Orientation = Orientation.Horizontal, Children = { colorTitre, colorValue } };
+
+        button.ToolTip = new ToolTip
+            { Placement = PlacementMode.Center, StaysOpen = true, IsOpen = false, Content = stack };
     }
 
     private void Rgb_OnClick(object sender, RoutedEventArgs e)
@@ -111,8 +108,9 @@ public partial class Theme
         var selectedTheme = CbStyle.SelectedItem.ToString();
 
         var theme = Requete.GetStyle(selectedTheme!);
-        
-        ButtonTheme(theme);
+
+        ButtonThemesBackground(theme);
+        ButtonThemesTooltip();
         
         ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
         ThemeLock.Tag = theme.Lock;
