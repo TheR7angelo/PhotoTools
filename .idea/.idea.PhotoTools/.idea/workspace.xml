@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="Added button new theme" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="ras">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -440,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663156496667</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="ras">
+      <created>1663156663598</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1663156663598</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,14 +489,14 @@
     <MESSAGE value="added image svg for ui" />
     <MESSAGE value="added resource file" />
     <MESSAGE value="added function to display color in color picker" />
-    <MESSAGE value="ras" />
     <MESSAGE value="added function to modify color display" />
     <MESSAGE value="remove todo" />
     <MESSAGE value="tooltip of button theme is now modified" />
     <MESSAGE value="Added img trash" />
     <MESSAGE value="added img plus" />
     <MESSAGE value="Added button new theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added button new theme" />
+    <MESSAGE value="ras" />
+    <option name="LAST_COMMIT_MESSAGE" value="ras" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

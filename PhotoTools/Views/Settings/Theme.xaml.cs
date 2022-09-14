@@ -124,6 +124,7 @@ public partial class Theme
 
     private void BtNewTheme_OnClick(object sender, RoutedEventArgs e)
     {
+        //TODO make function to add new theme theme
         Console.WriteLine("add new theme");
         CbStyle.IsEditable = true;
         CbStyle.Text = string.Empty;
