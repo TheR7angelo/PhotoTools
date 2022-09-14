@@ -85,14 +85,28 @@ public partial class Theme
     private void Rgb_OnClick(object sender, RoutedEventArgs e)
     {
         //todo Make function to modify value
-        var btn = (Button)sender;
-        var background = ((SolidColorBrush)btn.Background).Color;
-        var red = background.R;
-        var green = background.G;
-        var blue = background.B;
 
-        Console.WriteLine($@"{red} {green} {blue}");
-        Console.WriteLine(ThemeLock.Tag);
+        if (!(bool)ThemeLock.Tag)
+        {
+            var btn = (Button)sender;
+            var background = ((SolidColorBrush)btn.Background).Color;
+            var red = background.R;
+            var green = background.G;
+            var blue = background.B;
+
+            ColorEdit.InstanceColorEdit!.ColorPicker.Color.RGB_R = red;
+            ColorEdit.InstanceColorEdit.ColorPicker.Color.RGB_G = green;
+            ColorEdit.InstanceColorEdit.ColorPicker.Color.RGB_B = blue;
+            // ColorEdit.ColorPickerRgb.Red = red;
+            // ColorEdit.ColorPickerRgb.Green = green;
+            // ColorEdit.ColorPickerRgb.Blue = blue;
+
+            MainSettingView.InstanceMainSettingView!.ChangeTabItem("TabColorChange");
+        }
+        else
+        {
+            Console.WriteLine("Sorry but this theme is locked");
+        }
     }
 
     private void CbStyle_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -110,6 +124,6 @@ public partial class Theme
     }
     private static string GetImgLock(StrucConfig.Themes theme)
     {
-        return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";;
+        return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
     }
 }

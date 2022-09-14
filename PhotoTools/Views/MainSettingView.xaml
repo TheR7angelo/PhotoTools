@@ -17,12 +17,15 @@
             <RadioButton x:Name="RdBtSettingTabLanguage" Checked="RdBtSettingTabLanguage_OnCheck"/>
             <RadioButton x:Name="RdBtSettingTabTheme" Checked="RdBtTabItemTheme_OnCheck"/>
         </StackPanel>
-        <TabControl Grid.Column="1">
+        <TabControl x:Name="ControlSetting" Grid.Column="1">
             <TabItem x:Name="TabLanguage" Visibility="Collapsed">
                 <settings:Language/>
             </TabItem>
             <TabItem x:Name="TabTheme" Visibility="Collapsed">
                 <settings:Theme/>
+            </TabItem>
+            <TabItem x:Name="TabColorChange" Visibility="Collapsed">
+                <settings:ColorEdit/>
             </TabItem>
         </TabControl>
     </Grid>

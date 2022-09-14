@@ -5,8 +5,11 @@ namespace PhotoTools.Views;
 
 public partial class MainSettingView
 {
+    public static MainSettingView? InstanceMainSettingView { get; private set; }
+    
     public MainSettingView()
     {
+        InstanceMainSettingView = this;
         InitializeComponent();
         InitializeUi();
     }
@@ -21,7 +24,7 @@ public partial class MainSettingView
         ChangeTabItem(((RadioButton)sender).Name);
     }
 
-    private void ChangeTabItem(string tab)
+    public void ChangeTabItem(string tab)
     {
         switch (tab)
         {
@@ -30,6 +33,9 @@ public partial class MainSettingView
                 break;
             case "RdBtSettingTabTheme":
                 TabTheme.IsSelected = true;
+                break;
+            case "TabColorChange":
+                TabColorChange.IsSelected = true;
                 break;
         }
     }
