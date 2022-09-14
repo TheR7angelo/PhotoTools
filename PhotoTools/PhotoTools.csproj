@@ -55,6 +55,9 @@
       <Resource Include="Utils\Img\MessageBox\Source\Pngs\valid.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
+      <Resource Include="Utils\Img\Pack\license.pdf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
       <Resource Include="Utils\Img\Ui\github.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
@@ -109,9 +112,6 @@
       <None Remove="Utils\Img\Pack\Login\015-enter-1.png" />
       <None Remove="Utils\Img\Pack\Login\016-enter.png" />
       <None Remove="Utils\Img\Pack\Login\license.pdf" />
-      <Resource Include="Utils\Img\Pack\Login\license.pdf">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Utils\Img\Pack\Login\Login Icon Pack - Flat - 16 .SVG Icons.url" />
       <Resource Include="Utils\Img\Pack\Login\Login Icon Pack - Flat - 16 .SVG Icons.url">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

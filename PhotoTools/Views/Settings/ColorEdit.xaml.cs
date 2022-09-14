@@ -20,7 +20,6 @@ public partial class ColorEdit
         var red = (byte)ColorPicker.Color.RGB_R;
         var green = (byte)ColorPicker.Color.RGB_G;
         var blue = (byte)ColorPicker.Color.RGB_B;
-        // Console.WriteLine(Btn.Name);
         Btn.Background = new SolidColorBrush(Color.FromArgb(255, red, green, blue));
         Theme.ButtonThemeToolTip(Btn);
         Exit();

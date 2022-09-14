@@ -7,10 +7,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="remove todo">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="tooltip of button theme is now modified">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/001-pin-code.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/003-id-card-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/004-login-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/005-login.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/007-lock-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/008-lock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/009-key.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/010-keyhole-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/011-keyhole.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/012-id-card.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/013-exit-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/014-exit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/015-enter-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/016-enter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/license.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/license.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/ColorEdit.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/ColorEdit.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/ColorEdit.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/ColorEdit.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +38,15 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13f52135aee24447a5e1961d367aff7c1fe00/51/a7bfb87a/PickerControlBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13f52135aee24447a5e1961d367aff7c1fe00/ba/9d5f23d8/StandardColorPicker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50f0ff8c82e64eec8d5d9367561f6719166aba0/1d/ac91f6b4/MouseEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/2b/ec2b7b65/SQLiteDataReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/c7/4ef76f01/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/eb/17b5b3d5/TraceRoutedEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b03f0e903e36436cb2607b63b44f160e15f898/70/eb3cedb2/PartialTrustTolerantRuntime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/resource/13f52135aee24447a5e1961d367aff7c1fe00/12/65a6f621/standardcolorpicker.xaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/133b115411c2fb64df4278ddd68ab81905d23360234ce4e432116135557ac/UriExt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1376b8596591b9bceeddb42cb7a72a6377621cc4b5f6ae33d23821aea3ef4c3/WindowButtonCommands.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1c75f7ce15755f5ef0ffbfe951366a6895806eebd43910e5e715b15ab9b2588e/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
@@ -47,6 +67,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e6a439fde68a3e1d7d1e9e16caf4322bd91edc8db92a758dfdb87a72dd113e/XmlWellFormedWriter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7bdef8686489167e6bcc2498e93448cc314a7e6c78ad16fbe54b83ca84622/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/App.xaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/ColorEdit.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -410,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663147797455</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="tooltip of button theme is now modified">
+      <created>1663148562312</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1663148562312</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Correct for TabItemSelect" />
     <MESSAGE value="Refractor" />
     <MESSAGE value="Started style" />
     <MESSAGE value="Added color for title brush" />
@@ -456,7 +483,8 @@
     <MESSAGE value="ras" />
     <MESSAGE value="added function to modify color display" />
     <MESSAGE value="remove todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove todo" />
+    <MESSAGE value="tooltip of button theme is now modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="tooltip of button theme is now modified" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
