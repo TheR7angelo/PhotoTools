@@ -7,18 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added resource file">
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/ColorEdit.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/ColorEdit.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_2022_18_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_2022_18_06__Changes_.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added function to display color in color picker">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/App.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Config.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/MainSettingView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/MainSettingView.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/MainSettingView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/MainSettingView.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/ColorEdit.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/ColorEdit.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +21,7 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50f0ff8c82e64eec8d5d9367561f6719166aba0/1d/ac91f6b4/MouseEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/2b/ec2b7b65/SQLiteDataReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/c7/4ef76f01/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
@@ -43,6 +36,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5ab987bfd4bbcb1c96a936fa0fedfd488a291658f991ddcae783bea1b34bdd1/ToggleButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6a61c4e52cff5fdd5eff5f4db293532b6024f1103492107cd5575671cdb/SafeFileHandle.Windows.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7977fbd944152f51647ff2ab17233d94dd58c49f4447cbda8b8bac30a8c2bbd/ClrObjectRuntime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/79995d1ad792522127a852195f8ae8a7d5dff498c25f5f161ee1bf2a1d623f9/Visual.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/89827e4e6616ddd7af1a534375cfaacd712044f2c3b39e6620b18ecedb023/TabItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/89a2b53da2e32f22f450ecab5f59ea9f03bfe76b409627069931a786fcee/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a19439ae8dff2fdd12f27c8b7b3b360b86083bb6c699ec81f3caf797ea3eb11/Helper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -52,6 +46,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cde17d90ec8b28b5cf4cb2f7c2fa43e9f572488a65077a6353718e1ecc79b8a/UIElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e6a439fde68a3e1d7d1e9e16caf4322bd91edc8db92a758dfdb87a72dd113e/XmlWellFormedWriter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7bdef8686489167e6bcc2498e93448cc314a7e6c78ad16fbe54b83ca84622/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/App.xaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -387,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663074112429</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added function to display color in color picker">
+      <created>1663143988219</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1663143988219</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +410,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added table style in main" />
     <MESSAGE value="Added struc style" />
     <MESSAGE value="Added ui parameter" />
     <MESSAGE value="Correct for TabItemSelect" />
@@ -433,7 +434,8 @@
     <MESSAGE value="tooltip lock display on image" />
     <MESSAGE value="added image svg for ui" />
     <MESSAGE value="added resource file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added resource file" />
+    <MESSAGE value="added function to display color in color picker" />
+    <option name="LAST_COMMIT_MESSAGE" value="added function to display color in color picker" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
