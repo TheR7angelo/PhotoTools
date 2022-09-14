@@ -84,8 +84,6 @@ public partial class Theme
 
     private void Rgb_OnClick(object sender, RoutedEventArgs e)
     {
-        //todo Make function to modify value
-
         if (!(bool)ThemeLock.Tag)
         {
             var btn = (Button)sender;
