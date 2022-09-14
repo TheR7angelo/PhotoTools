@@ -118,7 +118,7 @@ public partial class Theme
     }
     private static string GetImgLock(StrucConfig.Themes theme)
     {
-        // return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
-        return theme.Lock ? "Login006-Lock-2" : "BasicUi089-Trash";
+        return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
+        //return theme.Lock ? "Login006-Lock-2" : "BasicUi067-Plus";
     }
 }

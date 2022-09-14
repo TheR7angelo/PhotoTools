@@ -4,6 +4,22 @@
     <SolidColorBrush x:Key="BasicUiSt0" Color="#FF90A4AE"/>
     <SolidColorBrush x:Key="BasicUiSt1" Color="#FFECEFF1"/>
     <SolidColorBrush x:Key="BasicUiSt2" Color="#FF607D8B"/>
+    <SolidColorBrush x:Key="BasicUiSt3" Color="#FF4CAF50"/>
+    
+    <DrawingImage x:Key="BasicUi067-Plus">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt3}">
+                    <GeometryDrawing.Geometry>
+                        <GeometryGroup>
+                            <PathGeometry>M437.3,192H32c-17.7,0-32,14.3-32,32v21.3c0,17.7,14.3,32,32,32h405.3c17.7,0,32-14.3,32-32V224 C469.3,206.3,455,192,437.3,192z</PathGeometry>
+                            <PathGeometry>M192,32v405.3c0,17.7,14.3,32,32,32h21.3c17.7,0,32-14.3,32-32V32c0-17.7-14.3-32-32-32H224 C206.3,0,192,14.3,192,32z</PathGeometry>
+                        </GeometryGroup>
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
     
     <DrawingImage x:Key="BasicUi089-Trash">
         <DrawingImage.Drawing>
