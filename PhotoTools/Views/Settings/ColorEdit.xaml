@@ -8,6 +8,12 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <colorPicker:StandardColorPicker x:Name="ColorPicker" Style="{StaticResource  DefaultColorPickerStyle}" Width="40" Height="40" ShowAlpha="False" SelectedColor="White" SecondaryColor="White"/>
+        <StackPanel Orientation="Vertical">
+            <colorPicker:StandardColorPicker x:Name="ColorPicker" Style="{StaticResource  DefaultColorPickerStyle}" Width="40" Height="40" ShowAlpha="False" SelectedColor="White" SecondaryColor="White"/>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="BtColorEditValidation" Content="Validation" Click="BtColorEditValidation_OnClick"/>
+                <Button x:Name="BtColorEditAnnul" Content="Annuler" Click="BtColorEditAnnul_OnClick"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </UserControl>

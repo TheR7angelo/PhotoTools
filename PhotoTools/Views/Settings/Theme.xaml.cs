@@ -97,9 +97,7 @@ public partial class Theme
             ColorEdit.InstanceColorEdit!.ColorPicker.Color.RGB_R = red;
             ColorEdit.InstanceColorEdit.ColorPicker.Color.RGB_G = green;
             ColorEdit.InstanceColorEdit.ColorPicker.Color.RGB_B = blue;
-            // ColorEdit.ColorPickerRgb.Red = red;
-            // ColorEdit.ColorPickerRgb.Green = green;
-            // ColorEdit.ColorPickerRgb.Blue = blue;
+            ColorEdit.InstanceColorEdit.Btn = btn;
 
             MainSettingView.InstanceMainSettingView!.ChangeTabItem("TabColorChange");
         }
