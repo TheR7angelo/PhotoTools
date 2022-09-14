@@ -121,4 +121,12 @@ public partial class Theme
         return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
         //return theme.Lock ? "Login006-Lock-2" : "BasicUi067-Plus";
     }
+
+    private void BtNewTheme_OnClick(object sender, RoutedEventArgs e)
+    {
+        Console.WriteLine("add new theme");
+        CbStyle.IsEditable = true;
+        CbStyle.Text = string.Empty;
+        BtNewTheme.IsEnabled = false;
+    }
 }

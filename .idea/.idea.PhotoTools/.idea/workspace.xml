@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="Added img trash">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added img plus">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +43,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/89827e4e6616ddd7af1a534375cfaacd712044f2c3b39e6620b18ecedb023/TabItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/89a2b53da2e32f22f450ecab5f59ea9f03bfe76b409627069931a786fcee/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a19439ae8dff2fdd12f27c8b7b3b360b86083bb6c699ec81f3caf797ea3eb11/Helper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b7b063ec35e595a939a2459ee7cfbe1730967c165f69741165be794d9a0e0/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ba47094ba7d713c3fbe6b073194f2822e7461fa8c3eb34a41c3dd61e48bc2/ResourceDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bc5ae3beba9b5dc6a499fd22f071ad8b106ae82dda9489f975fca4f768309d6e/Uri.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c9477497070f137b25b150b2602d7a2083506e66eb488c272fefc6a0def5/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
@@ -428,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663150789208</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="added img plus">
+      <created>1663155214977</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1663155214977</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +457,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Started style" />
     <MESSAGE value="Added color for title brush" />
     <MESSAGE value="added proto and params theme view" />
     <MESSAGE value="added tooltip with color display value" />
@@ -474,7 +481,8 @@
     <MESSAGE value="remove todo" />
     <MESSAGE value="tooltip of button theme is now modified" />
     <MESSAGE value="Added img trash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added img trash" />
+    <MESSAGE value="added img plus" />
+    <option name="LAST_COMMIT_MESSAGE" value="added img plus" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

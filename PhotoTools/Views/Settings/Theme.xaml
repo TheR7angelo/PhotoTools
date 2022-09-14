@@ -12,14 +12,16 @@
         <StackPanel Orientation="Vertical">
             <Grid Height="23" Margin="3">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="12*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:Name="CbStyle" SelectionChanged="CbStyle_OnSelectionChanged"/>
-                <Grid Grid.Column="1">
-                    <Image x:Name="ThemeLock"/>
+                <Button x:Name="BtNewTheme" Grid.Column="0" Click="BtNewTheme_OnClick">
+                    <Image Source="{StaticResource BasicUi067-Plus}"/>
+                </Button>
+                <ComboBox Grid.Column="1" x:Name="CbStyle" SelectionChanged="CbStyle_OnSelectionChanged"/>
+                <Image Grid.Column="2" x:Name="ThemeLock"/>
                 </Grid>
-            </Grid>
                 <!-- Affichage des coleurs principale -->
             <StackPanel Orientation="Vertical">
                 
