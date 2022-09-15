@@ -58,6 +58,9 @@
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
+                <!-- todo changer text -->
+                <Button Content="Valider"/>
+                <Button Content="Annuler"/>
         </StackPanel>
     </Grid>
 </UserControl>

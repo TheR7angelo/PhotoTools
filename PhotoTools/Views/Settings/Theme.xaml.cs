@@ -129,5 +129,7 @@ public partial class Theme
         CbStyle.IsEditable = true;
         CbStyle.Text = string.Empty;
         BtNewTheme.IsEnabled = false;
+        
+        
     }
 }
