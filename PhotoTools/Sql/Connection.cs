@@ -13,7 +13,7 @@ public static class Connection
     public static void InitializeBdds()
     {
         Conn.Open();
-        Requete.AttachBdds(PathBdds);
+        Query.AttachBdds(PathBdds);
     }
 
     public static void CloseBdds()

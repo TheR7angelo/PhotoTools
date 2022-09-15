@@ -25,7 +25,7 @@ public partial class Language
         CbSettingLanguage.Items.Clear();
         
         var lang = Config.Configue.Language.LanguageName;
-        var languages = Requete.GetAllLangs(lang!);
+        var languages = Query.GetAllLangs(lang!);
 
         foreach (var langue in languages)
         {
@@ -38,7 +38,7 @@ public partial class Language
         var lang = CbSettingLanguage.Text;
         if (lang == string.Empty) return;
         
-        var newLang = Requete.GetEnglishLang(lang);
+        var newLang = Query.GetEnglishLang(lang);
         Config.Changelanguage(newLang);
         
         var msg = new MessageBox

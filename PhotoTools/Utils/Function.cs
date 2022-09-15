@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Windows.Media;
-using PhotoTools.Sql;
-
 namespace PhotoTools.Utils;
 
-public static class Fonction
+public static class Function
 {
     public static SolidColorBrush SolidColorBrushConvert(string code)
     {

@@ -26,7 +26,7 @@ public static class Folder
     {
         var endDate = date.Month + 1 == 13 ? new DateOnly(date.Year + 1, 1, 1).AddDays(-1) : new DateOnly(date.Year, date.Month + 1, 1).AddDays(-1);
 
-        foreach (var day in Fonction.EachDay(date.ToDateTime(TimeOnly.MinValue), endDate.ToDateTime(TimeOnly.MinValue)))
+        foreach (var day in Function.EachDay(date.ToDateTime(TimeOnly.MinValue), endDate.ToDateTime(TimeOnly.MinValue)))
         {
             var num = day.ToString("dd");
             var weekDay = day.ToString("dddd", Constant.Language.CultureInfo).Capitalize();

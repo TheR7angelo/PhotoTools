@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SQLite;
 using System.IO;
 using PhotoTools.Utils.Config;
@@ -6,7 +7,7 @@ using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Sql;
 
-public static partial class Requete
+public static partial class Query
 {
     private static string _AttachBdd(string path)
     {
@@ -14,10 +15,19 @@ public static partial class Requete
         return $"ATTACH DATABASE '{path}' as {filename}";
     }
 
-    private static string _AddTheme(StrucConfig.Themes th)
+    private static string _AddTheme(StrucConfig.Themes theme)
     {
+        var listCol = new List<string>();
+        var listVal = new List<string>();
+
+        foreach (var th in theme.Value)
+        {
+            listCol.Add(th.Name);
+            var t = th.StyleValue;
+        }
         Console.WriteLine("hey");
-        var cmd = $"INSERT INTO "
+        var cmd = $"INSERT INTO ";
+        return cmd;
     }
     
     private static string _GetStyle(string theme)

@@ -16,7 +16,7 @@ public static class Config
     public static void InitializeApp()
     {
         Connection.InitializeBdds();
-        var paramsStrucs = Requete.GetParams();
+        var paramsStrucs = Query.GetParams();
 
         foreach (var param in paramsStrucs)
         {
@@ -57,7 +57,7 @@ public static class Config
 
     public static void InitializeStyle()
     {
-        var styles = Requete.GetActualStyle();
+        var styles = Query.GetActualStyle();
         foreach (var st in styles.Value)
         {
             Application.Current.Resources[st.Name] = st.StyleValue;
@@ -65,7 +65,7 @@ public static class Config
     }
     public static void Changelanguage(string lang)
     {
-        var code = Requete.GetCultureInfoCode(lang);
+        var code = Query.GetCultureInfoCode(lang);
 
         Configue.Language.LanguageName = lang;
         Configue.Language.LanguageCode = code;
@@ -82,7 +82,7 @@ public static class Config
         Connection.Transaction = Connection.Conn.BeginTransaction();
         foreach (var cf in cfs)
         {
-            Requete.UpdateSettings(cf.Section!, cf.Key!, cf.Value!);
+            Query.UpdateSettings(cf.Section!, cf.Key!, cf.Value!);
         }
         Connection.Transaction.Commit();
     }

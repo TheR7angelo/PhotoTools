@@ -6,7 +6,7 @@ using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Sql;
 
-public static partial class Requete
+public static partial class Query
 {
     public static bool AddTheme(StrucConfig.Themes th)
     {
@@ -47,12 +47,12 @@ public static partial class Requete
             Name = reader["name"].ToString()!,
             Value = new List<StrucConfig.StyleColorBrush>
             {
-                new() { Name = "RgbM1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m1"].ToString()!) },
-                new() { Name = "RgbM2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m2"].ToString()!) },
-                new() { Name = "RgbM3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_m3"].ToString()!) },
-                new() { Name = "RgbB1", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b1"].ToString()!) },
-                new() { Name = "RgbB2", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b2"].ToString()!) },
-                new() { Name = "RgbB3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) }
+                new() { Name = "RgbM1", StyleValue = Function.SolidColorBrushConvert(reader["rgb_m1"].ToString()!) },
+                new() { Name = "RgbM2", StyleValue = Function.SolidColorBrushConvert(reader["rgb_m2"].ToString()!) },
+                new() { Name = "RgbM3", StyleValue = Function.SolidColorBrushConvert(reader["rgb_m3"].ToString()!) },
+                new() { Name = "RgbB1", StyleValue = Function.SolidColorBrushConvert(reader["rgb_b1"].ToString()!) },
+                new() { Name = "RgbB2", StyleValue = Function.SolidColorBrushConvert(reader["rgb_b2"].ToString()!) },
+                new() { Name = "RgbB3", StyleValue = Function.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) }
             }
         };
     }

@@ -10,18 +10,21 @@
     
     <Grid Background="{DynamicResource RgbM1}">
         <StackPanel Orientation="Vertical">
+            
             <Grid Height="23" Margin="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="12*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="BtNewTheme" Grid.Column="0" Click="BtNewTheme_OnClick">
+                <Button Grid.Row="0" x:Name="BtNewTheme" Grid.Column="0" Click="BtNewTheme_OnClick">
                     <Image Source="{StaticResource BasicUi067-Plus}"/>
                 </Button>
                 <ComboBox Grid.Column="1" x:Name="CbStyle" SelectionChanged="CbStyle_OnSelectionChanged"/>
-                <Image Grid.Column="2" x:Name="ThemeLock"/>
-                </Grid>
+                <TextBox Grid.Column="1" x:Name="TbxStyle" Visibility="Hidden"/>
+                <Image Grid.Row="0" Grid.Column="2" x:Name="ThemeLock"/>
+            </Grid>
+            
                 <!-- Affichage des coleurs principale -->
             <StackPanel Orientation="Vertical">
                 

@@ -30,7 +30,7 @@ public partial class Theme
     private void FillComboStyle()
     {
         CbStyle.Items.Clear();
-        var themes = Requete.GetAllThemes();
+        var themes = Query.GetAllThemes();
         foreach (var theme in themes)
         {
             CbStyle.Items.Add(theme.Name);
@@ -110,7 +110,7 @@ public partial class Theme
         if (CbStyle.SelectedItem == null) return;
         var selectedTheme = CbStyle.SelectedItem.ToString();
 
-        var theme = Requete.GetStyle(selectedTheme!);
+        var theme = Query.GetStyle(selectedTheme!);
 
         ButtonThemesBackground(theme);
         ButtonThemesTooltip();
@@ -137,16 +137,17 @@ public partial class Theme
     {
         if (newTheme)
         {
-            CbStyle.Text = string.Empty;
+            CbStyle.IsEnabled = false;
             BtNewTheme.IsEnabled = false;
-            CbStyle.IsEditable = newTheme;
-            BtNewThemeValid.Visibility = Visibility.Visible;
+            BtNewThemeValid.Visibility = Visibility.Hidden;
+            TbxStyle.Visibility = Visibility.Visible;
         }
         else
         {
             BtNewTheme.IsEnabled = true;
             CbStyle.IsEditable = newTheme;
-            BtNewThemeValid.Visibility = Visibility.Hidden;
+            BtNewThemeValid.Visibility = Visibility.Visible;
+            TbxStyle.Visibility = Visibility.Hidden;
         }
     }
 
@@ -183,7 +184,7 @@ public partial class Theme
                 });
             }
 
-            var apply = Requete.AddTheme(th);
+            var apply = Query.AddTheme(th);
             // todo ajout un message si enregistrement réussi ou non
             Console.WriteLine("hey");
             var txt = apply ? "Yes" : "No";
