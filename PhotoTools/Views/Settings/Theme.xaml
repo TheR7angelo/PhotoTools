@@ -60,7 +60,7 @@
             </StackPanel>
                 <!-- todo changer text -->
                 <StackPanel x:Name="BtNewThemeValid" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
-                    <Button Content="Valider"/>
+                    <Button Content="Valider" Click="AddNewStyle_OnClick"/>
                     <Button Content="Annuler"/>
                 </StackPanel>
         </StackPanel>

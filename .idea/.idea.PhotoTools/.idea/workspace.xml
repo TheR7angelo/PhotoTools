@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="change visibility button add new theme">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="Added function for modified theme">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +57,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cde17d90ec8b28b5cf4cb2f7c2fa43e9f572488a65077a6353718e1ecc79b8a/UIElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e6a439fde68a3e1d7d1e9e16caf4322bd91edc8db92a758dfdb87a72dd113e/XmlWellFormedWriter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7bdef8686489167e6bcc2498e93448cc314a7e6c78ad16fbe54b83ca84622/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -129,14 +133,7 @@
       <workItem from="1662639429329" duration="2425000" />
       <workItem from="1663068610910" duration="94000" />
       <workItem from="1663069319850" duration="4891000" />
-      <workItem from="1663222554095" duration="3031000" />
-    </task>
-    <task id="LOCAL-00002" summary="Delete">
-      <created>1662037901100</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662037901100</updated>
+      <workItem from="1663222554095" duration="5147000" />
     </task>
     <task id="LOCAL-00003" summary="Move default parameter to sql database">
       <created>1662103469829</created>
@@ -474,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663225139008</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Added function for modified theme">
+      <created>1663225775526</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1663225775526</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +500,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added pack image to ressource" />
     <MESSAGE value="added svg pack image" />
     <MESSAGE value="Added combobox fill for select theme" />
     <MESSAGE value="Added image Login003-Id-Card-1" />
@@ -521,7 +524,8 @@
     <MESSAGE value="Added string english french to tooltip theme" />
     <MESSAGE value="added todo" />
     <MESSAGE value="change visibility button add new theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="change visibility button add new theme" />
+    <MESSAGE value="Added function for modified theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function for modified theme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

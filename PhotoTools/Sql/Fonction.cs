@@ -28,7 +28,7 @@ public static partial class Requete
 
     private static StrucConfig.Themes GetThemeValues(IDataRecord reader)
     {
-        var th = new StrucConfig.Themes
+        return new StrucConfig.Themes
         {
             Lock = Convert.ToBoolean(int.Parse(reader["lock"].ToString()!)),
             Name = reader["name"].ToString()!,
@@ -42,7 +42,6 @@ public static partial class Requete
                 new() { Name = "RgbB3", StyleValue = Fonction.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) }
             }
         };
-        return th;
     }
 
     public static StrucConfig.Themes GetActualStyle()

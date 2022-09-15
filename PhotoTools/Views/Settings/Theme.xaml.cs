@@ -23,7 +23,7 @@ public partial class Theme
 
     private void Ui()
     {
-        _listButton = new List<Button>{ RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
+        _listButton = new List<Button> { RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
         FillComboStyle();
     }
 
@@ -35,6 +35,7 @@ public partial class Theme
         {
             CbStyle.Items.Add(theme.Name);
         }
+
         CbStyle.SelectedValue = Config.Configue.Theme.Name;
     }
 
@@ -49,9 +50,9 @@ public partial class Theme
             }
         }
     }
+
     private void ButtonThemesTooltip()
     {
-        
         foreach (var button in _listButton!)
         {
             ButtonThemeToolTip(button);
@@ -65,7 +66,7 @@ public partial class Theme
         var green = background.G;
         var blue = background.B;
         var hexa = $"{red:X}{green:X}{blue:X}";
-        
+
         var colorTitre = new TextBlock { Text = Utils.Trad.ColorEdit.ButtonThemeToolTip, Margin = new Thickness(3) };
         var colorValue = new TextBlock
         {
@@ -104,8 +105,8 @@ public partial class Theme
 
     private void CbStyle_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        AddNewTheme(false);
-        
+        AddNewThemeVisibility(false);
+
         if (CbStyle.SelectedItem == null) return;
         var selectedTheme = CbStyle.SelectedItem.ToString();
 
@@ -113,11 +114,12 @@ public partial class Theme
 
         ButtonThemesBackground(theme);
         ButtonThemesTooltip();
-        
+
         ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
         ThemeLock.Tag = theme.Lock;
         ThemeLock.ToolTip = new ToolTip() { Content = $"Lock = {theme.Lock}" };
     }
+
     private static string GetImgLock(StrucConfig.Themes theme)
     {
         return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
@@ -128,12 +130,10 @@ public partial class Theme
     {
         //TODO make function to add new theme theme
         Console.WriteLine("add new theme");
-        AddNewTheme(true);
-        
-
+        AddNewThemeVisibility(true);
     }
 
-    private void AddNewTheme(bool newTheme)
+    private void AddNewThemeVisibility(bool newTheme)
     {
         if (newTheme)
         {
@@ -148,6 +148,41 @@ public partial class Theme
             CbStyle.IsEditable = newTheme;
             BtNewThemeValid.Visibility = Visibility.Hidden;
         }
+    }
 
+    private void AddNewStyle_OnClick(object sender, RoutedEventArgs e)
+    {
+        var name = CbStyle.Text;
+
+        if (name.Equals(string.Empty))
+        {
+            // todo Message pour avertir que le nom du thème ne peut pas etre vide
+            Console.WriteLine("Le nom ne peut pas étre vide");
+        }
+        else if (name.Equals("deja existant"))
+        {
+            // todo Message pour avertir que le nom du thème ne peut pas etre deja utiliser
+            // todo check pour nom en doublon
+            Console.WriteLine("Nom deja utilisé");
+        }
+        else
+        {
+            // todo fonction pour enregistrer le theme
+            var th = new StrucConfig.Themes
+            {
+                Name = name,
+                Value = new List<StrucConfig.StyleColorBrush>()
+            };
+
+            foreach (var btn in _listButton!)
+            {
+                th.Value.Add(new StrucConfig.StyleColorBrush
+                {
+                    Name = btn.Name.Insert(3, "_").ToLower(),
+                    StyleValue = (SolidColorBrush)btn.Background
+                });
+            }
+            Console.WriteLine("hey");
+        }
     }
 }
