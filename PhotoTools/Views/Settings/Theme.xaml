@@ -14,15 +14,19 @@
             <Grid Height="23" Margin="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="12*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Row="0" x:Name="BtNewTheme" Grid.Column="0" Click="BtNewTheme_OnClick">
+                <Button x:Name="BtNewTheme" Grid.Column="0" Click="BtNewTheme_OnClick">
                     <Image Source="{StaticResource BasicUi067-Plus}"/>
                 </Button>
-                <ComboBox Grid.Column="1" x:Name="CbStyle" SelectionChanged="CbStyle_OnSelectionChanged"/>
-                <TextBox Grid.Column="1" x:Name="TbxStyle" Visibility="Hidden"/>
-                <Image Grid.Row="0" Grid.Column="2" x:Name="ThemeLock"/>
+                <Button x:Name="BtDelTheme" Grid.Column="1" Click="BtDelTheme_OnClick">
+                    <Image Source="{StaticResource BasicUi089-Trash}"/>
+                </Button>
+                <ComboBox Grid.Column="2" x:Name="CbStyle" SelectionChanged="CbStyle_OnSelectionChanged"/>
+                <TextBox Grid.Column="3" x:Name="TbxStyle" Visibility="Hidden"/>
+                <Image Grid.Row="0" Grid.Column="3" x:Name="ThemeLock"/>
             </Grid>
             
                 <!-- Affichage des coleurs principale -->
@@ -62,9 +66,9 @@
                 </StackPanel>
             </StackPanel>
                 <!-- todo changer text -->
-                <StackPanel x:Name="BtNewThemeValid" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
+                <StackPanel x:Name="BtNewThemePanel" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
                     <Button Content="Valider" Click="AddNewStyle_OnClick"/>
-                    <Button Content="Annuler"/>
+                    <Button Content="Annuler" Click="BtNewTheme_OnClick"/>
                 </StackPanel>
         </StackPanel>
     </Grid>

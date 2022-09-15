@@ -19,28 +19,29 @@ public partial class Theme
     public Theme()
     {
         InitializeComponent();
+        _listButton = new List<Button> { RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
         Ui();
     }
 
-    private void Ui()
-    {
-        _listButton = new List<Button> { RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
-        FillComboStyle();
-    }
+    #region Function
 
-    private void FillComboStyle(string? name=null)
+    private void AddNewThemeVisibility(bool newTheme)
     {
-        CbStyle.Items.Clear();
-        var themes = Query.GetAllThemes();
-        foreach (var theme in themes)
+        if (newTheme)
         {
-            CbStyle.Items.Add(theme.Name);
+            BtNewTheme.IsEnabled = !newTheme;
+            BtNewThemePanel.Visibility = Visibility.Visible;
+            TbxStyle.Visibility = Visibility.Visible;
+            TbxStyle.Text = string.Empty;
         }
-
-        name ??= Config.Configue.Theme.Name;
-        CbStyle.SelectedValue = name;
+        else
+        {
+            BtNewTheme.IsEnabled = !newTheme;
+            BtNewThemePanel.Visibility = Visibility.Hidden;
+            TbxStyle.Visibility = Visibility.Hidden;
+        }
     }
-
+    
     private void ButtonThemesBackground(StrucConfig.Themes theme)
     {
         foreach (var button in _listButton!)
@@ -52,7 +53,7 @@ public partial class Theme
             }
         }
     }
-
+    
     private void ButtonThemesTooltip()
     {
         foreach (var button in _listButton!)
@@ -80,76 +81,34 @@ public partial class Theme
         button.ToolTip = new ToolTip
             { Placement = PlacementMode.Center, StaysOpen = true, IsOpen = false, Content = stack };
     }
-
-    private void Rgb_OnClick(object sender, RoutedEventArgs e)
+    
+    private void FillComboStyle(string? name=null)
     {
-        if (!(bool)ThemeLock.Tag)
+        CbStyle.Items.Clear();
+        var themes = Query.GetAllThemes();
+        foreach (var theme in themes)
         {
-            var btn = (Button)sender;
-            var background = ((SolidColorBrush)btn.Background).Color;
-            var red = background.R;
-            var green = background.G;
-            var blue = background.B;
-
-            ColorEdit.InstanceColorEdit!.ColorPicker.Color.RGB_R = red;
-            ColorEdit.InstanceColorEdit.ColorPicker.Color.RGB_G = green;
-            ColorEdit.InstanceColorEdit.ColorPicker.Color.RGB_B = blue;
-            ColorEdit.InstanceColorEdit.Btn = btn;
-
-            MainSettingView.InstanceMainSettingView!.ChangeTabItem("TabColorChange");
+            CbStyle.Items.Add(theme.Name);
         }
-        else
-        {
-            //todo afficher un message d'erreur car le theme est non modifiable
-            Console.WriteLine("Sorry but this theme is locked");
-        }
+
+        name ??= Config.Configue.Theme.Name;
+        CbStyle.SelectedValue = name;
     }
-
-    private void CbStyle_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        AddNewThemeVisibility(false);
-
-        if (CbStyle.SelectedItem == null) return;
-        var selectedTheme = CbStyle.SelectedItem.ToString();
-
-        var theme = Query.GetStyle(selectedTheme!);
-
-        ButtonThemesBackground(theme);
-        ButtonThemesTooltip();
-
-        ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
-        ThemeLock.Tag = theme.Lock;
-        ThemeLock.ToolTip = new ToolTip() { Content = $"Lock = {theme.Lock}" };
-    }
-
+    
     private static string GetImgLock(StrucConfig.Themes theme)
     {
         return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
         //return theme.Lock ? "Login006-Lock-2" : "BasicUi067-Plus";
     }
-
-    private void BtNewTheme_OnClick(object sender, RoutedEventArgs e)
+    
+    private void Ui()
     {
-        Console.WriteLine("add new theme");
-        AddNewThemeVisibility(true);
+        FillComboStyle();
     }
 
-    private void AddNewThemeVisibility(bool newTheme)
-    {
-        if (newTheme)
-        {
-            BtNewTheme.IsEnabled = !newTheme;
-            BtNewThemeValid.Visibility = Visibility.Visible;
-            TbxStyle.Visibility = Visibility.Visible;
-            TbxStyle.Text = string.Empty;
-        }
-        else
-        {
-            BtNewTheme.IsEnabled = !newTheme;
-            BtNewThemeValid.Visibility = Visibility.Hidden;
-            TbxStyle.Visibility = Visibility.Hidden;
-        }
-    }
+    #endregion
+
+    #region Action
 
     private void AddNewStyle_OnClick(object sender, RoutedEventArgs e)
     {
@@ -195,4 +154,57 @@ public partial class Theme
 
         }
     }
+    
+    private void BtDelTheme_OnClick(object sender, RoutedEventArgs e)
+    {
+        throw new NotImplementedException();
+    }
+    
+    private void BtNewTheme_OnClick(object sender, RoutedEventArgs e)
+    {
+        AddNewThemeVisibility(((Button)sender).Equals(BtNewTheme));
+    }
+    
+    private void CbStyle_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        AddNewThemeVisibility(false);
+
+        if (CbStyle.SelectedItem == null) return;
+        var selectedTheme = CbStyle.SelectedItem.ToString();
+
+        var theme = Query.GetStyle(selectedTheme!);
+
+        ButtonThemesBackground(theme);
+        ButtonThemesTooltip();
+
+        ThemeLock.Source = (ImageSource)Application.Current.FindResource(GetImgLock(theme))!;
+        ThemeLock.Tag = theme.Lock;
+        ThemeLock.ToolTip = new ToolTip() { Content = $"Lock = {theme.Lock}" };
+    }
+    
+    private void Rgb_OnClick(object sender, RoutedEventArgs e)
+    {
+        if (!(bool)ThemeLock.Tag)
+        {
+            var btn = (Button)sender;
+            var background = ((SolidColorBrush)btn.Background).Color;
+            var red = background.R;
+            var green = background.G;
+            var blue = background.B;
+
+            ColorEdit.InstanceColorEdit!.ColorPicker.Color.RGB_R = red;
+            ColorEdit.InstanceColorEdit.ColorPicker.Color.RGB_G = green;
+            ColorEdit.InstanceColorEdit.ColorPicker.Color.RGB_B = blue;
+            ColorEdit.InstanceColorEdit.Btn = btn;
+
+            MainSettingView.InstanceMainSettingView!.ChangeTabItem("TabColorChange");
+        }
+        else
+        {
+            //todo afficher un message d'erreur car le theme est non modifiable
+            Console.WriteLine("Sorry but this theme is locked");
+        }
+    }
+
+    #endregion
 }
