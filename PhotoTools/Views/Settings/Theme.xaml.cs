@@ -65,9 +65,8 @@ public partial class Theme
         var green = background.G;
         var blue = background.B;
         var hexa = $"{red:X}{green:X}{blue:X}";
-
-
-        var colorTitre = new TextBlock { Text = "Red:\nGreen:\nBlue:\nHexa:", Margin = new Thickness(3) };
+        
+        var colorTitre = new TextBlock { Text = Utils.Trad.ColorEdit.ButtonThemeToolTip, Margin = new Thickness(3) };
         var colorValue = new TextBlock
         {
             Text = $"{red}\n{green}\n{blue}\n{hexa}", Margin = new Thickness(3), TextAlignment = TextAlignment.Center
@@ -98,6 +97,7 @@ public partial class Theme
         }
         else
         {
+            //todo afficher un message d'erreur car le theme est non modifiable
             Console.WriteLine("Sorry but this theme is locked");
         }
     }
