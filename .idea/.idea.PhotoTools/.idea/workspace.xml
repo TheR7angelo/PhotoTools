@@ -7,9 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added function to switch name theme">
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Query.cs" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added function to check if theme name already exist">
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,14 +138,7 @@
       <workItem from="1662639429329" duration="2425000" />
       <workItem from="1663068610910" duration="94000" />
       <workItem from="1663069319850" duration="4891000" />
-      <workItem from="1663222554095" duration="12493000" />
-    </task>
-    <task id="LOCAL-00009" summary="Added image for messagebox and test in changing language function">
-      <created>1662365346445</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1662365346445</updated>
+      <workItem from="1663222554095" duration="12895000" />
     </task>
     <task id="LOCAL-00010" summary="Added icon base">
       <created>1662366037882</created>
@@ -484,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663235199391</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="added function to check if theme name already exist">
+      <created>1663235665070</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1663235665070</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +505,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Change style for ui" />
     <MESSAGE value="added color GlowBrush" />
     <MESSAGE value="added default style for TabControl" />
     <MESSAGE value="making note" />
@@ -531,26 +529,8 @@
     <MESSAGE value="moving files" />
     <MESSAGE value="refractor" />
     <MESSAGE value="added function to switch name theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added function to switch name theme" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs</url>
-          <line>156</line>
-          <properties documentPath="C:\Users\ZP6177\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Views\Settings\Theme.xaml.cs" initialLine="156" containingFunctionPresentation="method 'AddNewStyle_OnClick'">
-            <startOffsets>
-              <option value="4726" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4760" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added function to check if theme name already exist" />
+    <option name="LAST_COMMIT_MESSAGE" value="added function to check if theme name already exist" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

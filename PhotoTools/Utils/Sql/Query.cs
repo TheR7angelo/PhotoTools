@@ -29,7 +29,7 @@ public static partial class Query
         foreach (var th in theme.Value)
         {
             listCol.Add(th.Name);
-            listVal.Add($"'{th.StyleValue.Color.ToHex()}'");
+            listVal.Add($"'{th.StyleValue.ToHex()}'");
         }
         return $"INSERT INTO t_style (name, {string.Join(", ", listCol)}) VALUES ('{theme.Name}', {string.Join(", ", listVal)})";
     }

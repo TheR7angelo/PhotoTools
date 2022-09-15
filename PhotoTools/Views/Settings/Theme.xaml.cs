@@ -160,7 +160,6 @@ public partial class Theme
             // todo Message pour avertir que le nom du thème ne peut pas etre vide
             Console.WriteLine("Le nom ne peut pas étre vide");
         }
-        // todo use this function
         else if (Query.GetThemeExist(name))
         {
             // todo Message pour avertir que le nom du thème ne peut pas etre deja utiliser
@@ -168,7 +167,6 @@ public partial class Theme
         }
         else
         {
-            // todo fonction pour enregistrer le theme
             var th = new StrucConfig.Themes
             {
                 Name = name,
@@ -186,7 +184,6 @@ public partial class Theme
 
             var apply = Query.AddTheme(th);
             // todo ajout un message si enregistrement réussi ou non
-
             if (apply)
             {
                 Console.WriteLine("new theme: yes");
