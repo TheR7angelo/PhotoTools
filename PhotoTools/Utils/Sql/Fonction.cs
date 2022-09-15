@@ -8,6 +8,19 @@ namespace PhotoTools.Sql;
 
 public static partial class Query
 {
+    public static bool DeleteTheme(this string name)
+    {
+        try
+        {
+            Execute(_DeleteTheme(name));
+            return true;
+        }
+        catch (Exception)
+        {
+            return false;
+        }
+        
+    }
     public static bool GetThemeExist(string name)
     {
         var reader = ExecuteReader(_GetThemeExist(name));

@@ -157,7 +157,16 @@ public partial class Theme
     
     private void BtDelTheme_OnClick(object sender, RoutedEventArgs e)
     {
-        throw new NotImplementedException();
+        if (!(bool)ThemeLock.Tag)
+        {
+            var apply = CbStyle.Text!.DeleteTheme();
+            if // todo finir la fonction de delete theme
+        }
+        else
+        {
+            //todo afficher un message d'erreur car le theme est non supprimable
+            Console.WriteLine("Sorry but this theme is locked you can't delete");
+        }
     }
     
     private void BtNewTheme_OnClick(object sender, RoutedEventArgs e)
@@ -202,7 +211,7 @@ public partial class Theme
         else
         {
             //todo afficher un message d'erreur car le theme est non modifiable
-            Console.WriteLine("Sorry but this theme is locked");
+            Console.WriteLine("Sorry but this theme is locked you can't modifed it");
         }
     }
 
