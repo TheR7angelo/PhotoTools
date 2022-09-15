@@ -6,6 +6,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 using PhotoTools.Sql;
+using PhotoTools.Utils;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Strucs;
 
@@ -61,11 +62,11 @@ public partial class Theme
 
     public static void ButtonThemeToolTip(Control button)
     {
-        var background = ((SolidColorBrush)button.Background).Color;
-        var red = background.R;
-        var green = background.G;
-        var blue = background.B;
-        var hexa = $"{red:X}{green:X}{blue:X}";
+        var color = ((SolidColorBrush)button.Background).Color;
+        var red = color.R;
+        var green = color.G;
+        var blue = color.B;
+        var hexa = color.ToHex();
 
         var colorTitre = new TextBlock { Text = Utils.Trad.ColorEdit.ButtonThemeToolTip, Margin = new Thickness(3) };
         var colorValue = new TextBlock
@@ -137,23 +138,21 @@ public partial class Theme
     {
         if (newTheme)
         {
-            CbStyle.IsEnabled = false;
-            BtNewTheme.IsEnabled = false;
-            BtNewThemeValid.Visibility = Visibility.Hidden;
+            BtNewTheme.IsEnabled = !newTheme;
+            BtNewThemeValid.Visibility = Visibility.Visible;
             TbxStyle.Visibility = Visibility.Visible;
         }
         else
         {
-            BtNewTheme.IsEnabled = true;
-            CbStyle.IsEditable = newTheme;
-            BtNewThemeValid.Visibility = Visibility.Visible;
+            BtNewTheme.IsEnabled = !newTheme;
+            BtNewThemeValid.Visibility = Visibility.Hidden;
             TbxStyle.Visibility = Visibility.Hidden;
         }
     }
 
     private void AddNewStyle_OnClick(object sender, RoutedEventArgs e)
     {
-        var name = CbStyle.Text;
+        var name = TbxStyle.Text;
 
         if (name.Equals(string.Empty))
         {

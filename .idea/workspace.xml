@@ -7,7 +7,14 @@
     <list default="true" id="20c50975-6d46-4720-97cc-95d849124453" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/d6a60639-ffa0-404c-94bc-59ae822ac1b9.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Constant/DataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/DataBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Constant/Date.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Date.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Constant/Directory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

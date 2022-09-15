@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Media;
 using Microsoft.Toolkit.Uwp.Notifications;
 using PhotoTools.Utils.Config;
+using PhotoTools.Utils.Sql;
 
 namespace PhotoTools.Window
 {
@@ -89,7 +90,7 @@ namespace PhotoTools.Window
 
         private void OnApplicationExit(object? sender, CancelEventArgs e)
         {
-            Sql.Connection.CloseBdds();
+            Connection.CloseBdds();
         }
     }
 }

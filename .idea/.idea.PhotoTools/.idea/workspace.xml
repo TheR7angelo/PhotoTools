@@ -7,18 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor and add textbox for title of style">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Function/Create/Folder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Function/Create/Folder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Bdds/Main.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Connection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/d6a60639-ffa0-404c-94bc-59ae822ac1b9.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Constant/DataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/DataBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Constant/Date.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Date.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Constant/Directory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Requete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Query.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +39,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50f0ff8c82e64eec8d5d9367561f6719166aba0/1d/ac91f6b4/MouseEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/2b/ec2b7b65/SQLiteDataReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/48/3f30fa0b/Visibility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/c7/4ef76f01/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/eb/17b5b3d5/TraceRoutedEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b03f0e903e36436cb2607b63b44f160e15f898/70/eb3cedb2/PartialTrustTolerantRuntime.cs" root0="SKIP_HIGHLIGHTING" />
@@ -52,6 +51,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5a797ca92a578f6e5ea8cf99e224acee2df4fb7cfbfb0ed1f34a1685a4ddae4/XamlReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5ab987bfd4bbcb1c96a936fa0fedfd488a291658f991ddcae783bea1b34bdd1/ToggleButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6879c9ed20391a5ccfea363be5964fbcfe4f1dfde9558aa84b36df6b6ec92c6/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6a61c4e52cff5fdd5eff5f4db293532b6024f1103492107cd5575671cdb/SafeFileHandle.Windows.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7977fbd944152f51647ff2ab17233d94dd58c49f4447cbda8b8bac30a8c2bbd/ClrObjectRuntime.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/79995d1ad792522127a852195f8ae8a7d5dff498c25f5f161ee1bf2a1d623f9/Visual.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,6 +67,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7bdef8686489167e6bcc2498e93448cc314a7e6c78ad16fbe54b83ca84622/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ecc6a344e27f6cb5259bfb338530766215fab272df4395d6ba48f376fbe/Parsers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Sql/Fonction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Config/Config.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
@@ -143,14 +144,7 @@
       <workItem from="1662639429329" duration="2425000" />
       <workItem from="1663068610910" duration="94000" />
       <workItem from="1663069319850" duration="4891000" />
-      <workItem from="1663222554095" duration="8254000" />
-    </task>
-    <task id="LOCAL-00005" summary="Update Commit function">
-      <created>1662230017506</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1662230017507</updated>
+      <workItem from="1663222554095" duration="10190000" />
     </task>
     <task id="LOCAL-00006" summary="Commit">
       <created>1662282270445</created>
@@ -488,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663229700987</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="refractor and add textbox for title of style">
+      <created>1663231534161</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1663231534161</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +511,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added image Login003-Id-Card-1" />
     <MESSAGE value="Refractor color" />
     <MESSAGE value="Added function to display theme color" />
     <MESSAGE value="Change style for ui" />
@@ -535,39 +535,8 @@
     <MESSAGE value="Added function for modified theme" />
     <MESSAGE value="added check new theme" />
     <MESSAGE value="commit ?" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit ?" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Sql/Query.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\Users\ZP6177\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Sql\Requete.cs" initialLine="19" containingFunctionPresentation="method '_AddTheme'">
-            <startOffsets>
-              <option value="485" />
-            </startOffsets>
-            <endOffsets>
-              <option value="518" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs</url>
-          <line>155</line>
-          <properties documentPath="C:\Users\ZP6177\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Views\Settings\Theme.xaml.cs" initialLine="156" containingFunctionPresentation="method 'AddNewStyle_OnClick'">
-            <startOffsets>
-              <option value="4672" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4702" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refractor and add textbox for title of style" />
+    <option name="LAST_COMMIT_MESSAGE" value="refractor and add textbox for title of style" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

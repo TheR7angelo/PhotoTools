@@ -13,7 +13,6 @@ public static partial class Query
         try
         {
             Execute(_AddTheme(th));
-            
             return true;
         }
         catch (Exception)

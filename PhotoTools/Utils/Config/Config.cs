@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Media;
 using PhotoTools.Constant;
 using PhotoTools.Sql;
+using PhotoTools.Utils.Sql;
 using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Utils.Config;

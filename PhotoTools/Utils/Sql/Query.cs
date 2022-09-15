@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.IO;
+using PhotoTools.Utils;
 using PhotoTools.Utils.Config;
+using PhotoTools.Utils.Sql;
 using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Sql;
@@ -23,11 +25,9 @@ public static partial class Query
         foreach (var th in theme.Value)
         {
             listCol.Add(th.Name);
-            var t = th.StyleValue;
+            listVal.Add($"'{th.StyleValue.Color.ToHex()}'");
         }
-        Console.WriteLine("hey");
-        var cmd = $"INSERT INTO ";
-        return cmd;
+        return $"INSERT INTO t_style (name, {string.Join(", ", listCol)}) VALUES ('{theme.Name}', {string.Join(", ", listVal)})";
     }
     
     private static string _GetStyle(string theme)

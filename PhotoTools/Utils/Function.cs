@@ -5,6 +5,10 @@ namespace PhotoTools.Utils;
 
 public static class Function
 {
+    public static string ToHex(this Color color)
+    {
+        return $"#{color.A:X}{color.R:X}{color.G:X}{color.B:X}";
+    }
     public static SolidColorBrush SolidColorBrushConvert(string code)
     {
         return (SolidColorBrush)new BrushConverter().ConvertFromString(code)!;
