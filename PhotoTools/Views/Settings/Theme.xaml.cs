@@ -160,10 +160,10 @@ public partial class Theme
             // todo Message pour avertir que le nom du thème ne peut pas etre vide
             Console.WriteLine("Le nom ne peut pas étre vide");
         }
-        else if (name.Equals("deja existant"))
+        // todo use this function
+        else if (Query.GetThemeExist(name))
         {
             // todo Message pour avertir que le nom du thème ne peut pas etre deja utiliser
-            // todo check pour nom en doublon
             Console.WriteLine("Nom deja utilisé");
         }
         else

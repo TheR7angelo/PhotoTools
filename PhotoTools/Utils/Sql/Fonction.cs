@@ -8,6 +8,12 @@ namespace PhotoTools.Sql;
 
 public static partial class Query
 {
+    public static bool GetThemeExist(string name)
+    {
+        var reader = ExecuteReader(_GetThemeExist(name));
+        reader.Read();
+        return reader.HasRows;
+    }
     public static bool AddTheme(StrucConfig.Themes th)
     {
         try

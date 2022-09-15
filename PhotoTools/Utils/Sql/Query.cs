@@ -17,6 +17,10 @@ public static partial class Query
         return $"ATTACH DATABASE '{path}' as {filename}";
     }
 
+    private static string _GetThemeExist(string name)
+    {
+        return $"SELECT name FROM main.t_style WHERE name='{name}'";
+    }
     private static string _AddTheme(StrucConfig.Themes theme)
     {
         var listCol = new List<string>();
