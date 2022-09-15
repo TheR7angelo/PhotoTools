@@ -30,6 +30,7 @@ public partial class Theme
         if (newTheme)
         {
             BtNewTheme.IsEnabled = !newTheme;
+            CbStyle.Visibility = Visibility.Hidden;
             BtNewThemePanel.Visibility = Visibility.Visible;
             TbxStyle.Visibility = Visibility.Visible;
             TbxStyle.Text = string.Empty;
@@ -37,6 +38,7 @@ public partial class Theme
         else
         {
             BtNewTheme.IsEnabled = !newTheme;
+            CbStyle.Visibility = Visibility.Visible;
             BtNewThemePanel.Visibility = Visibility.Hidden;
             TbxStyle.Visibility = Visibility.Hidden;
         }
@@ -159,8 +161,17 @@ public partial class Theme
     {
         if (!(bool)ThemeLock.Tag)
         {
-            var apply = CbStyle.Text!.DeleteTheme();
-            if // todo finir la fonction de delete theme
+            var name = CbStyle.Text!;
+            var apply = name.DeleteTheme();
+            if (apply)
+            {
+                FillComboStyle();
+                Console.WriteLine($"Le theme \"{name}\" à bien étais supprimer");
+            }
+            else
+            {
+                Console.WriteLine($"Une erreur vous à empecher de supprimer le theme \"{name}\"");
+            }
         }
         else
         {

@@ -21,11 +21,11 @@
                 <Button x:Name="BtNewTheme" Grid.Column="0" Click="BtNewTheme_OnClick">
                     <Image Source="{StaticResource BasicUi067-Plus}"/>
                 </Button>
-                <Button x:Name="BtDelTheme" Grid.Column="1" Click="BtDelTheme_OnClick">
+                <Button Grid.Column="1" Click="BtDelTheme_OnClick">
                     <Image Source="{StaticResource BasicUi089-Trash}"/>
                 </Button>
                 <ComboBox Grid.Column="2" x:Name="CbStyle" SelectionChanged="CbStyle_OnSelectionChanged"/>
-                <TextBox Grid.Column="3" x:Name="TbxStyle" Visibility="Hidden"/>
+                <TextBox Grid.Column="2" x:Name="TbxStyle" Visibility="Hidden"/>
                 <Image Grid.Row="0" Grid.Column="3" x:Name="ThemeLock"/>
             </Grid>
             
