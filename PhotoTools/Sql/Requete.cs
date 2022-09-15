@@ -2,6 +2,7 @@
 using System.Data.SQLite;
 using System.IO;
 using PhotoTools.Utils.Config;
+using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Sql;
 
@@ -13,6 +14,12 @@ public static partial class Requete
         return $"ATTACH DATABASE '{path}' as {filename}";
     }
 
+    private static string _AddTheme(StrucConfig.Themes th)
+    {
+        Console.WriteLine("hey");
+        var cmd = $"INSERT INTO "
+    }
+    
     private static string _GetStyle(string theme)
     {
         return $"SELECT * FROM main.t_style WHERE name='{theme}'";

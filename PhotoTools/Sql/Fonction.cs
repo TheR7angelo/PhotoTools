@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SQLite;
 using PhotoTools.Utils;
 using PhotoTools.Utils.Strucs;
 
@@ -9,6 +8,20 @@ namespace PhotoTools.Sql;
 
 public static partial class Requete
 {
+    public static bool AddTheme(StrucConfig.Themes th)
+    {
+        try
+        {
+            Execute(_AddTheme(th));
+            
+            return true;
+        }
+        catch (Exception)
+        {
+            return false;
+        }
+        
+    }
     public static StrucConfig.Themes GetStyle(string theme)
     {
         var reader = ExecuteReader(_GetStyle(theme));

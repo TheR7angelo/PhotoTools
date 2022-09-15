@@ -128,7 +128,7 @@ public partial class Theme
 
     private void BtNewTheme_OnClick(object sender, RoutedEventArgs e)
     {
-        //TODO make function to add new theme theme
+        //todo make function to add new theme theme
         Console.WriteLine("add new theme");
         AddNewThemeVisibility(true);
     }
@@ -182,7 +182,12 @@ public partial class Theme
                     StyleValue = (SolidColorBrush)btn.Background
                 });
             }
+
+            var apply = Requete.AddTheme(th);
+            // todo ajout un message si enregistrement réussi ou non
             Console.WriteLine("hey");
+            var txt = apply ? "Yes" : "No";
+            Console.WriteLine($"new theme: {txt}");
         }
     }
 }
