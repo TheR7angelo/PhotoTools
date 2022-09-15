@@ -166,6 +166,7 @@ public partial class Theme
             if (apply)
             {
                 FillComboStyle();
+                // todo message pour avertir de la suppression
                 Console.WriteLine($"Le theme \"{name}\" à bien étais supprimer");
             }
             else
