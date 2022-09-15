@@ -24,18 +24,21 @@
     <ItemGroup>
       <None Remove="Sql\Bdds\Language.sqlite" />
       <None Remove="Utils\Img\parametres.png" />
-      <AdditionalFiles Include="Sql\Bdds\Language.sqlite">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </AdditionalFiles>
       <None Remove="Sql\Bdds\Main.sqlite" />
-      <AdditionalFiles Include="Sql\Bdds\Main.sqlite">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </AdditionalFiles>
       <None Remove="Sql\Bdds\Progress.sqlite" />
-      <AdditionalFiles Include="Sql\Bdds\Progress.sqlite">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </AdditionalFiles>
       <None Remove="app.config" />
+      <None Remove="Utils\Sql\Bdds\Language.sqlite" />
+      <AdditionalFiles Include="Utils\Sql\Bdds\Language.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
+      <None Remove="Utils\Sql\Bdds\Main.sqlite" />
+      <AdditionalFiles Include="Utils\Sql\Bdds\Main.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
+      <None Remove="Utils\Sql\Bdds\Progress.sqlite" />
+      <AdditionalFiles Include="Utils\Sql\Bdds\Progress.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
     </ItemGroup>
 
     <ItemGroup>

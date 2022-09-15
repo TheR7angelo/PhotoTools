@@ -7,17 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor and add textbox for title of style">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="moving files">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/d6a60639-ffa0-404c-94bc-59ae822ac1b9.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Constant/DataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/DataBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Constant/Date.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Date.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Constant/Directory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Sql/Query.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +31,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13f52135aee24447a5e1961d367aff7c1fe00/ba/9d5f23d8/StandardColorPicker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50f0ff8c82e64eec8d5d9367561f6719166aba0/1d/ac91f6b4/MouseEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/2b/ec2b7b65/SQLiteDataReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/4a/ad333000/SQLiteConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/48/3f30fa0b/Visibility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b27cf5ac6874b659efc9064e80061b583b898/c7/4ef76f01/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
@@ -144,14 +138,7 @@
       <workItem from="1662639429329" duration="2425000" />
       <workItem from="1663068610910" duration="94000" />
       <workItem from="1663069319850" duration="4891000" />
-      <workItem from="1663222554095" duration="10190000" />
-    </task>
-    <task id="LOCAL-00006" summary="Commit">
-      <created>1662282270445</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1662282270445</updated>
+      <workItem from="1663222554095" duration="10658000" />
     </task>
     <task id="LOCAL-00007" summary="Change struc for configuration">
       <created>1662284310205</created>
@@ -489,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663231534161</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="moving files">
+      <created>1663233410596</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1663233410596</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +505,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Refractor color" />
     <MESSAGE value="Added function to display theme color" />
     <MESSAGE value="Change style for ui" />
     <MESSAGE value="added color GlowBrush" />
@@ -536,7 +529,8 @@
     <MESSAGE value="added check new theme" />
     <MESSAGE value="commit ?" />
     <MESSAGE value="refractor and add textbox for title of style" />
-    <option name="LAST_COMMIT_MESSAGE" value="refractor and add textbox for title of style" />
+    <MESSAGE value="moving files" />
+    <option name="LAST_COMMIT_MESSAGE" value="moving files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
