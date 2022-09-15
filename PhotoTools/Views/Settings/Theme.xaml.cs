@@ -104,6 +104,8 @@ public partial class Theme
 
     private void CbStyle_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
+        AddNewTheme(false);
+        
         if (CbStyle.SelectedItem == null) return;
         var selectedTheme = CbStyle.SelectedItem.ToString();
 
@@ -126,10 +128,26 @@ public partial class Theme
     {
         //TODO make function to add new theme theme
         Console.WriteLine("add new theme");
-        CbStyle.IsEditable = true;
-        CbStyle.Text = string.Empty;
-        BtNewTheme.IsEnabled = false;
-        BtNewThemeValid.Visibility = Visibility.Visible;
+        AddNewTheme(true);
+        
+
+    }
+
+    private void AddNewTheme(bool newTheme)
+    {
+        if (newTheme)
+        {
+            CbStyle.Text = string.Empty;
+            BtNewTheme.IsEnabled = false;
+            CbStyle.IsEditable = newTheme;
+            BtNewThemeValid.Visibility = Visibility.Visible;
+        }
+        else
+        {
+            BtNewTheme.IsEnabled = true;
+            CbStyle.IsEditable = newTheme;
+            BtNewThemeValid.Visibility = Visibility.Hidden;
+        }
 
     }
 }
