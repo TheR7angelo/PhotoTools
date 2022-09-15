@@ -59,8 +59,10 @@
                 </StackPanel>
             </StackPanel>
                 <!-- todo changer text -->
-                <Button Content="Valider"/>
-                <Button Content="Annuler"/>
+                <StackPanel x:Name="BtNewThemeValid" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
+                    <Button Content="Valider"/>
+                    <Button Content="Annuler"/>
+                </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>
