@@ -14,12 +14,12 @@ namespace PhotoTools.Views.Settings;
 
 public partial class Theme
 {
-    private List<Button>? _listButton;
+    private List<Button>? ListButton { get;}
 
     public Theme()
     {
         InitializeComponent();
-        _listButton = new List<Button> { RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
+        ListButton = new List<Button> { RgbM1, RgbM2, RgbM3, RgbB1, RgbB2, RgbB3 };
         Ui();
     }
 
@@ -46,7 +46,7 @@ public partial class Theme
     
     private void ButtonThemesBackground(StrucConfig.Themes theme)
     {
-        foreach (var button in _listButton!)
+        foreach (var button in ListButton!)
         {
             foreach (var value in theme.Value.Where(value => value.Name.Equals(button.Name)))
             {
@@ -58,7 +58,7 @@ public partial class Theme
     
     private void ButtonThemesTooltip()
     {
-        foreach (var button in _listButton!)
+        foreach (var button in ListButton!)
         {
             ButtonThemeToolTip(button);
         }
@@ -134,7 +134,7 @@ public partial class Theme
                 Value = new List<StrucConfig.StyleColorBrush>()
             };
 
-            foreach (var btn in _listButton!)
+            foreach (var btn in ListButton!)
             {
                 th.Value.Add(new StrucConfig.StyleColorBrush
                 {

@@ -7,18 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added geometry github">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/33a0dca4-3c89-4032-958e-4fc9ada16a2c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/33a0dca4-3c89-4032-958e-4fc9ada16a2c/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/33a0dca4-3c89-4032-958e-4fc9ada16a2c/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/c6b5c690-4648-41d8-af44-0e20db581f51.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/c6b5c690-4648-41d8-af44-0e20db581f51/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/c6b5c690-4648-41d8-af44-0e20db581f51/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/f5061267-ba3f-41b8-9c8e-6d9576e1e6fe.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/f5061267-ba3f-41b8-9c8e-6d9576e1e6fe/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/f5061267-ba3f-41b8-9c8e-6d9576e1e6fe/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_2022_18_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_2022_18_06__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_14_09_2022_08_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_14_09_2022_08_21__Changes_.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added todo">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
@@ -36,6 +25,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9b35bc5d5da43a49af8d74dac7ab37ccc1bb654cb7dfe8f9a21501181ed9b/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -243,7 +233,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663085427822</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added function to delete theme">
+      <created>1663263861534</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663263861534</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added todo">
+      <created>1663263940286</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1663263940286</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +267,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Start making version file" />
     <MESSAGE value="Delete" />
@@ -283,7 +288,9 @@
     <MESSAGE value="Rename variable" />
     <MESSAGE value="added column modifiable in t_style" />
     <MESSAGE value="added geometry github" />
-    <option name="LAST_COMMIT_MESSAGE" value="added geometry github" />
+    <MESSAGE value="added function to delete theme" />
+    <MESSAGE value="added todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added todo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
