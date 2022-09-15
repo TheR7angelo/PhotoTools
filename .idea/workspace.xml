@@ -6,10 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="20c50975-6d46-4720-97cc-95d849124453" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/86e97449-6054-4abc-bf0a-687102f0a3d1.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/ffd7ae99-f5c7-46c7-906c-3b886de9dbbb.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/v17/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/phototools.metadata.v5.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/phototools.projects.v5.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

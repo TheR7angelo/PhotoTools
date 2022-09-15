@@ -7,10 +7,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="moving files">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/86e97449-6054-4abc-bf0a-687102f0a3d1.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/ffd7ae99-f5c7-46c7-906c-3b886de9dbbb.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/v17/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PhotoTools/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/phototools.metadata.v5.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/phototools.projects.v5.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +73,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ecc6a344e27f6cb5259bfb338530766215fab272df4395d6ba48f376fbe/Parsers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Sql/Fonction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Config/Config.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
@@ -77,26 +89,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.49624062&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ReSharper&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.49624062",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="PhotoTools" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/PhotoTools/bin/Debug/net7.0/PhotoTools.exe" />
@@ -138,14 +150,7 @@
       <workItem from="1662639429329" duration="2425000" />
       <workItem from="1663068610910" duration="94000" />
       <workItem from="1663069319850" duration="4891000" />
-      <workItem from="1663222554095" duration="10658000" />
-    </task>
-    <task id="LOCAL-00007" summary="Change struc for configuration">
-      <created>1662284310205</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1662284310205</updated>
+      <workItem from="1663222554095" duration="11721000" />
     </task>
     <task id="LOCAL-00008" summary="Refractor">
       <created>1662284446988</created>
@@ -483,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663233410596</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="refractor">
+      <created>1663233849897</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1663233849897</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +521,6 @@
     <MESSAGE value="Change style for ui" />
     <MESSAGE value="added color GlowBrush" />
     <MESSAGE value="added default style for TabControl" />
-    <MESSAGE value="refractor" />
     <MESSAGE value="making note" />
     <MESSAGE value="tooltip lock display on image" />
     <MESSAGE value="added image svg for ui" />
@@ -530,7 +541,8 @@
     <MESSAGE value="commit ?" />
     <MESSAGE value="refractor and add textbox for title of style" />
     <MESSAGE value="moving files" />
-    <option name="LAST_COMMIT_MESSAGE" value="moving files" />
+    <MESSAGE value="refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refractor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -28,7 +28,7 @@ public partial class Theme
         FillComboStyle();
     }
 
-    private void FillComboStyle()
+    private void FillComboStyle(string? name=null)
     {
         CbStyle.Items.Clear();
         var themes = Query.GetAllThemes();
@@ -37,7 +37,8 @@ public partial class Theme
             CbStyle.Items.Add(theme.Name);
         }
 
-        CbStyle.SelectedValue = Config.Configue.Theme.Name;
+        name ??= Config.Configue.Theme.Name;
+        CbStyle.SelectedValue = name;
     }
 
     private void ButtonThemesBackground(StrucConfig.Themes theme)
@@ -129,7 +130,6 @@ public partial class Theme
 
     private void BtNewTheme_OnClick(object sender, RoutedEventArgs e)
     {
-        //todo make function to add new theme theme
         Console.WriteLine("add new theme");
         AddNewThemeVisibility(true);
     }
@@ -141,6 +141,7 @@ public partial class Theme
             BtNewTheme.IsEnabled = !newTheme;
             BtNewThemeValid.Visibility = Visibility.Visible;
             TbxStyle.Visibility = Visibility.Visible;
+            TbxStyle.Text = string.Empty;
         }
         else
         {
@@ -185,9 +186,16 @@ public partial class Theme
 
             var apply = Query.AddTheme(th);
             // todo ajout un message si enregistrement réussi ou non
-            Console.WriteLine("hey");
-            var txt = apply ? "Yes" : "No";
-            Console.WriteLine($"new theme: {txt}");
+
+            if (apply)
+            {
+                Console.WriteLine("new theme: yes");
+                FillComboStyle(name);
+                AddNewThemeVisibility(false);
+                return;
+            }
+            Console.WriteLine("new theme: non");
+
         }
     }
 }

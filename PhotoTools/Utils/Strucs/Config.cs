@@ -75,7 +75,7 @@ public static class StrucConfig
     public struct Themes
     {
         public bool Lock;
-        public string Name;
+        public string? Name;
         public List<StyleColorBrush> Value;
     }
     #endregion
