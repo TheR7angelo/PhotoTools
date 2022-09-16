@@ -29,4 +29,6 @@
             <Button x:Name="BtOk"/>
         </StackPanel>
     </Grid>
+    
+    <!-- todo tout refaire  -->
 </mah:MetroWindow>
