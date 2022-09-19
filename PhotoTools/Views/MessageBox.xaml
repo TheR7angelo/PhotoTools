@@ -1,4 +1,4 @@
-﻿<mah:MetroWindow x:Class="PhotoTools.Views.Settings.MessageBox"
+﻿<mah:MetroWindow x:Class="PhotoTools.Views.MessageBox"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                  xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
@@ -21,7 +21,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="3*"/>
                 </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" x:Name="ImgIcon" Source="../../Utils/Img/MessageBox/information.png"/>
+                <Image Grid.Column="0" x:Name="ImgIcon"/>
                 <TextBlock Grid.Column="1" x:Name="LbMsg" TextWrapping="Wrap" HorizontalAlignment="Right" VerticalAlignment="Center"/>
             </Grid>
         </StackPanel>

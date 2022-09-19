@@ -5,6 +5,24 @@
     <SolidColorBrush x:Key="BasicUiSt1" Color="#FFECEFF1"/>
     <SolidColorBrush x:Key="BasicUiSt2" Color="#FF607D8B"/>
     <SolidColorBrush x:Key="BasicUiSt3" Color="#FF4CAF50"/>
+    <SolidColorBrush x:Key="BasicUiSt4" Color="#FF607D8B"/>
+    <SolidColorBrush x:Key="BasicUiSt5" Color="#FFFAFAFA"/>
+    
+    <DrawingImage x:Key="BasicUi050-Info">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt4}" Geometry="M256,0C114.8,0,0,114.8,0,256s114.8,256,256,256s256-114.8,256-256S397.2,0,256,0z"/>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt5}">
+                    <GeometryDrawing.Geometry>
+                        <GeometryGroup>
+                            <PathGeometry Figures="M277.3,128c0,11.8-9.6,21.3-21.3,21.3s-21.3-9.6-21.3-21.3s9.6-21.3,21.3-21.3S277.3,116.2,277.3,128z"/>
+                            <PathGeometry Figures="M304,405.3h-96c-11.8,0-21.3-9.6-21.3-21.3s9.5-21.3,21.3-21.3h26.7v-128h-16c-11.8,0-21.3-9.6-21.3-21.3 c0-11.8,9.5-21.3,21.3-21.3H256c11.8,0,21.3,9.6,21.3,21.3v149.3H304c11.8,0,21.3,9.6,21.3,21.3S315.8,405.3,304,405.3z"/>
+                        </GeometryGroup>
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
     
     <DrawingImage x:Key="BasicUi067-Plus">
         <DrawingImage.Drawing>

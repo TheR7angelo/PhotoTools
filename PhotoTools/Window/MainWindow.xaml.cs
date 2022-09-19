@@ -21,12 +21,15 @@ namespace PhotoTools.Window
             InitializeComponent();
             Config.InitializeStyle();
 
+            var i = new Views.MessageBox();
+            i.ShowDialog();
+            
             // ToastNotificationManagerCompat.OnActivated += toastArgs =>
             // {
             //     var args = ToastArguments.Parse(toastArgs.Argument);
             //     Console.WriteLine(args["action"]);
             // };
-            //
+            
             // for (var i = 0; i < 2; i++)
             // {
             //     new ToastContentBuilder()
@@ -42,15 +45,6 @@ namespace PhotoTools.Window
             // }
 
             InitializeUi();
-            
-            var t = (SolidColorBrush)Application.Current.FindResource("RgbM1")!;
-            // Console.WriteLine(t);
-
-            //Config.Changelanguage("English");
-
-            //const string path = @"E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Test";
-            //const string path = @"C:\Users\ZP6177\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Test";
-            //Folder.CreateFolderMonth(2022, path);
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)

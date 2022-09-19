@@ -2,7 +2,7 @@
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace PhotoTools.Views.Settings;
+namespace PhotoTools.Views;
 
 public partial class MessageBox
 {
