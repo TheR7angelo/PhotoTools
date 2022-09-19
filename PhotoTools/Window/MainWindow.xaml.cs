@@ -19,9 +19,10 @@ namespace PhotoTools.Window
             InitializeComponent();
             Config.InitializeStyle();
 
-            var msg = new Views.MessageBox();
+            var msg = new MessageBox();
             msg.SetIcon(msg.MessageIcon.Stop);
             msg.SetText("Yo je suis un test");
+            msg.SetSize(new Size{Height = 250, Width = 500});
             msg.ShowDialog();
             
             // ToastNotificationManagerCompat.OnActivated += toastArgs =>

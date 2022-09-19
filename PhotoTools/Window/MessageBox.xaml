@@ -1,4 +1,4 @@
-﻿<mah:MetroWindow x:Class="PhotoTools.Views.MessageBox"
+﻿<mah:MetroWindow x:Class="PhotoTools.Window.MessageBox"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                  xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
@@ -7,9 +7,9 @@
                  WindowTransitionsEnabled="False"
                  WindowStartupLocation="CenterScreen"
                  TitleCharacterCasing="Normal"
-                 Title="Information"
                  Height="250"
-                 Width="500">
+                 Width="500"
+                 >
     <Grid Background="{DynamicResource RgbM1}">
         <Grid.RowDefinitions>
             <RowDefinition Height="6*"/>
