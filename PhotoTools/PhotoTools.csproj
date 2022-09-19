@@ -87,11 +87,6 @@
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>
-      <Page Update="Views\MessageBox.xaml">
-        <Generator>MSBuild:Compile</Generator>
-        <XamlRuntime>Wpf</XamlRuntime>
-        <SubType>Designer</SubType>
-      </Page>
       <Resource Include="Utils\Themes\Colors\Base.xaml" />
       <Page Update="Utils\Themes\BaseColor.xaml">
         <Generator>MSBuild:Compile</Generator>
@@ -130,6 +125,11 @@
         <SubType>Designer</SubType>
       </Page>
       <Page Update="Utils\Img\Base.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Window\MessageBox.xaml">
         <Generator>MSBuild:Compile</Generator>
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
