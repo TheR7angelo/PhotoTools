@@ -16,7 +16,7 @@ public partial class Language
     private void InitializeUi()
     {
         FillComboLanguage();
-
+        // todo move function
         BtSettingLanguageValid.Content = Utils.Trad.Setting.MainSetting.BtSettingLanguageValid.Normalize();
     }
 
@@ -53,7 +53,9 @@ public partial class Language
         msg.SetButtonOk();
         // todo make icon valid
         msg.SetIcon(msg.MessageIcon.Information);
+        msg.SetTitle("Validation");
         msg.ShowDialog();
+        //todo add resource string
         // msg.SetText(Utils.Trad.SettingLanguage.BtSettingLanguageValideMsg);
         InitializeUi();
     }
