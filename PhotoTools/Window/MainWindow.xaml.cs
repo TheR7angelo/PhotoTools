@@ -1,11 +1,9 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows;
-using System.Windows.Media;
-using Microsoft.Toolkit.Uwp.Notifications;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Sql;
+using PhotoTools.Views;
 
 namespace PhotoTools.Window
 {
@@ -21,8 +19,10 @@ namespace PhotoTools.Window
             InitializeComponent();
             Config.InitializeStyle();
 
-            var i = new Views.MessageBox();
-            i.ShowDialog();
+            var msg = new Views.MessageBox();
+            msg.SetIcon(msg.MessageIcon.Stop);
+            msg.SetText("Yo je suis un test");
+            msg.ShowDialog();
             
             // ToastNotificationManagerCompat.OnActivated += toastArgs =>
             // {

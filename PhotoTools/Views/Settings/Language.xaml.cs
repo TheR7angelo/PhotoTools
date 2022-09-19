@@ -41,13 +41,14 @@ public partial class Language
         var newLang = Query.GetEnglishLang(lang);
         Config.Changelanguage(newLang);
         
-        var msg = new MessageBox
-        {
-            Title = Utils.Trad.MainSetting.BtSettingLanguageValid,
-            LbMsg ={ Text = Utils.Trad.MainSetting.BtSettingLanguageValideMsg },
-            ImgIcon ={ Source = MessageBox.Icon.Valid },
-        };
-        msg.Show();
+        //todo a refaire
+        // var msg = new MessageBox
+        // {
+        //     LbMsg ={ Text = Utils.Trad.SettingLanguage.BtSettingLanguageValideMsg},
+        //     ImgIcon ={Source = MessageBox.Icon.Valid},
+        //     Title = Utils.Trad.SettingLanguage.BtSettingLanguageValide
+        // };
+        // msg.Show();
         InitializeUi();
     }
 }

@@ -7,6 +7,7 @@
     <SolidColorBrush x:Key="BasicUiSt3" Color="#FF4CAF50"/>
     <SolidColorBrush x:Key="BasicUiSt4" Color="#FF607D8B"/>
     <SolidColorBrush x:Key="BasicUiSt5" Color="#FFFAFAFA"/>
+    <SolidColorBrush x:Key="BasicUiSt6" Color="#FFF44336"/>
     
     <DrawingImage x:Key="BasicUi050-Info">
         <DrawingImage.Drawing>
@@ -39,6 +40,15 @@
         </DrawingImage.Drawing>
     </DrawingImage>
     
+    <DrawingImage x:Key="BasicUi076-Remove">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt6}" Geometry="M256,0C114.8,0,0,114.8,0,256s114.8,256,256,256s256-114.8,256-256S397.2,0,256,0z"/>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt5}" Geometry="M350.3,320.1c8.3,8.3,8.3,21.8,0,30.2c-4.2,4.2-9.6,6.2-15.1,6.2c-5.5,0-10.9-2.1-15.1-6.2L256,286.2 l-64.1,64.1c-4.2,4.2-9.6,6.2-15.1,6.2c-5.5,0-10.9-2.1-15.1-6.2c-8.3-8.3-8.3-21.8,0-30.2l64.1-64.1l-64.1-64.1 c-8.3-8.3-8.3-21.8,0-30.2c8.3-8.3,21.8-8.3,30.2,0l64.1,64.1l64.1-64.1c8.3-8.3,21.8-8.3,30.2,0c8.3,8.3,8.3,21.8,0,30.2L286.2,256 L350.3,320.1z"/>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    
     <DrawingImage x:Key="BasicUi089-Trash">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -54,6 +64,16 @@
                         </GeometryGroup>
                     </GeometryDrawing.Geometry>
                 </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    
+    <DrawingImage x:Key="BasicUi091-Warning">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt3}" Geometry="M256,0C114.8,0,0,114.8,0,256s114.8,256,256,256s256-114.8,256-256S397.2,0,256,0z"/>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt1}" Geometry="M277.3,384c0,11.8-9.6,21.3-21.3,21.3s-21.3-9.6-21.3-21.3s9.6-21.3,21.3-21.3S277.3,372.2,277.3,384z"/>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt5}" Geometry="M277.3,298.7c0,11.8-9.6,21.3-21.3,21.3s-21.3-9.6-21.3-21.3V128c0-11.8,9.6-21.3,21.3-21.3s21.3,9.6,21.3,21.3 V298.7z"/>
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>

@@ -10,7 +10,7 @@
                  Title="Information"
                  Height="250"
                  Width="500">
-    <Grid Margin="10">
+    <Grid Background="{DynamicResource RgbM1}">
         <Grid.RowDefinitions>
             <RowDefinition Height="6*"/>
             <RowDefinition Height="*"/>
