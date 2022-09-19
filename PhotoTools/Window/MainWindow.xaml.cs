@@ -1,10 +1,8 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Sql;
-using PhotoTools.Views;
 
 namespace PhotoTools.Window
 {
@@ -20,14 +18,14 @@ namespace PhotoTools.Window
             InitializeComponent();
             Config.InitializeStyle();
 
-            var msg = new MessageBox();
-            msg.SetIcon(msg.MessageIcon.Stop);
-            msg.SetText("Yo je suis un test");
-            msg.SetSize(new Size{Height = 250, Width = 500});
-            msg.SetButtonYesNoCancel();
-            msg.ShowDialog();
-            var i = msg.Answer;
-            Console.WriteLine(i);
+            // var msg = new MessageBox();
+            // msg.SetIcon(msg.MessageIcon.Stop);
+            // msg.SetText("Yo je suis un test");
+            // msg.SetSize(new Size{Height = 250, Width = 500});
+            // msg.SetButtonYesNoCancel();
+            // msg.ShowDialog();
+            // var i = msg.Answer;
+            // Console.WriteLine(i);
             
             // ToastNotificationManagerCompat.OnActivated += toastArgs =>
             // {
@@ -54,7 +52,7 @@ namespace PhotoTools.Window
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo()
+            Process.Start(new ProcessStartInfo
             {
                 FileName = Constant.Directory.GithubPage,
                 UseShellExecute = true
@@ -78,8 +76,8 @@ namespace PhotoTools.Window
 
         private void ToolTips()
         {
-            BtMainGithub.ToolTip = Utils.Trad.MainWindows.BtGithubToolTip;
-            BtMainSetting.ToolTip = Utils.Trad.MainWindows.BtMainSetting;
+            BtMainGithub.ToolTip = Utils.Trad.Main.MainWindows.BtGithubToolTip;
+            BtMainSetting.ToolTip = Utils.Trad.Main.MainWindows.BtMainSetting;
 
             WindowButtonCommands.Minimize = "Réduire";
             WindowButtonCommands.Maximize = "Agrandir";

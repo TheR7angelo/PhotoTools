@@ -17,7 +17,7 @@ public partial class Language
     {
         FillComboLanguage();
 
-        BtSettingLanguageValid.Content = Utils.Trad.MainSetting.BtSettingLanguageValid.Normalize();
+        BtSettingLanguageValid.Content = Utils.Trad.Setting.MainSetting.BtSettingLanguageValid.Normalize();
     }
 
     private void FillComboLanguage()
@@ -49,6 +49,12 @@ public partial class Language
         //     Title = Utils.Trad.SettingLanguage.BtSettingLanguageValide
         // };
         // msg.Show();
+        var msg = new Window.MessageBox();
+        msg.SetButtonOk();
+        // todo make icon valid
+        msg.SetIcon(msg.MessageIcon.Information);
+        msg.ShowDialog();
+        // msg.SetText(Utils.Trad.SettingLanguage.BtSettingLanguageValideMsg);
         InitializeUi();
     }
 }

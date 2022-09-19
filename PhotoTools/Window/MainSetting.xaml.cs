@@ -12,7 +12,7 @@ public partial class MainSetting
 
     private void InitializeUi()
     {
-        Title = Utils.Trad.MainSetting.Title;
+        Title = Utils.Trad.Setting.MainSetting.Title;
     }
     
     

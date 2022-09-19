@@ -41,9 +41,9 @@ public partial class MainSettingView
     }
     private void InitializeUi()
     {
-        RdBtSettingTabLanguage.Content = Utils.Trad.MainSetting.RdBtSettingTabLanguage;
+        RdBtSettingTabLanguage.Content = Utils.Trad.Setting.MainSetting.RdBtSettingTabLanguage;
         RdBtSettingTabLanguage.IsChecked = true;
         
-        RdBtSettingTabTheme.Content = Utils.Trad.MainSetting.RdBtSettingTabTheme;
+        RdBtSettingTabTheme.Content = Utils.Trad.Setting.MainSetting.RdBtSettingTabTheme;
     }
 }

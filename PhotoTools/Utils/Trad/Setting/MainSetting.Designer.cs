@@ -7,10 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhotoTools.Utils.Trad {
-    using System;
-    
-    
+namespace PhotoTools.Utils.Trad.Setting {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -21,14 +18,14 @@ namespace PhotoTools.Utils.Trad {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MainWindows {
+    internal class MainSetting {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal MainWindows() {
+        internal MainSetting() {
         }
         
         /// <summary>
@@ -38,7 +35,7 @@ namespace PhotoTools.Utils.Trad {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.MainWindows", typeof(MainWindows).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.Setting.MainSetting", typeof(MainSetting).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -60,20 +57,47 @@ namespace PhotoTools.Utils.Trad {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open up the GitHub page.
+        ///   Looks up a localized string similar to Valid.
         /// </summary>
-        internal static string BtGithubToolTip {
+        internal static string BtSettingLanguageValid {
             get {
-                return ResourceManager.GetString("BtGithubToolTip", resourceCulture);
+                return ResourceManager.GetString("BtSettingLanguageValid", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open the settings menu.
+        ///   Looks up a localized string similar to Please rebbot to apply change.
         /// </summary>
-        internal static string BtMainSetting {
+        internal static string BtSettingLanguageValideMsg {
             get {
-                return ResourceManager.GetString("BtMainSetting", resourceCulture);
+                return ResourceManager.GetString("BtSettingLanguageValideMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string RdBtSettingTabLanguage {
+            get {
+                return ResourceManager.GetString("BtSettingTabLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        internal static string RdBtSettingTabTheme {
+            get {
+                return ResourceManager.GetString("BtSettingTabTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parameter.
+        /// </summary>
+        internal static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

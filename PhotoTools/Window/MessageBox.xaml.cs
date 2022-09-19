@@ -15,18 +15,18 @@ public partial class MessageBox
     #region List Buttons
     private readonly List<Utils.Strucs.MessageBox.Button> _buttonsOk = new()
     {
-        new Utils.Strucs.MessageBox.Button { Name = "Ok", Content = Utils.Trad.MessageBox.ButtonOk }
+        new Utils.Strucs.MessageBox.Button { Name = "Ok", Content = Utils.Trad.MessageBox.MessageBox.ButtonOk }
     };
     private readonly List<Utils.Strucs.MessageBox.Button> _buttonsYesNo = new()
     {
-        new Utils.Strucs.MessageBox.Button { Name = "Yes", Content = Utils.Trad.MessageBox.ButtonYes },
-        new Utils.Strucs.MessageBox.Button { Name = "No", Content = Utils.Trad.MessageBox.ButtonNo }
+        new Utils.Strucs.MessageBox.Button { Name = "Yes", Content = Utils.Trad.MessageBox.MessageBox.ButtonYes },
+        new Utils.Strucs.MessageBox.Button { Name = "No", Content = Utils.Trad.MessageBox.MessageBox.ButtonNo }
     };
     private readonly List<Utils.Strucs.MessageBox.Button> _buttonsYesNoCancel = new()
     {
-        new Utils.Strucs.MessageBox.Button { Name = "Yes", Content = Utils.Trad.MessageBox.ButtonYes },
-        new Utils.Strucs.MessageBox.Button { Name = "No", Content = Utils.Trad.MessageBox.ButtonNo },
-        new Utils.Strucs.MessageBox.Button { Name = "Cancel", Content = Utils.Trad.MessageBox.ButtonCancel },
+        new Utils.Strucs.MessageBox.Button { Name = "Yes", Content = Utils.Trad.MessageBox.MessageBox.ButtonYes },
+        new Utils.Strucs.MessageBox.Button { Name = "No", Content = Utils.Trad.MessageBox.MessageBox.ButtonNo },
+        new Utils.Strucs.MessageBox.Button { Name = "Cancel", Content = Utils.Trad.MessageBox.MessageBox.ButtonCancel },
     };
 
     #endregion
@@ -35,6 +35,7 @@ public partial class MessageBox
     {
         InitializeComponent();
         SetButtonOk();
+        Title = Utils.Trad.MessageBox.MessageBox.Title;
     }
 
     #region Setter
@@ -44,17 +45,11 @@ public partial class MessageBox
         Height = size.Height;
         Width = size.Width;
     }
+
+    public void SetTitle(string title) => Title = title;
+    public void SetIcon(ImageSource icon) => ImgIcon.Source = icon;
+    public void SetText(string text) => LbMsg.Text = text;
     
-    public void SetIcon(ImageSource icon)
-    {
-        ImgIcon.Source = icon;
-    }
-
-    public void SetText(string text)
-    {
-        LbMsg.Text = text;
-    }
-
     public void SetButtonYesNo() => SetButtons(_buttonsYesNo);
     public void SetButtonYesNoCancel() => SetButtons(_buttonsYesNoCancel);
     public void SetButtonOk() => SetButtons(_buttonsOk);

@@ -72,7 +72,7 @@ public partial class Theme
         var blue = color.B;
         var hexa = color.ToHex();
 
-        var colorTitre = new TextBlock { Text = Utils.Trad.ColorEdit.ButtonThemeToolTip, Margin = new Thickness(3) };
+        var colorTitre = new TextBlock { Text = Utils.Trad.Setting.ColorEdit.ButtonThemeToolTip, Margin = new Thickness(3) };
         var colorValue = new TextBlock
         {
             Text = $"{red}\n{green}\n{blue}\n{hexa}", Margin = new Thickness(3), TextAlignment = TextAlignment.Center

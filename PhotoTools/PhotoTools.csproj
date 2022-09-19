@@ -137,41 +137,37 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="Utils\Trad\MainSetting.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>MainSetting.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\MainWindows.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>MainWindows.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\ColorEdit.resx">
+      <EmbeddedResource Update="Utils\Trad\Settting\ColorEdit.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>ColorEdit.Designer.cs</LastGenOutput>
       </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\MessageBox.resx">
+      <EmbeddedResource Update="Utils\Trad\Settting\MainSetting.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>MainSetting.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\MessageBox\MessageBox.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>MessageBox.Designer.cs</LastGenOutput>
       </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Utils\Trad\MainSetting.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>SettingLanguage.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Utils\Trad\MainWindows.Designer.cs">
+      <Compile Update="Utils\Trad\Main\MainWindows.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>MainWindows.resx</DependentUpon>
       </Compile>
-      <Compile Update="Utils\Trad\ColorEdit.Designer.cs">
+      <Compile Update="Utils\Trad\Settting\ColorEdit.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>ColorEdit.resx</DependentUpon>
       </Compile>
-      <Compile Update="Utils\Trad\MessageBox.Designer.cs">
+      <Compile Update="Utils\Trad\Settting\MainSetting.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>SettingLanguage.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Utils\Trad\MessageBox\MessageBox.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>MessageBox.resx</DependentUpon>

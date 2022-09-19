@@ -7,10 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhotoTools.Utils.Trad {
-    using System;
-    
-    
+namespace PhotoTools.Utils.Trad.MessageBox {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -38,7 +35,7 @@ namespace PhotoTools.Utils.Trad {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.MessageBox", typeof(MessageBox).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.MessageBox.MessageBox", typeof(MessageBox).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -92,6 +89,15 @@ namespace PhotoTools.Utils.Trad {
         internal static string ButtonYes {
             get {
                 return ResourceManager.GetString("ButtonYes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information.
+        /// </summary>
+        internal static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }
