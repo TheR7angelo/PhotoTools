@@ -6,11 +6,10 @@ namespace PhotoTools.Window;
 public partial class MessageBox
 {
     public Utils.Strucs.MessageBox.Icon MessageIcon = new();
+    public string Answer = null!;
     public MessageBox()
     {
         InitializeComponent();
-
-        SetDefaultValue();
     }
 
     public void SetIcon(ImageSource icon)
@@ -27,14 +26,5 @@ public partial class MessageBox
     {
         Height = size.Height;
         Width = size.Width;
-    }
-
-    private void SetDefaultValue()
-    {
-        SetSize(new Size { Height = 250, Width = 500 });
-        SetIcon(MessageIcon.Information);
-        SetText(string.Empty);
-        // todo changer le titre
-        Title = "Information";
     }
 }
