@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows;
 using PhotoTools.Utils.Config;
@@ -23,7 +24,10 @@ namespace PhotoTools.Window
             msg.SetIcon(msg.MessageIcon.Stop);
             msg.SetText("Yo je suis un test");
             msg.SetSize(new Size{Height = 250, Width = 500});
+            msg.SetButtonYesNoCancel();
             msg.ShowDialog();
+            var i = msg.Answer;
+            Console.WriteLine(i);
             
             // ToastNotificationManagerCompat.OnActivated += toastArgs =>
             // {

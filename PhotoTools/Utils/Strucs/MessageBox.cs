@@ -3,8 +3,14 @@ using System.Windows.Media;
 
 namespace PhotoTools.Utils.Strucs;
 
-public  class MessageBox
+public class MessageBox
 {
+    public struct Button
+    {
+        public string Name;
+        public string Content;
+    }
+    
     public struct Icon
     {
         public Icon()
