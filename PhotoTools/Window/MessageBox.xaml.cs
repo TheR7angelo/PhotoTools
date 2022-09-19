@@ -13,21 +13,20 @@ public partial class MessageBox
     public string Answer { get; private set; } = null!;
 
     #region List Buttons
-
     private readonly List<Utils.Strucs.MessageBox.Button> _buttonsOk = new()
     {
-        new Utils.Strucs.MessageBox.Button { Name = "Ok", Content = "Ok" }
+        new Utils.Strucs.MessageBox.Button { Name = "Ok", Content = Utils.Trad.MessageBox.ButtonOk }
     };
     private readonly List<Utils.Strucs.MessageBox.Button> _buttonsYesNo = new()
     {
-        new Utils.Strucs.MessageBox.Button { Name = "Yes", Content = "Yes" },
-        new Utils.Strucs.MessageBox.Button { Name = "No", Content = "No" }
+        new Utils.Strucs.MessageBox.Button { Name = "Yes", Content = Utils.Trad.MessageBox.ButtonYes },
+        new Utils.Strucs.MessageBox.Button { Name = "No", Content = Utils.Trad.MessageBox.ButtonNo }
     };
     private readonly List<Utils.Strucs.MessageBox.Button> _buttonsYesNoCancel = new()
     {
-        new Utils.Strucs.MessageBox.Button { Name = "Yes", Content = "Yes" },
-        new Utils.Strucs.MessageBox.Button { Name = "No", Content = "No" },
-        new Utils.Strucs.MessageBox.Button { Name = "Cancel", Content = "Cancel" },
+        new Utils.Strucs.MessageBox.Button { Name = "Yes", Content = Utils.Trad.MessageBox.ButtonYes },
+        new Utils.Strucs.MessageBox.Button { Name = "No", Content = Utils.Trad.MessageBox.ButtonNo },
+        new Utils.Strucs.MessageBox.Button { Name = "Cancel", Content = Utils.Trad.MessageBox.ButtonCancel },
     };
 
     #endregion

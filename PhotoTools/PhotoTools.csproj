@@ -149,6 +149,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>ColorEdit.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\MessageBox.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>MessageBox.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -166,6 +170,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>ColorEdit.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Utils\Trad\MessageBox.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>MessageBox.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

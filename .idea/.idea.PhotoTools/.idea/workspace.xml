@@ -7,11 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor MessageBox interface">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/MessageBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/MessageBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added function to add buttons Yes No Cancel Ok">
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/MessageBox.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/MessageBox.en.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/MessageBox.fr-fr.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/MessageBox.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +30,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9b35bc5d5da43a49af8d74dac7ab37ccc1bb654cb7dfe8f9a21501181ed9b/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Window/MainWindow.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Window/MainWindow.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Window/MessageBox.xaml" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -265,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663619716367</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added function to add buttons Yes No Cancel Ok">
+      <created>1663621816415</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1663621816415</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +320,8 @@
     <MESSAGE value="added todo" />
     <MESSAGE value="added SetSize to msgbox" />
     <MESSAGE value="refractor MessageBox interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="refractor MessageBox interface" />
+    <MESSAGE value="added function to add buttons Yes No Cancel Ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="added function to add buttons Yes No Cancel Ok" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
