@@ -7,12 +7,12 @@
 	
 	
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FMessageBox_002FMessageBox/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FColorEdit/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FLanguage/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FColorEdit/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FLanguage/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FMainSetting/@EntryIndexedValue">False</s:Boolean>
 	
 	
-	<s:String x:Key="/Default/ResxEditorPersonal/DisabledLanguages/@EntryValue">default-language</s:String>
+	<s:String x:Key="/Default/ResxEditorPersonal/DisabledLanguages/@EntryValue"></s:String>
 	
 	
 	
@@ -38,4 +38,5 @@
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/OrderByFullPath/@EntryValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/ShowComments/@EntryValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/ShowOnlyErrors/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=hexa/@EntryIndexedValue">True</s:Boolean>
 	</wpf:ResourceDictionary>

@@ -21,6 +21,7 @@ public class MessageBox
         public ImageSource Information { get; } = (ImageSource)Application.Current.Resources["BasicUi050-Info"];
         public ImageSource Stop { get; } = (ImageSource)Application.Current.Resources["BasicUi076-Remove"];
         public ImageSource Warning { get; } = (ImageSource)Application.Current.Resources["BasicUi091-Warning"];
+        public ImageSource Question { get; } = (ImageSource)Application.Current.Resources["BasicUi091-Warning"];
 
     }
 }

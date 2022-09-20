@@ -7,9 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System;
-
 namespace PhotoTools.Utils.Trad.Setting {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -71,66 +72,104 @@ namespace PhotoTools.Utils.Trad.Setting {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sorry but this theme is locked you can't modifed it
+        ///   Looks up a localized string similar to Theme name cannot be empty.
         /// </summary>
-        internal static string ThemeLockMessage
-        {
+        internal static string EmptyThemeNameMessage {
+            get {
+                return ResourceManager.GetString("EmptyThemeNameMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The theme &quot;{0}&quot; has been added.
+        /// </summary>
+        internal static string ThemeAddedMessage {
+            get {
+                return ResourceManager.GetString("ThemeAddedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error has occurred.
+        ///Theme &quot;{0}&quot; was not deleted.
+        /// </summary>
+        internal static string ThemeDeleteFalseMessage {
+            get {
+                return ResourceManager.GetString("ThemeDeleteFalseMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do you really want to delete the &quot;{0}&quot; theme ?.
+        /// </summary>
+        internal static string ThemeDeleteQuestion {
+            get {
+                return ResourceManager.GetString("ThemeDeleteQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validation.
+        /// </summary>
+        internal static string ThemeDeleteTitleMessage {
+            get {
+                return ResourceManager.GetString("ThemeDeleteTitleMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Question.
+        /// </summary>
+        internal static string ThemeDeleteTitleQuestion {
+            get {
+                return ResourceManager.GetString("ThemeDeleteTitleQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The theme &quot;{0}&quot; was deleted.
+        /// </summary>
+        internal static string ThemeDeleteTrueMessage {
+            get {
+                return ResourceManager.GetString("ThemeDeleteTrueMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorry but this theme is locked you can&apos;t modifed it.
+        /// </summary>
+        internal static string ThemeLockMessage {
             get {
                 return ResourceManager.GetString("ThemeLockMessage", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Error
+        ///   Looks up a localized string similar to Error.
         /// </summary>
-        internal static string ThemeLockTitle
-        {
-            get
-            {
+        internal static string ThemeLockTitle {
+            get {
                 return ResourceManager.GetString("ThemeLockTitle", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to EmptyThemeNameMessage
+        ///   Looks up a localized string similar to The name &quot;{0}&quot; is already used.
+        ///Please modify it.
         /// </summary>
-        internal static string EmptyThemeNameMessage
-        {
-            get
-            {
-                return ResourceManager.GetString("EmptyThemeNameMessage", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Theme name cannot be empty
-        /// </summary>
-        internal static string ThemeNameExistMessage
-        {
-            get
-            {
+        internal static string ThemeNameExistMessage {
+            get {
                 return ResourceManager.GetString("ThemeNameExistMessage", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The theme "{0}" has been added
+        ///   Looks up a localized string similar to The theme &quot;{0}&quot; was not added.
         /// </summary>
-        internal static string ThemeAddedMessage
-        {
-            get
-            {
-                return ResourceManager.GetString("ThemeAddedMessage", resourceCulture);
-            }
-        }
-
-        internal static string ThemeNotAddedMessage
-        {
-            get
-            {
+        internal static string ThemeNotAddedMessage {
+            get {
                 return ResourceManager.GetString("ThemeNotAddedMessage", resourceCulture);
             }
-            
         }
     }
 }

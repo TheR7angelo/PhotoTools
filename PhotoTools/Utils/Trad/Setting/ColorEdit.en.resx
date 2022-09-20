@@ -17,9 +17,6 @@ Green:
 Blue:
 Hexa:</value>
     </data>
-    <data name="ThemeLockMessage" xml:space="preserve">
-        <value>Sorry but this theme is locked you can't modifed it</value>
-    </data>
     <data name="ThemeLockTitle" xml:space="preserve">
         <value>Error</value>
     </data>
@@ -35,5 +32,24 @@ Please modify it</value>
     </data>
     <data name="ThemeNotAddedMessage" xml:space="preserve">
         <value>The theme "{0}" was not added</value>
+    </data>
+    <data name="ThemeDeleteQuestion" xml:space="preserve">
+        <value>Do you really want to delete the "{0}" theme ?</value>
+    </data>
+    <data name="ThemeLockMessage" xml:space="preserve">
+        <value>Sorry but this theme is locked you can't modifed it</value>
+    </data>
+    <data name="ThemeDeleteTrueMessage" xml:space="preserve">
+        <value>The theme "{0}" was deleted</value>
+    </data>
+    <data name="ThemeDeleteTitleQuestion" xml:space="preserve">
+        <value>Question</value>
+    </data>
+    <data name="ThemeDeleteTitleMessage" xml:space="preserve">
+        <value>Validation</value>
+    </data>
+    <data name="ThemeDeleteFalseMessage" xml:space="preserve">
+        <value>An error has occurred.
+Theme "{0}" was not deleted</value>
     </data>
 </root>

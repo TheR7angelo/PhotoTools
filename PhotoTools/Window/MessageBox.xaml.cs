@@ -9,7 +9,7 @@ namespace PhotoTools.Window;
 public partial class MessageBox
 {
     public Utils.Strucs.MessageBox.Icon MessageIcon = new();
-    public string? Answer { get; private set; }
+    public string? Answer { get; internal set; }
 
     #region List Buttons
     private readonly List<Utils.Strucs.MessageBox.Button> _buttonsOk = new()

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -163,26 +162,41 @@ public partial class Theme
     
     private void BtDelTheme_OnClick(object sender, RoutedEventArgs e)
     {
-        if (!(bool)ThemeLock.Tag)
+        var msg = new Window.MessageBox();
+        var name = CbStyle.Text!;
+        msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeDeleteTitleQuestion);
+        msg.SetIcon(msg.MessageIcon.Question);
+        msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeDeleteQuestion, name));
+        msg.SetButtonYesNo();
+        msg.ShowDialog();
+
+        if (msg.Answer is not null && msg.Answer.Equals("yes"))
         {
-            var name = CbStyle.Text!;
-            // todo question are you sur to delete this theme
-            var apply = name.DeleteTheme();
-            if (apply)
+            msg = new Window.MessageBox();
+            msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
+            msg.SetIcon(msg.MessageIcon.Warning);
+            if (!(bool)ThemeLock.Tag)
             {
-                FillComboStyle();
-                // todo message pour avertir de la suppression
-                Console.WriteLine($"Le theme \"{name}\" à bien étais supprimer");
+                var apply = name.DeleteTheme();
+                if (apply)
+                {
+                    FillComboStyle();
+                    msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeDeleteTitleMessage);
+                    msg.SetIcon(msg.MessageIcon.Check);
+                    msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeDeleteTrueMessage, name));
+                    msg.ShowDialog();
+                }
+                else
+                {
+                    msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeDeleteFalseMessage, name));
+                    msg.ShowDialog();
+                }
             }
             else
             {
-                Console.WriteLine($"Une erreur vous à empecher de supprimer le theme \"{name}\"");
+                msg.SetText(Utils.Trad.Setting.ColorEdit.ThemeLockMessage);
+                msg.ShowDialog();
             }
-        }
-        else
-        {
-            //todo afficher un message d'erreur car le theme est non supprimable
-            Console.WriteLine("Sorry but this theme is locked you can't delete");
         }
     }
 

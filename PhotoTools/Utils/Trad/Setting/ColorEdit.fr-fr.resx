@@ -35,4 +35,20 @@ Veuillez le modifier</value>
     <data name="ThemeNotAddedMessage" xml:space="preserve">
         <value>Le thème "{0}" n'a pas été ajouté</value>
     </data>
+    <data name="ThemeDeleteQuestion" xml:space="preserve">
+        <value>Voulez-vous vraiment supprimer le thème "{0}" ?</value>
+    </data>
+    <data name="ThemeDeleteTrueMessage" xml:space="preserve">
+        <value>Le thème "{0}" a été supprimé</value>
+    </data>
+    <data name="ThemeDeleteTitleQuestion" xml:space="preserve">
+        <value>Question</value>
+    </data>
+    <data name="ThemeDeleteTitleMessage" xml:space="preserve">
+        <value>Validation</value>
+    </data>
+    <data name="ThemeDeleteFalseMessage" xml:space="preserve">
+        <value>Une erreur est survenue.
+Le thème "{0}" n'a pas été supprimé</value>
+    </data>
 </root>
