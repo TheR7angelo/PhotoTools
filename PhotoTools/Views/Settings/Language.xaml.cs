@@ -22,11 +22,14 @@ public partial class Language
     {
         CbSettingLanguage.Items.Clear();
         
+        // todo get cultureLang actual
         var lang = Config.Configue.Language.LanguageName!;
+        var cultureLang = "";
         var languages = Query.GetAllLangs(lang);
 
         foreach (var language in languages)
         {
+            if (language.Equals(cultureLang)) continue;
             CbSettingLanguage.Items.Add(language);
         }
     }
