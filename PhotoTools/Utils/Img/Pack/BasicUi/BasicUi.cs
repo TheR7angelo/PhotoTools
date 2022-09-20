@@ -5,6 +5,7 @@ namespace PhotoTools.Utils.Img.Pack;
 
 public partial class Image
 {
+    // todo make list for login
     private Images.LicenceImages _imageBasicUi = new()
     {
         Url = "https://www.flaticon.com/packs/basic-ui-3?word=basic%20ui",
