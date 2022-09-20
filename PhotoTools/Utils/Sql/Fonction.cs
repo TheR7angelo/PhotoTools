@@ -89,14 +89,14 @@ public static partial class Query
     }
     public static IEnumerable<string> GetAllLangs(string lang)
     {
-        var langs = new List<string>();
+        var languages = new List<string>();
         var reader = ExecuteReader(_GetAllLangs(lang));
         while (reader.Read())
         {
-            langs.Add(reader[lang.ToLower()].ToString()!);
+            languages.Add(reader[lang.ToLower()].ToString()!);
         }
 
-        return langs;
+        return languages;
     }
 
     public static string GetActualcultureLang(string lang)
