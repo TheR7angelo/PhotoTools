@@ -98,6 +98,14 @@ public static partial class Query
 
         return langs;
     }
+
+    public static string GetActualcultureLang(string lang)
+    {
+        Console.WriteLine(_GetActualcultureLang(lang));
+        var reader = ExecuteReader(_GetActualcultureLang(lang));
+        reader.Read();
+        return reader[lang.ToLower()].ToString()!;
+    }
     public static string? GetCultureInfoLang(string code)
     {
         var reader = ExecuteReader(_GetCultureInfoLang(code));

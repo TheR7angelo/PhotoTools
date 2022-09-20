@@ -24,7 +24,7 @@ public partial class Language
         
         // todo get cultureLang actual
         var lang = Config.Configue.Language.LanguageName!;
-        var cultureLang = "";
+        var cultureLang = Query.GetActualcultureLang(lang);
         var languages = Query.GetAllLangs(lang);
 
         foreach (var language in languages)

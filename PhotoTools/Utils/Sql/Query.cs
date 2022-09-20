@@ -69,6 +69,10 @@ public static partial class Query
     {
         return $"SELECT la.{lang.ToLower()} FROM language.t_lang la ORDER BY la.{lang.ToLower()}";
     }
+    private static string _GetActualcultureLang(string lang)
+    {
+        return $"SELECT la.{lang.ToLower()} FROM language.t_lang la WHERE la.english='{lang}'";
+    }
     private static string _GetCultureInfoLang(string code)
     {
         return $"SELECT cu.* FROM language.v_culture cu WHERE cu.code='{code}'";
