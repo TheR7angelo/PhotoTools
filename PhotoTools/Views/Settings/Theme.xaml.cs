@@ -5,9 +5,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
-using PhotoTools.Sql;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Function;
+using PhotoTools.Utils.Sql;
 using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Views.Settings;
@@ -100,7 +100,6 @@ public partial class Theme
     private static string GetImgLock(StrucConfig.Themes theme)
     {
         return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
-        //return theme.Lock ? "Login006-Lock-2" : "BasicUi067-Plus";
     }
     
     private void Ui()
@@ -115,11 +114,15 @@ public partial class Theme
     private void AddNewStyle_OnClick(object sender, RoutedEventArgs e)
     {
         var name = TbxStyle.Text;
-
+        
+        var msg = new Window.MessageBox();
+        msg.SetButtonOk();
+        
         if (name.Equals(string.Empty))
         {
-            // todo Message pour avertir que le nom du thème ne peut pas etre vide
-            Console.WriteLine("Le nom ne peut pas étre vide");
+            msg.SetIcon(msg.MessageIcon.Warning);
+            msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
+            msg.SetText(Utils.Trad.Setting.ColorEdit.EmptyThemeNameMessage);
         }
         else if (Query.GetThemeExist(name))
         {
@@ -150,11 +153,13 @@ public partial class Theme
                 Console.WriteLine("new theme: yes");
                 FillComboStyle(name);
                 AddNewThemeVisibility(false);
-                return;
             }
-            Console.WriteLine("new theme: non");
-
+            else
+            {
+                Console.WriteLine("new theme: non");
+            }
         }
+        msg.ShowDialog();
     }
     
     private void BtDelTheme_OnClick(object sender, RoutedEventArgs e)
@@ -162,6 +167,7 @@ public partial class Theme
         if (!(bool)ThemeLock.Tag)
         {
             var name = CbStyle.Text!;
+            // todo question are you sur to delete this theme
             var apply = name.DeleteTheme();
             if (apply)
             {
@@ -180,7 +186,7 @@ public partial class Theme
             Console.WriteLine("Sorry but this theme is locked you can't delete");
         }
     }
-    
+
     private void BtNewTheme_OnClick(object sender, RoutedEventArgs e)
     {
         AddNewThemeVisibility(((Button)sender).Equals(BtNewTheme));
@@ -222,15 +228,12 @@ public partial class Theme
         }
         else
         {
-            //todo afficher un message d'erreur car le theme est non modifiable
-            // Console.WriteLine("Sorry but this theme is locked you can't modifed it");
             var msg = new Window.MessageBox();
             msg.SetButtonOk();
             msg.SetIcon(msg.MessageIcon.Warning);
-            msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockMessage);
-            msg.SetText(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
+            msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
+            msg.SetText(Utils.Trad.Setting.ColorEdit.ThemeLockMessage);
             msg.ShowDialog();
-            var answer = msg.Answer;
         }
     }
 

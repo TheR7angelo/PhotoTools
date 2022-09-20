@@ -22,4 +22,7 @@ Bleu:</value>
     <data name="ThemeLockTitle" xml:space="preserve">
         <value>Erreur</value>
     </data>
+    <data name="EmptyThemeNameMessage" xml:space="preserve">
+        <value>Le nom du thème ne peut pas être vide</value>
+    </data>
 </root>

@@ -30,4 +30,7 @@ Hexa:</value>
     <data name="ThemeLockTitle" xml:space="preserve">
         <value>Error</value>
     </data>
+    <data name="EmptyThemeNameMessage" xml:space="preserve">
+        <value>Theme name cannot be empty</value>
+    </data>
 </root>

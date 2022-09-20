@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Strucs;
 using Convert = PhotoTools.Utils.Function.Convert;
 
-namespace PhotoTools.Sql;
+namespace PhotoTools.Utils.Sql;
 
 public static partial class Query
 {

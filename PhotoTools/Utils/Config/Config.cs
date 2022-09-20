@@ -4,9 +4,9 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
 using PhotoTools.Constant;
-using PhotoTools.Sql;
 using PhotoTools.Utils.Sql;
 using PhotoTools.Utils.Strucs;
+using Query = PhotoTools.Utils.Sql.Query;
 
 namespace PhotoTools.Utils.Config;
 

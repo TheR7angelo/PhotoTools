@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SQLite;
 using System.IO;
-using PhotoTools.Utils;
-using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Function;
-using PhotoTools.Utils.Sql;
 using PhotoTools.Utils.Strucs;
 
-namespace PhotoTools.Sql;
+namespace PhotoTools.Utils.Sql;
 
 public static partial class Query
 {
@@ -66,7 +62,7 @@ public static partial class Query
         return $"""
                 SELECT la.english
                 FROM language.t_lang la
-                WHERE la.{ Config.Configue.Language.LanguageName!.ToLower()}='{lang}'
+                WHERE la.{ Config.Config.Configue.Language.LanguageName!.ToLower()}='{lang}'
                 """;
     }
     private static string _GetAllLangs(string lang)

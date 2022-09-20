@@ -88,5 +88,13 @@ namespace PhotoTools.Utils.Trad.Setting {
                 return ResourceManager.GetString("ThemeLockTitle", resourceCulture);
             }
         }
+
+        public static string EmptyThemeNameMessage
+        {
+            get
+            {
+                return ResourceManager.GetString("EmptyThemeNameMessage", resourceCulture);
+            }
+        }
     }
 }
