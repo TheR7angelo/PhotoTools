@@ -95,7 +95,6 @@ public static partial class Query
         {
             languages.Add(reader[lang.ToLower()].ToString()!);
         }
-
         return languages;
     }
 
