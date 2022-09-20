@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using PhotoTools.Sql;
 using PhotoTools.Utils.Config;
 
@@ -17,7 +16,7 @@ public partial class Language
     {
         FillComboLanguage();
         // todo move function
-        BtSettingLanguageValid.Content = Utils.Trad.Setting.MainSetting.BtSettingLanguageValid.Normalize();
+        BtSettingLanguageValid.Content = Utils.Trad.Setting.MainSetting.BtLanguageValid.Normalize();
     }
 
     private void FillComboLanguage()
@@ -45,8 +44,8 @@ public partial class Language
         msg.SetButtonYesNo();
         // todo make icon question
         msg.SetIcon(msg.MessageIcon.Check);
-        msg.SetTitle("Validation");
-        msg.SetText(Utils.Trad.Setting.SettingLanguage.BtSettingLanguageValideMsg);
+        msg.SetTitle(Utils.Trad.Setting.Language.Title);
+        msg.SetText(Utils.Trad.Setting.Language.Message);
         msg.ShowDialog();
         var answer = msg.Answer;
 

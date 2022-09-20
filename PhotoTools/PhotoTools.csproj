@@ -149,6 +149,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>MessageBox.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\Language.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Language.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -171,6 +175,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>MessageBox.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Utils\Trad\Setting\Language.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Language.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
