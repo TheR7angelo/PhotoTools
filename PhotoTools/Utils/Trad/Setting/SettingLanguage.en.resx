@@ -15,6 +15,7 @@
         <value>Valid</value>
     </data>
     <data name="BtSettingLanguageValideMsg" xml:space="preserve">
-        <value>Please rebbot to apply change</value>
+        <value>A reboot is required to apply the change.
+Restart the app ?</value>
     </data>
 </root>

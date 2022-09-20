@@ -7,13 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="delete">
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Application/Current.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" afterDir="false" />
-    </list>
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added function to restart application" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,13 +136,6 @@
       <workItem from="1663069319850" duration="4891000" />
       <workItem from="1663222554095" duration="17921000" />
       <workItem from="1663589111529" duration="1028000" />
-    </task>
-    <task id="LOCAL-00017" summary="Added color for title brush">
-      <created>1662639632910</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1662639632910</updated>
     </task>
     <task id="LOCAL-00018" summary="added proto and params theme view">
       <created>1662974127059</created>
@@ -486,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663659850486</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="added function to restart application">
+      <created>1663660429046</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1663660429046</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +502,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="making note" />
     <MESSAGE value="tooltip lock display on image" />
     <MESSAGE value="added image svg for ui" />
     <MESSAGE value="added resource file" />
@@ -533,7 +526,8 @@
     <MESSAGE value="refractor" />
     <MESSAGE value="Refractor" />
     <MESSAGE value="delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete" />
+    <MESSAGE value="added function to restart application" />
+    <option name="LAST_COMMIT_MESSAGE" value="added function to restart application" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -15,6 +15,7 @@
         <value>Validé</value>
     </data>
     <data name="BtSettingLanguageValideMsg" xml:space="preserve">
-        <value>Merci de relancer l'application pour appliquer le changement</value>
+        <value>Un redémarrage est nécessaire pour appliquer le changement.
+Redémarrer l'application ?</value>
     </data>
 </root>
