@@ -82,6 +82,27 @@ public partial class Theme
         button.ToolTip = new ToolTip
             { Placement = PlacementMode.Center, StaysOpen = true, IsOpen = false, Content = stack };
     }
+
+    private static string GetImgLock(StrucConfig.Themes theme)
+    {
+        return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
+    }
+    
+    private void Ui()
+    {
+        FillComboStyle();
+        ContentButton();
+    }
+
+    #endregion
+
+    #region Initialize
+
+    private void ContentButton()
+    {
+        BtAddNewThemeValid.Content = Utils.Trad.Setting.Theme.BtAddNewThemeValid;
+        BtAddNewThemeCancel.Content = Utils.Trad.Setting.Theme.BtAddNewThemeCancel;
+    }
     
     private void FillComboStyle(string? name=null)
     {
@@ -95,19 +116,9 @@ public partial class Theme
         name ??= Config.Configue.Theme.Name;
         CbStyle.SelectedValue = name;
     }
-    
-    private static string GetImgLock(StrucConfig.Themes theme)
-    {
-        return theme.Lock ? "Login006-Lock-2" : "Login002-Unlock";
-    }
-    
-    private void Ui()
-    {
-        FillComboStyle();
-    }
 
     #endregion
-
+    
     #region Action
 
     private void BtAddNewThemeValid_OnClick(object sender, RoutedEventArgs e)

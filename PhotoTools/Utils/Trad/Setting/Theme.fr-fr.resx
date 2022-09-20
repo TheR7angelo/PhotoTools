@@ -51,4 +51,10 @@ Veuillez le modifier</value>
     <data name="ThemeNotAddedMessage" xml:space="preserve">
         <value>Le thème "{0}" n'a pas été ajouté</value>
     </data>
+    <data name="BtAddNewThemeCancel" xml:space="preserve">
+        <value>Annuler</value>
+    </data>
+    <data name="BtAddNewThemeValid" xml:space="preserve">
+        <value>Valider</value>
+    </data>
 </root>

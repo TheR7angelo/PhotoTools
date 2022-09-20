@@ -60,6 +60,24 @@ namespace PhotoTools.Utils.Trad.Setting {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string BtAddNewThemeCancel {
+            get {
+                return ResourceManager.GetString("BtAddNewThemeCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Valid.
+        /// </summary>
+        internal static string BtAddNewThemeValid {
+            get {
+                return ResourceManager.GetString("BtAddNewThemeValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Red:
         ///Green:
         ///Blue:
