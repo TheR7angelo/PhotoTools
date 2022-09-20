@@ -101,7 +101,6 @@ public static partial class Query
 
     public static string GetActualcultureLang(string lang)
     {
-        Console.WriteLine(_GetActualcultureLang(lang));
         var reader = ExecuteReader(_GetActualcultureLang(lang));
         reader.Read();
         return reader[lang.ToLower()].ToString()!;
