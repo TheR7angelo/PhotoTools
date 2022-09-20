@@ -27,6 +27,4 @@
         </StackPanel>
         <StackPanel x:Name="PanelButton" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right"/>
     </Grid>
-    
-    <!-- todo tout refaire  -->
 </mah:MetroWindow>

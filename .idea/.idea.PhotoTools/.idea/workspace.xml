@@ -7,24 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor">
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Converter/Color.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Converter/String.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/4e0615e1-1a7e-4e7c-b96c-b04599c67122.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/4e0615e1-1a7e-4e7c-b96c-b04599c67122.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2022_21_50__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2022_21_50__Changes_.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="delete">
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Application/Current.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Function/Create/Folder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Function/Create/Folder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/DataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/DataBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Function.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Getter/Application.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Getter/Application.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Getter/Path.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Getter/Path.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Query.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" afterDir="false" />
     </list>
@@ -77,6 +63,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7bdef8686489167e6bcc2498e93448cc314a7e6c78ad16fbe54b83ca84622/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ecc6a344e27f6cb5259bfb338530766215fab272df4395d6ba48f376fbe/Parsers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Language.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
@@ -155,20 +142,6 @@
       <workItem from="1663069319850" duration="4891000" />
       <workItem from="1663222554095" duration="17921000" />
       <workItem from="1663589111529" duration="1028000" />
-    </task>
-    <task id="LOCAL-00015" summary="Refractor">
-      <created>1662451660006</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1662451660006</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Started style">
-      <created>1662473169465</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1662473169465</updated>
     </task>
     <task id="LOCAL-00017" summary="Added color for title brush">
       <created>1662639632910</created>
@@ -499,7 +472,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663589484389</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Refractor">
+      <created>1663659203304</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1663659203304</updated>
+    </task>
+    <task id="LOCAL-00065" summary="delete">
+      <created>1663659850486</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1663659850486</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +508,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added default style for TabControl" />
     <MESSAGE value="making note" />
     <MESSAGE value="tooltip lock display on image" />
     <MESSAGE value="added image svg for ui" />
@@ -542,11 +528,12 @@
     <MESSAGE value="moving files" />
     <MESSAGE value="added function to switch name theme" />
     <MESSAGE value="added function to check if theme name already exist" />
-    <MESSAGE value="Refractor" />
     <MESSAGE value="added todo" />
     <MESSAGE value="ras" />
     <MESSAGE value="refractor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refractor" />
+    <MESSAGE value="Refractor" />
+    <MESSAGE value="delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

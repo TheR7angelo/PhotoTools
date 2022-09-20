@@ -1,9 +1,7 @@
-﻿using System.Windows;
-using System.Windows.Media;
+﻿using System;
+using System.Windows;
 using PhotoTools.Sql;
-using PhotoTools.Utils;
 using PhotoTools.Utils.Config;
-using PhotoTools.Utils.Function;
 
 namespace PhotoTools.Views.Settings;
 
@@ -44,16 +42,14 @@ public partial class Language
         Config.Changelanguage(newLang);
         
         var msg = new Window.MessageBox();
-        msg.SetButtonOk();
+        msg.SetButtonYesNo();
         // todo make icon valid
         msg.SetIcon(msg.MessageIcon.Information);
         msg.SetTitle("Validation");
         msg.SetText(Utils.Trad.Setting.SettingLanguage.BtSettingLanguageValideMsg);
         msg.ShowDialog();
+        var answer = msg.Answer;
 
-        //todo à faire fonctionner
-        //Function.Restart();
-        
-        //InitializeUi();
+        if (answer is not null && answer.Equals("yes")) Utils.Function.Application.Current.Restart();
     }
 }
