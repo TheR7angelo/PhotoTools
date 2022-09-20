@@ -71,7 +71,7 @@ public partial class Theme
         var blue = color.B;
         var hexa = color.ToHex();
 
-        var colorTitre = new TextBlock { Text = Utils.Trad.Setting.ColorEdit.ButtonThemeToolTip, Margin = new Thickness(3) };
+        var colorTitre = new TextBlock { Text = Utils.Trad.Setting.Theme.ButtonThemeToolTip, Margin = new Thickness(3) };
         var colorValue = new TextBlock
         {
             Text = $"{red}\n{green}\n{blue}\n{hexa}", Margin = new Thickness(3), TextAlignment = TextAlignment.Center
@@ -110,22 +110,22 @@ public partial class Theme
 
     #region Action
 
-    private void AddNewStyle_OnClick(object sender, RoutedEventArgs e)
+    private void BtAddNewThemeValid_OnClick(object sender, RoutedEventArgs e)
     {
         var name = TbxStyle.Text;
         
         var msg = new Window.MessageBox();
-        msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
+        msg.SetTitle(Utils.Trad.Setting.Theme.ThemeLockTitle);
         msg.SetIcon(msg.MessageIcon.Warning);
         msg.SetButtonOk();
         
         if (name.Equals(string.Empty))
         {
-            msg.SetText(Utils.Trad.Setting.ColorEdit.EmptyThemeNameMessage);
+            msg.SetText(Utils.Trad.Setting.Theme.EmptyThemeNameMessage);
         }
         else if (Query.GetThemeExist(name))
         {
-            msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeNameExistMessage, name));
+            msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeNameExistMessage, name));
         }
         else
         {
@@ -150,11 +150,11 @@ public partial class Theme
                 FillComboStyle(name);
                 AddNewThemeVisibility(false);
                 
-                msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeAddedMessage, name));
+                msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeAddedMessage, name));
             }
             else
             {
-                msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeNotAddedMessage, name));
+                msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeNotAddedMessage, name));
             }
         }
         msg.ShowDialog();
@@ -164,16 +164,16 @@ public partial class Theme
     {
         var msg = new Window.MessageBox();
         var name = CbStyle.Text!;
-        msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeDeleteTitleQuestion);
+        msg.SetTitle(Utils.Trad.Setting.Theme.ThemeDeleteTitleQuestion);
         msg.SetIcon(msg.MessageIcon.Question);
-        msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeDeleteQuestion, name));
+        msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeDeleteQuestion, name));
         msg.SetButtonYesNo();
         msg.ShowDialog();
 
         if (msg.Answer is not null && msg.Answer.Equals("yes"))
         {
             msg = new Window.MessageBox();
-            msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
+            msg.SetTitle(Utils.Trad.Setting.Theme.ThemeLockTitle);
             msg.SetIcon(msg.MessageIcon.Warning);
             if (!(bool)ThemeLock.Tag)
             {
@@ -181,26 +181,26 @@ public partial class Theme
                 if (apply)
                 {
                     FillComboStyle();
-                    msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeDeleteTitleMessage);
+                    msg.SetTitle(Utils.Trad.Setting.Theme.ThemeDeleteTitleMessage);
                     msg.SetIcon(msg.MessageIcon.Check);
-                    msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeDeleteTrueMessage, name));
+                    msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeDeleteTrueMessage, name));
                     msg.ShowDialog();
                 }
                 else
                 {
-                    msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeDeleteFalseMessage, name));
+                    msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeDeleteFalseMessage, name));
                     msg.ShowDialog();
                 }
             }
             else
             {
-                msg.SetText(Utils.Trad.Setting.ColorEdit.ThemeLockMessage);
+                msg.SetText(Utils.Trad.Setting.Theme.ThemeLockMessage);
                 msg.ShowDialog();
             }
         }
     }
 
-    private void BtNewTheme_OnClick(object sender, RoutedEventArgs e)
+    private void BtAddNewThemeCancel_OnClick(object sender, RoutedEventArgs e)
     {
         AddNewThemeVisibility(((Button)sender).Equals(BtNewTheme));
     }
@@ -244,8 +244,8 @@ public partial class Theme
             var msg = new Window.MessageBox();
             msg.SetButtonOk();
             msg.SetIcon(msg.MessageIcon.Warning);
-            msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
-            msg.SetText(Utils.Trad.Setting.ColorEdit.ThemeLockMessage);
+            msg.SetTitle(Utils.Trad.Setting.Theme.ThemeLockTitle);
+            msg.SetText(Utils.Trad.Setting.Theme.ThemeLockMessage);
             msg.ShowDialog();
         }
     }
