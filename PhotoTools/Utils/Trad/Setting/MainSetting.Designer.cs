@@ -71,18 +71,18 @@ namespace PhotoTools.Utils.Trad.Setting {
         /// <summary>
         ///   Looks up a localized string similar to Language.
         /// </summary>
-        internal static string BtSettingTabLanguage {
+        internal static string RdBtSettingTabLanguage {
             get {
-                return ResourceManager.GetString("BtSettingTabLanguage", resourceCulture);
+                return ResourceManager.GetString("RdBtSettingTabLanguage", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Theme.
         /// </summary>
-        internal static string BtSettingTabTheme {
+        internal static string RdBtSettingTabTheme {
             get {
-                return ResourceManager.GetString("BtSettingTabTheme", resourceCulture);
+                return ResourceManager.GetString("RdBtSettingTabTheme", resourceCulture);
             }
         }
         

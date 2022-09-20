@@ -41,7 +41,6 @@ public partial class Language
         
         var msg = new Window.MessageBox();
         msg.SetButtonYesNo();
-        // todo make icon question
         msg.SetIcon(msg.MessageIcon.Question);
         msg.SetTitle(Utils.Trad.Setting.Language.Title);
         msg.SetText(Utils.Trad.Setting.Language.Message);
