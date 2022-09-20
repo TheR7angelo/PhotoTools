@@ -4,6 +4,7 @@ using System.Data.SQLite;
 using System.IO;
 using PhotoTools.Utils;
 using PhotoTools.Utils.Config;
+using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Sql;
 using PhotoTools.Utils.Strucs;
 

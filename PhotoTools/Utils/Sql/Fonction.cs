@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using PhotoTools.Utils;
+using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Strucs;
+using Convert = PhotoTools.Utils.Function.Convert;
 
 namespace PhotoTools.Sql;
 
@@ -61,16 +62,16 @@ public static partial class Query
     {
         return new StrucConfig.Themes
         {
-            Lock = Convert.ToBoolean(int.Parse(reader["lock"].ToString()!)),
+            Lock = System.Convert.ToBoolean(int.Parse(reader["lock"].ToString()!)),
             Name = reader["name"].ToString()!,
             Value = new List<StrucConfig.StyleColorBrush>
             {
-                new() { Name = "RgbM1", StyleValue = Function.SolidColorBrushConvert(reader["rgb_m1"].ToString()!) },
-                new() { Name = "RgbM2", StyleValue = Function.SolidColorBrushConvert(reader["rgb_m2"].ToString()!) },
-                new() { Name = "RgbM3", StyleValue = Function.SolidColorBrushConvert(reader["rgb_m3"].ToString()!) },
-                new() { Name = "RgbB1", StyleValue = Function.SolidColorBrushConvert(reader["rgb_b1"].ToString()!) },
-                new() { Name = "RgbB2", StyleValue = Function.SolidColorBrushConvert(reader["rgb_b2"].ToString()!) },
-                new() { Name = "RgbB3", StyleValue = Function.SolidColorBrushConvert(reader["rgb_b3"].ToString()!) }
+                new() { Name = "RgbM1", StyleValue = Convert.SolidColorBrush(reader["rgb_m1"].ToString()!) },
+                new() { Name = "RgbM2", StyleValue = Convert.SolidColorBrush(reader["rgb_m2"].ToString()!) },
+                new() { Name = "RgbM3", StyleValue = Convert.SolidColorBrush(reader["rgb_m3"].ToString()!) },
+                new() { Name = "RgbB1", StyleValue = Convert.SolidColorBrush(reader["rgb_b1"].ToString()!) },
+                new() { Name = "RgbB2", StyleValue = Convert.SolidColorBrush(reader["rgb_b2"].ToString()!) },
+                new() { Name = "RgbB3", StyleValue = Convert.SolidColorBrush(reader["rgb_b3"].ToString()!) }
             }
         };
     }

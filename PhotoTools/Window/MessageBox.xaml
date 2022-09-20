@@ -7,28 +7,26 @@
                  WindowTransitionsEnabled="False"
                  WindowStartupLocation="CenterScreen"
                  TitleCharacterCasing="Normal"
+                 Title="Information"
                  Height="250"
-                 Width="500"
-                 >
+                 Width="500">
     <Grid Background="{DynamicResource RgbM1}">
-        
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="3*"/>
-            </Grid.ColumnDefinitions>
-            
-            <Image Grid.Row="0" Grid.Column="0" x:Name="ImgIcon" Margin="7" Source="../Utils/Img/Pack/BasicUi/050-info.svg" Stretch="Uniform"/>
-            
-            <TextBlock Grid.Row="0" Grid.Column="1" x:Name="LbMsg" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            
-            <StackPanel x:Name="PanelButton" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="3" Orientation="Horizontal" HorizontalAlignment="Right"/>
-            
-        </Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" VerticalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" x:Name="ImgIcon"/>
+                <TextBlock Grid.Column="1" x:Name="LbMsg" TextWrapping="Wrap" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            </Grid>
+        </StackPanel>
+        <StackPanel x:Name="PanelButton" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right"/>
     </Grid>
+    
+    <!-- todo tout refaire  -->
 </mah:MetroWindow>

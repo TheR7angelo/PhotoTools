@@ -6,8 +6,8 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 using PhotoTools.Sql;
-using PhotoTools.Utils;
 using PhotoTools.Utils.Config;
+using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Views.Settings;

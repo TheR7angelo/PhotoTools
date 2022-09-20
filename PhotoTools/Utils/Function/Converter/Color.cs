@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows.Media;
-namespace PhotoTools.Utils;
+﻿using System.Windows.Media;
 
-public static class Function
+namespace PhotoTools.Utils.Function;
+
+public static partial class Convert
 {
     /// <summary>
     /// Convert Color to hexadecimal value
     /// </summary>
     /// <param name="color">GYGYGYGYGYGYGYGYJGJYGJYGJG</param>
     /// <returns><see cref="string"/></returns>
-    public static string ToHex(this Color color)
+    public static string ToHex(this System.Windows.Media.Color color)
     {
         return $"#{color.A:X}{color.R:X}{color.G:X}{color.B:X}";
     }
@@ -23,23 +22,8 @@ public static class Function
     {
         return $"#{solidColorBrush.Color.A:X}{solidColorBrush.Color.R:X}{solidColorBrush.Color.G:X}{solidColorBrush.Color.B:X}";
     }
-    public static SolidColorBrush SolidColorBrushConvert(string code)
+    public static SolidColorBrush SolidColorBrush(string code)
     {
         return (SolidColorBrush)new BrushConverter().ConvertFromString(code)!;
-    }
-    public static IEnumerable<DateTime> EachDay(DateTime from, DateTime thru)
-    {
-        for(var day = from.Date; day.Date <= thru.Date; day = day.AddDays(1))
-            yield return day;
-    }
-    public static string Capitalize(this string str)
-    {
-        if (str.Length == 1){
-            str = char.ToUpper(str[0]).ToString();
-        }
-        else{
-            str = char.ToUpper(str[0]) + str[1..];
-        }
-        return str;
     }
 }

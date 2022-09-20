@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Reflection;
 
-namespace PhotoTools.Utils.Getter;
+namespace PhotoTools.Utils.Function;
 
-public class Application
+public static partial class Get
 {
     private static AssemblyName _assemblyName = Assembly.GetExecutingAssembly().GetName();
     public static string? GetCurrentName()

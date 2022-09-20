@@ -49,6 +49,8 @@ public partial class MessageBox
     public void SetTitle(string title) => Title = title;
     public void SetIcon(ImageSource icon) => ImgIcon.Source = icon;
     public void SetText(string text) => LbMsg.Text = text;
+
+    public void SetTextColor(Color color) => LbMsg.Foreground = new SolidColorBrush(color);
     
     public void SetButtonYesNo() => SetButtons(_buttonsYesNo);
     public void SetButtonYesNoCancel() => SetButtons(_buttonsYesNoCancel);

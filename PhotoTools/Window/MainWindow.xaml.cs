@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Windows;
 using PhotoTools.Utils.Config;
+using PhotoTools.Utils.Constant;
 using PhotoTools.Utils.Sql;
 
 namespace PhotoTools.Window
@@ -54,7 +55,7 @@ namespace PhotoTools.Window
         {
             Process.Start(new ProcessStartInfo
             {
-                FileName = Constant.Directory.GithubPage,
+                FileName = Directory.GithubPage,
                 UseShellExecute = true
             });
         }
@@ -69,7 +70,7 @@ namespace PhotoTools.Window
 
         private void InitializeUi()
         {
-            var v = Utils.Getter.Application.GetCurrentVersion;
+            var v = Utils.Function.Get.GetCurrentVersion;
             
             ToolTips();
         }

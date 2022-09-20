@@ -1,4 +1,4 @@
-﻿namespace PhotoTools.Constant;
+﻿namespace PhotoTools.Utils.Constant;
 
 public static class BasePath
 {
