@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="20c50975-6d46-4720-97cc-95d849124453" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/MessageBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/MessageBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.en.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.fr-fr.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
