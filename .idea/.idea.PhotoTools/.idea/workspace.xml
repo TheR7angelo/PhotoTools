@@ -7,21 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/4e0615e1-1a7e-4e7c-b96c-b04599c67122.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/4e0615e1-1a7e-4e7c-b96c-b04599c67122.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/MessageBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/MessageBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.en.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.fr-fr.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" afterDir="false" />
-    </list>
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added messageBox for delete theme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,14 +138,7 @@
       <workItem from="1663589111529" duration="1028000" />
       <workItem from="1663664296241" duration="6597000" />
       <workItem from="1663673971102" duration="12000" />
-      <workItem from="1663674013614" duration="3242000" />
-    </task>
-    <task id="LOCAL-00024" summary="ras">
-      <created>1662986119894</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1662986119894</updated>
+      <workItem from="1663674013614" duration="3625000" />
     </task>
     <task id="LOCAL-00025" summary="Added image Login003-Id-Card-1">
       <created>1663054513602</created>
@@ -497,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663669297709</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="added messageBox for delete theme">
+      <created>1663678341542</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1663678341542</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +505,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="remove todo" />
     <MESSAGE value="tooltip of button theme is now modified" />
     <MESSAGE value="Added img trash" />
     <MESSAGE value="added img plus" />
@@ -544,7 +529,8 @@
     <MESSAGE value="added message theme lock" />
     <MESSAGE value="added message empty new theme name" />
     <MESSAGE value="added message new theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added message new theme" />
+    <MESSAGE value="added messageBox for delete theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="added messageBox for delete theme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

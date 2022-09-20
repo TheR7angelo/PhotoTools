@@ -15,7 +15,6 @@ public partial class Language
     private void InitializeUi()
     {
         FillComboLanguage();
-        // todo move function
         BtSettingLanguageValid.Content = Utils.Trad.Setting.MainSetting.BtLanguageValid.Normalize();
     }
 

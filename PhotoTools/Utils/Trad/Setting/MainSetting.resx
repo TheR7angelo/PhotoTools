@@ -27,7 +27,7 @@
     <data name="BtSettingTabTheme" xml:space="preserve">
         <value>Theme</value>
     </data>
-    <data name="BtSettingLanguageValid" xml:space="preserve">
-        <value />
+    <data name="BtLanguageValid" xml:space="preserve">
+        <value>Valid</value>
     </data>
 </root>

@@ -8,6 +8,9 @@
 //------------------------------------------------------------------------------
 
 namespace PhotoTools.Utils.Trad.Setting {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -61,23 +64,14 @@ namespace PhotoTools.Utils.Trad.Setting {
         /// </summary>
         internal static string BtLanguageValid {
             get {
-                return ResourceManager.GetString("BtSettingLanguageValid", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please rebbot to apply change.
-        /// </summary>
-        internal static string BtSettingLanguageValideMsg {
-            get {
-                return ResourceManager.GetString("BtSettingLanguageValideMsg", resourceCulture);
+                return ResourceManager.GetString("BtLanguageValid", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Language.
         /// </summary>
-        internal static string RdBtSettingTabLanguage {
+        internal static string BtSettingTabLanguage {
             get {
                 return ResourceManager.GetString("BtSettingTabLanguage", resourceCulture);
             }
@@ -86,7 +80,7 @@ namespace PhotoTools.Utils.Trad.Setting {
         /// <summary>
         ///   Looks up a localized string similar to Theme.
         /// </summary>
-        internal static string RdBtSettingTabTheme {
+        internal static string BtSettingTabTheme {
             get {
                 return ResourceManager.GetString("BtSettingTabTheme", resourceCulture);
             }

@@ -20,7 +20,7 @@
     <data name="BtSettingTabLanguage" xml:space="preserve">
         <value>Language</value>
     </data>
-    <data name="BtSettingLanguageValid" xml:space="preserve">
+    <data name="BtLanguageValid" xml:space="preserve">
         <value>Valid</value>
     </data>
 </root>
