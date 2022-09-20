@@ -5,11 +5,32 @@
                  TitleAlignment="Center"
                  ResizeMode="NoResize"
                  WindowTransitionsEnabled="False"
+                 WindowTitleBrush="{DynamicResource RgbM1}"
+                 NonActiveWindowTitleBrush="{DynamicResource RgbM1}"
+                 GlowBrush="{DynamicResource RgbM2}"
                  WindowStartupLocation="CenterScreen"
                  TitleCharacterCasing="Normal"
                  Title="Information"
                  Height="250"
                  Width="500">
+    
+    <!-- Header -->
+    <mah:MetroWindow.WindowButtonCommands>
+        <!-- todo traduire les mot -->
+        <mah:WindowButtonCommands Minimize="Réduire"
+                                  Maximize="Agrandir"
+                                  Restore="Rétrécir"
+                                  Close="Quitter"
+                                  LightMinButtonStyle="{DynamicResource MinButtonStyle}"
+                                  DarkMinButtonStyle="{DynamicResource MinButtonStyle}"
+                                  LightCloseButtonStyle="{DynamicResource CloseButtonStyle}"
+                                  DarkCloseButtonStyle="{DynamicResource CloseButtonStyle}"
+                                  LightMaxButtonStyle="{StaticResource MaxButtonStyle}"
+                                  DarkMaxButtonStyle="{StaticResource MaxButtonStyle}"/>
+                                  
+
+    </mah:MetroWindow.WindowButtonCommands>
+    
     <Grid Background="{DynamicResource RgbM1}">
         <Grid.RowDefinitions>
             <RowDefinition Height="6*"/>
