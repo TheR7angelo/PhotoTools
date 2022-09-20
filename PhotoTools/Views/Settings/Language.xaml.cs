@@ -43,8 +43,8 @@ public partial class Language
         
         var msg = new Window.MessageBox();
         msg.SetButtonYesNo();
-        // todo make icon valid
-        msg.SetIcon(msg.MessageIcon.Information);
+        // todo make icon question
+        msg.SetIcon(msg.MessageIcon.Check);
         msg.SetTitle("Validation");
         msg.SetText(Utils.Trad.Setting.SettingLanguage.BtSettingLanguageValideMsg);
         msg.ShowDialog();
