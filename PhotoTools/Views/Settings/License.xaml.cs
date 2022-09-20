@@ -20,6 +20,7 @@ public partial class License
     private void AddImages(Images.LicenceImages pack, Panel panel)
     {
         var url = pack.Url;
+        // todo add licence name and go to url
         foreach (var image in pack.Images)
         {
             var btn = new Button
