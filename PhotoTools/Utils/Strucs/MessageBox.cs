@@ -3,7 +3,7 @@ using System.Windows.Media;
 
 namespace PhotoTools.Utils.Strucs;
 
-public class MessageBox
+public static class MessageBox
 {
     public struct Button
     {
