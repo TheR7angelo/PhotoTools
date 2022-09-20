@@ -16,4 +16,10 @@
 Vert:
 Bleu:</value>
     </data>
+    <data name="ThemeLockMessage" xml:space="preserve">
+        <value>Désolé mais ce thème est verrouillé vous ne pouvez pas le modifier</value>
+    </data>
+    <data name="ThemeLockTitle" xml:space="preserve">
+        <value>Erreur</value>
+    </data>
 </root>

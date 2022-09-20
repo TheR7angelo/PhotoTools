@@ -22,7 +22,7 @@
                     <ColumnDefinition Width="3*"/>
                 </Grid.ColumnDefinitions>
                 <Image Grid.Column="0" x:Name="ImgIcon" Margin="5"/>
-                <TextBlock Grid.Column="1" x:Name="LbMsg" Margin="5" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" x:Name="LbMsg" Margin="5" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="{DynamicResource RgbM3}"/>
             </Grid>
         </StackPanel>
         <StackPanel x:Name="PanelButton" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right"/>

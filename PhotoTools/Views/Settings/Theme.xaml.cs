@@ -223,7 +223,14 @@ public partial class Theme
         else
         {
             //todo afficher un message d'erreur car le theme est non modifiable
-            Console.WriteLine("Sorry but this theme is locked you can't modifed it");
+            // Console.WriteLine("Sorry but this theme is locked you can't modifed it");
+            var msg = new Window.MessageBox();
+            msg.SetButtonOk();
+            msg.SetIcon(msg.MessageIcon.Warning);
+            msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockMessage);
+            msg.SetText(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
+            msg.ShowDialog();
+            var answer = msg.Answer;
         }
     }
 

@@ -24,4 +24,10 @@ Green:
 Blue:
 Hexa:</value>
     </data>
+    <data name="ThemeLockMessage" xml:space="preserve">
+        <value>Sorry but this theme is locked you can't modifed it</value>
+    </data>
+    <data name="ThemeLockTitle" xml:space="preserve">
+        <value>Error</value>
+    </data>
 </root>

@@ -7,25 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_2022_08_20_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_2022_08_20__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_20_09_2022_08_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_20_09_2022_08_12__Changes_.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Template/proto.xd" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Template/proto.xd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.en.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.fr-fr.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/SettingLanguage.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Language.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/SettingLanguage.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Language.en.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/SettingLanguage.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Language.fr-fr.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/SettingLanguage.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Language.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.en.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.fr-fr.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,14 +143,7 @@
       <workItem from="1663069319850" duration="4891000" />
       <workItem from="1663222554095" duration="17921000" />
       <workItem from="1663589111529" duration="1028000" />
-      <workItem from="1663664296241" duration="1113000" />
-    </task>
-    <task id="LOCAL-00020" summary="Added icon pack login">
-      <created>1662977248712</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1662977248712</updated>
+      <workItem from="1663664296241" duration="2337000" />
     </task>
     <task id="LOCAL-00021" summary="Added pack image to ressource">
       <created>1662981902280</created>
@@ -499,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663661481715</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="refractor">
+      <created>1663665592563</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1663665592563</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,13 +529,13 @@
     <MESSAGE value="added function to check if theme name already exist" />
     <MESSAGE value="added todo" />
     <MESSAGE value="ras" />
-    <MESSAGE value="refractor" />
     <MESSAGE value="Refractor" />
     <MESSAGE value="delete" />
     <MESSAGE value="added function to restart application" />
     <MESSAGE value="Change message to apply new language setting" />
     <MESSAGE value="added check image" />
-    <option name="LAST_COMMIT_MESSAGE" value="added check image" />
+    <MESSAGE value="refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refractor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

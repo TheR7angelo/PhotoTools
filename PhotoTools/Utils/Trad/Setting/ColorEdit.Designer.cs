@@ -67,5 +67,26 @@ namespace PhotoTools.Utils.Trad.Setting {
                 return ResourceManager.GetString("ButtonThemeToolTip", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorry but this theme is locked you can't modifed it
+        /// </summary>
+        internal static string ThemeLockMessage
+        {
+            get {
+                return ResourceManager.GetString("ThemeLockMessage", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Error
+        /// </summary>
+        internal static string ThemeLockTitle
+        {
+            get
+            {
+                return ResourceManager.GetString("ThemeLockTitle", resourceCulture);
+            }
+        }
     }
 }
