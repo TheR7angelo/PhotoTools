@@ -18,20 +18,10 @@
             </StackPanel>
             <TabControl Grid.Row="1">
                 <TabItem Header="BasicUi">
-                    <WrapPanel x:Name="WrapPanelBasicUi" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Auto">
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                        <Label Height="75" Width="75" BorderBrush="Black" BorderThickness="1"/>
-                    </WrapPanel>
+                    <WrapPanel x:Name="WrapPanelBasicUi" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                </TabItem>
+                <TabItem Header="Login">
+                    <WrapPanel x:Name="WrapPanelLogin" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
                 </TabItem>
             </TabControl>
         </Grid>
