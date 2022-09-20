@@ -33,4 +33,14 @@ Hexa:</value>
     <data name="EmptyThemeNameMessage" xml:space="preserve">
         <value>Theme name cannot be empty</value>
     </data>
+    <data name="ThemeNameExistMessage" xml:space="preserve">
+        <value>The name "{0}" is already used.
+Please modify it</value>
+    </data>
+    <data name="ThemeAddedMessage" xml:space="preserve">
+        <value>The theme "{0}" has been added</value>
+    </data>
+    <data name="ThemeNotAddedMessage" xml:space="preserve">
+        <value>The theme "{0}" was not added</value>
+    </data>
 </root>

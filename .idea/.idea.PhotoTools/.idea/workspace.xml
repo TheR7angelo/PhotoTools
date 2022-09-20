@@ -7,17 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added message theme lock">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added message empty new theme name">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Connection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Query.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.en.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.fr-fr.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/ColorEdit.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,14 +142,7 @@
       <workItem from="1663069319850" duration="4891000" />
       <workItem from="1663222554095" duration="17921000" />
       <workItem from="1663589111529" duration="1028000" />
-      <workItem from="1663664296241" duration="3569000" />
-    </task>
-    <task id="LOCAL-00022" summary="added svg pack image">
-      <created>1662984781037</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1662984781037</updated>
+      <workItem from="1663664296241" duration="4703000" />
     </task>
     <task id="LOCAL-00023" summary="Added combobox fill for select theme">
       <created>1662985906920</created>
@@ -492,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663666704439</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="added message empty new theme name">
+      <created>1663667946861</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1663667946861</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +509,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added function to display color in color picker" />
     <MESSAGE value="added function to modify color display" />
     <MESSAGE value="remove todo" />
     <MESSAGE value="tooltip of button theme is now modified" />
@@ -539,7 +533,8 @@
     <MESSAGE value="added check image" />
     <MESSAGE value="refractor" />
     <MESSAGE value="added message theme lock" />
-    <option name="LAST_COMMIT_MESSAGE" value="added message theme lock" />
+    <MESSAGE value="added message empty new theme name" />
+    <option name="LAST_COMMIT_MESSAGE" value="added message empty new theme name" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

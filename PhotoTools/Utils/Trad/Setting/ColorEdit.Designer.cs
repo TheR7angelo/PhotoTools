@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System;
+
 namespace PhotoTools.Utils.Trad.Setting {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
@@ -89,12 +91,46 @@ namespace PhotoTools.Utils.Trad.Setting {
             }
         }
 
-        public static string EmptyThemeNameMessage
+        /// <summary>
+        ///   Looks up a localized string similar to EmptyThemeNameMessage
+        /// </summary>
+        internal static string EmptyThemeNameMessage
         {
             get
             {
                 return ResourceManager.GetString("EmptyThemeNameMessage", resourceCulture);
             }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Theme name cannot be empty
+        /// </summary>
+        internal static string ThemeNameExistMessage
+        {
+            get
+            {
+                return ResourceManager.GetString("ThemeNameExistMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The theme "{0}" has been added
+        /// </summary>
+        internal static string ThemeAddedMessage
+        {
+            get
+            {
+                return ResourceManager.GetString("ThemeAddedMessage", resourceCulture);
+            }
+        }
+
+        internal static string ThemeNotAddedMessage
+        {
+            get
+            {
+                return ResourceManager.GetString("ThemeNotAddedMessage", resourceCulture);
+            }
+            
         }
     }
 }

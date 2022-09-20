@@ -116,18 +116,17 @@ public partial class Theme
         var name = TbxStyle.Text;
         
         var msg = new Window.MessageBox();
+        msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
+        msg.SetIcon(msg.MessageIcon.Warning);
         msg.SetButtonOk();
         
         if (name.Equals(string.Empty))
         {
-            msg.SetIcon(msg.MessageIcon.Warning);
-            msg.SetTitle(Utils.Trad.Setting.ColorEdit.ThemeLockTitle);
             msg.SetText(Utils.Trad.Setting.ColorEdit.EmptyThemeNameMessage);
         }
         else if (Query.GetThemeExist(name))
         {
-            // todo Message pour avertir que le nom du thème ne peut pas etre deja utiliser
-            Console.WriteLine("Nom deja utilisé");
+            msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeNameExistMessage, name));
         }
         else
         {
@@ -147,16 +146,16 @@ public partial class Theme
             }
 
             var apply = Query.AddTheme(th);
-            // todo ajout un message si enregistrement réussi ou non
             if (apply)
             {
-                Console.WriteLine("new theme: yes");
                 FillComboStyle(name);
                 AddNewThemeVisibility(false);
+                
+                msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeAddedMessage, name));
             }
             else
             {
-                Console.WriteLine("new theme: non");
+                msg.SetText(string.Format(Utils.Trad.Setting.ColorEdit.ThemeNotAddedMessage, name));
             }
         }
         msg.ShowDialog();

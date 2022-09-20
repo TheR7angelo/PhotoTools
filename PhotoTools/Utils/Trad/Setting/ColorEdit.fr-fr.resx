@@ -25,4 +25,14 @@ Bleu:</value>
     <data name="EmptyThemeNameMessage" xml:space="preserve">
         <value>Le nom du thème ne peut pas être vide</value>
     </data>
+    <data name="ThemeNameExistMessage" xml:space="preserve">
+        <value>Le nom "{0}" est déjà utilisé.
+Veuillez le modifier</value>
+    </data>
+    <data name="ThemeAddedMessage" xml:space="preserve">
+        <value>Le thème "{0}" a été ajouté</value>
+    </data>
+    <data name="ThemeNotAddedMessage" xml:space="preserve">
+        <value>Le thème "{0}" n'a pas été ajouté</value>
+    </data>
 </root>
