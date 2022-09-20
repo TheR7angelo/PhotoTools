@@ -7,5 +7,6 @@
              xmlns:settings="clr-namespace:PhotoTools.Views.Settings">
     
     <Grid Background="{DynamicResource RgbM1}">
+        <settings:License/>
     </Grid>
 </UserControl>
