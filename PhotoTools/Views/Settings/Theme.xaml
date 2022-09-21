@@ -8,6 +8,8 @@
              xmlns:views="clr-namespace:PhotoTools.Views">
     
     
+    <!-- todo make export theme -->
+    
     <Grid Background="{DynamicResource RgbM1}">
         <StackPanel Orientation="Vertical">
             

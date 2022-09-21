@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using PhotoTools.Utils.Strucs;
+using PhotoTools.Utils.Function.Application;
 
 namespace PhotoTools.Views.Settings;
 
@@ -19,34 +19,38 @@ public partial class License
 
     private void AddImages(Images.LicenceImages pack, Panel panel)
     {
-        var url = pack.Url;
-        var author = pack.Author;
         // todo add licence name and go to url
-        foreach (var image in pack.Images.OrderBy(item => item))
+        foreach (var image in pack.Images.OrderBy(item => item).Select((value, i) => new { i, value }))
         {
             var btn = new Button
             {
-                Content = new Image { Source =  Utils.Function.Get.GetResourcesImageSource(image)},
+                Name = $"{pack.PackName}_{image.i}",
+                Content = new Image { Source =  Utils.Function.Get.GetResourcesImageSource(image.value)},
                 Style = _style,
+                Tag = pack.Url,
                 
-                // ToolTip = new ToolTip{ Content = new TextBlock
-                // {
-                //     Text = $"Author: {author}\nUrl: {url}",
-                //     Inlines = { new Hyperlink{ NavigateUri = new Uri(url)} }
-                // }}
+                //todo make string trad
+                ToolTip = $"Author: {pack.Author}\nUrl: {pack.Url}"
             };
-            var popup = new Popup()
-            {
-                IsOpen = true,
-                PlacementTarget = btn,
-                Child = new TextBlock()
-                {
-                    Text = "yo mec"
-                }
-            };
-            //btn.ToolTip = popup;
-
+            btn.Click += ButtonImageLicence_OnClick;
             panel.Children.Add(btn);
+        }
+    }
+
+    private void ButtonImageLicence_OnClick(object sender, RoutedEventArgs e)
+    {
+        var btn = sender as Button;
+        // todo make string trad
+        var msg = new Window.MessageBox();
+        msg.SetTitle("Question");
+        msg.SetIcon(msg.MessageIcon.Question);
+        msg.SetText("Open web page ?");
+        msg.SetButtonYesNo();
+        msg.ShowDialog();
+
+        if (msg.Answer is "yes")
+        {
+            ((string)btn!.Tag).OpenUrl();
         }
     }
 }

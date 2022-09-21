@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using System.Diagnostics;
 using System.Windows;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Constant;
@@ -61,8 +60,6 @@ namespace PhotoTools.Window
         {
             var setting = new MainSetting();
             setting.ShowDialog();
-            // Console.WriteLine("open settings");
-            // Config.InitializeStyle();
         }
 
         private void InitializeUi()

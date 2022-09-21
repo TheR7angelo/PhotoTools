@@ -7,6 +7,7 @@ public static partial class Image
 {
     public static Images.LicenceImages ImageLogin = new()
     {
+        PackName = "Login",
         Url = "https://www.flaticon.com/packs/login-6",
         Author = "Pixel perfect",
         Images = new List<string>
