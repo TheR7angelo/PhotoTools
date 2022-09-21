@@ -178,6 +178,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Theme.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\License.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>License.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -210,6 +214,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Theme.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Utils\Trad\Setting\License.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>License.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

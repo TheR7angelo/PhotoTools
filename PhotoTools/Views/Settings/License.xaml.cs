@@ -29,12 +29,15 @@ public partial class License
                 Style = _style,
                 Tag = pack.Url,
                 
+                // todo make tooltip interactif
                 ToolTip = new StackPanel
                 {
                     Orientation = Orientation.Horizontal,
-                    Children = { new TextBlock { Text= "Auteur: \nUrl: " }, new TextBlock { Text= $"{pack.Author}\n{pack.Url}" } }
+                    Children = { 
+                        new TextBlock { Text= Utils.Trad.Setting.License.ButtonToolTip },
+                        new TextBlock { Text = $"{pack.Author}\n{pack.Url}" }
+                    }
                 }
-                //todo make string trad
             };
             btn.Click += ButtonImageLicence_OnClick;
             panel.Children.Add(btn);
