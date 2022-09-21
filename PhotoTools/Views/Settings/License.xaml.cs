@@ -1,13 +1,18 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
 using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Views.Settings;
 
 public partial class License
 {
-    private readonly Style _style = (Application.Current.Resources["ButtonImage"] as Style)!;
+    private readonly Style _style = (Application.Current.Resources["ButtonImageLicence"] as Style)!;
     public License()
     {
         InitializeComponent();
@@ -25,10 +30,25 @@ public partial class License
         {
             var btn = new Button
             {
-                Content = new Image { Source =  Utils.Function.Get.GetImageSourceResources(image)},
+                Content = new Image { Source =  Utils.Function.Get.GetResourcesImageSource(image)},
                 Style = _style,
-                ToolTip = image
+                
+                // ToolTip = new ToolTip{ Content = new TextBlock
+                // {
+                //     Text = $"Author: {author}\nUrl: {url}",
+                //     Inlines = { new Hyperlink{ NavigateUri = new Uri(url)} }
+                // }}
             };
+            var popup = new Popup()
+            {
+                IsOpen = true,
+                PlacementTarget = btn,
+                Child = new TextBlock()
+                {
+                    Text = "yo mec"
+                }
+            };
+            //btn.ToolTip = popup;
 
             panel.Children.Add(btn);
         }

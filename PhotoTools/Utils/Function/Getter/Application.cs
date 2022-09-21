@@ -13,7 +13,7 @@ public partial class Get
     }
     public static Version? GetCurrentVersion { get; } = _assemblyName.Version;
 
-    public static ImageSource GetImageSourceResources(string key)
+    public static ImageSource GetResourcesImageSource(string key)
     {
         return (System.Windows.Application.Current.Resources[key] as ImageSource)!;
     }

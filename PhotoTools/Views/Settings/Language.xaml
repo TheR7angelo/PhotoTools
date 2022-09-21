@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
             <ComboBox x:Name="CbSettingLanguage" Height="25"/>
-            <Button  x:Name="BtSettingLanguageValid" Height="25" Click="BtSettingLanguageValid_OnClick"/>
+            <Button x:Name="BtSettingLanguageValid" Height="25" Click="BtSettingLanguageValid_OnClick"/>
         </StackPanel>
     </Grid>
 </UserControl>
