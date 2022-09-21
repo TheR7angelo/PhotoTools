@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Windows;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Constant;
+using PhotoTools.Utils.Function.Application;
 using PhotoTools.Utils.Sql;
 
 namespace PhotoTools.Window
@@ -53,11 +54,7 @@ namespace PhotoTools.Window
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo
-            {
-                FileName = Directory.GithubPage,
-                UseShellExecute = true
-            });
+            Directory.GithubPage.OpenUrl();
         }
 
         private void BtSettings_OnClick(object sender, RoutedEventArgs e)
