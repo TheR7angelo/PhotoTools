@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
+using Microsoft.Win32;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Sql;
@@ -262,4 +265,28 @@ public partial class Theme
     }
 
     #endregion
+
+    private void BtExpTheme_OnClick(object sender, RoutedEventArgs e)
+    {
+        // todo finish export ".json" file
+        var name = CbStyle.Text!;
+        var theme = Query.GetStyle(name);
+        var ext = SaveFile();
+        Console.WriteLine(name);
+    }
+
+    private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
+    {
+        throw new System.NotImplementedException();
+    }
+    
+    private static string SaveFile()
+    {
+        // "Text file (*.txt)|*.txt|C# file (*.cs)|*.cs"
+        var saveFileDialog = new SaveFileDialog {
+            Filter = "Json file (*.json)|*.json",
+            InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
+        };
+        return saveFileDialog.ShowDialog() != true ? string.Empty : Path.GetExtension(saveFileDialog.FileName);
+    }
 }
