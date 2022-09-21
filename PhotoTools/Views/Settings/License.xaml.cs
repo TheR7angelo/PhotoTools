@@ -1,14 +1,13 @@
 ﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using PhotoTools.Utils.Strucs;
 
 namespace PhotoTools.Views.Settings;
 
 public partial class License
 {
-    private Style _style = (Application.Current.Resources["ButtonImage"] as Style)!;
+    private readonly Style _style = (Application.Current.Resources["ButtonImage"] as Style)!;
     public License()
     {
         InitializeComponent();
@@ -26,7 +25,7 @@ public partial class License
         {
             var btn = new Button
             {
-                Content = new Image { Source = (Application.Current.Resources[image] as ImageSource)! },
+                Content = new Image { Source =  Utils.Function.Get.GetImageSourceResources(image)},
                 Style = _style,
                 ToolTip = image
             };
