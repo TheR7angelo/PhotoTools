@@ -61,7 +61,7 @@ public static partial class Query
     {
         return new StrucConfig.Themes
         {
-            Lock = System.Convert.ToBoolean(int.Parse(reader["lock"].ToString()!)),
+            Lock = Convert.ParseToBool(reader["lock"].ToString()!),
             Name = reader["name"].ToString()!,
             Value = new List<StrucConfig.StyleColorBrush>
             {
