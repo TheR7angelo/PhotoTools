@@ -29,8 +29,12 @@ public partial class License
                 Style = _style,
                 Tag = pack.Url,
                 
+                ToolTip = new StackPanel
+                {
+                    Orientation = Orientation.Horizontal,
+                    Children = { new TextBlock { Text= "Auteur: \nUrl: " }, new TextBlock { Text= $"{pack.Author}\n{pack.Url}" } }
+                }
                 //todo make string trad
-                ToolTip = $"Author: {pack.Author}\nUrl: {pack.Url}"
             };
             btn.Click += ButtonImageLicence_OnClick;
             panel.Children.Add(btn);

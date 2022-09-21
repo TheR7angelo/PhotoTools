@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="RD-222.4167.23">
-    <data-source name="Main zp6177" uuid="4e0615e1-1a7e-4e7c-b96c-b04599c67122">
+    <data-source name="Main" uuid="4e0615e1-1a7e-4e7c-b96c-b04599c67122">
       <database-info product="SQLite" version="3.39.2" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.39.2.0" dbms="SQLITE" exact-version="3.39.2" exact-driver-version="3.39">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -14,17 +14,8 @@
       </schema-mapping>
     </data-source>
     <data-source name="Main perso" uuid="d9aa31e5-cc33-4c7e-9ed5-08dcc93eec3c">
-      <database-info product="SQLite" version="3.39.2" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.39.2.0" dbms="SQLITE" exact-version="3.39.2" exact-driver-version="3.39">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <secret-storage>master_key</secret-storage>
-      <auth-provider>no-auth</auth-provider>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="@" />
-        </introspection-scope>
-      </schema-mapping>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <schema-mapping />
     </data-source>
   </component>
 </project>
