@@ -16,6 +16,7 @@
                 <TextBlock x:Name="LicenceTitle" Text="Licence :" FontWeight="Bold"/>
                 <TextBlock x:Name="LicenceWarning" Text="All image are from Flaticon"/>
             </StackPanel>
+            <!-- todo make style for tabitem -->
             <TabControl Grid.Row="1">
                 <TabItem Header="BasicUi">
                     <WrapPanel x:Name="WrapPanelBasicUi" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
