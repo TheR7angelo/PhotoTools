@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -20,8 +20,9 @@ public partial class License
     private void AddImages(Images.LicenceImages pack, Panel panel)
     {
         var url = pack.Url;
+        var author = pack.Author;
         // todo add licence name and go to url
-        foreach (var image in pack.Images)
+        foreach (var image in pack.Images.OrderBy(item => item))
         {
             var btn = new Button
             {
