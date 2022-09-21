@@ -37,7 +37,7 @@ public partial class License
         }
     }
 
-    private void ButtonImageLicence_OnClick(object sender, RoutedEventArgs e)
+    private static void ButtonImageLicence_OnClick(object sender, RoutedEventArgs e)
     {
         var btn = sender as Button;
         // todo make string trad
