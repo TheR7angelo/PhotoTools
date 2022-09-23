@@ -9,8 +9,7 @@ public static partial class Export
 {
     public static void ExportJson(string path, StrucConfig.Themes themes)
     {
-        var data = new Dictionary<object, object>();
-        data.Add("name", themes.Name!);
+        var data = new Dictionary<object, object> { { "name", themes.Name! } };
 
         foreach (var co in themes.Value)
         {
@@ -22,15 +21,8 @@ public static partial class Export
 
     private static void SaveJson(string path, Dictionary<object, object> data)
     {
-
-        var json = JsonConvert.SerializeObject(data, Formatting.Indented);
-
         using var file = File.CreateText(path);
         var serializer = new JsonSerializer { Formatting = Formatting.Indented};
         serializer.Serialize(file, data);
-
-        // var createStream = File.Create(path);
-        // JsonSerializer.SerializeAsync(createStream, data);
-        // createStream.Close();
     }
 }
