@@ -14,10 +14,18 @@ public partial class Export
             Filter = ifilter,
             InitialDirectory = iinitialFolder
         };
-        var path = saveFileDialog.ShowDialog() != true ? string.Empty : saveFileDialog.FileName;
-
+        return saveFileDialog.ShowDialog() != true ? string.Empty : saveFileDialog.FileName;
+    }
+    
+    public static string SaveFile(string? initialFolder = null, string? filter = null)
+    {
+        var ifilter = filter is null ? string.Empty : string.Join('|', filter);
+        var iinitialFolder = initialFolder is null ? string.Empty : string.Join('|', initialFolder);
         
-
-        return path;
+        var saveFileDialog = new SaveFileDialog {
+            Filter = ifilter,
+            InitialDirectory = iinitialFolder
+        };
+        return saveFileDialog.ShowDialog() != true ? string.Empty : saveFileDialog.FileName;
     }
 }

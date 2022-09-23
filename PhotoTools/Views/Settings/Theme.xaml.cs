@@ -275,7 +275,7 @@ public partial class Theme
         // todo finish export ".json" file
         var name = CbStyle.Text!;
         var theme = Query.GetStyle(name);
-        var path = Export.SaveFile(SaveFileFilter.Json(), Utils.Function.Get.GetDesktop);
+        var path = Export.SaveFile(SaveFileFilter.Json(), Get.GetDesktop);
 
         if (path != string.Empty)
         {
