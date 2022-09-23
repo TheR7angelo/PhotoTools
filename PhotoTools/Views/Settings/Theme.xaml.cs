@@ -12,6 +12,10 @@ using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Sql;
 using PhotoTools.Utils.Strucs;
 
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using PhotoTools.Utils.Constant;
+
 namespace PhotoTools.Views.Settings;
 
 public partial class Theme
@@ -271,22 +275,27 @@ public partial class Theme
         // todo finish export ".json" file
         var name = CbStyle.Text!;
         var theme = Query.GetStyle(name);
-        var ext = SaveFile();
+        var path = Export.SaveFile(SaveFileFilter.Json(), Utils.Function.Get.GetDesktop);
+
+        if (path != string.Empty)
+        {
+            var ext = Path.GetExtension(path);
+            var liste = new Dictionary<object, object>();
+            liste.Add("test", 1);
+            liste.Add("test1", 1);
+            liste.Add("test2", 1);
+            liste.Add("test3", 1);
+
+            var createStream = File.Create(path);
+            JsonSerializer.SerializeAsync(createStream, liste);
+            createStream.Close();
+        }
+        
         Console.WriteLine(name);
     }
 
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
     {
         throw new System.NotImplementedException();
-    }
-    
-    private static string SaveFile()
-    {
-        // "Text file (*.txt)|*.txt|C# file (*.cs)|*.cs"
-        var saveFileDialog = new SaveFileDialog {
-            Filter = "Json file (*.json)|*.json",
-            InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
-        };
-        return saveFileDialog.ShowDialog() != true ? string.Empty : Path.GetExtension(saveFileDialog.FileName);
     }
 }
