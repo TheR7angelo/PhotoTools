@@ -28,16 +28,19 @@ public static partial class Export
 
     private static void WriteCsv(IEnumerable<IEnumerable<object>> lines, char delimiter, TextWriter writer)
     {
-        // todo make new line ;)
-        foreach (var line in lines)
+        foreach (var item in lines.Select((value, index) => new { index, value }))
         {
-            WriteCsv(line, delimiter, writer);
+            WriteCsv(item.value, delimiter, writer, true);
+            if(item.index < lines.Count() - 1) writer.Write(writer.NewLine);
         }
+        writer.Close();
     }
     
-    private static void WriteCsv(IEnumerable<object> lines, char delimiter, TextWriter writer)
+    private static void WriteCsv(IEnumerable<object> lines, char delimiter, TextWriter writer, bool slave = false)
     {
         var iline = lines.Select(line => line.ToString()!).ToList();
         writer.Write(string.Join(delimiter, iline));
+        
+        if (!slave) writer.Close();
     }
 }

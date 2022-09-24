@@ -10,7 +10,10 @@ public static partial class Export
 {
     public static (string, string) SaveFile(string title, string? initialFolder = null, List<SaveFileFilter.Filter>? filters = null)
     {
-        var ifilter = filters is null ? string.Empty : filters.Aggregate("", (current, filter) => $"{current}|{filter}");
+        //var ifilter = filters is null ? string.Empty : filters.Aggregate("", (current, filter) => $"{current}|{filter}");
+        
+        var ifilter = filters is null ? string.Empty : string.Join('|', filters.Select(filter => filter.Value).ToList());
+        
         var iinitialFolder = initialFolder ?? string.Empty;
         
         var saveFileDialog = new SaveFileDialog {
