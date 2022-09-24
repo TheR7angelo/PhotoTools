@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace PhotoTools.Utils.Function;
 
-public static partial class Export
+public partial class Export
 {
     public static void ExportJson(string path, StrucConfig.Themes themes)
     {

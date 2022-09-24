@@ -2,6 +2,7 @@
 
 public static class SaveFileFilter
 {
+    // todo change string by trad
     public static Filter SemiColonCsv => new()
         { Value = "Csv (délimiter par des points virgule) (*.csv)|*.csv", Extension = ".csv" };
 
