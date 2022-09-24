@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,7 +9,6 @@ using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Sql;
 using PhotoTools.Utils.Strucs;
 using PhotoTools.Utils.Constant;
-using WinRT;
 
 namespace PhotoTools.Views.Settings;
 
@@ -282,11 +280,17 @@ public partial class Theme
             case var value when value.Equals(SaveFileFilter.Json.Value):
                 Export.ExportJson(path.Item1, theme);
                 break;
+            case ".json":
+                Export.ExportJson(path.Item1, theme);
+                break;
             case var value when value.Equals(SaveFileFilter.SemiColonCsv.Value):
                 Export.ExportCsv(path.Item1, theme, ';');
                 break;
             case var value when value.Equals(SaveFileFilter.CommaCsv.Value):
                 Export.ExportCsv(path.Item1, theme, ',');
+                break;
+            case ".csv":
+                Export.ExportCsv(path.Item1, theme, ';');
                 break;
         }
     }
