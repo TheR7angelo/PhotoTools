@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
-using Microsoft.Win32;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Sql;
 using PhotoTools.Utils.Strucs;
-
-using System.Text.Json;
-using System.Text.Json.Serialization;
 using PhotoTools.Utils.Constant;
+using WinRT;
 
 namespace PhotoTools.Views.Settings;
 
@@ -272,26 +268,27 @@ public partial class Theme
 
     private void BtExpTheme_OnClick(object sender, RoutedEventArgs e)
     {
-        // todo finish export ".json" file
         var name = CbStyle.Text!;
         var theme = Query.GetStyle(name);
-        var path = Export.SaveFile(SaveFileFilter.Json(), Get.GetDesktop);
-
-        if (path != string.Empty)
-        {
-            var ext = Path.GetExtension(path);
-            var liste = new Dictionary<object, object>();
-            liste.Add("test", 1);
-            liste.Add("test1", 1);
-            liste.Add("test2", 1);
-            liste.Add("test3", 1);
-
-            var createStream = File.Create(path);
-            JsonSerializer.SerializeAsync(createStream, liste);
-            createStream.Close();
-        }
+        // todo change string to trad
         
-        Console.WriteLine(name);
+        var filter = new List<SaveFileFilter.Filter> { SaveFileFilter.Json, SaveFileFilter.SemiColonCsv, SaveFileFilter.CommaCsv };
+        var path = Export.SaveFile($"Fichier d'export du theme {name}" ,Get.GetDesktop, filter);
+
+        if (path.Item1 == string.Empty) return;
+
+        switch (path.Item2)
+        {
+            case var value when value.Equals(SaveFileFilter.Json.Value):
+                Export.ExportJson(path.Item1, theme);
+                break;
+            case var value when value.Equals(SaveFileFilter.SemiColonCsv.Value):
+                Export.ExportCsv(path.Item1, theme, ';');
+                break;
+            case var value when value.Equals(SaveFileFilter.CommaCsv.Value):
+                Export.ExportCsv(path.Item1, theme, ',');
+                break;
+        }
     }
 
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
