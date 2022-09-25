@@ -12,6 +12,14 @@ public partial class ColorEdit
     {
         InstanceColorEdit = this;
         InitializeComponent();
+
+        InitializedUi();
+    }
+
+    private void InitializedUi()
+    {
+        BtCancel.Content = Utils.Trad.Setting.ColorEdit.BtCancelContent;
+        BtValid.Content = Utils.Trad.Setting.ColorEdit.BtValidContent;
     }
 
     private void BtColorEditValidation_OnClick(object sender, RoutedEventArgs e)

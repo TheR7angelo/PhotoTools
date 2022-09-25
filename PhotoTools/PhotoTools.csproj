@@ -177,6 +177,9 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Theme.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\ColorEdit\ColorEdit.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>

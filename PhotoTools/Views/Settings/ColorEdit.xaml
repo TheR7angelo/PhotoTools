@@ -11,7 +11,6 @@
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <colorPicker:StandardColorPicker x:Name="ColorPicker" Style="{StaticResource  DefaultColorPickerStyle}" ShowAlpha="False" SelectedColor="White"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <!-- todo changer text !! -->
                 <Button Name="BtValid" Content="Validation" Click="BtColorEditValidation_OnClick"/>
                 <Button Name="BtCancel" Content="Annuler" Click="BtColorEditAnnul_OnClick"/>
             </StackPanel>
