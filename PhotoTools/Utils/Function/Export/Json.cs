@@ -8,7 +8,7 @@ namespace PhotoTools.Utils.Function;
 
 public partial class Export
 {
-    public static bool ExportJson(string path, StrucConfig.Themes themes)
+    public static bool ExportJson(this string path, StrucConfig.Themes themes)
     {
         var data = new Dictionary<object, object> { { "name", themes.Name! } };
 
@@ -28,7 +28,7 @@ public partial class Export
         }
     }
 
-    private static void SaveJson(string path, Dictionary<object, object> data)
+    private static void SaveJson(this string path, Dictionary<object, object> data)
     {
         using var file = File.CreateText(path);
         var serializer = new JsonSerializer { Formatting = Formatting.Indented};

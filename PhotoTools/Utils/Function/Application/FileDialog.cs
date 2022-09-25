@@ -13,7 +13,14 @@ public static class FileDialog
         var ifilter = filters is null ? string.Empty : string.Join('|', filters.Select(filter => filter.Value).ToList());
         var iinitialFolder = initialFolder ?? string.Empty;
 
-        return new FolderFilter() { Filter = ifilter, InitialFolder = iinitialFolder };
+        return new FolderFilter { Filter = ifilter, InitialFolder = iinitialFolder };
+    }
+
+    public static FolderFilter DefaultFolderFilter(string? initialFolder = null, SaveFileFilter.Filter? filter = null)
+    {
+        var ifilter = filter is null ? string.Empty : filter.Value.Value;
+        var iinitialFolder = initialFolder ?? string.Empty;
+        return new FolderFilter { Filter = ifilter, InitialFolder = iinitialFolder };
     }
     
     public static (string, string) FileDialogResult(IReadOnlyList<SaveFileFilter.Filter>? filters, Microsoft.Win32.FileDialog fileDialog, FolderFilter folderFilter)

@@ -22,13 +22,12 @@ public static partial class Export
 
     public static string SaveFile(string title, string? initialFolder = null, SaveFileFilter.Filter? filter = null)
     {
-        var ifilter = filter is null ? string.Empty : filter.Value.Value;
-        var iinitialFolder = initialFolder ?? string.Empty;
+        var folderFilter = FileDialog.DefaultFolderFilter(initialFolder, filter);
         
         var saveFileDialog = new SaveFileDialog {
             Title = title,
-            Filter = ifilter,
-            InitialDirectory = iinitialFolder
+            Filter = folderFilter.Filter,
+            InitialDirectory = folderFilter.InitialFolder
         };
         return saveFileDialog.ShowDialog() != true ? string.Empty : saveFileDialog.FileName;
     }

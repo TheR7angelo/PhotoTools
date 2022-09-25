@@ -9,7 +9,7 @@ public static partial class Convert
     /// </summary>
     /// <param name="color">GYGYGYGYGYGYGYGYJGJYGJYGJG</param>
     /// <returns><see cref="string"/></returns>
-    public static string ToHex(this System.Windows.Media.Color color)
+    public static string ToHex(this Color color)
     {
         return $"#{color.A:X}{color.R:X}{color.G:X}{color.B:X}";
     }
@@ -22,7 +22,7 @@ public static partial class Convert
     {
         return $"#{solidColorBrush.Color.A:X}{solidColorBrush.Color.R:X}{solidColorBrush.Color.G:X}{solidColorBrush.Color.B:X}";
     }
-    public static SolidColorBrush SolidColorBrush(string code)
+    public static SolidColorBrush SolidColorBrush(this string code)
     {
         return (SolidColorBrush)new BrushConverter().ConvertFromString(code)!;
     }

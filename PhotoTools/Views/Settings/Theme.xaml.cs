@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -315,7 +316,9 @@ public partial class Theme
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
     {
         var filePath = Import.GetOpenFile("Import File", Get.GetDesktop);
-        // todo import function
-        throw new System.NotImplementedException();
+        // todo import function finish
+        
+        var ey = filePath.Item1.Json();
+        Console.WriteLine("hry");
     }
 }
