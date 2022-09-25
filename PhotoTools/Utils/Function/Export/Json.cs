@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using PhotoTools.Utils.Strucs;
 using Newtonsoft.Json;
@@ -7,7 +8,7 @@ namespace PhotoTools.Utils.Function;
 
 public partial class Export
 {
-    public static void ExportJson(string path, StrucConfig.Themes themes)
+    public static bool ExportJson(string path, StrucConfig.Themes themes)
     {
         var data = new Dictionary<object, object> { { "name", themes.Name! } };
 
@@ -15,8 +16,16 @@ public partial class Export
         {
             data.Add(co.Name, co.StyleValue);
         }
-        
-        SaveJson(path, data);
+
+        try
+        {
+            SaveJson(path, data);
+            return true;
+        }
+        catch (Exception)
+        {
+            return false;
+        }
     }
 
     private static void SaveJson(string path, Dictionary<object, object> data)
