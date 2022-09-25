@@ -19,4 +19,17 @@ public static partial class Import
         };
         return FileDialog.FileDialogResult(filters, openFileDialog, folderFilter);
     }
+    
+    public static (string, string) GetOpenFile(string title, string? initialFolder = null, SaveFileFilter.Filter? filter = null)
+    {
+        var folderFilter = FileDialog.DefaultFolderFilter(initialFolder, filter);
+        
+        var openFileDialog = new OpenFileDialog()
+        {
+            Title = title,
+            InitialDirectory = folderFilter.InitialFolder,
+            Filter = folderFilter.Filter
+        };
+        return FileDialog.FileDialogResult(filter, openFileDialog, folderFilter);
+    }
 }
