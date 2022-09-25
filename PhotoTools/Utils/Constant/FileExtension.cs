@@ -2,6 +2,8 @@
 
 public static class FileExtension
 {
+    public const string All = ".*";
+    
     public const string Csv = ".csv";
     public const char Semicolon = ';';
     public const char Comma = ',';
