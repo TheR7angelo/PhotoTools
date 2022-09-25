@@ -34,21 +34,6 @@
 
     <ItemGroup>
       <None Remove="Utils\Img\github.png" />
-      <Resource Include="Utils\Img\MessageBox\Source\Pngs\alert.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Utils\Img\MessageBox\Source\Pngs\critical.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Utils\Img\MessageBox\Source\Pngs\error.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Utils\Img\MessageBox\Source\Pngs\information.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Utils\Img\MessageBox\Source\Pngs\valid.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <Resource Include="Utils\Img\Pack\license.pdf">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>

@@ -7,19 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor and finish import json">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/FileExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/FileExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/SaveFileFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/SaveFileFilter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Application/FileDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Application/FileDialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Import/Common.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Import/Common.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.en.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.fr-fr.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
-    </list>
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="path crash for import json file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,8 +23,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/51626ab8db72e5d4ce9fd4c2b191142d42241a6cc538c9f81d8b2aa974b1b/ManifestBasedResourceGroveler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9b35bc5d5da43a49af8d74dac7ab37ccc1bb654cb7dfe8f9a21501181ed9b/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Constant/FileExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Constant/SaveFileFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Application/FileDialog.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Import/Common.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Import/Json.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.Designer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" root0="FORCE_HIGHLIGHTING" />
@@ -378,7 +372,42 @@
       <option name="project" value="LOCAL" />
       <updated>1664129086101</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added overload function getOpenFile with one filter">
+      <created>1664131893726</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1664131893726</updated>
+    </task>
+    <task id="LOCAL-00039" summary="added overload for function FileDialogResult and change default filter by new filter all files">
+      <created>1664131933763</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1664131933763</updated>
+    </task>
+    <task id="LOCAL-00040" summary="added new filter all files">
+      <created>1664131947313</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1664131947313</updated>
+    </task>
+    <task id="LOCAL-00041" summary="added new filter all files and change ext for all filters">
+      <created>1664131988255</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1664131988255</updated>
+    </task>
+    <task id="LOCAL-00042" summary="path crash for import json file">
+      <created>1664132005739</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1664132005739</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,11 +429,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Change struc for configuration" />
-    <MESSAGE value="Refractor" />
-    <MESSAGE value="Added image for messagebox and test in changing language function" />
-    <MESSAGE value="Added icon base" />
-    <MESSAGE value="added table style in main" />
     <MESSAGE value="Added struc style" />
     <MESSAGE value="Added fonction to change current style" />
     <MESSAGE value="Rerfractor and add Ui Setting" />
@@ -425,7 +449,12 @@
     <MESSAGE value="refractor" />
     <MESSAGE value="ras" />
     <MESSAGE value="refractor and finish import json" />
-    <option name="LAST_COMMIT_MESSAGE" value="refractor and finish import json" />
+    <MESSAGE value="added overload function getOpenFile with one filter" />
+    <MESSAGE value="added overload for function FileDialogResult and change default filter by new filter all files" />
+    <MESSAGE value="added new filter all files" />
+    <MESSAGE value="added new filter all files and change ext for all filters" />
+    <MESSAGE value="path crash for import json file" />
+    <option name="LAST_COMMIT_MESSAGE" value="path crash for import json file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
