@@ -2,14 +2,14 @@
 
 public static class SaveFileFilter
 {
-    // todo change string by trad
     public static Filter SemiColonCsv => new()
-        { Value = "Csv (délimiter par des points virgule) (*.csv)|*.csv", Extension = ".csv" };
+        { Value = Trad.SaveFileFilter.SaveFileFilter.SeminColonCsv, Extension = ".csv" };
 
     public static Filter CommaCsv => new()
-        { Value = "Csv (délimiter par une virgule) (*.csv)|*.csv", Extension = ".csv" };
+        { Value = Trad.SaveFileFilter.SaveFileFilter.CommaCsv, Extension = ".csv" };
     
-    public static Filter Json => new () { Value = "Json file (*.json)|*.json", Extension = ".json" };
+    public static Filter Json => new ()
+        { Value = Trad.SaveFileFilter.SaveFileFilter.Json, Extension = ".json" };
     
     public struct Filter
     {

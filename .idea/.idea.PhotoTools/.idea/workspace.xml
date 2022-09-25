@@ -7,23 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added todo task">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor">
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.en.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.fr-fr.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Date.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Date.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/SaveFileFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/SaveFileFilter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Bdds/Language.sql" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Bdds/Language.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Bdds/Language.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Bdds/Language.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Bdds/Main.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Bdds/Main.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Bdds/Progress.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Bdds/Progress.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Connection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,14 +153,7 @@
       <workItem from="1663674013614" duration="4497000" />
       <workItem from="1663833759449" duration="4968000" />
       <workItem from="1663947400157" duration="15316000" />
-      <workItem from="1664100062952" duration="311000" />
-    </task>
-    <task id="LOCAL-00050" summary="change visibility button add new theme">
-      <created>1663225139008</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1663225139008</updated>
+      <workItem from="1664100062952" duration="801000" />
     </task>
     <task id="LOCAL-00051" summary="Added function for modified theme">
       <created>1663225775526</created>
@@ -507,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664054480791</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="refractor">
+      <created>1664100418785</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1664100418785</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +522,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Change message to apply new language setting" />
     <MESSAGE value="added check image" />
-    <MESSAGE value="refractor" />
     <MESSAGE value="added message theme lock" />
     <MESSAGE value="added message empty new theme name" />
     <MESSAGE value="added message new theme" />
@@ -554,7 +544,8 @@
     <MESSAGE value="valid csv mode" />
     <MESSAGE value="valid export" />
     <MESSAGE value="added todo task" />
-    <option name="LAST_COMMIT_MESSAGE" value="added todo task" />
+    <MESSAGE value="refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refractor" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
