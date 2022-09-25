@@ -140,42 +140,42 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>MessageBox.Designer.cs</LastGenOutput>
       </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\Language.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>Language.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\ColorEdit.en.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\ColorEdit.fr-fr.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\Language.en.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\Language.fr-fr.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\MainSetting.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\MainSetting.en.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\MainSetting.fr-fr.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\Theme.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>Theme.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Utils\Trad\Setting\License.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>License.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
       <EmbeddedResource Update="Utils\Trad\SaveFileFilter\SaveFileFilter.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>SaveFileFilter.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\ColorEdit\ColorEdit.en.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\ColorEdit\ColorEdit.fr-fr.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\Language\Language.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Language.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\Language\Language.en.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\Language\Language.fr-fr.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\License\License.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>License.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\MainSetting\MainSetting.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\MainSetting\MainSetting.en.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\MainSetting\MainSetting.fr-fr.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Setting\Theme\Theme.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Theme.Designer.cs</LastGenOutput>
       </EmbeddedResource>
     </ItemGroup>
 
@@ -200,25 +200,25 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>MessageBox.resx</DependentUpon>
       </Compile>
-      <Compile Update="Utils\Trad\Setting\Language.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>Language.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Utils\Trad\Setting\Theme.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>Theme.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Utils\Trad\Setting\License.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>License.resx</DependentUpon>
-      </Compile>
       <Compile Update="Utils\Trad\SaveFileFilter\SaveFileFilter.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>SaveFileFilter.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Utils\Trad\Setting\Language\Language.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Language.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Utils\Trad\Setting\License\License.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>License.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Utils\Trad\Setting\Theme\Theme.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Theme.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
