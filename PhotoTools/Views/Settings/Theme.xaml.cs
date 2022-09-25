@@ -184,7 +184,7 @@ public partial class Theme
         msg.SetButtonYesNo();
         msg.ShowDialog();
 
-        if (msg.Answer is not null && msg.Answer.Equals("yes"))
+        if (msg.Answer is not null && msg.Answer.Equals(msg.AnswerYes))
         {
             msg = new Window.MessageBox();
             msg.SetTitle(Utils.Trad.Setting.Theme.ThemeLockTitle);
@@ -306,8 +306,7 @@ public partial class Theme
         }
 
         msg.ShowDialog();
-        var answer = msg.Answer;
-        if (answer is not null && answer.Equals(msg.AnswerYes))
+        if (msg.Answer is not null && msg.Answer.Equals(msg.AnswerYes))
         {
             path.Item1.StartFile();
         }

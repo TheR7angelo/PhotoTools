@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Interop;
 using PhotoTools.Utils.Strucs;
 using PhotoTools.Utils.Function.Application;
 
@@ -54,8 +55,8 @@ public partial class License
         msg.SetText("Open web page ?");
         msg.SetButtonYesNo();
         msg.ShowDialog();
-
-        if (msg.Answer is "yes")
+        
+        if (msg.Answer is not null && msg.Answer.Equals(msg.AnswerYes))
         {
             ((string)btn!.Tag).OpenUrl();
         }

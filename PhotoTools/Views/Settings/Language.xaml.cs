@@ -48,8 +48,7 @@ public partial class Language
         msg.SetTitle(Utils.Trad.Setting.Language.Title);
         msg.SetText(Utils.Trad.Setting.Language.Message);
         msg.ShowDialog();
-        var answer = msg.Answer;
 
-        if (answer is not null && answer.Equals("yes")) Utils.Function.Application.Current.Restart();
+        if (msg.Answer is not null && msg.Answer.Equals(msg.AnswerYes)) Utils.Function.Application.Current.Restart();
     }
 }
