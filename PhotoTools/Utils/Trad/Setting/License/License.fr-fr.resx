@@ -15,4 +15,10 @@
         <value>Auteur : 
 Url : </value>
     </data>
+    <data name="ButtonImageLicence_OnClick_Title" xml:space="preserve">
+        <value>Question</value>
+    </data>
+    <data name="ButtonImageLicence_OnClick_Content" xml:space="preserve">
+        <value>Ouvrir la page internet ?</value>
+    </data>
 </root>

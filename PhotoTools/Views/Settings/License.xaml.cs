@@ -46,11 +46,10 @@ public partial class License
     private static void ButtonImageLicence_OnClick(object sender, RoutedEventArgs e)
     {
         var btn = sender as Button;
-        // todo make string trad
         var msg = new Window.MessageBox();
-        msg.SetTitle("Question");
+        msg.SetTitle(Utils.Trad.Setting.License.ButtonImageLicence_OnClick_Title);
         msg.SetIcon(msg.MessageIcon.Question);
-        msg.SetText("Open web page ?");
+        msg.SetText(Utils.Trad.Setting.License.ButtonImageLicence_OnClick_Content);
         msg.SetButtonYesNo();
         msg.ShowDialog();
         

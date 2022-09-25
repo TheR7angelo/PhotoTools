@@ -60,6 +60,24 @@ namespace PhotoTools.Utils.Trad.Setting {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string ButtonImageLicence_OnClick_Content {
+            get {
+                return ResourceManager.GetString("ButtonImageLicence_OnClick_Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string ButtonImageLicence_OnClick_Title {
+            get {
+                return ResourceManager.GetString("ButtonImageLicence_OnClick_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Author :
         /// 
         ///Url : .
