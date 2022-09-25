@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -9,7 +8,7 @@ namespace PhotoTools.Window;
 public partial class MessageBox
 {
     public Utils.Strucs.MessageBox.Icon MessageIcon = new();
-    public string? Answer { get; internal set; }
+    public string? Answer { get; private set; }
 
     #region List Buttons
     private readonly List<Utils.Strucs.MessageBox.Button> _buttonsOk = new()
@@ -27,6 +26,15 @@ public partial class MessageBox
         new Utils.Strucs.MessageBox.Button { Name = "No", Content = Utils.Trad.MessageBox.MessageBox.ButtonNo },
         new Utils.Strucs.MessageBox.Button { Name = "Cancel", Content = Utils.Trad.MessageBox.MessageBox.ButtonCancel },
     };
+
+    #endregion
+
+    #region answer
+
+    public string AnswerCancel { get; } = "cancel";
+    public string AnswerOk { get; } = "ok";
+    public string AnswerNo { get; } = "no";
+    public string AnswerYes { get; } = "yes";
 
     #endregion
 

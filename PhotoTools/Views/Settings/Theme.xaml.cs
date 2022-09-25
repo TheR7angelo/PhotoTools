@@ -8,6 +8,7 @@ using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Strucs;
 using PhotoTools.Utils.Constant;
+using PhotoTools.Utils.Function.Application;
 using PhotoTools.Utils.Function.Sql;
 using Query = PhotoTools.Utils.Function.Sql.Query;
 
@@ -288,6 +289,7 @@ public partial class Theme
 
         var msg = new Window.MessageBox();
 
+        // todo make trad
         if (sucess)
         {
             msg.SetIcon(msg.MessageIcon.Check);
@@ -304,6 +306,11 @@ public partial class Theme
         }
 
         msg.ShowDialog();
+        var answer = msg.Answer;
+        if (answer is not null && answer.Equals(msg.AnswerYes))
+        {
+            path.Item1.StartFile();
+        }
     }
 
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
