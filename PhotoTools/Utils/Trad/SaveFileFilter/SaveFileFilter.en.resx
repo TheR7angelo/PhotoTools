@@ -20,4 +20,7 @@
     <data name="Json" xml:space="preserve">
         <value>Json file (*.json)|*.json</value>
     </data>
+    <data name="All" xml:space="preserve">
+        <value>All files (*.*)|*.*</value>
+    </data>
 </root>

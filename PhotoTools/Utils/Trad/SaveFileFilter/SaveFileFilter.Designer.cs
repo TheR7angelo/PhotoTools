@@ -62,6 +62,15 @@ namespace PhotoTools.Utils.Trad.SaveFileFilter {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        internal static string All {
+            get {
+                return ResourceManager.GetString("All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         internal static string CommaCsv {
             get {
                 return ResourceManager.GetString("CommaCsv", resourceCulture);
