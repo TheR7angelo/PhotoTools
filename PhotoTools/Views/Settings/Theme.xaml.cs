@@ -271,7 +271,7 @@ public partial class Theme
         var name = CbStyle.Text!;
         var theme = Query.GetStyle(name);
         // todo change string to trad
-        
+
         var filter = new List<SaveFileFilter.Filter> { SaveFileFilter.Json, SaveFileFilter.SemiColonCsv, SaveFileFilter.CommaCsv };
         var path = Export.SaveFile($"Fichier d'export du theme {name}" ,Get.GetDesktop, filter);
 
@@ -314,6 +314,7 @@ public partial class Theme
 
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
     {
+        // todo import function
         throw new System.NotImplementedException();
     }
 }
