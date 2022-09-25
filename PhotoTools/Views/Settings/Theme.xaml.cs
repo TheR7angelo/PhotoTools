@@ -304,6 +304,7 @@ public partial class Theme
                 return;
                 break;
             case FileExtension.Csv:
+                data = filePath.Item1.ReadCsv(FileExtension.Semicolon).ParseToDictCsv();
                 return;
                 break;
             default:
