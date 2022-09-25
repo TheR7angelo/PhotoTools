@@ -22,7 +22,6 @@ public partial class Language
     {
         CbSettingLanguage.Items.Clear();
         
-        // todo get cultureLang actual
         var lang = Config.Configue.Language.LanguageName!;
         var cultureLang = Query.GetActualcultureLang(lang);
         var languages = Query.GetAllLangs(lang);

@@ -19,7 +19,6 @@ public partial class License
 
     private void AddImages(Images.LicenceImages pack, Panel panel)
     {
-        // todo add licence name and go to url
         foreach (var image in pack.Images.OrderBy(item => item).Select((value, i) => new { i, value }))
         {
             var btn = new Button
