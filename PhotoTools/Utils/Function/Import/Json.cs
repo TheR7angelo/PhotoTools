@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using PhotoTools.Utils.Strucs;
@@ -8,7 +7,7 @@ namespace PhotoTools.Utils.Function;
 
 public static partial class Import
 {
-    public static StrucConfig.Themes Json(this string path)
+    public static StrucConfig.Themes ThemeJson(this string path)
     {
         var data = path.ReadJson().DeserializeJson();
 
@@ -38,7 +37,7 @@ public static partial class Import
         return th;
     }
 
-    public static Dictionary<object, object> DeserializeJson(this string data)
+    private static Dictionary<object, object> DeserializeJson(this string data)
     {
         return JsonConvert.DeserializeObject<Dictionary<object, object>>(data)!;
     }
