@@ -7,14 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="ras">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_21_09_2022_21_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_21_09_2022_21_05__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/Login/Login.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Strucs/Image.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/License.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/License.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Converter/String.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Converter/String.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Fonction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,16 +32,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/51626ab8db72e5d4ce9fd4c2b191142d42241a6cc538c9f81d8b2aa974b1b/ManifestBasedResourceGroveler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9b35bc5d5da43a49af8d74dac7ab37ccc1bb654cb7dfe8f9a21501181ed9b/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Application/Current.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Getter/Application.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Getter/Application.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Themes/Styles/Base/Widgets/Button.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Language.xaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Import/Json.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/License.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/License.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Window/MainWindow.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Window/MessageBox.xaml.cs" root0="FORCE_HIGHLIGHTING" />
@@ -360,7 +354,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663765730220</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="ras">
+      <created>1664125987094</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1664125987094</updated>
+    </task>
+    <task id="LOCAL-00036" summary="ras">
+      <created>1664126065741</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1664126065741</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,12 +410,70 @@
     <MESSAGE value="Added content trad messageBox" />
     <MESSAGE value="Add image showing" />
     <MESSAGE value="added authors name" />
-    <MESSAGE value="ras" />
     <MESSAGE value="GetImageSourceResources function added" />
     <MESSAGE value="Change style button" />
     <MESSAGE value="added todo" />
     <MESSAGE value="refractor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refractor" />
+    <MESSAGE value="ras" />
+    <option name="LAST_COMMIT_MESSAGE" value="ras" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs</url>
+          <line>160</line>
+          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Views\Settings\Theme.xaml.cs" initialLine="160" containingFunctionPresentation="method 'AddNewTheme'">
+            <startOffsets>
+              <option value="4539" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4573" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Fonction.cs</url>
+          <line>32</line>
+          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Sql\Fonction.cs" initialLine="32" containingFunctionPresentation="method 'AddTheme'">
+            <startOffsets>
+              <option value="690" />
+            </startOffsets>
+            <endOffsets>
+              <option value="713" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs</url>
+          <line>25</line>
+          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Sql\Query.cs" initialLine="25" containingFunctionPresentation="method '_AddTheme'">
+            <startOffsets>
+              <option value="713" />
+            </startOffsets>
+            <endOffsets>
+              <option value="746" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs</url>
+          <line>30</line>
+          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Sql\Query.cs" initialLine="30" containingFunctionPresentation="method '_AddTheme'">
+            <startOffsets>
+              <option value="852" />
+            </startOffsets>
+            <endOffsets>
+              <option value="895" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -28,6 +27,34 @@ public partial class Theme
 
     #region Function
 
+    private void AddNewTheme(StrucConfig.Themes theme)
+    {
+        var msg = new Window.MessageBox();
+        msg.SetTitle(Utils.Trad.Setting.Theme.ThemeLockTitle);
+        msg.SetIcon(msg.MessageIcon.Warning);
+        msg.SetButtonOk();
+
+        if (Query.GetThemeExist(theme.Name!))
+        {
+            msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeNameExistMessage, theme.Name));
+        }
+        else
+        {
+            if (Query.AddTheme(theme))
+            {
+                FillComboStyle(theme.Name);
+                AddNewThemeVisibility(false);
+                
+                msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeAddedMessage, theme.Name));
+            }
+            else
+            {
+                msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeNotAddedMessage, theme.Name));
+            }
+        }
+        msg.ShowDialog();
+    }
+    
     private void AddNewThemeVisibility(bool newTheme)
     {
         if (newTheme)
@@ -125,56 +152,43 @@ public partial class Theme
     
     #region Action
 
+    private void BtAddNewThemeCancel_OnClick(object sender, RoutedEventArgs e)
+    {
+        AddNewThemeVisibility(((Button)sender).Equals(BtNewTheme));
+    }
+    
     private void BtAddNewThemeValid_OnClick(object sender, RoutedEventArgs e)
     {
         var name = TbxStyle.Text;
-        
-        var msg = new Window.MessageBox();
-        msg.SetTitle(Utils.Trad.Setting.Theme.ThemeLockTitle);
-        msg.SetIcon(msg.MessageIcon.Warning);
-        msg.SetButtonOk();
-        
+
         if (name.Equals(string.Empty))
         {
+            var msg = new Window.MessageBox();
+            msg.SetTitle(Utils.Trad.Setting.Theme.ThemeLockTitle);
+            msg.SetIcon(msg.MessageIcon.Warning);
+            msg.SetButtonOk();
             msg.SetText(Utils.Trad.Setting.Theme.EmptyThemeNameMessage);
+            msg.ShowDialog();
+            return;
         }
-        else if (Query.GetThemeExist(name))
+        
+        var th = new StrucConfig.Themes
         {
-            msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeNameExistMessage, name));
-        }
-        else
+            Name = name,
+            Value = new List<StrucConfig.StyleColorBrush>()
+        };
+        
+        foreach (var btn in ListButton!)
         {
-            var th = new StrucConfig.Themes
+            th.Value.Add(new StrucConfig.StyleColorBrush
             {
-                Name = name,
-                Value = new List<StrucConfig.StyleColorBrush>()
-            };
-
-            foreach (var btn in ListButton!)
-            {
-                th.Value.Add(new StrucConfig.StyleColorBrush
-                {
-                    Name = btn.Name.Insert(3, "_").ToLower(),
-                    StyleValue = (SolidColorBrush)btn.Background
-                });
-            }
-
-            var apply = Query.AddTheme(th);
-            if (apply)
-            {
-                FillComboStyle(name);
-                AddNewThemeVisibility(false);
-                
-                msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeAddedMessage, name));
-            }
-            else
-            {
-                msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeNotAddedMessage, name));
-            }
+                Name = btn.Name.Insert(3, "_").ToLower(),
+                StyleValue = (SolidColorBrush)btn.Background
+            });
         }
-        msg.ShowDialog();
+        AddNewTheme(th);
     }
-    
+
     private void BtDelTheme_OnClick(object sender, RoutedEventArgs e)
     {
         var msg = new Window.MessageBox();
@@ -215,9 +229,59 @@ public partial class Theme
         }
     }
 
-    private void BtAddNewThemeCancel_OnClick(object sender, RoutedEventArgs e)
+    private void BtExpTheme_OnClick(object sender, RoutedEventArgs e)
     {
-        AddNewThemeVisibility(((Button)sender).Equals(BtNewTheme));
+        var name = CbStyle.Text!;
+        var theme = Query.GetStyle(name);
+        // todo change string to trad
+
+        var filter = new List<SaveFileFilter.Filter> { SaveFileFilter.Json, SaveFileFilter.SemiColonCsv, SaveFileFilter.CommaCsv };
+        var path = Export.SaveFile($"Fichier d'export du theme {name}" ,Get.GetDesktop, filter);
+
+        if (path.Item1 == string.Empty) return;
+
+        var success = path.Item2 switch
+        {
+            var value when value.Equals(SaveFileFilter.Json.Value) => path.Item1.ExportJson(theme),
+            FileExtension.Json => path.Item1.ExportJson(theme),
+            var value when value.Equals(SaveFileFilter.SemiColonCsv.Value) => Export.ExportCsv(path.Item1, theme, FileExtension.Semicolon),
+            var value when value.Equals(SaveFileFilter.CommaCsv.Value) => Export.ExportCsv(path.Item1, theme, FileExtension.Comma),
+            FileExtension.Csv => Export.ExportCsv(path.Item1, theme, FileExtension.Semicolon),
+            _ => false
+        };
+
+        var msg = new Window.MessageBox();
+
+        // todo make trad
+        if (success)
+        {
+            msg.SetIcon(msg.MessageIcon.Check);
+            msg.SetTitle("Success");
+            msg.SetText("Success");
+            msg.SetButtonYesNo();
+        }
+        else
+        {
+            msg.SetIcon(msg.MessageIcon.Error);
+            msg.SetTitle("Error");
+            msg.SetText("Error");
+            msg.SetButtonOk();
+        }
+
+        msg.ShowDialog();
+        if (msg.Answer is not null && msg.Answer.Equals(msg.AnswerYes))
+        {
+            path.Item1.StartFile();
+        }
+    }
+    
+    private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
+    {
+        var filePath = Import.GetOpenFile("Import File", Get.GetDesktop);
+        // todo import function finish
+        
+        var theme = filePath.Item1.ThemeJson();
+        AddNewTheme(theme);
     }
     
     private void CbStyle_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -266,59 +330,5 @@ public partial class Theme
     }
 
     #endregion
-
-    private void BtExpTheme_OnClick(object sender, RoutedEventArgs e)
-    {
-        var name = CbStyle.Text!;
-        var theme = Query.GetStyle(name);
-        // todo change string to trad
-
-        var filter = new List<SaveFileFilter.Filter> { SaveFileFilter.Json, SaveFileFilter.SemiColonCsv, SaveFileFilter.CommaCsv };
-        var path = Export.SaveFile($"Fichier d'export du theme {name}" ,Get.GetDesktop, filter);
-
-        if (path.Item1 == string.Empty) return;
-
-        var sucess = path.Item2 switch
-        {
-            var value when value.Equals(SaveFileFilter.Json.Value) => Export.ExportJson(path.Item1, theme),
-            FileExtension.Json => Export.ExportJson(path.Item1, theme),
-            var value when value.Equals(SaveFileFilter.SemiColonCsv.Value) => Export.ExportCsv(path.Item1, theme, FileExtension.Semicolon),
-            var value when value.Equals(SaveFileFilter.CommaCsv.Value) => Export.ExportCsv(path.Item1, theme, FileExtension.Comma),
-            FileExtension.Csv => Export.ExportCsv(path.Item1, theme, FileExtension.Semicolon),
-            _ => false
-        };
-
-        var msg = new Window.MessageBox();
-
-        // todo make trad
-        if (sucess)
-        {
-            msg.SetIcon(msg.MessageIcon.Check);
-            msg.SetTitle("Success");
-            msg.SetText("Success");
-            msg.SetButtonYesNo();
-        }
-        else
-        {
-            msg.SetIcon(msg.MessageIcon.Error);
-            msg.SetTitle("Error");
-            msg.SetText("Error");
-            msg.SetButtonOk();
-        }
-
-        msg.ShowDialog();
-        if (msg.Answer is not null && msg.Answer.Equals(msg.AnswerYes))
-        {
-            path.Item1.StartFile();
-        }
-    }
-
-    private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
-    {
-        var filePath = Import.GetOpenFile("Import File", Get.GetDesktop);
-        // todo import function finish
-        
-        var ey = filePath.Item1.Json();
-        Console.WriteLine("hry");
-    }
+    
 }

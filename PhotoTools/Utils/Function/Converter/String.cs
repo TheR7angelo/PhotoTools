@@ -12,4 +12,12 @@ public static partial class Convert
         }
         return str;
     }
+
+    public static string InsertString(this string original, int index, string insertStr)
+    {
+        var newStr = string.Empty;
+        
+        
+        return newStr;
+    }
 }

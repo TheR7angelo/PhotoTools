@@ -13,11 +13,11 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Main perso" uuid="d9aa31e5-cc33-4c7e-9ed5-08dcc93eec3c">
+    <data-source source="LOCAL" name="Main debug" uuid="0ef48ac4-9c37-4cc5-b46c-cb2185579722">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/PhotoTools/Utils/Sql/Bdds/Main.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/PhotoTools/bin/Debug/net7.0-windows10.0.17763.0/Utils/Bdds/Main.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
