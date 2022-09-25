@@ -7,7 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="path crash for import json file" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="ras">
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Converter/Csv.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Import/Csv.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Reader/Csv.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Reader/Json.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Import/Json.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Import/Json.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,12 +25,16 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/038dcc795a114e50a9c2769a26c1e8ed83a888/97/088015b1/TraceRoutedEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3e97068f857e4c7788a761e2f8c7c305f7a880/f8/a07563f2/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/2b/ec2b7b65/SQLiteDataReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/582c551e66394e5abdf6cabd080bc771613a0/b1/a3686d39/SQLiteCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/459b5cba13fc65ba87d9a46ab276a2a9b3c1125ef6bac57b7ca4b7ac70c0ad4c/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/51626ab8db72e5d4ce9fd4c2b191142d42241a6cc538c9f81d8b2aa974b1b/ManifestBasedResourceGroveler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9b35bc5d5da43a49af8d74dac7ab37ccc1bb654cb7dfe8f9a21501181ed9b/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b365fa8dcc5fbc273d9cca964d7afad9796ba662727da79a2227d2d6ba65f0/UIElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cde17d90ec8b28b5cf4cb2f7c2fa43e9f572488a65077a6353718e1ecc79b8a/UIElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dbf2140ddb0407b76aaf50b9172c54887b8f1f1bcdda12f1bc90906826c3/BitVector32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Constant/FileExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Constant/SaveFileFilter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/Logiciels/Adobe/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Application/FileDialog.cs" root0="SKIP_HIGHLIGHTING" />
@@ -407,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664132005739</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="ras">
+      <created>1664132112074</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1664132112074</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,14 +466,59 @@
     <MESSAGE value="Change style button" />
     <MESSAGE value="added todo" />
     <MESSAGE value="refractor" />
-    <MESSAGE value="ras" />
     <MESSAGE value="refractor and finish import json" />
     <MESSAGE value="added overload function getOpenFile with one filter" />
     <MESSAGE value="added overload for function FileDialogResult and change default filter by new filter all files" />
     <MESSAGE value="added new filter all files" />
     <MESSAGE value="added new filter all files and change ext for all filters" />
     <MESSAGE value="path crash for import json file" />
-    <option name="LAST_COMMIT_MESSAGE" value="path crash for import json file" />
+    <MESSAGE value="ras" />
+    <option name="LAST_COMMIT_MESSAGE" value="ras" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Converter/Csv.cs</url>
+          <line>11</line>
+          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Converter\Csv.cs" initialLine="11" containingFunctionPresentation="method 'ParseToDictCsv'">
+            <startOffsets>
+              <option value="358" />
+            </startOffsets>
+            <endOffsets>
+              <option value="432" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Import/Csv.cs</url>
+          <line>10</line>
+          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Import\Csv.cs" initialLine="10" containingFunctionPresentation="method 'ThemeCsv'">
+            <startOffsets>
+              <option value="269" />
+            </startOffsets>
+            <endOffsets>
+              <option value="308" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs</url>
+          <line>289</line>
+          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Views\Settings\Theme.xaml.cs" initialLine="288" containingFunctionPresentation="method 'BtImpTheme_OnClick'">
+            <startOffsets>
+              <option value="9228" />
+            </startOffsets>
+            <endOffsets>
+              <option value="9251" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

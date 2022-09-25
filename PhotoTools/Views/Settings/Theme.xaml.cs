@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,6 +10,7 @@ using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Strucs;
 using PhotoTools.Utils.Constant;
 using PhotoTools.Utils.Function.Application;
+using PhotoTools.Utils.Function.Reader;
 using PhotoTools.Utils.Function.Sql;
 using Query = PhotoTools.Utils.Function.Sql.Query;
 
@@ -278,12 +280,37 @@ public partial class Theme
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
     {
         // todo add trad
-        var filePath = Import.GetOpenFile("Import File", Get.GetDesktop, SaveFileFilter.Json);
+        var filePath = Import.GetOpenFile("Import File", Get.GetDesktop, new List<SaveFileFilter.Filter>
+            {SaveFileFilter.Json, SaveFileFilter.SemiColonCsv});
         // todo import function finish
         
         if (filePath.Item1.Equals(string.Empty)) return;
-        
-        var theme = filePath.Item1.ThemeJson();
+
+        StrucConfig.Themes theme;
+        IEnumerable<Dictionary<string, string>>? data;
+        switch (filePath.Item2)
+        {
+            case var value when value.Equals(SaveFileFilter.Json.Value):
+            case FileExtension.Json:
+                theme = filePath.Item1.ThemeJson();
+                break;
+            case var value when value.Equals(SaveFileFilter.SemiColonCsv.Value):
+                data = filePath.Item1.ReadCsv(FileExtension.Semicolon).ParseToDictCsv();
+                // todo convert dict to theme
+                return;
+                break;
+            case var value when value.Equals(SaveFileFilter.CommaCsv.Value):
+                data = filePath.Item1.ReadCsv(FileExtension.Comma).ParseToDictCsv();
+                return;
+                break;
+            case FileExtension.Csv:
+                return;
+                break;
+            default:
+                return;
+        }
+
+        // var theme = filePath.Item1.ThemeJson();
         AddNewTheme(theme);
     }
     
