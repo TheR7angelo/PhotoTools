@@ -314,6 +314,7 @@ public partial class Theme
 
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
     {
+        var filePath = Import.GetOpenFile("Import File", Get.GetDesktop);
         // todo import function
         throw new System.NotImplementedException();
     }

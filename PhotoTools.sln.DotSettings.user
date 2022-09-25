@@ -15,12 +15,12 @@
 	
 	
 	
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FLicense_002FLicense/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FLicense_002FLicense/@EntryIndexedValue">True</s:Boolean>
 	
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FMainSetting_002FMainSetting/@EntryIndexedValue">False</s:Boolean>
 	
 	
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FTheme_002FTheme/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=PhotoTools_002FUtils_002FTrad_002FSetting_002FTheme_002FTheme/@EntryIndexedValue">False</s:Boolean>
 	
 	
 	<s:String x:Key="/Default/ResxEditorPersonal/DisabledLanguages/@EntryValue">default-language</s:String>

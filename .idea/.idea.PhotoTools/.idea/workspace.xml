@@ -7,15 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="remove todo color edit">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="make licence trad">
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Application/FileDialog.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Import/Common.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Language/Language.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Language/Language.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/License/License.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/License/License.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting/MainSetting.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/MainSetting/MainSetting.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/License.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/License.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Export/Common.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Export/Common.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +70,7 @@
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Export/Csv.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Export/Json.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/ColorEdit.xaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
@@ -160,28 +159,7 @@
       <workItem from="1663674013614" duration="4497000" />
       <workItem from="1663833759449" duration="4968000" />
       <workItem from="1663947400157" duration="15316000" />
-      <workItem from="1664100062952" duration="5059000" />
-    </task>
-    <task id="LOCAL-00060" summary="refractor">
-      <created>1663242916234</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1663242916234</updated>
-    </task>
-    <task id="LOCAL-00061" summary="added todo">
-      <created>1663309141099</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1663309141099</updated>
-    </task>
-    <task id="LOCAL-00062" summary="ras">
-      <created>1663336491668</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1663336491668</updated>
+      <workItem from="1664100062952" duration="7876000" />
     </task>
     <task id="LOCAL-00063" summary="refractor">
       <created>1663589484389</created>
@@ -505,7 +483,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664104581115</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="refractor">
+      <created>1664105218696</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1664105218696</updated>
+    </task>
+    <task id="LOCAL-00110" summary="refractor">
+      <created>1664105460359</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1664105460359</updated>
+    </task>
+    <task id="LOCAL-00111" summary="make licence trad">
+      <created>1664110123078</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1664110123078</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +526,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added trad for button valid and annul new theme" />
     <MESSAGE value="Change theme color" />
     <MESSAGE value="added todo" />
     <MESSAGE value="remove parameter current language from possible choice" />
@@ -550,9 +548,10 @@
     <MESSAGE value="refractor and added start of messagebox for success" />
     <MESSAGE value="Added function to open File theme after export" />
     <MESSAGE value="ras" />
-    <MESSAGE value="refractor" />
     <MESSAGE value="remove todo color edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove todo color edit" />
+    <MESSAGE value="refractor" />
+    <MESSAGE value="make licence trad" />
+    <option name="LAST_COMMIT_MESSAGE" value="make licence trad" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
