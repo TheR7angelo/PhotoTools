@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using PhotoTools.Utils.Config;
-using PhotoTools.Utils.Sql;
+using Query = PhotoTools.Utils.Function.Sql.Query;
 
 namespace PhotoTools.Views.Settings;
 

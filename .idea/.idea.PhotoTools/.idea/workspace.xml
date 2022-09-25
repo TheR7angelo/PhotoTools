@@ -7,10 +7,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="valid csv mode">
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="added todo task">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Export/Common.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Export/Common.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Config/Config.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Date.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Date.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/Directory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/SaveFileFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/SaveFileFilter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Bdds/Language.sql" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Bdds/Language.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Bdds/Language.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Bdds/Language.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Bdds/Main.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Bdds/Main.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Bdds/Progress.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Bdds/Progress.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Connection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Fonction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Language.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +40,6 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13f52135aee24447a5e1961d367aff7c1fe00/51/a7bfb87a/PickerControlBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13f52135aee24447a5e1961d367aff7c1fe00/ba/9d5f23d8/StandardColorPicker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50f0ff8c82e64eec8d5d9367561f6719166aba0/1d/ac91f6b4/MouseEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
@@ -63,20 +75,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e6a439fde68a3e1d7d1e9e16caf4322bd91edc8db92a758dfdb87a72dd113e/XmlWellFormedWriter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7bdef8686489167e6bcc2498e93448cc314a7e6c78ad16fbe54b83ca84622/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ecc6a344e27f6cb5259bfb338530766215fab272df4395d6ba48f376fbe/Parsers.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Constant/SaveFileFilter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Constant/SaveFileFilter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Export/Common.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Export/Common.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Export/Common.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Export/Json.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Export/Json.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Views/Settings/Theme.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -161,21 +161,8 @@
       <workItem from="1663673971102" duration="12000" />
       <workItem from="1663674013614" duration="4497000" />
       <workItem from="1663833759449" duration="4968000" />
-      <workItem from="1663947400157" duration="14873000" />
-    </task>
-    <task id="LOCAL-00048" summary="Added string english french to tooltip theme">
-      <created>1663224396814</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1663224396814</updated>
-    </task>
-    <task id="LOCAL-00049" summary="added todo">
-      <created>1663224986040</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1663224986040</updated>
+      <workItem from="1663947400157" duration="15316000" />
+      <workItem from="1664100062952" duration="311000" />
     </task>
     <task id="LOCAL-00050" summary="change visibility button add new theme">
       <created>1663225139008</created>
@@ -506,7 +493,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664053139039</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="valid export">
+      <created>1664054345855</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1664054345855</updated>
+    </task>
+    <task id="LOCAL-00098" summary="added todo task">
+      <created>1664054480791</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1664054480791</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,8 +529,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="delete" />
-    <MESSAGE value="added function to restart application" />
     <MESSAGE value="Change message to apply new language setting" />
     <MESSAGE value="added check image" />
     <MESSAGE value="refractor" />
@@ -553,26 +552,11 @@
     <MESSAGE value="added filtre parameter" />
     <MESSAGE value="added function to export theme selected" />
     <MESSAGE value="valid csv mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="valid csv mode" />
+    <MESSAGE value="valid export" />
+    <MESSAGE value="added todo task" />
+    <option name="LAST_COMMIT_MESSAGE" value="added todo task" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Export/Common.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Users\ZP6177\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Export\Common.cs" initialLine="24" containingFunctionPresentation="method 'SaveFile'">
-            <startOffsets>
-              <option value="813" />
-            </startOffsets>
-            <endOffsets>
-              <option value="866" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#PhotoTools.Utils.Constant.SaveFileFilter+Filter" memberName="Value" />

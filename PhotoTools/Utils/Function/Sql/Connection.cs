@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.SQLite;
 
-namespace PhotoTools.Utils.Sql;
+namespace PhotoTools.Utils.Function.Sql;
 
 public static class Connection
 {

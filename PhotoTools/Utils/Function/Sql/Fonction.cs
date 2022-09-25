@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using PhotoTools.Utils.Strucs;
-using Convert = PhotoTools.Utils.Function.Convert;
 
-namespace PhotoTools.Utils.Sql;
+namespace PhotoTools.Utils.Function.Sql;
 
 public static partial class Query
 {
@@ -12,7 +11,7 @@ public static partial class Query
     {
         try
         {
-            Execute(_DeleteTheme(name));
+            Query.Execute(Query._DeleteTheme(name));
             return true;
         }
         catch (Exception)
@@ -23,7 +22,7 @@ public static partial class Query
     }
     public static bool GetThemeExist(string name)
     {
-        var reader = ExecuteReader(_GetThemeExist(name));
+        var reader = Query.ExecuteReader(Query._GetThemeExist(name));
         reader.Read();
         return reader.HasRows;
     }
@@ -31,7 +30,7 @@ public static partial class Query
     {
         try
         {
-            Execute(_AddTheme(th));
+            Query.Execute(Query._AddTheme(th));
             return true;
         }
         catch (Exception)
@@ -42,14 +41,14 @@ public static partial class Query
     }
     public static StrucConfig.Themes GetStyle(string theme)
     {
-        var reader = ExecuteReader(_GetStyle(theme));
+        var reader = Query.ExecuteReader(Query._GetStyle(theme));
         reader.Read();
         return GetThemeValues(reader);
     }
     public static IEnumerable<StrucConfig.Themes> GetAllThemes()
     {
         var themes = new List<StrucConfig.Themes>();
-        var reader = ExecuteReader(_GetAllStyles());
+        var reader = Query.ExecuteReader(Query._GetAllStyles());
         while (reader.Read())
         {
             themes.Add(GetThemeValues(reader));
@@ -77,20 +76,20 @@ public static partial class Query
 
     public static StrucConfig.Themes GetActualStyle()
     {
-        var reader = ExecuteReader(_GetActualStyle());
+        var reader = Query.ExecuteReader(Query._GetActualStyle());
         reader.Read();
         return GetThemeValues(reader);
     }
     public static string GetEnglishLang(string lang)
     {
-        var reader = ExecuteReader(_GetEnglishLang(lang));
+        var reader = Query.ExecuteReader(Query._GetEnglishLang(lang));
         reader.Read();
         return reader["english"].ToString()!;
     }
     public static IEnumerable<string> GetAllLangs(string lang)
     {
         var languages = new List<string>();
-        var reader = ExecuteReader(_GetAllLangs(lang));
+        var reader = Query.ExecuteReader(Query._GetAllLangs(lang));
         while (reader.Read())
         {
             languages.Add(reader[lang.ToLower()].ToString()!);
@@ -100,13 +99,13 @@ public static partial class Query
 
     public static string GetActualcultureLang(string lang)
     {
-        var reader = ExecuteReader(_GetActualcultureLang(lang));
+        var reader = Query.ExecuteReader(Query._GetActualcultureLang(lang));
         reader.Read();
         return reader[lang.ToLower()].ToString()!;
     }
     public static string? GetCultureInfoLang(string code)
     {
-        var reader = ExecuteReader(_GetCultureInfoLang(code));
+        var reader = Query.ExecuteReader(Query._GetCultureInfoLang(code));
 
         reader.Read();
         var lang = reader["lang"].ToString();
@@ -115,7 +114,7 @@ public static partial class Query
     }
     public static string GetCultureInfoCode(string lang)
     {
-        var reader = ExecuteReader(_GetCultureInfoCode(lang));
+        var reader = Query.ExecuteReader(Query._GetCultureInfoCode(lang));
 
         reader.Read();
         var code = reader["code"].ToString();
@@ -125,12 +124,12 @@ public static partial class Query
 
     public static void UpdateSettings(string section, string key, string value)
     {
-        Execute(_UpdateSettings(section, key, value));
+        Query.Execute(Query._UpdateSettings(section, key, value));
     }
     public static List<StrucConfig.ConfigStruc> GetParams()
     {
         var cnfs = new List<StrucConfig.ConfigStruc>();
-        var reader = ExecuteReader(_GetParams());
+        var reader = Query.ExecuteReader(Query._GetParams());
 
         while (reader.Read())
         {
@@ -147,7 +146,7 @@ public static partial class Query
     {
         foreach (var path in pathBdds)
         {
-            Execute(_AttachBdd(path));
+            Query.Execute(Query._AttachBdd(path));
         }
     }
 }

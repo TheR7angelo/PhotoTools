@@ -28,17 +28,8 @@
       <None Remove="Sql\Bdds\Progress.sqlite" />
       <None Remove="app.config" />
       <None Remove="Utils\Sql\Bdds\Language.sqlite" />
-      <AdditionalFiles Include="Utils\Sql\Bdds\Language.sqlite">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </AdditionalFiles>
       <None Remove="Utils\Sql\Bdds\Main.sqlite" />
-      <AdditionalFiles Include="Utils\Sql\Bdds\Main.sqlite">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </AdditionalFiles>
       <None Remove="Utils\Sql\Bdds\Progress.sqlite" />
-      <AdditionalFiles Include="Utils\Sql\Bdds\Progress.sqlite">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </AdditionalFiles>
     </ItemGroup>
 
     <ItemGroup>
@@ -220,6 +211,18 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>License.resx</DependentUpon>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Utils\Bdds\Language.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
+      <AdditionalFiles Include="Utils\Bdds\Main.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
+      <AdditionalFiles Include="Utils\Bdds\Progress.sqlite">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </AdditionalFiles>
     </ItemGroup>
 
 </Project>

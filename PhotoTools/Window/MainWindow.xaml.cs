@@ -3,7 +3,7 @@ using System.Windows;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Constant;
 using PhotoTools.Utils.Function.Application;
-using PhotoTools.Utils.Sql;
+using PhotoTools.Utils.Function.Sql;
 
 namespace PhotoTools.Window
 {

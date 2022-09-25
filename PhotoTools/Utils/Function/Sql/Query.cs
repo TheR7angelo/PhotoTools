@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Data.SQLite;
 using System.IO;
-using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Strucs;
 
-namespace PhotoTools.Utils.Sql;
+namespace PhotoTools.Utils.Function.Sql;
 
 public static partial class Query
 {

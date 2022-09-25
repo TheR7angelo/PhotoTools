@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace PhotoTools.Constant;
+namespace PhotoTools.Utils.Constant;
 
 public static class Language
 {

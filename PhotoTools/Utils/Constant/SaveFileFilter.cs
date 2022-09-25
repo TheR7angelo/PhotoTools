@@ -10,7 +10,7 @@ public static class SaveFileFilter
         { Value = "Csv (délimiter par une virgule) (*.csv)|*.csv", Extension = ".csv" };
     
     public static Filter Json => new () { Value = "Json file (*.json)|*.json", Extension = ".json" };
-
+    
     public struct Filter
     {
         public string Value = string.Empty;
@@ -18,5 +18,4 @@ public static class SaveFileFilter
 
         public Filter(){}
     }
-    
 }

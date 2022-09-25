@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
-using PhotoTools.Constant;
-using PhotoTools.Utils.Sql;
+using PhotoTools.Utils.Constant;
+using PhotoTools.Utils.Function.Sql;
 using PhotoTools.Utils.Strucs;
-using Query = PhotoTools.Utils.Sql.Query;
+using Query = PhotoTools.Utils.Function.Sql.Query;
 
 namespace PhotoTools.Utils.Config;
 
