@@ -38,7 +38,7 @@ namespace PhotoTools.Utils.Trad.Setting {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.Setting.License", typeof(License).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhotoTools.Utils.Trad.Setting.License.License", typeof(License).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
