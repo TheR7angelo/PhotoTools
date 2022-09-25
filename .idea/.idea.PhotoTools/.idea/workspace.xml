@@ -7,14 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="ras">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_21_09_2022_21_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/shelf/Uncommitted_changes_before_Update_at_21_09_2022_21_05__Changes_.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="refractor and finish import json">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Converter/String.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Converter/String.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Fonction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Fonction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/FileExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/FileExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Constant/SaveFileFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Constant/SaveFileFilter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Application/FileDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Application/FileDialog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Import/Common.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Import/Common.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.en.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.fr-fr.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/SaveFileFilter/SaveFileFilter.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -368,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664126065741</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="refractor and finish import json">
+      <created>1664129086101</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1664129086101</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +400,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Commit" />
     <MESSAGE value="Change struc for configuration" />
     <MESSAGE value="Refractor" />
     <MESSAGE value="Added image for messagebox and test in changing language function" />
@@ -415,65 +424,8 @@
     <MESSAGE value="added todo" />
     <MESSAGE value="refractor" />
     <MESSAGE value="ras" />
-    <option name="LAST_COMMIT_MESSAGE" value="ras" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs</url>
-          <line>160</line>
-          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Views\Settings\Theme.xaml.cs" initialLine="160" containingFunctionPresentation="method 'AddNewTheme'">
-            <startOffsets>
-              <option value="4539" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4573" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Fonction.cs</url>
-          <line>32</line>
-          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Sql\Fonction.cs" initialLine="32" containingFunctionPresentation="method 'AddTheme'">
-            <startOffsets>
-              <option value="690" />
-            </startOffsets>
-            <endOffsets>
-              <option value="713" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs</url>
-          <line>25</line>
-          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Sql\Query.cs" initialLine="25" containingFunctionPresentation="method '_AddTheme'">
-            <startOffsets>
-              <option value="713" />
-            </startOffsets>
-            <endOffsets>
-              <option value="746" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Sql/Query.cs</url>
-          <line>30</line>
-          <properties documentPath="E:\Logiciels\Adobe\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Sql\Query.cs" initialLine="30" containingFunctionPresentation="method '_AddTheme'">
-            <startOffsets>
-              <option value="852" />
-            </startOffsets>
-            <endOffsets>
-              <option value="895" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refractor and finish import json" />
+    <option name="LAST_COMMIT_MESSAGE" value="refractor and finish import json" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

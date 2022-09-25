@@ -277,8 +277,11 @@ public partial class Theme
     
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
     {
-        var filePath = Import.GetOpenFile("Import File", Get.GetDesktop);
+        // todo add trad
+        var filePath = Import.GetOpenFile("Import File", Get.GetDesktop, SaveFileFilter.Json);
         // todo import function finish
+        
+        if (filePath.Item1.Equals(string.Empty)) return;
         
         var theme = filePath.Item1.ThemeJson();
         AddNewTheme(theme);
