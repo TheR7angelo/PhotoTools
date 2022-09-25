@@ -276,24 +276,34 @@ public partial class Theme
 
         if (path.Item1 == string.Empty) return;
 
-        switch (path.Item2)
+        var sucess = path.Item2 switch
         {
-            case var value when value.Equals(SaveFileFilter.Json.Value):
-                Export.ExportJson(path.Item1, theme);
-                break;
-            case ".json":
-                Export.ExportJson(path.Item1, theme);
-                break;
-            case var value when value.Equals(SaveFileFilter.SemiColonCsv.Value):
-                Export.ExportCsv(path.Item1, theme, ';');
-                break;
-            case var value when value.Equals(SaveFileFilter.CommaCsv.Value):
-                Export.ExportCsv(path.Item1, theme, ',');
-                break;
-            case ".csv":
-                Export.ExportCsv(path.Item1, theme, ';');
-                break;
+            var value when value.Equals(SaveFileFilter.Json.Value) => Export.ExportJson(path.Item1, theme),
+            FileExtension.Json => Export.ExportJson(path.Item1, theme),
+            var value when value.Equals(SaveFileFilter.SemiColonCsv.Value) => Export.ExportCsv(path.Item1, theme, FileExtension.Semicolon),
+            var value when value.Equals(SaveFileFilter.CommaCsv.Value) => Export.ExportCsv(path.Item1, theme, FileExtension.Comma),
+            FileExtension.Csv => Export.ExportCsv(path.Item1, theme, FileExtension.Semicolon),
+            _ => false
+        };
+
+        var msg = new Window.MessageBox();
+
+        if (sucess)
+        {
+            msg.SetIcon(msg.MessageIcon.Check);
+            msg.SetTitle("Success");
+            msg.SetText("Success");
+            msg.SetButtonYesNo();
         }
+        else
+        {
+            msg.SetIcon(msg.MessageIcon.Error);
+            msg.SetTitle("Error");
+            msg.SetText("Error");
+            msg.SetButtonOk();
+        }
+
+        msg.ShowDialog();
     }
 
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
