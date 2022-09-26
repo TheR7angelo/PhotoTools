@@ -8,7 +8,6 @@ public static partial class Reader
 {
     public static List<List<string>> ReadCsv(this string filePath, char delimiter)
     {
-        // todo a tester
         var csv = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
         var sr = new StreamReader(csv);
 

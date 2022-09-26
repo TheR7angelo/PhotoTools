@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,7 +9,6 @@ using PhotoTools.Utils.Function;
 using PhotoTools.Utils.Strucs;
 using PhotoTools.Utils.Constant;
 using PhotoTools.Utils.Function.Application;
-using PhotoTools.Utils.Function.Reader;
 using PhotoTools.Utils.Function.Sql;
 using Query = PhotoTools.Utils.Function.Sql.Query;
 
@@ -282,14 +280,12 @@ public partial class Theme
         // todo add trad
         var filePath = Import.GetOpenFile("Import File", Get.GetDesktop, new List<SaveFileFilter.Filter>
             {SaveFileFilter.Json, SaveFileFilter.SemiColonCsv});
-        // todo import function finish
-        
+
         if (filePath.Item1.Equals(string.Empty)) return;
 
         StrucConfig.Themes theme;
         switch (filePath.Item2)
         {
-            // todo last
             case var value when value.Equals(SaveFileFilter.Json.Value):
             case FileExtension.Json:
                 theme = filePath.Item1.ThemeJson();

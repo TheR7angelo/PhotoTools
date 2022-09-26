@@ -47,13 +47,13 @@ public static partial class Import
             switch (key)
             {
                 case "name":
-                    th.Name = data[key].ToString();
+                    th.Name = data[key];
                     break;
                 default:
                     th.Value.Add(new StrucConfig.StyleColorBrush
                     {
-                        Name = key.ToString()!,
-                        StyleValue = data[key].ToString()!.SolidColorBrush()
+                        Name = key,
+                        StyleValue = data[key].SolidColorBrush()
                     });
                     break;
             }
