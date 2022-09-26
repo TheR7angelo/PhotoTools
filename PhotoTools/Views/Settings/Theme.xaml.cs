@@ -290,6 +290,7 @@ public partial class Theme
         IEnumerable<Dictionary<string, string>>? data;
         switch (filePath.Item2)
         {
+            // todo last
             case var value when value.Equals(SaveFileFilter.Json.Value):
             case FileExtension.Json:
                 theme = filePath.Item1.ThemeJson();
