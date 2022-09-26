@@ -9,36 +9,11 @@ public static partial class Import
 {
     public static StrucConfig.Themes ThemeJson(this string filePath)
     {
-        var data = filePath.ReadJson().DeserializeJson();
-
-        var th = new StrucConfig.Themes
-        {
-            Lock = false,
-            Value = new List<StrucConfig.StyleColorBrush>()
-        };
-
-        foreach (var key in data.Keys)
-        {
-            switch (key)
-            {
-                case "name":
-                    th.Name = data[key].ToString();
-                    break;
-                default:
-                    th.Value.Add(new StrucConfig.StyleColorBrush
-                    {
-                        Name = key.ToString()!,
-                        StyleValue = data[key].ToString()!.SolidColorBrush()
-                    });
-                    break;
-            }
-        }
-
-        return th;
+        return filePath.ReadJson().DeserializeJson().ParseDictToTheme();
     }
 
-    private static Dictionary<object, object> DeserializeJson(this string data)
+    private static Dictionary<string, string> DeserializeJson(this string data)
     {
-        return JsonConvert.DeserializeObject<Dictionary<object, object>>(data)!;
+        return JsonConvert.DeserializeObject<Dictionary<string, string>>(data)!;
     }
 }

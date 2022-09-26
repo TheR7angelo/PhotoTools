@@ -296,17 +296,13 @@ public partial class Theme
                 theme = filePath.Item1.ThemeJson();
                 break;
             case var value when value.Equals(SaveFileFilter.SemiColonCsv.Value):
-                data = filePath.Item1.ReadCsv(FileExtension.Semicolon).ParseToDictCsv();
-                // todo convert dict to theme
-                return;
+                theme = filePath.Item1.ThemeCsv(FileExtension.Semicolon);
                 break;
             case var value when value.Equals(SaveFileFilter.CommaCsv.Value):
-                data = filePath.Item1.ReadCsv(FileExtension.Comma).ParseToDictCsv();
-                return;
+                theme = filePath.Item1.ThemeCsv(FileExtension.Comma);
                 break;
             case FileExtension.Csv:
-                data = filePath.Item1.ReadCsv(FileExtension.Semicolon).ParseToDictCsv();
-                return;
+                theme = filePath.Item1.ThemeCsv(FileExtension.Semicolon);
                 break;
             default:
                 return;
