@@ -287,7 +287,6 @@ public partial class Theme
         if (filePath.Item1.Equals(string.Empty)) return;
 
         StrucConfig.Themes theme;
-        IEnumerable<Dictionary<string, string>>? data;
         switch (filePath.Item2)
         {
             // todo last
@@ -307,8 +306,6 @@ public partial class Theme
             default:
                 return;
         }
-
-        // var theme = filePath.Item1.ThemeJson();
         AddNewTheme(theme);
     }
     
