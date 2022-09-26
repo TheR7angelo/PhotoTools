@@ -7,10 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="fibnish import csv theme">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Reader/Csv.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Reader/Csv.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Test/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Test/test.csv" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="remove todo and refractor">
+      <change beforePath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.en.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.en.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.fr-fr.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.fr-fr.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Trad/Setting/Theme/Theme.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +67,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e6a439fde68a3e1d7d1e9e16caf4322bd91edc8db92a758dfdb87a72dd113e/XmlWellFormedWriter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7bdef8686489167e6bcc2498e93448cc314a7e6c78ad16fbe54b83ca84622/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ecc6a344e27f6cb5259bfb338530766215fab272df4395d6ba48f376fbe/Parsers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ZP6177/Creative Cloud Files/Programmation/C#/Personnel/PhotoTools/PhotoTools/Utils/Function/Reader/Csv.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -154,21 +157,7 @@
       <workItem from="1663833759449" duration="4968000" />
       <workItem from="1663947400157" duration="15316000" />
       <workItem from="1664100062952" duration="10616000" />
-      <workItem from="1664175010228" duration="2807000" />
-    </task>
-    <task id="LOCAL-00065" summary="delete">
-      <created>1663659850486</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1663659850486</updated>
-    </task>
-    <task id="LOCAL-00066" summary="added function to restart application">
-      <created>1663660429046</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1663660429046</updated>
+      <workItem from="1664175010228" duration="3126000" />
     </task>
     <task id="LOCAL-00067" summary="Change message to apply new language setting">
       <created>1663660697619</created>
@@ -499,7 +488,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664176500884</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="added read csv in read only mode">
+      <created>1664181138316</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1664181138316</updated>
+    </task>
+    <task id="LOCAL-00115" summary="remove todo and refractor">
+      <created>1664181218602</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1664181218603</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,8 +524,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added todo" />
-    <MESSAGE value="remove parameter current language from possible choice" />
     <MESSAGE value="added licence show image retribution" />
     <MESSAGE value="added tooltip for button licence" />
     <MESSAGE value="added default path Desktop, Documents" />
@@ -546,26 +547,11 @@
     <MESSAGE value="make licence trad" />
     <MESSAGE value="refractor" />
     <MESSAGE value="fibnish import csv theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="fibnish import csv theme" />
+    <MESSAGE value="added read csv in read only mode" />
+    <MESSAGE value="remove todo and refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove todo and refractor" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PhotoTools/Utils/Function/Reader/Csv.cs</url>
-          <line>11</line>
-          <properties documentPath="C:\Users\ZP6177\Creative Cloud Files\Programmation\C#\Personnel\PhotoTools\PhotoTools\Utils\Function\Reader\Csv.cs" initialLine="11" containingFunctionPresentation="method 'ReadCsv'">
-            <startOffsets>
-              <option value="275" />
-            </startOffsets>
-            <endOffsets>
-              <option value="363" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#PhotoTools.Utils.Constant.SaveFileFilter+Filter" memberName="Value" />

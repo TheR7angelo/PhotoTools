@@ -233,10 +233,9 @@ public partial class Theme
     {
         var name = CbStyle.Text!;
         var theme = Query.GetStyle(name);
-        // todo change string to trad
 
         var filter = new List<SaveFileFilter.Filter> { SaveFileFilter.Json, SaveFileFilter.SemiColonCsv, SaveFileFilter.CommaCsv };
-        var path = Export.SaveFile($"Fichier d'export du theme {name}" ,Get.GetDesktop, filter);
+        var path = Export.SaveFile(string.Format(Utils.Trad.Setting.Theme.SaveFileTitle, name) ,Get.GetDesktop, filter);
 
         if (path.Item1 == string.Empty) return;
 

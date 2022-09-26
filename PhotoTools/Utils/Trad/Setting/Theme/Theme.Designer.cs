@@ -99,6 +99,15 @@ namespace PhotoTools.Utils.Trad.Setting {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string SaveFileTitle {
+            get {
+                return ResourceManager.GetString("SaveFileTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The theme &quot;{0}&quot; has been added.
         /// </summary>
         internal static string ThemeAddedMessage {

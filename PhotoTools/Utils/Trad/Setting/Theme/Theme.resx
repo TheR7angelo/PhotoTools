@@ -65,4 +65,7 @@ Please modify it</value>
     <data name="BtAddNewThemeCancel" xml:space="preserve">
         <value>Cancel</value>
     </data>
+    <data name="SaveFileTitle" xml:space="preserve">
+        <value />
+    </data>
 </root>

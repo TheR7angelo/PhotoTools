@@ -57,4 +57,7 @@ Veuillez le modifier</value>
     <data name="BtAddNewThemeValid" xml:space="preserve">
         <value>Valider</value>
     </data>
+    <data name="SaveFileTitle" xml:space="preserve">
+        <value>Theme export file "{0}"</value>
+    </data>
 </root>
