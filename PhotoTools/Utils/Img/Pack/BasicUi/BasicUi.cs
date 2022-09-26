@@ -12,8 +12,8 @@ public static partial class Image
         Author = "Pixel perfect",
         Images = new List<string>
         {
-            "BasicUi008-Check", "BasicUi050-Info", "BasicUi067-Plus", "BasicUi073-Question", "BasicUi076-Remove",
-            "BasicUi089-Trash", "BasicUi091-Warning"
+            "BasicUi008-Check", "BasicUi028-Download", "BasicUi050-Info", "BasicUi067-Plus", "BasicUi073-Question",
+            "BasicUi076-Remove", "BasicUi089-Trash", "BasicUi090-Upload", "BasicUi091-Warning"
         }
         //todo correct BasicUi067-Plus and BasicUi089-Trash color
     };

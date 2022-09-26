@@ -222,4 +222,8 @@
       </AdditionalFiles>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Utils\Test" />
+    </ItemGroup>
+
 </Project>

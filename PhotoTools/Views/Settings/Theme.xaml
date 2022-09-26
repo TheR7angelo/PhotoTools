@@ -23,10 +23,10 @@
                 <ComboBox Grid.Column="2" x:Name="CbStyle" SelectionChanged="CbStyle_OnSelectionChanged"/>
                 <TextBox Grid.Column="2" x:Name="TbxStyle" Visibility="Hidden"/>
                 <Button Grid.Column="3" Style="{StaticResource ButtonImage}" Click="BtExpTheme_OnClick">
-                    <Image Source="{StaticResource BasicUi089-Trash}"/>
+                    <Image Source="{StaticResource BasicUi028-Download}"/>
                 </Button>
                 <Button Grid.Column="4" Style="{StaticResource ButtonImage}" Click="BtImpTheme_OnClick">
-                    <Image Source="{StaticResource BasicUi089-Trash}"/>
+                    <Image Source="{StaticResource BasicUi090-Upload}"/>
                 </Button>
                 <Image Grid.Column="5" x:Name="ThemeLock"/>
             </Grid>

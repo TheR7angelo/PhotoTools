@@ -19,35 +19,6 @@ namespace PhotoTools.Window
             InitializeComponent();
             Config.InitializeStyle();
 
-            // var msg = new MessageBox();
-            // msg.SetIcon(msg.MessageIcon.Stop);
-            // msg.SetText("Yo je suis un test");
-            // msg.SetSize(new Size{Height = 250, Width = 500});
-            // msg.SetButtonYesNoCancel();
-            // msg.ShowDialog();
-            // var i = msg.Answer;
-            // Console.WriteLine(i);
-            
-            // ToastNotificationManagerCompat.OnActivated += toastArgs =>
-            // {
-            //     var args = ToastArguments.Parse(toastArgs.Argument);
-            //     Console.WriteLine(args["action"]);
-            // };
-            
-            // for (var i = 0; i < 2; i++)
-            // {
-            //     new ToastContentBuilder()
-            //         .AddArgument("action", "viewConversation")
-            //         .AddArgument("conversationId", 9813)
-            //         .AddText("Andrew sent you a picture")
-            //         .AddText("Check this out, The Enchantments in Washington!")
-            //         .AddButton(new ToastButton()
-            //             .SetContent("Archive")
-            //             .AddArgument("action", "archive")
-            //             .SetBackgroundActivation())
-            //         .Show();
-            // }
-
             InitializeUi();
         }
 

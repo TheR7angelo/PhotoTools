@@ -20,6 +20,15 @@
         </DrawingImage.Drawing>
     </DrawingImage>
     
+    <DrawingImage x:Key="BasicUi028-Download">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt4}" Geometry="M448,512H64c-35.3,0-64-28.7-64-64v-85.3c0-11.8,9.6-21.3,21.3-21.3c11.8,0,21.3,9.6,21.3,21.3V448 c0,11.8,9.6,21.3,21.3,21.3h384c11.8,0,21.3-9.6,21.3-21.3v-85.3c0-11.8,9.6-21.3,21.3-21.3c11.8,0,21.3,9.6,21.3,21.3V448 C512,483.3,483.3,512,448,512z"/>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt3}" Geometry="M356.4,271.1l-85.3,85.3c-8.3,8.3-21.8,8.3-30.2,0l-85.3-85.3c-6.1-6.1-7.9-15.3-4.6-23.3 c3.3-8,11.1-13.2,19.7-13.2h64V21.3C234.7,9.6,244.2,0,256,0s21.3,9.6,21.3,21.3v213.3h64c8.6,0,16.4,5.2,19.7,13.2 C364.4,255.8,362.5,265,356.4,271.1z"></GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    
     <DrawingImage x:Key="BasicUi050-Info">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -85,6 +94,15 @@
                         </GeometryGroup>
                     </GeometryDrawing.Geometry>
                 </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    
+    <DrawingImage x:Key="BasicUi090-Upload">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt3}" Geometry="M361,114.8c-3.3,8-11.1,13.2-19.7,13.2h-64v213.3c0,11.8-9.6,21.3-21.3,21.3c-11.8,0-21.3-9.6-21.3-21.3V128 h-64c-8.6,0-16.4-5.2-19.7-13.2c-3.3-8-1.5-17.2,4.6-23.3l85.3-85.3c8.3-8.3,21.8-8.3,30.2,0l85.3,85.3 C362.5,97.7,364.4,106.9,361,114.8z"/>
+                <GeometryDrawing Brush="{StaticResource BasicUiSt4}" Geometry="M448,512H64c-35.3,0-64-28.7-64-64v-85.3c0-11.8,9.6-21.3,21.3-21.3s21.3,9.6,21.3,21.3V448 c0,11.8,9.6,21.3,21.3,21.3h384c11.8,0,21.3-9.6,21.3-21.3v-85.3c0-11.8,9.6-21.3,21.3-21.3c11.8,0,21.3,9.6,21.3,21.3V448 C512,483.3,483.3,512,448,512z"/>
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
