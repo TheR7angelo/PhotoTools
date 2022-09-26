@@ -17,11 +17,7 @@
     <!-- Header -->
     <mah:MetroWindow.WindowButtonCommands>
         <!-- todo traduire les mot -->
-        <mah:WindowButtonCommands Minimize="Réduire"
-                                  Maximize="Agrandir"
-                                  Restore="Rétrécir"
-                                  Close="Quitter"
-                                  LightMinButtonStyle="{DynamicResource MinButtonStyle}"
+        <mah:WindowButtonCommands LightMinButtonStyle="{DynamicResource MinButtonStyle}"
                                   DarkMinButtonStyle="{DynamicResource MinButtonStyle}"
                                   LightCloseButtonStyle="{DynamicResource CloseButtonStyle}"
                                   DarkCloseButtonStyle="{DynamicResource CloseButtonStyle}"
