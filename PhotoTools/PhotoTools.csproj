@@ -165,6 +165,19 @@
       <EmbeddedResource Update="Utils\Trad\Setting\ColorEdit\ColorEdit.resx">
         <Generator>ResXFileCodeGenerator</Generator>
       </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\Window\MetroWindow\MetroWindow.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>MetroWindow.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\MetroWindow\MetroWindow.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\MetroWindow\MetroWindow.en.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Utils\Trad\MetroWindow\MetroWindow.fr-fr.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>

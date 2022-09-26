@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using MahApps.Metro.Controls;
 using Microsoft.Toolkit.Uwp.Notifications;
 
 namespace PhotoTools.Utils.Function.Application;
@@ -36,5 +37,13 @@ public static class Current
         //             .SetBackgroundActivation())
         //         .Show();
         // }
+    }
+    
+    public static void MetroWindowRightButton(this MetroWindow window)
+    {
+        window.WindowButtonCommands.Close = Trad.MetroWindow.MetroWindow.Close;
+        window.WindowButtonCommands.Maximize = Trad.MetroWindow.MetroWindow.Maximize;
+        window.WindowButtonCommands.Minimize = Trad.MetroWindow.MetroWindow.Minimize;
+        window.WindowButtonCommands.Restore = Trad.MetroWindow.MetroWindow.Restore;
     }
 }

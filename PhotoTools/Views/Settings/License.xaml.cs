@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using PhotoTools.Utils.Strucs;
 using PhotoTools.Utils.Function.Application;
+using MessageBox = PhotoTools.Window.MessageBox;
 
 namespace PhotoTools.Views.Settings;
 
@@ -46,7 +47,7 @@ public partial class License
     private static void ButtonImageLicence_OnClick(object sender, RoutedEventArgs e)
     {
         var btn = sender as Button;
-        var msg = new Window.MessageBox();
+        var msg = new MessageBox();
         msg.SetTitle(Utils.Trad.Setting.License.ButtonImageLicence_OnClick_Title);
         msg.SetIcon(msg.MessageIcon.Question);
         msg.SetText(Utils.Trad.Setting.License.ButtonImageLicence_OnClick_Content);

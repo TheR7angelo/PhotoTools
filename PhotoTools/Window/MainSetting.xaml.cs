@@ -1,6 +1,6 @@
-﻿using System.Windows;
+﻿using PhotoTools.Utils.Function.Application;
 
-namespace PhotoTools;
+namespace PhotoTools.Window;
 
 public partial class MainSetting
 {
@@ -13,6 +13,8 @@ public partial class MainSetting
     private void InitializeUi()
     {
         Title = Utils.Trad.Setting.MainSetting.Title;
+        
+        this.MetroWindowRightButton();
     }
     
     

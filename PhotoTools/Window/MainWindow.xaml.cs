@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Windows;
+using MahApps.Metro.Controls;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Constant;
 using PhotoTools.Utils.Function.Application;
@@ -38,17 +39,14 @@ namespace PhotoTools.Window
             var v = Utils.Function.Get.GetCurrentVersion;
             
             ToolTips();
+
+            this.MetroWindowRightButton();
         }
 
         private void ToolTips()
         {
             BtMainGithub.ToolTip = Utils.Trad.Main.MainWindows.BtGithubToolTip;
             BtMainSetting.ToolTip = Utils.Trad.Main.MainWindows.BtMainSetting;
-
-            WindowButtonCommands.Minimize = "Réduire";
-            WindowButtonCommands.Maximize = "Agrandir";
-            WindowButtonCommands.Restore = "Rétrécir";
-            WindowButtonCommands.Close = "Quitter";
         }
 
         private void OnApplicationExit(object? sender, CancelEventArgs e)
