@@ -7,8 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="ras">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="BasicUi067-Plus repare">
       <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,14 +153,7 @@
       <workItem from="1663947400157" duration="15316000" />
       <workItem from="1664100062952" duration="10616000" />
       <workItem from="1664175010228" duration="3126000" />
-      <workItem from="1664182551943" duration="3706000" />
-    </task>
-    <task id="LOCAL-00069" summary="refractor">
-      <created>1663665592563</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1663665592563</updated>
+      <workItem from="1664182551943" duration="4059000" />
     </task>
     <task id="LOCAL-00070" summary="added message theme lock">
       <created>1663666704439</created>
@@ -499,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664185275416</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="BasicUi067-Plus repare">
+      <created>1664186451419</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1664186451419</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +521,6 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added tooltip for button licence" />
     <MESSAGE value="added default path Desktop, Documents" />
     <MESSAGE value="added overload function to get savefile" />
     <MESSAGE value="added title to export file" />
@@ -547,7 +545,8 @@
     <MESSAGE value="remove todo and refractor" />
     <MESSAGE value="added two image" />
     <MESSAGE value="ras" />
-    <option name="LAST_COMMIT_MESSAGE" value="ras" />
+    <MESSAGE value="BasicUi067-Plus repare" />
+    <option name="LAST_COMMIT_MESSAGE" value="BasicUi067-Plus repare" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
