@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using PhotoTools.Utils.Function.Application;
 
 namespace PhotoTools.Window;
 
@@ -43,6 +44,7 @@ public partial class MessageBox
         InitializeComponent();
         SetButtonOk();
         Title = Utils.Trad.MessageBox.MessageBox.Title;
+        this.MetroWindowRightButton();
     }
 
     #region Setter
