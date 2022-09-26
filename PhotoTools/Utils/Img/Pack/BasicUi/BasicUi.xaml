@@ -47,16 +47,7 @@
     
     <DrawingImage x:Key="BasicUi067-Plus">
         <DrawingImage.Drawing>
-            <DrawingGroup>
-                <GeometryDrawing Brush="{StaticResource BasicUiSt3}">
-                    <GeometryDrawing.Geometry>
-                        <GeometryGroup>
-                            <PathGeometry Figures="M437.3,192H32c-17.7,0-32,14.3-32,32v21.3c0,17.7,14.3,32,32,32h405.3c17.7,0,32-14.3,32-32V224 C469.3,206.3,455,192,437.3,192z"/>
-                            <PathGeometry Figures="M192,32v405.3c0,17.7,14.3,32,32,32h21.3c17.7,0,32-14.3,32-32V32c0-17.7-14.3-32-32-32H224 C206.3,0,192,14.3,192,32z"/>
-                        </GeometryGroup>
-                    </GeometryDrawing.Geometry>
-                </GeometryDrawing>
-            </DrawingGroup>
+            <GeometryDrawing Brush="{StaticResource BasicUiSt3}" Geometry="M469.3,224v21.3c0,17.7-14.3,32-32,32h-160v160c0,17.7-14.3,32-32,32H224c-17.7,0-32-14.3-32-32v-160H32 c-17.7,0-32-14.3-32-32V224c0-17.7,14.3-32,32-32h160V32c0-17.7,14.3-32,32-32h21.3c17.7,0,32,14.3,32,32v160h160 C455,192,469.3,206.3,469.3,224z"/>
         </DrawingImage.Drawing>
     </DrawingImage>
     

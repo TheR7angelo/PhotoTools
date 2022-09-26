@@ -7,16 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="remove todo and refractor">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/0ef48ac4-9c37-4cc5-b46c-cb2185579722.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/dataSources/0ef48ac4-9c37-4cc5-b46c-cb2185579722.xml" afterDir="false" />
+    <list default="true" id="f917951a-6dbe-4a4c-8634-3a8f15f00e9a" name="Changes" comment="ras">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PhotoTools/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/PhotoTools.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Function/Application/Current.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Function/Application/Current.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Utils/Img/Pack/BasicUi/BasicUi.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Utils/Test/test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Views/Settings/Theme.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoTools/Window/MainWindow.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,27 +82,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.49624062&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.49624062",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="PhotoTools" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/PhotoTools/bin/Debug/net7.0/PhotoTools.exe" />
@@ -160,21 +154,7 @@
       <workItem from="1663947400157" duration="15316000" />
       <workItem from="1664100062952" duration="10616000" />
       <workItem from="1664175010228" duration="3126000" />
-      <workItem from="1664182551943" duration="2444000" />
-    </task>
-    <task id="LOCAL-00067" summary="Change message to apply new language setting">
-      <created>1663660697619</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1663660697619</updated>
-    </task>
-    <task id="LOCAL-00068" summary="added check image">
-      <created>1663661481715</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1663661481715</updated>
+      <workItem from="1664182551943" duration="3706000" />
     </task>
     <task id="LOCAL-00069" summary="refractor">
       <created>1663665592563</created>
@@ -505,7 +485,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664181218603</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="added two image">
+      <created>1664185209241</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1664185209241</updated>
+    </task>
+    <task id="LOCAL-00117" summary="ras">
+      <created>1664185275416</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1664185275416</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,8 +520,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added licence show image retribution" />
     <MESSAGE value="added tooltip for button licence" />
     <MESSAGE value="added default path Desktop, Documents" />
     <MESSAGE value="added overload function to get savefile" />
@@ -545,14 +539,15 @@
     <MESSAGE value="added const extension or delimiter for file" />
     <MESSAGE value="refractor and added start of messagebox for success" />
     <MESSAGE value="Added function to open File theme after export" />
-    <MESSAGE value="ras" />
     <MESSAGE value="remove todo color edit" />
     <MESSAGE value="make licence trad" />
     <MESSAGE value="refractor" />
     <MESSAGE value="fibnish import csv theme" />
     <MESSAGE value="added read csv in read only mode" />
     <MESSAGE value="remove todo and refractor" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove todo and refractor" />
+    <MESSAGE value="added two image" />
+    <MESSAGE value="ras" />
+    <option name="LAST_COMMIT_MESSAGE" value="ras" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
