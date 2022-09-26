@@ -16,7 +16,6 @@
     
     <!-- Header -->
     <mah:MetroWindow.WindowButtonCommands>
-        <!-- todo traduire les mot -->
         <mah:WindowButtonCommands LightMinButtonStyle="{DynamicResource MinButtonStyle}"
                                   DarkMinButtonStyle="{DynamicResource MinButtonStyle}"
                                   LightCloseButtonStyle="{DynamicResource CloseButtonStyle}"
