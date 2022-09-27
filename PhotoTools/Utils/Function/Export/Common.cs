@@ -9,7 +9,7 @@ namespace PhotoTools.Utils.Function;
 
 public static partial class Export
 {
-    public static (string, string) SaveFile(string title, string? initialFolder = null, List<SaveFileFilter.Filter>? filters = null)
+    private static (string, string) SaveFile(string title, string? initialFolder = null, List<SaveFileFilter.Filter>? filters = null)
     {
         var folderFilter = FileDialog.DefaultFolderFilter(initialFolder, filters);
         
@@ -22,7 +22,7 @@ public static partial class Export
         return FileDialog.FileDialogResult(filters, saveFileDialog, folderFilter);
     }
 
-    public static string SaveFile(string title, string? initialFolder = null, SaveFileFilter.Filter? filter = null)
+    private static string SaveFile(string title, string? initialFolder = null, SaveFileFilter.Filter? filter = null)
     {
         var folderFilter = FileDialog.DefaultFolderFilter(initialFolder, filter);
         
@@ -37,7 +37,7 @@ public static partial class Export
     public static void ExportTheme(string name)
     {
         var filter = new List<SaveFileFilter.Filter> { SaveFileFilter.Json, SaveFileFilter.SemiColonCsv, SaveFileFilter.CommaCsv };
-        var path = SaveFile(string.Format(Utils.Trad.Setting.Theme.SaveFileTitle, name) ,Get.GetDesktop, filter);
+        var path = SaveFile(string.Format(Trad.Setting.Theme.SaveFileTitle, name) ,Get.GetDesktop, filter);
 
         if (path.Item1 == string.Empty) return;
 

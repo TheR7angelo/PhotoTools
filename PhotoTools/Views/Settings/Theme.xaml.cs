@@ -34,23 +34,19 @@ public partial class Theme
         msg.SetIcon(msg.MessageIcon.Warning);
         msg.SetButtonOk();
 
-        if (Query.GetThemeExist(theme.Name!))
+        switch (Import.AddNewTheme(theme))
         {
-            msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeNameExistMessage, theme.Name));
-        }
-        else
-        {
-            if (Query.AddTheme(theme))
-            {
+            case 0:
+                msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeNameExistMessage, theme.Name));
+                break;
+            case 1:
                 FillComboStyle(theme.Name);
                 AddNewThemeVisibility(false);
-                
                 msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeAddedMessage, theme.Name));
-            }
-            else
-            {
+                break;
+            default:
                 msg.SetText(string.Format(Utils.Trad.Setting.Theme.ThemeNotAddedMessage, theme.Name));
-            }
+                break;
         }
         msg.ShowDialog();
     }
