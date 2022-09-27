@@ -231,47 +231,7 @@ public partial class Theme
 
     private void BtExpTheme_OnClick(object sender, RoutedEventArgs e)
     {
-        var name = CbStyle.Text!;
-        var theme = Query.GetStyle(name);
-
-        var filter = new List<SaveFileFilter.Filter> { SaveFileFilter.Json, SaveFileFilter.SemiColonCsv, SaveFileFilter.CommaCsv };
-        var path = Export.SaveFile(string.Format(Utils.Trad.Setting.Theme.SaveFileTitle, name) ,Get.GetDesktop, filter);
-
-        if (path.Item1 == string.Empty) return;
-
-        var success = path.Item2 switch
-        {
-            var value when value.Equals(SaveFileFilter.Json.Value) => path.Item1.ExportJson(theme),
-            FileExtension.Json => path.Item1.ExportJson(theme),
-            var value when value.Equals(SaveFileFilter.SemiColonCsv.Value) => Export.ExportCsv(path.Item1, theme, FileExtension.Semicolon),
-            var value when value.Equals(SaveFileFilter.CommaCsv.Value) => Export.ExportCsv(path.Item1, theme, FileExtension.Comma),
-            FileExtension.Csv => Export.ExportCsv(path.Item1, theme, FileExtension.Semicolon),
-            _ => false
-        };
-
-        var msg = new Window.MessageBox();
-
-        // todo make trad
-        if (success)
-        {
-            msg.SetIcon(msg.MessageIcon.Check);
-            msg.SetTitle("Success");
-            msg.SetText("Success");
-            msg.SetButtonYesNo();
-        }
-        else
-        {
-            msg.SetIcon(msg.MessageIcon.Error);
-            msg.SetTitle("Error");
-            msg.SetText("Error");
-            msg.SetButtonOk();
-        }
-
-        msg.ShowDialog();
-        if (msg.Answer is not null && msg.Answer.Equals(msg.AnswerYes))
-        {
-            path.Item1.StartFile();
-        }
+        Export.ExportTheme(CbStyle.Text!);
     }
     
     private void BtImpTheme_OnClick(object sender, RoutedEventArgs e)
