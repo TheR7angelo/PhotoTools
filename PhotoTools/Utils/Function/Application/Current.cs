@@ -1,4 +1,7 @@
 ﻿using System.Diagnostics;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using MahApps.Metro.Controls;
 using Microsoft.Toolkit.Uwp.Notifications;
 
@@ -46,4 +49,18 @@ public static class Current
         window.WindowButtonCommands.Minimize = Trad.MetroWindow.MetroWindow.Minimize;
         window.WindowButtonCommands.Restore = Trad.MetroWindow.MetroWindow.Restore;
     }
+
+    public static void ChangeIcon(Image source1, Image source2)
+    {
+        var target = new Bitmap(source1.Width, source1.Height, PixelFormat.Format32bppArgb);
+        var graphic = Graphics.FromImage(target);
+
+        graphic.CompositingMode = CompositingMode.SourceOver;
+            
+        graphic.DrawImage(source1, 0, 0);
+        graphic.DrawImage(source2, 0, 0);
+
+        System.Windows.Application.Current.MainWindow!.Icon = target.ParseToImageSource();
+    }
+    
 }
