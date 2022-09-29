@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel;
 using System.Windows;
-using MahApps.Metro.Controls;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Constant;
 using PhotoTools.Utils.Function.Application;
@@ -21,6 +20,14 @@ namespace PhotoTools.Window
             Config.InitializeStyle();
 
             InitializeUi();
+
+            TestFunction();
+
+        }
+
+        private static void TestFunction()
+        {
+            
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
