@@ -2,7 +2,7 @@
 
 namespace PhotoTools.Utils.Function;
 
-public partial class Get
+public static partial class Get
 {
     public static string GetCurrentPath => Environment.CurrentDirectory;
     
