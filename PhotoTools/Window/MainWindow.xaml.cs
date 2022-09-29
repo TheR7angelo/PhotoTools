@@ -1,5 +1,10 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Threading;
 using System.Windows;
+using System.Windows.Media.Imaging;
 using PhotoTools.Utils.Config;
 using PhotoTools.Utils.Constant;
 using PhotoTools.Utils.Function.Application;
@@ -21,13 +26,14 @@ namespace PhotoTools.Window
 
             InitializeUi();
 
-            TestFunction();
+            // TestFunction();
 
         }
 
         private static void TestFunction()
         {
-            
+            Current.ChangeIcon(new Bitmap(@"C:\Users\ZP6177\AppData\Local\Microsoft\Teams\current\resources\assets\favicon.png"),
+                new Bitmap(@"C:\Users\ZP6177\AppData\Local\Microsoft\Teams\current\resources\assets\Badge_4.png"));
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)

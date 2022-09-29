@@ -52,15 +52,23 @@ public static class Current
 
     public static void ChangeIcon(Image source1, Image source2)
     {
+        var target = MergeImage(source1, source2);
+
+        System.Windows.Application.Current.Invoke(() =>
+        {
+            System.Windows.Application.Current.MainWindow!.Icon = target.ParseToImageSource();
+        });
+    }
+
+    private static Bitmap MergeImage(Image source1, Image source2)
+    {
         var target = new Bitmap(source1.Width, source1.Height, PixelFormat.Format32bppArgb);
         var graphic = Graphics.FromImage(target);
 
         graphic.CompositingMode = CompositingMode.SourceOver;
-            
+
         graphic.DrawImage(source1, 0, 0);
         graphic.DrawImage(source2, 0, 0);
-
-        System.Windows.Application.Current.MainWindow!.Icon = target.ParseToImageSource();
+        return target;
     }
-    
 }

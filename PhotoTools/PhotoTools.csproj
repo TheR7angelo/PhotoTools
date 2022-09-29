@@ -233,6 +233,20 @@
       <AdditionalFiles Include="Utils\Bdds\Progress.sqlite">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </AdditionalFiles>
+      <None Remove="Utils\Img\008-check.png" />
+      <AdditionalFiles Include="Utils\Img\008-check.png" />
+      <None Remove="Utils\Img\009-check.png" />
+      <AdditionalFiles Include="Utils\Img\009-check.png" />
+      <None Remove="Utils\Img\010-check.png" />
+      <AdditionalFiles Include="Utils\Img\010-check.png" />
+      <None Remove="Utils\Img\011-check.png" />
+      <AdditionalFiles Include="Utils\Img\011-check.png" />
+      <None Remove="Utils\Img\012-checkmark.png" />
+      <AdditionalFiles Include="Utils\Img\012-checkmark.png" />
+      <None Remove="Utils\Img\013-checkmark.png" />
+      <AdditionalFiles Include="Utils\Img\013-checkmark.png" />
+      <None Remove="Utils\Img\014-checkmark.png" />
+      <AdditionalFiles Include="Utils\Img\014-checkmark.png" />
     </ItemGroup>
 
     <ItemGroup>
