@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoTools", "PhotoTools\PhotoTools.csproj", "{AA37FA81-F547-4579-95B5-26A7198E202E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libs", "Libs\Libs.csproj", "{53719FA0-E36B-4357-B54E-B8139FE67FB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibsTest", "LibsTest\LibsTest.csproj", "{FD67A4A9-C42F-4B54-8AE4-3231B321B462}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA37FA81-F547-4579-95B5-26A7198E202E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA37FA81-F547-4579-95B5-26A7198E202E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA37FA81-F547-4579-95B5-26A7198E202E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA37FA81-F547-4579-95B5-26A7198E202E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53719FA0-E36B-4357-B54E-B8139FE67FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53719FA0-E36B-4357-B54E-B8139FE67FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53719FA0-E36B-4357-B54E-B8139FE67FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53719FA0-E36B-4357-B54E-B8139FE67FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD67A4A9-C42F-4B54-8AE4-3231B321B462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD67A4A9-C42F-4B54-8AE4-3231B321B462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD67A4A9-C42F-4B54-8AE4-3231B321B462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD67A4A9-C42F-4B54-8AE4-3231B321B462}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
