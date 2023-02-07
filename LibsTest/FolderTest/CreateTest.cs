@@ -1,5 +1,4 @@
 ﻿using Libs.Folder;
-using IWshRuntimeLibrary;
 using WindowsShortcutFactory;
 
 namespace LibsTest.FolderTest;
@@ -23,7 +22,7 @@ public class CreateTest
     private void CreateSortCut()
     {
         const string target = "C:\\Users\\ZP6177\\Downloads\\df.csv";
-        const string file = "C:\\Users\\ZP6177\\Creative Cloud Files\\Programmation\\C#\\Personnel\\PhotoTools\\LibsTest\\test.ink";
+        const string file = "C:\\Users\\ZP6177\\Creative Cloud Files\\Programmation\\C#\\Personnel\\PhotoTools\\LibsTest\\test.lnk";
         using var shortcut = new WindowsShortcut
         {
             Path = target
