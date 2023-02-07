@@ -12,7 +12,7 @@ public static class Create
         });
     }
 
-    public static async Task CreateFolder(this string pathParent, int year)
+    private static async Task CreateFolder(this string pathParent, int year)
     {
         var start = new DateTime(year, 1, 1);
         var stop = new DateTime(year + 1, 1, 1).AddDays(-1) ;

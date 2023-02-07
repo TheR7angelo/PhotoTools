@@ -1,4 +1,6 @@
 ﻿using Libs.Folder;
+using IWshRuntimeLibrary;
+using WindowsShortcutFactory;
 
 namespace LibsTest.FolderTest;
 
@@ -7,7 +9,7 @@ public class CreateTest
     [Fact]
     private async void CreateFolderTest()
     {
-        const string path = "G:\\Mes Photo\\Photo";
+        var path = Path.GetFullPath("LibsTest/Dossier Test");
 
         var cancellationTokenSource = new CancellationTokenSource();
         
@@ -15,5 +17,17 @@ public class CreateTest
 
         var task = path.CreateFolder(2023, middleFolder, cancellationTokenSource.Token);
         await task;
+    }
+    
+    [Fact]
+    private void CreateSortCut()
+    {
+        const string target = "C:\\Users\\ZP6177\\Downloads\\df.csv";
+        const string file = "C:\\Users\\ZP6177\\Creative Cloud Files\\Programmation\\C#\\Personnel\\PhotoTools\\LibsTest\\test.ink";
+        using var shortcut = new WindowsShortcut
+        {
+            Path = target
+        };
+        shortcut.Save(file);
     }
 }
